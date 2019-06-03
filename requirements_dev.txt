@@ -7,6 +7,9 @@ flake8
 tox
 coverage
 Sphinx
+matplotlib
+pandas
 pytest
 pytest-runner
+scikit-learn
 -e .
