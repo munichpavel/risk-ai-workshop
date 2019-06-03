@@ -60,3 +60,9 @@ target/
 
 # pyenv python configuration file
 .python-version
+
+# local environment file
+.env
+
+# Notebook files
+notebooks/.ipynb_checkpoints
