@@ -12,4 +12,5 @@ pandas
 pytest
 pytest-runner
 scikit-learn
+-e git://github.com/munichpavel/fake-data-for-learning.git#egg=fake_data_for_learning
 -e .
