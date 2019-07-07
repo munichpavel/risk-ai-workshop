@@ -66,3 +66,12 @@ target/
 
 # Notebook files
 notebooks/.ipynb_checkpoints
+
+# LaTeX files
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.gz
+*.toc
