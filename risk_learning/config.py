@@ -15,3 +15,4 @@ class filenames:
     >> pd.read_csv(filenames.telecom_churn)
     '''
     telcom_churn=datadir.joinpath('WA_Fn-UseC_-Telco-Customer-Churn.csv')
+    fake_churn=datadir.joinpath('churn.csv')
