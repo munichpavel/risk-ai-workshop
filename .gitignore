@@ -75,3 +75,4 @@ notebooks/.ipynb_checkpoints
 *.snm
 *.gz
 *.toc
+*.pdf
