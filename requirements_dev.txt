@@ -15,3 +15,4 @@ pytest-runner
 scikit-learn
 sklearn-pandas
 -e .
+-e git://github.com/munichpavel/fake-data-for-learning.git#egg=fake_data_for_learning
