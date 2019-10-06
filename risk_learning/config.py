@@ -17,3 +17,5 @@ class filenames:
     telcom_churn=datadir.joinpath('WA_Fn-UseC_-Telco-Customer-Churn.csv')
     fake_churn=datadir.joinpath('churn.csv')
     fake_churn_simple=datadir.joinpath('churn_simple.csv')
+    
+    churn_bn=datadir.joinpath('churn_bn.pickle')
