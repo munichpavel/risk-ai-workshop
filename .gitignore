@@ -76,3 +76,14 @@ notebooks/.ipynb_checkpoints
 *.gz
 *.toc
 *.pdf
+*.fdb_latexmk
+*.fls
+
+# OS X
+.DS_Store
+
+# Visual Code
+.vscode/
+
+# scripts
+*.sh
