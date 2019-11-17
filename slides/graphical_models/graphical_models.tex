@@ -48,16 +48,63 @@ Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowled
 \begin{frame}
     \frametitle{d-separation}
     \framesubtitle{Examples}
-    \begin{tikzpicture}
 
-        % Define nodes
-        \node[obs]                               (c) {$c$};
-        \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
-        \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
+    \begin{figure}[ht]
+        \begin{center}
+          \begin{tabular}{cc}
+            (i)
+            \begin{tikzpicture}
+                                % Define nodes
+                \node[obs]                               (c) {$c$};
+                \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
+                \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
+        
+                \edge {a} {c} ; %
+                \edge {c} {b} ;
+              
+              \end{tikzpicture} &
+              (ii)
+              \begin{tikzpicture}
 
-        \edge {a,b} {c} ; %
-      
-      \end{tikzpicture}
+                % Define nodes
+                \node[obs]                               (c) {$c$};
+                \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
+                \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
+        
+                \edge {b} {c} ; %
+                \edge {c} {a} ; %
+              
+              \end{tikzpicture}
+          \end{tabular}
+          \begin{tabular}{cc}
+            (iii)
+            \begin{tikzpicture}
+                                % Define nodes
+                \node[obs]                               (c) {$c$};
+                \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
+                \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
+        
+                \edge {c} {a} ; %
+                \edge {c} {b} ;
+              
+              \end{tikzpicture} &
+              (iv)
+              \begin{tikzpicture}
+
+                % Define nodes
+                \node[obs]                               (c) {$c$};
+                \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
+                \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
+        
+                \edge {a} {c} ; %
+                \edge {b} {c} ; %
+              
+              \end{tikzpicture}
+          \end{tabular}
+        \end{center}
+        \caption{Examples.}
+      \end{figure}
+
 \end{frame}
 
 
