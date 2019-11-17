@@ -1,0 +1,64 @@
+% Input common header
+\input{../ai_for_risk_header}
+
+
+\title{Graphical Models for Risk}
+\begin{document}
+\maketitle
+
+\begin{frame}
+\frametitle{d-separation}
+\emph{Definition} Let $X$, $Y$, and $Z$ be three disjoint subsets of nodes in a directed acyclic graph, $G$, and let $p$ be any path betweeen a node in $X$ and one in $Y$, where by `path'we mean a succession of arcs, independent of direction. Then $Z$ is said to block $p$ if there is a node $w$ on $p$ satisfying one of the following two conditions
+
+\begin{enumerate}
+\item $w$ has converging arrows along $p$, and neither $w$ nor any of its descendents are in $Z$, or
+\item $w$ does not have converging arrows along $p$, and $w$ is in $Z$.
+\end{enumerate}
+
+Further, $Z$ is said to $d-separate$ $X$ from $Y$ in $G$, denoted 
+
+\begin{equation*}
+    (X \ci Y | Z)_G
+\end{equation*}
+
+if and only if $Z$ blocks every path from a node in $X$ to a node in $Y$.
+\end{frame}
+
+
+\begin{frame}
+\frametitle{d-separation}
+\framesubtitle{Intuitions}
+From \href{https://www.andrew.cmu.edu/user/scheines/tutor/d-sep.html}{Richard Scheines tutorial}:\newline
+
+\begin{quote}
+Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowledge of $X$ gives you no extra information about $Y$ once you have knowledge about $Z$. In other words, once you know $Z$, $X$ adds nothing to what you know about $Y$.
+\end{quote}
+\end{frame}
+
+\begin{frame}
+    \frametitle{d-separation}
+    \framesubtitle{Alternative defintion}
+    From \href{https://www.andrew.cmu.edu/user/scheines/tutor/d-sep.html}{Richard Scheines tutorial}
+    
+    \begin{quote}
+    Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowledge of $X$ gives you no extra information about $Y$ once you have knowledge about $Z$. In other words, once you know $Z$, $X$ adds nothing to what you know about $Y$.
+    \end{quote}
+\end{frame}
+
+\begin{frame}
+    \frametitle{d-separation}
+    \framesubtitle{Examples}
+    \begin{tikzpicture}
+
+        % Define nodes
+        \node[obs]                               (c) {$c$};
+        \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
+        \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
+
+        \edge {a,b} {c} ; %
+      
+      \end{tikzpicture}
+\end{frame}
+
+
+\end{document}
