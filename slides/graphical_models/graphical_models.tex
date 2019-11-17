@@ -7,6 +7,15 @@
 \maketitle
 
 \begin{frame}
+\frametitle{Graphs}
+
+\emph{Definition} A \emph{directed acyclical graph} or \emph{DAG} is ??? \newline
+
+\emph{Definition} A \emph{path} in a DAG $G$ is a consecutive set of edges, independent of directions. \newline
+
+\end{frame}
+
+\begin{frame}
 \frametitle{d-separation}
 \emph{Definition} Let $X$, $Y$, and $Z$ be three disjoint subsets of nodes in a directed acyclic graph, $G$, and let $p$ be any path betweeen a node in $X$ and one in $Y$, where by `path'we mean a succession of arcs, independent of direction. Then $Z$ is said to block $p$ if there is a node $w$ on $p$ satisfying one of the following two conditions
 
@@ -21,29 +30,54 @@ Further, $Z$ is said to $d-separate$ $X$ from $Y$ in $G$, denoted
     (X \ci Y | Z)_G
 \end{equation*}
 
-if and only if $Z$ blocks every path from a node in $X$ to a node in $Y$.
+if and only if $Z$ blocks every path from a node in $X$ to a node in $Y$.\newline
+
+References: \cite{pearl1995causal}
 \end{frame}
 
 
 \begin{frame}
 \frametitle{d-separation}
-\framesubtitle{Intuitions}
-From \href{https://www.andrew.cmu.edu/user/scheines/tutor/d-sep.html}{Richard Scheines tutorial}:\newline
+\framesubtitle{Intuition}
+From \cite{scheines-tutorial}: \newline
 
 \begin{quote}
 Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowledge of $X$ gives you no extra information about $Y$ once you have knowledge about $Z$. In other words, once you know $Z$, $X$ adds nothing to what you know about $Y$.
 \end{quote}
+
 \end{frame}
 
 \begin{frame}
     \frametitle{d-separation}
-    \framesubtitle{Alternative defintion}
-    From \href{https://www.andrew.cmu.edu/user/scheines/tutor/d-sep.html}{Richard Scheines tutorial}
+    \framesubtitle{Alternative definition via blocking paths}
     
-    \begin{quote}
-    Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowledge of $X$ gives you no extra information about $Y$ once you have knowledge about $Z$. In other words, once you know $Z$, $X$ adds nothing to what you know about $Y$.
-    \end{quote}
+ 
 \end{frame}
+
+\begin{frame}
+    \frametitle{d-separation}
+    \framesubtitle{Alternative definition, ii}
+
+    Let $A$, $B$, $C$ be non-intersecting subsets of vertices of a DAG $G$. \newline
+
+    \emph{Definition} A path from $A$ to $B$ is \emph{blocked} by $C$ if the path contains a node such that either
+
+    \begin{itemize}
+    \item the node is in $C$, and the arrows on the path at the node meet either head-to-tail or tail-to-tail, or
+    \item neither the node nor its descendents is in $C$, and the arrows on the path at the node meet head-to-head \newline
+    \end{itemize}
+
+    \emph{Definition} A is said to be $d-separated$ from $B$ by $C$ if all paths from $A$ to $B$ are blocked by $C$. We write
+
+    \begin{equation*}
+        (A \ci B | C)
+    \end{equation*}
+
+    References: \cite{tum-graphical}
+
+    
+\end{frame}
+
 
 \begin{frame}
     \frametitle{d-separation}
@@ -52,7 +86,7 @@ Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowled
     \begin{figure}[ht]
         \begin{center}
           \begin{tabular}{cc}
-            (i)
+            \onslide<2->{$(A \ci B | \, \{c\})$}
             \begin{tikzpicture}
                                 % Define nodes
                 \node[obs]                               (c) {$c$};
@@ -63,7 +97,7 @@ Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowled
                 \edge {c} {b} ;
               
               \end{tikzpicture} &
-              (ii)
+              \onslide<2->{$(A \ci B | \, \{c\})$}
               \begin{tikzpicture}
 
                 % Define nodes
@@ -77,7 +111,7 @@ Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowled
               \end{tikzpicture}
           \end{tabular}
           \begin{tabular}{cc}
-            (iii)
+            \onslide<2->{$(A \ci B | \, \{c\}))$}
             \begin{tikzpicture}
                                 % Define nodes
                 \node[obs]                               (c) {$c$};
@@ -88,7 +122,7 @@ Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowled
                 \edge {c} {b} ;
               
               \end{tikzpicture} &
-              (iv)
+              \onslide<2->{$(A \ci B | \,\emptyset)$}
               \begin{tikzpicture}
 
                 % Define nodes
@@ -102,10 +136,15 @@ Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowled
               \end{tikzpicture}
           \end{tabular}
         \end{center}
-        \caption{Examples.}
+        \caption{Examples $A = \{a\}$, $B = \{ b\}$.}
       \end{figure}
 
 \end{frame}
 
+\begin{frame}[allowframebreaks]
+    \frametitle{References}
+    \bibliographystyle{amsalpha}
+    \bibliography{../../references.bib}
+\end{frame}
 
 \end{document}
