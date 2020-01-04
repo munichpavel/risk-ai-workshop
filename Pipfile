@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+pylint = "*"
+pytest = "*"
+risk-learning = {editable = true,file = "file:///Users/pauldev/delo/projects/risk-learning"}
+
+[packages]
+jupyter = "*"
+matplotlib = "*"
+pandas = "*"
+pytest-runner = "*"
+scikit-learn = ">=0.21.3"
+sklearn-pandas = "*"
+graphviz = "*"
+dowhy = "*"
+fake-data-for-learning = {git = "https://github.com/munichpavel/fake-data-for-learning"}
+
+[requires]
+python_version = "3.7"
