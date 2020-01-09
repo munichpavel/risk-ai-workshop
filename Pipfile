@@ -19,6 +19,7 @@ sklearn-pandas = "*"
 graphviz = "*"
 dowhy = "*"
 fake-data-for-learning = {git = "https://github.com/munichpavel/fake-data-for-learning"}
+causalgraphicalmodels = "*"
 
 [requires]
 python_version = "3.7"
