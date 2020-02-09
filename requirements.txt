@@ -1,12 +1,5 @@
 jupyter
 pip
-bumpversion
-wheel
-watchdog
-flake8
-tox
-coverage
-Sphinx
 matplotlib
 pandas
 pylint
@@ -15,5 +8,7 @@ pytest-runner
 scikit-learn>=0.21.3
 sklearn-pandas
 graphviz
-git+https://github.com/munichpavel/fake-data-for-learning
+
+git+https://github.com/munichpavel/fake-data-for-learning#egg=fake_data_for_learning
+
 -e .
