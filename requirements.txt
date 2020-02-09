@@ -3,6 +3,7 @@ pip
 matplotlib
 pandas
 pylint
+pyro-ppl
 pytest
 pytest-runner
 scikit-learn>=0.21.3
