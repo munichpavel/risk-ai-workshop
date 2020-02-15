@@ -58,7 +58,30 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Judea Pearl's Rules of Causality \cite{pearl2007mathematics}}
+    \frametitle{Counterfactuals and causality}
+
+    The definitions in following slides are from \cite{pearl2007mathematics}.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{The Structural Causal Model}
+    A \emph{structural causal model} $M$ consists of two sets of variables $U, V$ and a set of functions $F$, where 
+    
+    \begin{itemize}
+        \item $U$ are considered \emph{exogenous}, or background variables, 
+        \item $V$ are the \emph{causal} variables, i.e. that can be manipulated, and
+        \item $F$ are the functions that represent the process of assigning values to elements of $V$ based on other values in $U, V$, e.g. $v_i = f(u, v)$.
+    \end{itemize}
+
+    We denote by $G$ the graph induced on $U, V$ by the functions $F$, and call it the \emph{causal graph} of $(U, V, F)$.
+\end{frame}
+
+\begin{frame}
+    \frametitle{The definition of ``do"}
+\end{frame}
+\begin{frame}
+\frametitle{Judea Pearl's Rules of Causality}
 
 Let $X$, $Y$ , $Z$ and $W$ be arbitrary disjoint sets of nodes in a DAG $G$. Let $G_\underline{X}$ be the graph obtained by removing all arrows pointing into (nodes of) $X$. 
 Denote by $G_{\overline{X}}$ the graph obtained by removing all arrows pointing out of $X$. If, e.g. we remove arrows pointing out of $X$ and into $Z$, we the resulting graph is denoted by $G_{\underline{X} \overline{Z}}$
