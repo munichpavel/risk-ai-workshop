@@ -3,12 +3,12 @@ pip
 matplotlib
 pandas
 pylint
+torch
 pyro-ppl
-pytest
-pytest-runner
 scikit-learn>=0.21.3
 sklearn-pandas
 graphviz
+brent
 
 git+https://github.com/munichpavel/fake-data-for-learning#egg=fake_data_for_learning
 
