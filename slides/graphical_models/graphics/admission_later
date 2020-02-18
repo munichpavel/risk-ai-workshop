@@ -1,0 +1,12 @@
+digraph {
+	rankdir=LR
+	node [shape=circle]
+	gender
+	dept
+	comp
+	admission
+	gender -> dept
+	gender -> admission
+	dept -> comp
+	comp -> admission
+}

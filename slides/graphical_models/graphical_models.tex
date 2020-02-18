@@ -2,7 +2,7 @@
 \input{../ai_for_risk_header}
 
 
-\title{Graphical Models for Risk}
+\title{Discrete Geometry for Risk and AI}
 \begin{document}
 \maketitle
 
@@ -14,6 +14,32 @@
 \emph{Definition} A \emph{path} in a DAG $G$ is a consecutive set of edges, independent of directions. \newline
 
 \end{frame}
+
+\begin{frame}
+  \frametitle{Bayesian networks}
+  \framesubtitle{Simpson paradox preview, university admission gender bias}
+
+  \begin{figure}[ht]
+    \centering
+            \includegraphics[height=0.15\textwidth]{graphics/berkeley} 
+            \includegraphics[height=0.4\textwidth]{graphics/admission_original}
+       
+    \end{figure}
+    Sources: \cite{simpson-wikipedia} \cite{freedman1998statistics}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Bayesian networks}
+  \framesubtitle{Simpson paradox preview, university admission gender bias}
+
+  \begin{figure}[ht]
+    \centering
+            \includegraphics[height=0.35\textheight]{graphics/berkeley_later} 
+            \includegraphics[height=0.35\textheight]{graphics/admission_later}
+    \end{figure}
+    Sources: \cite{simpson-wikipedia} \cite{Bickel398}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{d-separation}
@@ -205,6 +231,7 @@ Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowled
       \end{figure}
 
 \end{frame}
+
 
 \begin{frame}[allowframebreaks]
     \frametitle{References}
