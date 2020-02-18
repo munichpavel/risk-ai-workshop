@@ -16,8 +16,8 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Bayesian networks}
-  \framesubtitle{Simpson paradox preview, university admission gender bias}
+  \frametitle{Bayesian networks: university admission gender bias}
+  \framesubtitle{Simpson paradox preview}
 
   \begin{figure}[ht]
     \centering
@@ -29,8 +29,8 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Bayesian networks}
-  \framesubtitle{Simpson paradox preview, university admission gender bias}
+  \frametitle{Bayesian networks: university admission gender bias}
+  \framesubtitle{Simpson paradox preview}
 
   \begin{figure}[ht]
     \centering
@@ -40,6 +40,34 @@
     Sources: \cite{simpson-wikipedia} \cite{Bickel398}
 \end{frame}
 
+\begin{frame}
+\frametitle{Bayesian networks: hit rate for insurance quotes}
+\begin{itemize}
+  \item product type: financial, liability, property
+  \item days: number of days to generate quote
+  \item rating: measure of premium paid expected claims
+  \item hit: 0 if quote refused, 1 if accepted
+\end{itemize}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[height=0.7\textheight]{graphics/hit}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Markov random field: credit default risk}
+Undirected graphical model.
+\begin{itemize}
+  \item Nodes take values 0 (healthy) or 1 (default)
+  \item Industry nodes connect to other industry nodes
+  \item Individual firm nodes connect only to corresponding industry node
+\end{itemize}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[height=0.7\textheight]{graphics/credit_default}
+\end{figure}
+\end{frame}
 
 \begin{frame}
 \frametitle{d-separation}
@@ -232,6 +260,9 @@ Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowled
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Probability polytopes}
+\end{frame}
 
 \begin{frame}[allowframebreaks]
     \frametitle{References}
