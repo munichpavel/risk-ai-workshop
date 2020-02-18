@@ -58,14 +58,28 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Counterfactuals and causality}
+\frametitle{Counterfactuals and causality}
+Ideal: Intervention + \href{https://en.wikipedia.org/wiki/Multiverse}{Multiverse} $\rightarrow$ Causality
 
-    The definitions in following slides are from \cite{pearl2007mathematics}.
+Examples:
+\begin{itemize}
+\item Medical treatment (e.g. \href{https://en.wikipedia.org/wiki/Simpson\%27s_paradox\#Kidney_stone_treatment}{kidney stone treatment})
+\item Social outomes (e.g. \href{https://en.wikipedia.org/wiki/Simpson\%27s_paradox\#UC_Berkeley_gender_bias}{university admissions})
+\item Business outcomes (e.g. \href{https://en.wikipedia.org/wiki/Click-through\_rate}{click-through rate}, hit rate)
+\end{itemize}
+
+In-practice:
+\begin{itemize}
+\item A / B testing: approximate multiverse by splitting sample well
+\item Correlation: approximate multiverse by 
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}
     \frametitle{The Structural Causal Model}
+    The definitions in following slides are from \cite{pearl2007mathematics}.
+
     A \emph{structural causal model} $M$ consists of two sets of variables $U, V$ and a set of functions $F$, where 
     
     \begin{itemize}
@@ -86,21 +100,45 @@
 Let $X$, $Y$ , $Z$ and $W$ be arbitrary disjoint sets of nodes in a DAG $G$. Let $G_\underline{X}$ be the graph obtained by removing all arrows pointing into (nodes of) $X$. 
 Denote by $G_{\overline{X}}$ the graph obtained by removing all arrows pointing out of $X$. If, e.g. we remove arrows pointing out of $X$ and into $Z$, we the resulting graph is denoted by $G_{\underline{X} \overline{Z}}$
 
-Rules
-\begin{equation}
+Rule 1: Insertion / deletion of observations
+\begin{equation*}
 P(y | \jpdo(x), z, w) = P(y | \jpdo(x), w) \textrm{ if } (Y \ci Z | X, W)_{G_{\overline{X}}}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+Rule 2: Action / observation exchange
+\begin{equation*}
 P(y | \jpdo(x), \jpdo(z), w) = P(y | \jpdo(x), z, w) \textrm{ if } (Y \ci Z | X, W)_{G_{\overline{X} \underline{Z}}}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+Rule 3: Insertion / deletion of actions
+\begin{equation*}
 P(y | \jpdo(x), \jpdo(z), w) = P(y | \jpdo(x), w) \textrm{ if } (Y \ci Z | X, W)_{G_{\overline{X} \overline{Z(W)}}},
-\end{equation}
+\end{equation*}
 
-where $Z(W)$ is the et of $Z$-nodes that are not ancestors of any $W$-node in $G_\underline{X}$.
+where $Z(W)$ is the set of $Z$-nodes that are not ancestors of any $W$-node in $G_\underline{X}$.
 
+\end{frame}
+
+\begin{frame}
+\frametitle{Special cases of the causal rules}
+
+By judicious setting of sets of nodes to be empty, we obtain some useful corollaries of the causal rules.
+\newline
+
+Rule 1': Insertion / deletion of observations, with $W = \emptyset$
+\begin{equation*}
+    P(y | \jpdo(x), z) = P(y | \jpdo(x)) \textrm{ if } (Y \ci Z | X)_{G_{\overline{X}}}
+\end{equation*}
+
+Rule 2': Action / observation exchange, with $X = \emptyset$
+\begin{equation*}
+P(y | \jpdo(z), w) = P(y | z, w) \textrm{ if } (Y \ci Z | W)_{G_{ \underline{Z}}}
+\end{equation*}
+
+Rule 3': Insertion / deletion of actions, with $X, W = \emptyset$
+\begin{equation*}
+P(y | \jpdo(z)) = P(y) \textrm{ if } (Y \ci Z )_{G_{\overline{Z}}}
+\end{equation*}
 
 \end{frame}
 
