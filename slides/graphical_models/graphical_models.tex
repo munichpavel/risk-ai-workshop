@@ -141,6 +141,71 @@ Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowled
 
 \end{frame}
 
+\begin{frame}
+    \frametitle{d-separation}
+    \framesubtitle{More examples}
+
+    \begin{figure}[ht]
+        \begin{center}
+          \begin{tabular}{cc}
+            \onslide<2->{$\neg (A \ci B | \, \{c\})$, but $(A \ci B | \, \emptyset)$}
+            \begin{tikzpicture}
+                                % Define nodes
+                \node[obs]                               (d) {$d$};
+                \node[obs, left=of d, xshift=-1.2cm] (a) {$a$};
+                \node[obs, right=of d, xshift=1.2cm]  (b) {$b$};
+                \node[obs, below=of d]                (c) {$c$};
+                \edge {a} {d} ; %
+                \edge {b} {d} ;
+                \edge {c} {a} ;
+                \edge {c} {b} ;
+              
+              \end{tikzpicture} &
+              
+        %       \onslide<2->{$(A \ci B | \, \{c\})$}
+        %       \begin{tikzpicture}
+
+        %         % Define nodes
+        %         \node[obs]                               (c) {$c$};
+        %         \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
+        %         \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
+        
+        %         \edge {b} {c} ; %
+        %         \edge {c} {a} ; %
+              
+        %       \end{tikzpicture}
+        %   \end{tabular}
+        %   \begin{tabular}{cc}
+        %     \onslide<2->{$(A \ci B | \, \{c\}))$}
+        %     \begin{tikzpicture}
+        %                         % Define nodes
+        %         \node[obs]                               (c) {$c$};
+        %         \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
+        %         \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
+        
+        %         \edge {c} {a} ; %
+        %         \edge {c} {b} ;
+              
+        %       \end{tikzpicture} &
+        %       \onslide<2->{$(A \ci B | \,\emptyset)$}
+        %       \begin{tikzpicture}
+
+        %         % Define nodes
+        %         \node[obs]                               (c) {$c$};
+        %         \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
+        %         \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
+        
+        %         \edge {a} {c} ; %
+        %         \edge {b} {c} ; %
+              
+        %      \end{tikzpicture}
+          \end{tabular}
+        \end{center}
+        \caption{Examples $A = \{a\}$, $B = \{ b\}$.}
+      \end{figure}
+
+\end{frame}
+
 \begin{frame}[allowframebreaks]
     \frametitle{References}
     \bibliographystyle{amsalpha}
