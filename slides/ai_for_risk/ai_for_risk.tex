@@ -121,7 +121,26 @@ See also: \href{https://www.theverge.com/2018/1/12/16882408/google-racist-gorill
 \end{frame}
 
 \begin{frame}
-  \frametitle{Model selection: data + AI}
+  \frametitle{Model selection: theory sketch}
+  Goal: select the best model for data to come, i.e. minimize \emph{generalization error}.\newline
+
+  Basic steps
+  \begin{itemize}
+    \item {\color{blue}Split data} set into train, validation and test sets
+    \item For each model family (e.g. logistic regression, gradient boosted tree classifier), {\color{blue}select features} and {\color{blue}optimize model parameters} on training data
+    \item For each model family, {\color{blue}evaluate fitted models} on validation set with chosen metric (e.g. recall, accuracy) and choose best
+    \item To {\color{blue}estimate generalization error}, evaluate the best model on the test set.
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Model selection: practice sketch}
+
+  \begin{itemize}
+    \item Market / business need trumps model selection theory
+    \item Don't cede sense to statistics
+    \item Regularize
+    \item Use pipelines to avoid model leakage
+  \end{itemize}
 \end{frame}
 \begin{frame}
 \frametitle{Buzzwords deserving skepticism}
