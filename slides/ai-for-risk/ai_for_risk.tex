@@ -1,6 +1,5 @@
 % Input common header
 \input{../ai_for_risk_header}
-
 \title{Risk, Artificial Intelligence and Discrete Geometry}
 \begin{document}
 \maketitle
@@ -104,8 +103,8 @@ See also: \href{https://www.theverge.com/2018/1/12/16882408/google-racist-gorill
   \frametitle{Artificial intelligence in insurance}
 
   \begin{itemize}
-    \item Underwriting: selling insurance
-    \item Claims: dealing with client loss events
+    \item Underwriting: selling insurance, e.g. using a \emph{technical pricing model} that predicts expected claims
+    \item Claims: dealing with client loss events, e.g. using algorithmic \emph{straight-through-processing} or \emph{fraud detection}
     \item Operations: process efficiency
   \end{itemize}
 \end{frame}
@@ -132,6 +131,53 @@ See also: \href{https://www.theverge.com/2018/1/12/16882408/google-racist-gorill
     \item To {\color{blue}estimate generalization error}, evaluate the best model on the test set.
   \end{itemize}
 \end{frame}
+
+\begin{frame}
+\frametitle{Model selection example: hit rate for insurance quotes}
+Fake data generated with \href{https://github.com/munichpavel/fake-data-for-learning}{fake-data-for-learning}\newline
+
+ \input{graphics/hits}\newline
+
+ Variables
+\begin{itemize}
+\item product\_type: Client line of business
+\item days: Number of days to generate quote
+\item rating: Binary indication of client risk
+\item hit: Binary, 1 for success (binding the quote), 0 for failure
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Model selection example: lightning data}
+Fake data generated with \href{https://github.com/munichpavel/fake-data-for-learning}{fake-data-for-learning}\newline
+
+ \input{graphics/lightning}\newline
+
+ Variables
+\begin{itemize}
+\item city: Slovenian city
+\item year: calendar year AD
+\item lightning\_strike: Number of lightning strike deaths per year
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Model selection example: university admissions data}
+Fake data generated with \href{https://github.com/munichpavel/fake-data-for-learning}{fake-data-for-learning}\newline
+
+ \input{graphics/fake_admissions}\newline
+
+ Variables
+\begin{itemize}
+\item gender of applicant: 0 for male, 1 for female
+\item department: integer code for university department to which applicant applied
+\item comp: binary code for competitiveness of department, 1 for competitive
+\item admission: binary, 0 for rejection, 1 for acceptance
+\end{itemize}
+\end{frame}
+
+
 \begin{frame}
   \frametitle{Model selection: practice sketch}
 
