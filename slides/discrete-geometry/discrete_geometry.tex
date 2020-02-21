@@ -6,16 +6,18 @@
 \begin{document}
 \maketitle
 
+
 \begin{frame}
 \frametitle{Why discrete geometry?}
 
 \begin{itemize}
-\item Older history: graphical models among first non-rules based AI approaches \cite{darwiche2009modeling}
-\item Recent history: Dissatisfaction with deep learning, only ``curve fitting'', alternative via \emph{causal graphical models} \cite{pearl2019limitations}
+\item Recent history: Dissatisfaction with deep learning, only ``curve fitting'', alternatives via \emph{causal graphical models} \cite{pearl2019limitations}
+\item Less recent history: graphical models among first non-rules based AI approaches \cite{darwiche2009modeling}
 \item Geometrical formulations of statistical objects, e.g. graphical models and probability polytopes\newline
 \end{itemize}
 
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Directed graphical model: university admission gender bias}
@@ -42,6 +44,7 @@
     Sources: \cite{simpson-wikipedia} \cite{Bickel398}
 \end{frame}
 
+
 \begin{frame}
 \frametitle{Directed graphical model: hit rate for insurance quotes}
 \begin{itemize}
@@ -58,7 +61,7 @@
 
 
 \begin{frame}
-\frametitle{Undirected graphical model: credit default risk}
+\frametitle{Undirected graphical model: credit default risk \cite{filiz2012graphical}}
 
 \begin{itemize}
   \item Nodes take values 0 (healthy) or 1 (default)
@@ -67,7 +70,7 @@
 \end{itemize}
 \begin{figure}[ht]
   \centering
-  \includegraphics[height=0.7\textheight]{graphics/credit_default}
+  \includegraphics[height=0.6\textheight]{graphics/credit_default}
 \end{figure}
 \end{frame}
 
@@ -89,7 +92,7 @@ A \emph{graph} is a pair of sets $(V, E)$, where $V$ is called the set of \emph{
 \begin{frame}
 \frametitle{Graphical models}
 \begin{definition}
-(Informal) A graphical model is a graph whose nodes represent variables and edges represent direct statistical dependencies between the variables.\newline
+(Informal) A graphical model is a graph whose nodes represent variables and whose edges represent direct statistical dependencies between the variables.\newline
 \end{definition}
 
 \emph{Why graphical models?}
@@ -100,8 +103,24 @@ A \emph{graph} is a pair of sets $(V, E)$, where $V$ is called the set of \emph{
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{Conditional independence}
 
+Recall that two random variables $X, Y$ are \emph{independent} if $P(X=x, Y=y) = P(X=x) P(Y=y)$.
 
+\begin{definition}
+Let $X = (X_1, \ldots, X_m)$ be a probability distribution, and let $A, B, C$ be pair-wise disjoint subsets of ${1, \ldots, m}$, and define $X_A = (X_i)_{i \in A}$. Then $X_A, X_B$ are \emph{conditionally depenedent given $X_C$} if and only if 
+
+\begin{align*}
+P(&X_A = x_A,  \,X_B = x_B | X_C = x_c) \\
+&= P(X_A = x_a | X_C = x_c) P(X_B = x_B | X_C = x_c)
+\end{align*}
+
+for all $x_A, x_B, x_C$.\newline
+\end{definition}
+
+For $X_A, X_B$ conditionally independent given $X_C$, we write $$(X_A \ci X_B | X_C)$$.
+\end{frame}
 
 \begin{frame}
 \frametitle{d-separation in DAGs}
