@@ -276,11 +276,53 @@ P = P(A,z)=\{ x \in R^d: Ax \leq z\} \textrm{ for some } A \in R^{m d}, z \in R^
 If $P$ is bounded (i.e. compact), then it is called a \emph{polytope}.
 
 \begin{definition}
-(Informal) A V-polytope is the convex hull of a finite set of vertices $x \in R^d$. See \cite{ziegler2012lectures} for a precise definition.
+(Informal) A \emph{V-polytope} is the convex hull of a finite set of vertices $conv(V) \in R^d$. See \cite{ziegler2012lectures} for a precise definition.
 \end{definition}
 
+Example: The V-representation for all $Bernoulli$ distributions is
+\begin{tikzpicture}[scale=1.2]
+  % Draw axes
+  \draw [<->] (0,1.35) node (yaxis) [above] {}
+      |- (1.35,0) node (xaxis) [right] {};
+  \draw [thick] (0,1.0) coordinate (b_1) node[anchor=west, xshift=-1.0cm] {(0,1)} -- (1.0,0) coordinate (b_2) node[anchor=south, yshift=-0.75cm] {(1,0)};
+  
+\end{tikzpicture}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{The main theorem of polytopes}
+
+\begin{theorem}
+  A subset $P \subset R^d$ is the convex hull of a finite point set (a \emph{V-polytope}) 
+  \begin{equation*}
+    P = conv(V) \textrm{ for some }V \in R^{dn}
+  \end{equation*}
+if and only if it is a bounded intersection of halfspaces (an \emph{H-polytope}) 
+\begin{equation*}
+  P = P(A,z) \textrm{ for some }A \in R^{md}, z \in R^m
+\end{equation*}
+\end{theorem}
+
+See \cite{ziegler2012lectures} for a proof.\newline
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Applying the main theorem to conditional probability tables}
+For the Karma weight-lifting example, all conditional probability tables for $(W | K, H)$ that satisfy $E(W | K = 0) = 0$ (bad Karma, no weight) and $E(W | H = 0)=0.2$ can be written as an $H-polytope$ as above with additional constraints
+
+\begin{align*}
+\sum_{w, h} w \, p_{w | 0, h} &= 0\\
+\sum_{w, k} w \, p_{w | k, 0} & = 0.2\newline
+\end{align*}
+
+By converting this H-representation to a V-representation, we can generate random conditional probability tables subject to expectation constrains.\newline
+
+For an example, see the implementation of \href{https://munichpavel.github.io/fake-data-docs/html/\_modules/fake\_data\_for\_learning/utils.html\#ProbabilityPolytope}{ProbabilityPolytope} of \href{https://munichpavel.github.io/fake-data-for-learning/}{https://munichpavel.github.io/fake-data-for-learning/}.
 
 \end{frame}
+
 
 \begin{frame}[allowframebreaks]
     \frametitle{References}
