@@ -7,10 +7,10 @@
 
 ## Workshop topics
 
-### Artificial intelligence for risk management
+* [Artificial intelligence for risk management](slides/ai-for-risk)
 
-### Discrete geometry for risk
+* [Discrete geometry for risk](slides/discrete-geometry)
 
-### Correlation and Causality
+* [Correlation and Causation](slides/correlation-and-causation)
 
-### Artificial intelligence in practice
+* [Artificial intelligence in practice](ai-in-practice)
