@@ -129,7 +129,38 @@ If there is a directed path from $X_i$ to $X_j$, then $X_i$ is called a \emph{pa
   
   \input{graphics/karma_weights}\newline
   \end{frame}
+
+
+\begin{frame}
+\frametitle{Decomposition example: Karma and weight-lifting} 
+Suppose $X = (K, H, W)$ admits the graph
+\begin{figure}[ht]
+  \centering
+  \includegraphics[height=0.5\textheight]{graphics/karma_chain}
+\end{figure}
+
+Then $P(K, H, W) = P(K) \, P(H | K) P(W | H) $.
+
+\begin{definition}
+A DAG of the form above is called a \emph{chain}.
+\end{definition}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Decomposition example: Karma and weight-lifting} 
+  Suppose $X = (K, H, W)$ admits the graph
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[height=0.5\textheight]{graphics/karma_collider}
+  \end{figure}
   
+  Then $P(K, H, W) = P(K) \, P(H) \, P(W | K, H)$.
+  \begin{definition}
+A DAG of the form above is called a \emph{collider} at $W$.
+  \end{definition}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Conditional independence}
@@ -147,158 +178,62 @@ P(&X_A = x_A,  \,X_B = x_B | X_C = x_c) \\
 for all $x_A, x_B, x_C$.\newline
 \end{definition}
 
-For $X_A, X_B$ conditionally independent given $X_C$, we write $$(X_A \ci X_B | X_C)$$. See e.g. \cite{drton2008lectures} for a precise formulation.
+For $X_A, X_B$ conditionally independent given $X_C$, we write $(X_A \ci X_B | X_C)$. See e.g. \cite{drton2008lectures} for a precise formulation.
+\end{frame}
+
+\begin{frame}
+\frametitle{Conditional independence and d-separation teaser}
+First example of discrete geometry helping statistics: conditional independence in a DAG model $(X, G)$ can be detected in properties of $G$\footnote{The required graph properties are combinatorial, but can also be understood geometrically, see e.g. \cite{drton2008lectures}.}. More precisely,
+
+
+\begin{theorem}
+If $(X, G)$ is a DAG model, then d-separation implies conditional independence.
+\end{theorem}
+See e.g. \cite{pearl2016causal}, chapter 2.
+\end{frame}
+
+
+\begin{frame}
+\frametitle{A couple more definitions before d-separation}
+
+\begin{figure}[ht]
+  \begin{tabular}{c}
+    \includegraphics[height=0.35\textheight]{graphics/karma_chain}
+  \end{tabular}
+  \caption{Chain}
+  \begin{tabular}{cc}
+    \includegraphics[height=0.35\textheight]{graphics/karma_collider}      
+    &
+    \includegraphics[height=0.35\textheight]{graphics/karma_fork}
+  \end{tabular}
+\caption{Collider at $W$, Fork at $K$}
+\end{figure}
+
 \end{frame}
 
 
 \begin{frame}
 \frametitle{d-separation in DAGs}
 \begin{definition}
-Let $X$, $Y$, and $Z$ be three disjoint subsets of nodes in a directed acyclic graph, $G$, and let $p$ be any path between a node in $X$ and one in $Y$, where by `path'we mean a succession of arcs, independent of direction. Then $Z$ is said to block $p$ if there is a node $w$ on $p$ satisfying one of the following two conditions
+Let $A$, $B$, and $C$ be three disjoint subsets of nodes in a directed acyclic graph, $G$, and let $p$ be any path between a node in $A$ and one in $B$, where by `path'we mean a succession of arcs, independent of direction. Then $C$ is said to block $p$ if there is a node $w$ on $p$ satisfying one of the following two conditions
 
 \begin{enumerate}
-\item $w$ has converging arrows along $p$, and neither $w$ nor any of its descendents are in $Z$, or
-\item $w$ does not have converging arrows along $p$, and $w$ is in $Z$.
+\item $w$ has converging arrows along $p$, and neither $w$ nor any of its descendents are in $C$, or
+\item $w$ does not have converging arrows along $p$, and $w$ is in $C$.
 \end{enumerate}
 
-Further, $Z$ is said to $d-separate$ $X$ from $Y$ in $G$, denoted 
+Further, $C$ is said to $d-separate$ $A$ from $B$ in $G$, denoted 
 
 \begin{equation*}
-    (X \ci Y | Z)_G
+    (A \ci B | C)_G
 \end{equation*}
 
-if and only if $Z$ blocks every path from a node in $X$ to a node in $Y$.\newline
+if and only if $C$ blocks every path from a node in $A$ to a node in $B$.\newline
 \end{definition}
 References: \cite{pearl1995causal}
 \end{frame}
 
 
-\begin{frame}
-    \frametitle{d-separation}
-    \framesubtitle{Examples}
-
-    \begin{figure}[ht]
-        \begin{center}
-          \begin{tabular}{cc}
-            \onslide<2->{$(A \ci B | \, \{c\})$}
-            \begin{tikzpicture}
-                                % Define nodes
-                \node[obs]                               (c) {$c$};
-                \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
-                \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
-        
-                \edge {a} {c} ; %
-                \edge {c} {b} ;
-              
-              \end{tikzpicture} &
-              \onslide<2->{$(A \ci B | \, \{c\})$}
-              \begin{tikzpicture}
-
-                % Define nodes
-                \node[obs]                               (c) {$c$};
-                \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
-                \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
-        
-                \edge {b} {c} ; %
-                \edge {c} {a} ; %
-              
-              \end{tikzpicture}
-          \end{tabular}
-          \begin{tabular}{cc}
-            \onslide<2->{$(A \ci B | \, \{c\}))$}
-            \begin{tikzpicture}
-                                % Define nodes
-                \node[obs]                               (c) {$c$};
-                \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
-                \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
-        
-                \edge {c} {a} ; %
-                \edge {c} {b} ;
-              
-              \end{tikzpicture} &
-              \onslide<2->{$(A \ci B | \,\emptyset)$}
-              \begin{tikzpicture}
-
-                % Define nodes
-                \node[obs]                               (c) {$c$};
-                \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
-                \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
-        
-                \edge {a} {c} ; %
-                \edge {b} {c} ; %
-              
-              \end{tikzpicture}
-          \end{tabular}
-        \end{center}
-        \caption{Examples $A = \{a\}$, $B = \{ b\}$.}
-      \end{figure}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{d-separation}
-    \framesubtitle{More examples}
-
-    \begin{figure}[ht]
-        \begin{center}
-          \begin{tabular}{cc}
-            \onslide<2->{$\neg (A \ci B | \, \{c\})$, but $(A \ci B | \, \emptyset)$}
-            \begin{tikzpicture}
-                                % Define nodes
-                \node[obs]                               (d) {$d$};
-                \node[obs, left=of d, xshift=-1.2cm] (a) {$a$};
-                \node[obs, right=of d, xshift=1.2cm]  (b) {$b$};
-                \node[obs, below=of d]                (c) {$c$};
-                \edge {a} {d} ; %
-                \edge {b} {d} ;
-                \edge {c} {a} ;
-                \edge {c} {b} ;
-              
-              \end{tikzpicture} &
-              
-        %       \onslide<2->{$(A \ci B | \, \{c\})$}
-        %       \begin{tikzpicture}
-
-        %         % Define nodes
-        %         \node[obs]                               (c) {$c$};
-        %         \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
-        %         \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
-        
-        %         \edge {b} {c} ; %
-        %         \edge {c} {a} ; %
-              
-        %       \end{tikzpicture}
-        %   \end{tabular}
-        %   \begin{tabular}{cc}
-        %     \onslide<2->{$(A \ci B | \, \{c\}))$}
-        %     \begin{tikzpicture}
-        %                         % Define nodes
-        %         \node[obs]                               (c) {$c$};
-        %         \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
-        %         \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
-        
-        %         \edge {c} {a} ; %
-        %         \edge {c} {b} ;
-              
-        %       \end{tikzpicture} &
-        %       \onslide<2->{$(A \ci B | \,\emptyset)$}
-        %       \begin{tikzpicture}
-
-        %         % Define nodes
-        %         \node[obs]                               (c) {$c$};
-        %         \node[obs, above=of c, xshift=-1.2cm] (a) {$a$};
-        %         \node[obs, above=of c, xshift=1.2cm]  (b) {$b$};
-        
-        %         \edge {a} {c} ; %
-        %         \edge {b} {c} ; %
-              
-        %      \end{tikzpicture}
-          \end{tabular}
-        \end{center}
-        \caption{Examples $A = \{a\}$, $B = \{ b\}$.}
-      \end{figure}
-
-\end{frame}
 
 \begin{frame}
 \frametitle{Probability polytopes}
@@ -306,6 +241,7 @@ References: \cite{pearl1995causal}
 
 \begin{frame}[allowframebreaks]
     \frametitle{References}
+    \setbeamertemplate{bibliography item}[text]
     \bibliographystyle{amsalpha}
     \bibliography{../../references.bib}
 \end{frame}
