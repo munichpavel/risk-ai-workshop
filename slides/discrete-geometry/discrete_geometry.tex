@@ -174,49 +174,6 @@ References: \cite{pearl1995causal}
 
 
 \begin{frame}
-\frametitle{d-separation}
-\framesubtitle{Intuition}
-From \cite{scheines-tutorial}: \newline
-
-\begin{quote}
-Roughly, two variables $X$ and $Y$ are independent conditional on $Z$ if knowledge of $X$ gives you no extra information about $Y$ once you have knowledge about $Z$. In other words, once you know $Z$, $X$ adds nothing to what you know about $Y$.
-\end{quote}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{d-separation}
-    \framesubtitle{Alternative definition via blocking paths}
-    
- 
-\end{frame}
-
-\begin{frame}
-    \frametitle{d-separation}
-    \framesubtitle{Alternative definition, ii}
-
-    Let $A$, $B$, $C$ be non-intersecting subsets of vertices of a DAG $G$. \newline
-
-    \emph{Definition} A path from $A$ to $B$ is \emph{blocked} by $C$ if the path contains a node such that either
-
-    \begin{itemize}
-    \item the node is in $C$, and the arrows on the path at the node meet either head-to-tail or tail-to-tail, or
-    \item neither the node nor its descendents is in $C$, and the arrows on the path at the node meet head-to-head \newline
-    \end{itemize}
-
-    \emph{Definition} A is said to be $d-separated$ from $B$ by $C$ if all paths from $A$ to $B$ are blocked by $C$. We write
-
-    \begin{equation*}
-        (A \ci B | C)
-    \end{equation*}
-
-    References: \cite{tum-graphical}
-
-    
-\end{frame}
-
-
-\begin{frame}
     \frametitle{d-separation}
     \framesubtitle{Examples}
 
