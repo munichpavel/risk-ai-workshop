@@ -231,9 +231,55 @@ By the d-separation teaser theorem, $(X \ci Y | C)_{G}$ implies conditional inde
 \end{frame}
 
 
+\begin{frame}
+\frametitle{d-separation example: hit rate for insurance}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[height=0.5\textheight]{graphics/hit}
+\end{figure}
+
+All paths from $\mathrm{product\_type}$ to $\mathrm{hit}$ are blocked by $\{\mathrm{days}, \mathrm{rating}\}$, hence $(\mathrm{product\_type} \ci \mathrm{hit} | \mathrm{days}, \mathrm{rating})_G$.
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Probability polytopes}
+
+\emph{Goal}: Use geometric interpretation of multivariate discrete random variables to generate intersting fake data with few(er) parameters.\newline
+
+Example: The family of all $X \sim Bernoulli$ can be represented as
+
+\begin{equation*}
+\Delta_1 = \{(p_0, p_1): p_i \geq 0, \sum p_i = 1\} \subseteq R^2\newline
+\end{equation*}
+
+Example: Consider the collider graph for Karma-influenced weight-lifting $(K, H, W)$. Then all possible conditional probability tables for $(W | K, H)$ can be parametrized as 
+
+\begin{equation*}
+  \{(p_{w | k, h}): p_{w | k, h} \geq 0, \sum_w p_{w  | k,h} = 1 \textrm{ for } (k, h) \in \{0, 1\}^2\} \subseteq R^8
+\end{equation*}
+
+In general, the space of multivariate discrete random variable distributions is a \emph{polytope}, see e.g. \cite{drton2008lectures}, Ch. 1.
+\end{frame}
+
+
+\begin{frame}
+\frametitle{H- and V-representations of polytopes}
+
+\begin{definition}
+An \emph{H-polyhedron} is an intersection of closed halfspaces, i.e. a set $P \subseteq R^d$ presented in the form
+\begin{equation*}
+P = P(A,z)=\{ x \in R^d: Ax \leq z\} \textrm{ for some } A \in R^{m d}, z \in R^m.
+\end{equation*}
+\end{definition}
+
+If $P$ is bounded (i.e. compact), then it is called a \emph{polytope}.
+
+\begin{definition}
+(Informal) A V-polytope is the convex hull of a finite set of vertices $x \in R^d$. See \cite{ziegler2012lectures} for a precise definition.
+\end{definition}
+
+
 \end{frame}
 
 \begin{frame}[allowframebreaks]
