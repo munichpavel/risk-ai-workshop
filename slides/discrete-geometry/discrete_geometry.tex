@@ -103,6 +103,34 @@ A \emph{graph} is a pair of sets $(V, E)$, where $V$ is called the set of \emph{
 \end{itemize}
 \end{frame}
 
+
+\begin{frame}
+\frametitle{Directed acyclic graphs}
+
+\begin{definition}
+A graph $G = (V, E)$ is a \emph{directed acyclic graph} (denoted also \emph{DAG}) if all edges have an associated direction, and no edge path consistent with the directions forms a cycle.\newline
+
+If there is a directed path from $X_i$ to $X_j$, then $X_i$ is called a \emph{parent} of $X_j$, and $Pa(X_j) \subseteq V$ is the set of all parents of $X_j$.
+\end{definition}
+
+\begin{definition}
+  If $X = (X_1, \ldots, X_m)$ admits a DAG $G$, then $X_G$ is a \emph{DAG model} if the distribution of $X$ decomposes according to $G$, i.e.
+
+  \begin{equation*}
+    P(X) = \prod_{i \in \{1, \ldots, m\}} P(X_i | Pa(X_i))
+  \end{equation*}
+\end{definition}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Example: Karma and weight-lifting}
+  Take $K$ to be your Karma, $H$ to be the hours you spend in the gym lifting weight each day, and then $W$ be the weight you can bench press on a given day. For simplicity, all random variables are binary.\newline
+  
+  \input{graphics/karma_weights}\newline
+  \end{frame}
+  
+
 \begin{frame}
 \frametitle{Conditional independence}
 
@@ -119,8 +147,9 @@ P(&X_A = x_A,  \,X_B = x_B | X_C = x_c) \\
 for all $x_A, x_B, x_C$.\newline
 \end{definition}
 
-For $X_A, X_B$ conditionally independent given $X_C$, we write $$(X_A \ci X_B | X_C)$$.
+For $X_A, X_B$ conditionally independent given $X_C$, we write $$(X_A \ci X_B | X_C)$$. See e.g. \cite{drton2008lectures} for a precise formulation.
 \end{frame}
+
 
 \begin{frame}
 \frametitle{d-separation in DAGs}
