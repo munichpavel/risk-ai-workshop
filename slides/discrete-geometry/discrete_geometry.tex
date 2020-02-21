@@ -194,7 +194,7 @@ See e.g. \cite{pearl2016causal}, chapter 2.
 
 
 \begin{frame}
-\frametitle{A couple more definitions before d-separation}
+\frametitle{More definitions before d-separation}
 
 \begin{figure}[ht]
   \begin{tabular}{c}
@@ -215,22 +215,19 @@ See e.g. \cite{pearl2016causal}, chapter 2.
 \begin{frame}
 \frametitle{d-separation in DAGs}
 \begin{definition}
-Let $A$, $B$, and $C$ be three disjoint subsets of nodes in a directed acyclic graph, $G$, and let $p$ be any path between a node in $A$ and one in $B$, where by `path'we mean a succession of arcs, independent of direction. Then $C$ is said to block $p$ if there is a node $w$ on $p$ satisfying one of the following two conditions
-
+An undirected path $p$ in a DAG $G$ is \emph{blocked} by a set of nodes $C$ if and only if
 \begin{enumerate}
-\item $w$ has converging arrows along $p$, and neither $w$ nor any of its descendents are in $C$, or
-\item $w$ does not have converging arrows along $p$, and $w$ is in $C$.
+\item $p$ contains a chain of nodes $X \to Y \to Z$, or a form $X \rightarrow Y \leftarrow Z$ such that $Y \in C$, or
+\item $p$ contains a collider $X \to Y \leftarrow Z$ such that $Y \notin C$ and descendant of $Y$ is in $C$.
 \end{enumerate}
-
-Further, $C$ is said to $d-separate$ $A$ from $B$ in $G$, denoted 
-
-\begin{equation*}
-    (A \ci B | C)_G
-\end{equation*}
-
-if and only if $C$ blocks every path from a node in $A$ to a node in $B$.\newline
 \end{definition}
-References: \cite{pearl1995causal}
+
+\begin{definition}
+If $C$ blocks every path between two nodes $X$ and $Y$, then $X$ and $Y$ are called \emph{d-separated conditional on $C$}, and we write 
+$$(X \ci Y | C)_{G}$$.
+\end{definition}
+
+By the d-separation teaser theorem, $(X \ci Y | C)_{G}$ implies conditional independence.\newline
 \end{frame}
 
 
