@@ -1,25 +1,16 @@
-# Risk, Machine Learning and Discrete Geometry
+# Risk, Artificial Intelligence and Discrete Geometry
 
 ## Quickstart
 
 * `git clone` the repository and `cd` into the root directory
-* Adapt the `.env.example` file and save as `.env`
-* Create a virtual environment using ```conda```, ```virtualenv``` or ```virtualenvwrapper``` and add the relevant command to your `.env` file (e.g. if your environment is named ```myenv```, add ```conda activate myenv```, ```source myenv/bin/activate``` or ```workon myenv```)
+* For the exercise Jupyter notebooks, install python dependencies with `pip install -r requirements.txt` in a virtual environment.
 
-## Content
+## Workshop topics
 
-### Introduction
+### Artificial intelligence for risk management
 
-* Artificial intelligence
-* Risk modeling
-  * Approaches
-  * Model risk
-
-### Discrete geometry and statistics
-
-* Probability polytopes
-* Graphical models
+### Discrete geometry for risk
 
 ### Correlation and Causality
 
-### AI in Practice
+### Artificial intelligence in practice
