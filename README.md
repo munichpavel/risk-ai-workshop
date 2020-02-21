@@ -13,4 +13,4 @@
 
 * [Correlation and Causation](slides/correlation-and-causation)
 
-* [Artificial intelligence in practice](ai-in-practice)
+* [Artificial intelligence in practice](slides/ai-in-practice)
