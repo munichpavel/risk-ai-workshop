@@ -11,6 +11,6 @@
 
 * [Discrete geometry for risk](slides/discrete-geometry)
 
-* [Correlation and Causation](slides/correlation-and-causation)
+* [Correlation and Causality](slides/correlation-causality)
 
 * [Artificial intelligence in practice](slides/ai-in-practice)
