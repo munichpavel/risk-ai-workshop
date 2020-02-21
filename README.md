@@ -2,7 +2,7 @@
 
 ## Quickstart
 
-* `git clone` the repository and `cd` into the root directory
+* `git clone` the repository and `cd` into the root directory.
 * For the exercise Jupyter notebooks, install python dependencies with `pip install -r requirements.txt` in a virtual environment.
 
 ## Workshop topics
