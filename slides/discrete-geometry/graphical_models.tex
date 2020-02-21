@@ -7,16 +7,18 @@
 \maketitle
 
 \begin{frame}
-\frametitle{Graphs}
+\frametitle{Why discrete geometry?}
 
-\emph{Definition} A \emph{directed acyclical graph} or \emph{DAG} is ??? \newline
-
-\emph{Definition} A \emph{path} in a DAG $G$ is a consecutive set of edges, independent of directions. \newline
+\begin{itemize}
+\item Older history: graphical models among first non-rules based AI approaches \cite{darwiche2009modeling}
+\item Recent history: Dissatisfaction with deep learning, only ``curve fitting'', alternative via \emph{causal graphical models} \cite{pearl2019limitations}
+\item Geometrical formulations of statistical objects, e.g. graphical models and probability polytopes\newline
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}
-  \frametitle{Bayesian networks: university admission gender bias}
+  \frametitle{Directed graphical model: university admission gender bias}
   \framesubtitle{Simpson paradox preview}
 
   \begin{figure}[ht]
@@ -41,7 +43,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Bayesian networks: hit rate for insurance quotes}
+\frametitle{Directed graphical model: hit rate for insurance quotes}
 \begin{itemize}
   \item product type: financial, liability, property
   \item days: number of days to generate quote
@@ -56,8 +58,8 @@
 
 
 \begin{frame}
-\frametitle{Markov random field: credit default risk}
-Undirected graphical model.
+\frametitle{Undirected graphical model: credit default risk}
+
 \begin{itemize}
   \item Nodes take values 0 (healthy) or 1 (default)
   \item Industry nodes connect to other industry nodes
@@ -69,9 +71,42 @@ Undirected graphical model.
 \end{figure}
 \end{frame}
 
+
 \begin{frame}
-\frametitle{d-separation}
-\emph{Definition} Let $X$, $Y$, and $Z$ be three disjoint subsets of nodes in a directed acyclic graph, $G$, and let $p$ be any path betweeen a node in $X$ and one in $Y$, where by `path'we mean a succession of arcs, independent of direction. Then $Z$ is said to block $p$ if there is a node $w$ on $p$ satisfying one of the following two conditions
+\frametitle{Graph definitions}
+\begin{definition}
+A \emph{graph} is a pair of sets $(V, E)$, where $V$ is called the set of \emph{vertices} (or \emph{nodes}) and $E$ is called the set of \emph{edges}, such that the set of edges corresponds injectively to pairs of vertices. \newline
+\end{definition}
+
+\emph{Notes}
+\begin{itemize}
+\item Typically `pairs of vertices` does not include self-pairs, but this can be relaxed, leading to graphics with with loops.
+\item The injectivity requirement can also be relaxed, leading to \emph{multigraphs}.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Graphical models}
+\begin{definition}
+(Informal) A graphical model is a graph whose nodes represent variables and edges represent direct statistical dependencies between the variables.\newline
+\end{definition}
+
+\emph{Why graphical models?}
+\begin{itemize}
+\item For probability distributions admitting a graphical model representation, then graph properties (\emph{d-separation}) imply conditional independence relations.
+\item Conditional independence relations reduce the number of parameters required to specify a probability distribution.
+\item Graphical models come in two flavors depending on their edges: directed (aka \emph{Bayesian Networks}) and undirected (aka \emph{random Markov fields}.
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{d-separation in DAGs}
+\begin{definition}
+Let $X$, $Y$, and $Z$ be three disjoint subsets of nodes in a directed acyclic graph, $G$, and let $p$ be any path between a node in $X$ and one in $Y$, where by `path'we mean a succession of arcs, independent of direction. Then $Z$ is said to block $p$ if there is a node $w$ on $p$ satisfying one of the following two conditions
 
 \begin{enumerate}
 \item $w$ has converging arrows along $p$, and neither $w$ nor any of its descendents are in $Z$, or
@@ -85,7 +120,7 @@ Further, $Z$ is said to $d-separate$ $X$ from $Y$ in $G$, denoted
 \end{equation*}
 
 if and only if $Z$ blocks every path from a node in $X$ to a node in $Y$.\newline
-
+\end{definition}
 References: \cite{pearl1995causal}
 \end{frame}
 
