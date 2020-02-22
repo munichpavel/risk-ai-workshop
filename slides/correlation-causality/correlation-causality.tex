@@ -33,7 +33,7 @@
 \begin{tikzpicture}
 
     \node[inner sep=0pt] (med_caption) at (0,0) {
-            Because A / B testing is hard.
+            Because A / B testing is not always possible.
     };
     \node[inner sep=0pt, below=0.5cm of med_caption] (med)  {
         \fbox{
@@ -46,6 +46,25 @@
 \cite{estruch2013primary}
 \end{frame}
 
+
+\begin{frame}
+    \frametitle{Simpson's paradox: cautionary tales}
+    Simpson's paradox: a phenomenon in probability and statistics in which a trend appears disappears or reverses depending on grouping of data. \cite{simpson-wikipedia} \newline
+    
+    Example: University of California, Berkeley 1973 admission figures\newline
+    
+    \begin{figure}[ht]
+        \includegraphics[height=0.15\textheight]{graphics/berkeley}\newline
+        \cite{freedman1998statistics}
+    \end{figure}
+    \begin{figure}[ht]
+        \includegraphics[height=0.3\textheight]{graphics/berkeley_later}\newline
+        \cite{Bickel398}
+    \end{figure}
+    
+\end{frame}
+
+
 \begin{frame}
 \frametitle{A brief, biased history of causality}
 \begin{itemize}
@@ -56,6 +75,7 @@
 \item Judea Pearl, b. 1936 AD
 \end{itemize}
 \end{frame}
+
 
 \begin{frame}
 \frametitle{Counterfactuals and causality}
@@ -71,17 +91,44 @@ Examples:
 In-practice:
 \begin{itemize}
     \item Correlation: approximate multiverse by comparing intervention at $t$ to result at $t-1$
-    \item A / B testing: approximate multiverse by splitting sample well
+    \item Random population: approximate multiverse by splitting sample well
+    \item A / B testing: random populations A / B + intervention in one
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{Simpson's paradox: a warning for statistical causality}
-Simpson's paradox: a phenomenon in probability and statistics in which a trend appears disappears or reverses depending on grouping of data.
 
-Examples
-\cite{simpsons-wikipedia}
+
+
+\begin{frame}
+\frametitle{Counterfactual example: hit rate for insurance}
+Variables:
+\begin{itemize}
+\item product\_type: Client line of business
+\item days: Number of days to generate quote
+\item rating: Binary indication of client risk
+\item hit: Binary, 1 for success (binding the quote), 0 for failure\newline
+\end{itemize}
+
+Fake data:\newline\newline
+\input{../ai-for-risk/graphics/hits}\newline
 \end{frame}
+
+
+\begin{frame}
+    \frametitle{Counterfactual example: hit rate for insurance}
+    Variables:
+    \begin{itemize}
+    \item product\_type: Client line of business
+    \item days: Number of days to generate quote
+    \item rating: Binary indication of client risk
+    \item hit: Binary, 1 for success (binding the quote), 0 for failure\newline
+    \end{itemize}
+    
+    \begin{figure}[ht]
+    \includegraphics[height=0.6\textheight]{graphics/hit}
+    \end{figure}
+\end{frame}
+
 
 \begin{frame}
     \frametitle{The Structural Causal Model}
@@ -151,6 +198,7 @@ P(y | \jpdo(z)) = P(y) \textrm{ if } (Y \ci Z )_{G_{\overline{Z}}}
 
 \begin{frame}[allowframebreaks]
     \frametitle{References}
+    \setbeamertemplate{bibliography item}[text]
     \bibliographystyle{amsalpha}
     \bibliography{../../references.bib}
 \end{frame}
