@@ -1,0 +1,13 @@
+digraph {
+	rankdir=LR
+	node [shape=circle]
+	product_type
+	days [shape=doublecircle]
+	days
+	rating
+	hit
+	product_type -> rating
+	product_type -> days
+	days -> hit
+	rating -> hit
+}

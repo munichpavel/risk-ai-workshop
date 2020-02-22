@@ -54,11 +54,11 @@
     Example: University of California, Berkeley 1973 admission figures\newline
     
     \begin{figure}[ht]
-        \includegraphics[height=0.15\textheight]{graphics/berkeley}\newline
+        \includegraphics[height=0.15\textheight]{../discrete-geometry/graphics/berkeley}\newline
         \cite{freedman1998statistics}
     \end{figure}
     \begin{figure}[ht]
-        \includegraphics[height=0.3\textheight]{graphics/berkeley_later}\newline
+        \includegraphics[height=0.3\textheight]{../discrete-geometry/graphics/berkeley_later}\newline
         \cite{Bickel398}
     \end{figure}
     
@@ -166,15 +166,94 @@ From exercise Jupyter notebook:\newline
 Hit rate example: $U = \{\textrm{product\_type}, \textrm{rating}\}$, $V= \{\textrm{days}, \textrm{hit}\}$, $F\leftrightarrow$ sample from conditional probabilty tables in directed graphical model.
 \end{frame}
 
+
 \begin{frame}
-    \frametitle{Formalizing interventions: the definition of ``do"}
+    \frametitle{Formalizing interventions: the intuition of ``do"}
+    For business application, quantity of interest is not $P(\textrm{hit}=1 | \textrm{days}=d)$, but intervention $$P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$$.\newline
+    \begin{figure}[ht]
+\includegraphics[height=0.4\textwidth]{graphics/do_days}
+    \end{figure}
 \end{frame}
 
 
 \begin{frame}
-\frametitle{}
+\frametitle{Formalizing interventions: the intuition of ``do"}
+    For business application, quantity of interest is effect of intervention / counterfactual %$P(\textrm{hit}=1 | \textrm{days}=d)$, but intervention $$P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$$.\newline
+\begin{columns}[T] % align columns
+    \begin{column}{.48\textwidth}
+    Not $P(\textrm{hit}=1 | \textrm{days}=d)$\newline
+    \begin{figure}[ht]
+        $G = $ \includegraphics[height=0.55\textwidth]{graphics/given_days}
+    \end{figure}
+    \end{column}%
+%    \hfill%
+    \begin{column}{.48\textwidth}
+        but $P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$\newline
+               \begin{figure}[ht]
+             $G' = G_{\underline{\textrm{days}}} =$
+             \includegraphics[height=0.55\textwidth]{graphics/do_days}
+        \end{figure}
+         \end{column}%
+    \end{columns}
 \end{frame}
 
+
+\begin{frame}
+\frametitle{Formalizing interventions: the intuition of ``do"}
+	First, find quantities unchanged between $G$ and $G' = G_{\underline{\textrm{days}}}$
+         \begin{figure}[ht]
+             \includegraphics[height=0.5\textheight]{graphics/do_days}
+        \end{figure}
+        \vspace{-0.5cm}
+        \begin{align}
+        P_{G'}( & \textrm{product\_type} = p, \textrm{rating} = r) \nonumber \\
+        & = P_G( \textrm{product\_type} = p, \textrm{rating} = r) \\
+        P_{G'}(&\textrm{hit}=1 | \textrm{product\_type} = p, \textrm{rating} = r) \nonumber  \\
+        & = P_G(\textrm{hit}=1 | \textrm{product\_type} = p, \textrm{rating} = r)
+        \end{align}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Formalizing interventions: the intuition of ``do"}
+	\vspace{-1.5cm}
+	\begin{figure}[ht]
+	\hspace{8cm}
+             \includegraphics[height=0.45\textheight]{graphics/do_days}
+        \end{figure}
+        \vspace{-2.5cm}
+        \begin{align*}
+         P(&\textrm{hit}=1 | \jpdo(\textrm{days})=d) \\
+         & = P_{G'}(\textrm{hit}=1 | \textrm{days}=d) \textrm{, by definition} \\
+        & = \sum_{p, r} P_{G'}(\textrm{hit}=1 | \textrm{days}=d, \textrm{product\_type} = p, \textrm{rating} = r) \\
+        & \qquad  \qquad P_{G'}(\textrm{product\_type} = p, \textrm{rating} = r | \textrm{days}=d)\textrm{, by total probability} \\
+        & = \sum_{p, r} P_{G'}(\textrm{hit}=1 | \textrm{days}=d, \textrm{product\_type} = p, \textrm{rating} = r) \\
+        & \qquad  \qquad P_{G'}(\textrm{product\_type} = p, \textrm{rating} = r), \textrm{ by substitution} \\
+        & =  \sum_{p, r} P_{G}(\textrm{hit}=1 | \textrm{days}=d, \textrm{product\_type} = p, \textrm{rating} = r) \\
+        & \qquad  \qquad P_{G}(\textrm{product\_type} = p, \textrm{rating} = r), \textrm{ our \emph{adjustment} formula} 
+        \end{align*}
+        References: \cite{pearl2016causal}, \cite{chmp}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Causal hit rate}
+\begin{columns}[T] % align columns
+    \begin{column}{.48\textwidth}
+    $P(\textrm{hit}=1 | \textrm{days}=d)$\newline
+    
+    \input{graphics/given_days}
+    \end{column}%
+%    \hfill%
+    \begin{column}{.48\textwidth}
+        $P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$\newline
+        
+          \input{graphics/do_days}
+
+         \end{column}%
+    \end{columns}
+
+\end{frame}
 
 \begin{frame}
 \frametitle{Judea Pearl's Rules of Causality}
@@ -201,6 +280,7 @@ where $Z(W)$ is the set of $Z$-nodes that are not ancestors of any $W$-node in $
 
 \end{frame}
 
+
 \begin{frame}
 \frametitle{Special cases of the causal rules}
 
@@ -222,7 +302,9 @@ Rule 3': Insertion / deletion of actions, with $X, W = \emptyset$
 P(y | \jpdo(z)) = P(y) \textrm{ if } (Y \ci Z )_{G_{\overline{Z}}}
 \end{equation*}
 
+\onslide<2->\textcolor{blue}{$\implies$ d-separation + causal rules = \emph{adjustment formulas}: $\jpdo$ queries as normal queries.}
 \end{frame}
+
 
 \begin{frame}[allowframebreaks]
     \frametitle{References}
