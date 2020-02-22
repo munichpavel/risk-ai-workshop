@@ -49,7 +49,7 @@
 
 \begin{frame}
     \frametitle{Simpson's paradox: cautionary tales}
-    Simpson's paradox: a phenomenon in probability and statistics in which a trend appears disappears or reverses depending on grouping of data. \cite{simpson-wikipedia} \newline
+    Simpson's paradox: a phenomenon in probability and statistics in which a trend appears disappears or reverses depending on grouping of data. \cite{simpson-wikipedia}, \cite{pearl2016causal} \newline
     
     Example: University of California, Berkeley 1973 admission figures\newline
     
@@ -130,10 +130,28 @@ Fake data:\newline\newline
 \end{frame}
 
 
+
+\begin{frame}
+\frametitle{Non-counterfactual approach: condition and query}
+
+Goal: estimate effect of $\textrm{days}$ on $\textrm{hit}$.\newline
+
+Calculate
+\begin{itemize}
+\item $P(\textrm{hit}=1 | \textrm{days} = 0) - P(\textrm{hit}=1 | \textrm{days} = 1)$,
+\item $P(\textrm{hit}=1 | \textrm{days} = 1) - P(\textrm{hit}=1 | \textrm{days} = 2)$,
+\item $\ldots$ \newline
+\end{itemize}
+
+From exercise Jupyter notebook:\newline
+\input{graphics/given_days}
+\end{frame}
+
+
 \begin{frame}
     \frametitle{The Structural Causal Model}
-    The definitions in following slides are from \cite{pearl2007mathematics}.
-
+    The definitions in following slides are from \cite{pearl2007mathematics}, \cite{pearl2016causal}.
+\begin{definition}
     A \emph{structural causal model} $M$ consists of two sets of variables $U, V$ and a set of functions $F$, where 
     
     \begin{itemize}
@@ -142,12 +160,22 @@ Fake data:\newline\newline
         \item $F$ are the functions that represent the process of assigning values to elements of $V$ based on other values in $U, V$, e.g. $v_i = f(u, v)$.
     \end{itemize}
 
-    We denote by $G$ the graph induced on $U, V$ by the functions $F$, and call it the \emph{causal graph} of $(U, V, F)$.
+    We denote by $G$ the graph induced on $U, V$ by the functions $F$, and call it the \emph{causal graph} of $(U, V, F)$.\newline
+\end{definition}
+
+Hit rate example: $U = \{\textrm{product\_type}, \textrm{rating}\}$, $V= \{\textrm{days}, \textrm{hit}\}$, $F\leftrightarrow$ sample from conditional probabilty tables in directed graphical model.
 \end{frame}
 
 \begin{frame}
-    \frametitle{The definition of ``do"}
+    \frametitle{Formalizing interventions: the definition of ``do"}
 \end{frame}
+
+
+\begin{frame}
+\frametitle{}
+\end{frame}
+
+
 \begin{frame}
 \frametitle{Judea Pearl's Rules of Causality}
 
