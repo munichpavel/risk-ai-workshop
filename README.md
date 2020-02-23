@@ -7,10 +7,19 @@
 
 ## Workshop topics
 
-* [Artificial intelligence for risk management](slides/ai-for-risk)
+## Artificial intelligence for risk management
 
-* [Discrete geometry for risk](slides/discrete-geometry)
+* [Slides](slides/ai-for-risk)
+* [Examples and exercises](notebooks/model-selection-exercises.ipynb)
 
-* [Correlation and causality](slides/correlation-causality)
+## Discrete geometry for risk
 
-* [Artificial intelligence in practice](slides/ai-in-practice)
+* [Slides](slides/discrete-geometry)
+* Examples and exercises: [graphical models](notebooks/graphical-models-exercises.ipynb), [probability polytopes](notebooks/probability-polytope-exercises.ipynb)
+
+## Correlation and causality
+
+* [Slides](slides/correlation-causality)
+* [Examples and exercises](notebooks/causal-models-exercises.ipynb)
+
+## [Artificial intelligence in practice](slides/ai-in-practice)
