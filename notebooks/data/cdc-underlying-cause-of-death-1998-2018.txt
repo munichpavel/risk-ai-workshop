@@ -1,0 +1,1558 @@
+"Notes"	"Year"	"Year Code"	"Cause of death"	"Cause of death Code"	Deaths	Population	Crude Rate
+	"1999"	"1999"	"Struck by thrown, projected or falling object"	"W20"	701	279040168	0.3
+	"1999"	"1999"	"Striking against or struck by sports equipment"	"W21"	10	279040168	Unreliable
+	"1999"	"1999"	"Striking against or struck by other objects"	"W22"	131	279040168	0.0
+	"1999"	"1999"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	93	279040168	0.0
+	"1999"	"1999"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	117	279040168	0.0
+	"1999"	"1999"	"Contact with sharp glass"	"W25"	30	279040168	0.0
+	"1999"	"1999"	"Contact with knife, sword or dagger"	"W26"	3	279040168	Unreliable
+	"1999"	"1999"	"Contact with nonpowered hand tool"	"W27"	6	279040168	Unreliable
+	"1999"	"1999"	"Contact with powered lawnmower"	"W28"	23	279040168	0.0
+	"1999"	"1999"	"Contact with other powered hand tools and household machinery"	"W29"	6	279040168	Unreliable
+	"1999"	"1999"	"Contact with agricultural machinery"	"W30"	198	279040168	0.1
+	"1999"	"1999"	"Contact with other and unspecified machinery"	"W31"	307	279040168	0.1
+	"1999"	"1999"	"Explosion and rupture of boiler"	"W35"	6	279040168	Unreliable
+	"1999"	"1999"	"Explosion and rupture of gas cylinder"	"W36"	6	279040168	Unreliable
+	"1999"	"1999"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	14	279040168	Unreliable
+	"1999"	"1999"	"Explosion and rupture of other specified pressurized devices"	"W38"	7	279040168	Unreliable
+	"1999"	"1999"	"Discharge of firework"	"W39"	7	279040168	Unreliable
+	"1999"	"1999"	"Explosion of other materials"	"W40"	166	279040168	0.1
+	"1999"	"1999"	"Exposure to high-pressure jet"	"W41"	3	279040168	Unreliable
+	"1999"	"1999"	"Foreign body entering into or through eye or natural orifice"	"W44"	32	279040168	0.0
+	"1999"	"1999"	"Foreign body or object entering through skin"	"W45"	6	279040168	Unreliable
+	"1999"	"1999"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	43	279040168	0.0
+	"1999"	"1999"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	35	279040168	0.0
+	"1999"	"1999"	"Striking against or bumped into by another person"	"W51"	17	279040168	Unreliable
+	"1999"	"1999"	"Bitten by rat"	"W53"	1	279040168	Unreliable
+	"1999"	"1999"	"Bitten or struck by dog"	"W54"	25	279040168	0.0
+	"1999"	"1999"	"Bitten or struck by other mammals"	"W55"	68	279040168	0.0
+	"1999"	"1999"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	10	279040168	Unreliable
+	"1999"	"1999"	"Bitten or crushed by other reptiles"	"W59"	45	279040168	0.0
+	"1999"	"1999"	"Exposure to other and unspecified animate mechanical forces"	"W64"	13	279040168	Unreliable
+	"1999"	"1999"	"Accidental suffocation and strangulation in bed"	"W75"	330	279040168	0.1
+	"1999"	"1999"	"Other accidental hanging and strangulation"	"W76"	307	279040168	0.1
+	"1999"	"1999"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	47	279040168	0.0
+	"1999"	"1999"	"Inhalation of gastric contents"	"W78"	417	279040168	0.1
+	"1999"	"1999"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	640	279040168	0.2
+	"1999"	"1999"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	2828	279040168	1.0
+	"1999"	"1999"	"Confined to or trapped in a low-oxygen environment"	"W81"	16	279040168	Unreliable
+	"1999"	"1999"	"Other specified threats to breathing"	"W83"	154	279040168	0.1
+	"1999"	"1999"	"Unspecified threat to breathing"	"W84"	764	279040168	0.3
+	"1999"	"1999"	"Exposure to electric transmission lines"	"W85"	127	279040168	0.0
+	"1999"	"1999"	"Exposure to other specified electric current"	"W86"	147	279040168	0.1
+	"1999"	"1999"	"Exposure to unspecified electric current"	"W87"	163	279040168	0.1
+	"1999"	"1999"	"Exposure to excessive heat of man-made origin"	"W92"	15	279040168	Unreliable
+	"1999"	"1999"	"Exposure to excessive cold of man-made origin"	"W93"	3	279040168	Unreliable
+	"1999"	"1999"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	22	279040168	0.0
+	"1999"	"1999"	"Exposure to other and unspecified man-made environmental factors"	"W99"	2	279040168	Unreliable
+	"1999"	"1999"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	5	279040168	Unreliable
+	"1999"	"1999"	"Contact with hot tap-water"	"X11"	51	279040168	0.0
+	"1999"	"1999"	"Contact with other hot fluids"	"X12"	15	279040168	Unreliable
+	"1999"	"1999"	"Contact with steam and hot vapours"	"X13"	5	279040168	Unreliable
+	"1999"	"1999"	"Contact with hot air and gases"	"X14"	2	279040168	Unreliable
+	"1999"	"1999"	"Contact with hot household appliances"	"X15"	11	279040168	Unreliable
+	"1999"	"1999"	"Contact with hot heating appliances, radiators and pipes"	"X16"	17	279040168	Unreliable
+	"1999"	"1999"	"Contact with hot engines, machinery and tools"	"X17"	2	279040168	Unreliable
+	"1999"	"1999"	"Contact with other hot metals"	"X18"	6	279040168	Unreliable
+	"1999"	"1999"	"Contact with other and unspecified heat and hot substances"	"X19"	9	279040168	Unreliable
+	"1999"	"1999"	"Contact with venomous snakes and lizards"	"X20"	7	279040168	Unreliable
+	"1999"	"1999"	"Contact with venomous spiders"	"X21"	6	279040168	Unreliable
+	"1999"	"1999"	"Contact with hornets, wasps and bees"	"X23"	43	279040168	0.0
+	"1999"	"1999"	"Contact with centipedes and venomous millipedes (tropical)"	"X24"	1	279040168	Unreliable
+	"1999"	"1999"	"Contact with other specified venomous arthropods"	"X25"	2	279040168	Unreliable
+	"1999"	"1999"	"Contact with unspecified venomous animal or plant"	"X29"	2	279040168	Unreliable
+	"1999"	"1999"	"Exposure to excessive natural heat"	"X30"	594	279040168	0.2
+	"1999"	"1999"	"Exposure to excessive natural cold"	"X31"	598	279040168	0.2
+	"1999"	"1999"	"Exposure to sunlight"	"X32"	3	279040168	Unreliable
+	"1999"	"1999"	"Victim of lightning"	"X33"	64	279040168	0.0
+	"1999"	"1999"	"Victim of earthquake"	"X34"	2	279040168	Unreliable
+	"1999"	"1999"	"Victim of avalanche, landslide and other earth movements"	"X36"	44	279040168	0.0
+	"1999"	"1999"	"Victim of cataclysmic storm"	"X37"	129	279040168	0.0
+	"1999"	"1999"	"Victim of flood"	"X38"	15	279040168	Unreliable
+	"1999"	"1999"	"Exposure to other and unspecified forces of nature"	"X39"	39	279040168	0.0
+	"1999"	"1999"	"Overexertion and strenuous or repetitive movements"	"X50"	21	279040168	0.0
+	"1999"	"1999"	"Lack of food"	"X53"	137	279040168	0.0
+	"1999"	"1999"	"Lack of water"	"X54"	1	279040168	Unreliable
+	"1999"	"1999"	"Unspecified privation"	"X57"	32	279040168	0.0
+	"1999"	"1999"	"Exposure to other specified factors"	"X58"	77	279040168	0.0
+	"1999"	"1999"	"Exposure to unspecified factor"	"X59"	7459	279040168	2.7
+	"1999"	"1999"	"Sequelae of other accidents"	"Y86"	878	279040168	0.3
+"Total"	"1999"	"1999"			18388	279040168	6.6
+	"2000"	"2000"	"Struck by thrown, projected or falling object"	"W20"	712	281421906	0.3
+	"2000"	"2000"	"Striking against or struck by sports equipment"	"W21"	19	281421906	Unreliable
+	"2000"	"2000"	"Striking against or struck by other objects"	"W22"	146	281421906	0.1
+	"2000"	"2000"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	84	281421906	0.0
+	"2000"	"2000"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	97	281421906	0.0
+	"2000"	"2000"	"Contact with sharp glass"	"W25"	20	281421906	0.0
+	"2000"	"2000"	"Contact with knife, sword or dagger"	"W26"	9	281421906	Unreliable
+	"2000"	"2000"	"Contact with nonpowered hand tool"	"W27"	10	281421906	Unreliable
+	"2000"	"2000"	"Contact with powered lawnmower"	"W28"	27	281421906	0.0
+	"2000"	"2000"	"Contact with other powered hand tools and household machinery"	"W29"	14	281421906	Unreliable
+	"2000"	"2000"	"Contact with agricultural machinery"	"W30"	245	281421906	0.1
+	"2000"	"2000"	"Contact with other and unspecified machinery"	"W31"	334	281421906	0.1
+	"2000"	"2000"	"Explosion and rupture of boiler"	"W35"	3	281421906	Unreliable
+	"2000"	"2000"	"Explosion and rupture of gas cylinder"	"W36"	8	281421906	Unreliable
+	"2000"	"2000"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	12	281421906	Unreliable
+	"2000"	"2000"	"Explosion and rupture of other specified pressurized devices"	"W38"	7	281421906	Unreliable
+	"2000"	"2000"	"Discharge of firework"	"W39"	5	281421906	Unreliable
+	"2000"	"2000"	"Explosion of other materials"	"W40"	167	281421906	0.1
+	"2000"	"2000"	"Exposure to noise"	"W42"	1	281421906	Unreliable
+	"2000"	"2000"	"Foreign body entering into or through eye or natural orifice"	"W44"	31	281421906	0.0
+	"2000"	"2000"	"Foreign body or object entering through skin"	"W45"	5	281421906	Unreliable
+	"2000"	"2000"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	36	281421906	0.0
+	"2000"	"2000"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	35	281421906	0.0
+	"2000"	"2000"	"Striking against or bumped into by another person"	"W51"	26	281421906	0.0
+	"2000"	"2000"	"Bitten or struck by dog"	"W54"	26	281421906	0.0
+	"2000"	"2000"	"Bitten or struck by other mammals"	"W55"	65	281421906	0.0
+	"2000"	"2000"	"Contact with marine animal"	"W56"	2	281421906	Unreliable
+	"2000"	"2000"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	9	281421906	Unreliable
+	"2000"	"2000"	"Bitten or crushed by other reptiles"	"W59"	31	281421906	0.0
+	"2000"	"2000"	"Contact with plant thorns and spines and sharp leaves"	"W60"	1	281421906	Unreliable
+	"2000"	"2000"	"Exposure to other and unspecified animate mechanical forces"	"W64"	9	281421906	Unreliable
+	"2000"	"2000"	"Accidental suffocation and strangulation in bed"	"W75"	327	281421906	0.1
+	"2000"	"2000"	"Other accidental hanging and strangulation"	"W76"	333	281421906	0.1
+	"2000"	"2000"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	64	281421906	0.0
+	"2000"	"2000"	"Inhalation of gastric contents"	"W78"	382	281421906	0.1
+	"2000"	"2000"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	744	281421906	0.3
+	"2000"	"2000"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3187	281421906	1.1
+	"2000"	"2000"	"Confined to or trapped in a low-oxygen environment"	"W81"	15	281421906	Unreliable
+	"2000"	"2000"	"Other specified threats to breathing"	"W83"	195	281421906	0.1
+	"2000"	"2000"	"Unspecified threat to breathing"	"W84"	401	281421906	0.1
+	"2000"	"2000"	"Exposure to electric transmission lines"	"W85"	99	281421906	0.0
+	"2000"	"2000"	"Exposure to other specified electric current"	"W86"	137	281421906	0.0
+	"2000"	"2000"	"Exposure to unspecified electric current"	"W87"	159	281421906	0.1
+	"2000"	"2000"	"Exposure to excessive heat of man-made origin"	"W92"	10	281421906	Unreliable
+	"2000"	"2000"	"Exposure to excessive cold of man-made origin"	"W93"	2	281421906	Unreliable
+	"2000"	"2000"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	12	281421906	Unreliable
+	"2000"	"2000"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	6	281421906	Unreliable
+	"2000"	"2000"	"Contact with hot tap-water"	"X11"	55	281421906	0.0
+	"2000"	"2000"	"Contact with other hot fluids"	"X12"	17	281421906	Unreliable
+	"2000"	"2000"	"Contact with steam and hot vapours"	"X13"	3	281421906	Unreliable
+	"2000"	"2000"	"Contact with hot air and gases"	"X14"	2	281421906	Unreliable
+	"2000"	"2000"	"Contact with hot household appliances"	"X15"	5	281421906	Unreliable
+	"2000"	"2000"	"Contact with hot heating appliances, radiators and pipes"	"X16"	10	281421906	Unreliable
+	"2000"	"2000"	"Contact with hot engines, machinery and tools"	"X17"	4	281421906	Unreliable
+	"2000"	"2000"	"Contact with other and unspecified heat and hot substances"	"X19"	8	281421906	Unreliable
+	"2000"	"2000"	"Contact with venomous snakes and lizards"	"X20"	12	281421906	Unreliable
+	"2000"	"2000"	"Contact with venomous spiders"	"X21"	5	281421906	Unreliable
+	"2000"	"2000"	"Contact with scorpions"	"X22"	1	281421906	Unreliable
+	"2000"	"2000"	"Contact with hornets, wasps and bees"	"X23"	54	281421906	0.0
+	"2000"	"2000"	"Contact with other specified venomous arthropods"	"X25"	7	281421906	Unreliable
+	"2000"	"2000"	"Contact with other specified venomous plants"	"X28"	1	281421906	Unreliable
+	"2000"	"2000"	"Exposure to excessive natural heat"	"X30"	301	281421906	0.1
+	"2000"	"2000"	"Exposure to excessive natural cold"	"X31"	742	281421906	0.3
+	"2000"	"2000"	"Exposure to sunlight"	"X32"	1	281421906	Unreliable
+	"2000"	"2000"	"Victim of lightning"	"X33"	50	281421906	0.0
+	"2000"	"2000"	"Victim of earthquake"	"X34"	1	281421906	Unreliable
+	"2000"	"2000"	"Victim of volcanic eruption"	"X35"	3	281421906	Unreliable
+	"2000"	"2000"	"Victim of avalanche, landslide and other earth movements"	"X36"	31	281421906	0.0
+	"2000"	"2000"	"Victim of cataclysmic storm"	"X37"	49	281421906	0.0
+	"2000"	"2000"	"Victim of flood"	"X38"	5	281421906	Unreliable
+	"2000"	"2000"	"Exposure to other and unspecified forces of nature"	"X39"	40	281421906	0.0
+	"2000"	"2000"	"Overexertion and strenuous or repetitive movements"	"X50"	13	281421906	Unreliable
+	"2000"	"2000"	"Lack of food"	"X53"	120	281421906	0.0
+	"2000"	"2000"	"Lack of water"	"X54"	2	281421906	Unreliable
+	"2000"	"2000"	"Unspecified privation"	"X57"	50	281421906	0.0
+	"2000"	"2000"	"Exposure to other specified factors"	"X58"	56	281421906	0.0
+	"2000"	"2000"	"Exposure to unspecified factor"	"X59"	6673	281421906	2.4
+	"2000"	"2000"	"Sequelae of other accidents"	"Y86"	847	281421906	0.3
+"Total"	"2000"	"2000"			17437	281421906	6.2
+	"2001"	"2001"	"Struck by thrown, projected or falling object"	"W20"	707	284968955	0.2
+	"2001"	"2001"	"Striking against or struck by sports equipment"	"W21"	11	284968955	Unreliable
+	"2001"	"2001"	"Striking against or struck by other objects"	"W22"	135	284968955	0.0
+	"2001"	"2001"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	116	284968955	0.0
+	"2001"	"2001"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	87	284968955	0.0
+	"2001"	"2001"	"Contact with sharp glass"	"W25"	16	284968955	Unreliable
+	"2001"	"2001"	"Contact with knife, sword or dagger"	"W26"	3	284968955	Unreliable
+	"2001"	"2001"	"Contact with nonpowered hand tool"	"W27"	4	284968955	Unreliable
+	"2001"	"2001"	"Contact with powered lawnmower"	"W28"	45	284968955	0.0
+	"2001"	"2001"	"Contact with other powered hand tools and household machinery"	"W29"	13	284968955	Unreliable
+	"2001"	"2001"	"Contact with agricultural machinery"	"W30"	260	284968955	0.1
+	"2001"	"2001"	"Contact with other and unspecified machinery"	"W31"	301	284968955	0.1
+	"2001"	"2001"	"Explosion and rupture of boiler"	"W35"	1	284968955	Unreliable
+	"2001"	"2001"	"Explosion and rupture of gas cylinder"	"W36"	14	284968955	Unreliable
+	"2001"	"2001"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	12	284968955	Unreliable
+	"2001"	"2001"	"Explosion and rupture of other specified pressurized devices"	"W38"	11	284968955	Unreliable
+	"2001"	"2001"	"Discharge of firework"	"W39"	6	284968955	Unreliable
+	"2001"	"2001"	"Explosion of other materials"	"W40"	138	284968955	0.0
+	"2001"	"2001"	"Foreign body entering into or through eye or natural orifice"	"W44"	29	284968955	0.0
+	"2001"	"2001"	"Foreign body or object entering through skin"	"W45"	4	284968955	Unreliable
+	"2001"	"2001"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	37	284968955	0.0
+	"2001"	"2001"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	31	284968955	0.0
+	"2001"	"2001"	"Striking against or bumped into by another person"	"W51"	14	284968955	Unreliable
+	"2001"	"2001"	"Bitten by rat"	"W53"	1	284968955	Unreliable
+	"2001"	"2001"	"Bitten or struck by dog"	"W54"	25	284968955	0.0
+	"2001"	"2001"	"Bitten or struck by other mammals"	"W55"	64	284968955	0.0
+	"2001"	"2001"	"Contact with marine animal"	"W56"	2	284968955	Unreliable
+	"2001"	"2001"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	9	284968955	Unreliable
+	"2001"	"2001"	"Bitten or struck by crocodile or alligator"	"W58"	5	284968955	Unreliable
+	"2001"	"2001"	"Contact with plant thorns and spines and sharp leaves"	"W60"	1	284968955	Unreliable
+	"2001"	"2001"	"Exposure to other and unspecified animate mechanical forces"	"W64"	8	284968955	Unreliable
+	"2001"	"2001"	"Accidental suffocation and strangulation in bed"	"W75"	456	284968955	0.2
+	"2001"	"2001"	"Other accidental hanging and strangulation"	"W76"	279	284968955	0.1
+	"2001"	"2001"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	56	284968955	0.0
+	"2001"	"2001"	"Inhalation of gastric contents"	"W78"	422	284968955	0.1
+	"2001"	"2001"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	742	284968955	0.3
+	"2001"	"2001"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3021	284968955	1.1
+	"2001"	"2001"	"Confined to or trapped in a low-oxygen environment"	"W81"	20	284968955	0.0
+	"2001"	"2001"	"Other specified threats to breathing"	"W83"	210	284968955	0.1
+	"2001"	"2001"	"Unspecified threat to breathing"	"W84"	349	284968955	0.1
+	"2001"	"2001"	"Exposure to electric transmission lines"	"W85"	83	284968955	0.0
+	"2001"	"2001"	"Exposure to other specified electric current"	"W86"	146	284968955	0.1
+	"2001"	"2001"	"Exposure to unspecified electric current"	"W87"	180	284968955	0.1
+	"2001"	"2001"	"Exposure to excessive heat of man-made origin"	"W92"	7	284968955	Unreliable
+	"2001"	"2001"	"Exposure to excessive cold of man-made origin"	"W93"	1	284968955	Unreliable
+	"2001"	"2001"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	13	284968955	Unreliable
+	"2001"	"2001"	"Exposure to other and unspecified man-made environmental factors"	"W99"	1	284968955	Unreliable
+	"2001"	"2001"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	6	284968955	Unreliable
+	"2001"	"2001"	"Contact with hot tap-water"	"X11"	57	284968955	0.0
+	"2001"	"2001"	"Contact with other hot fluids"	"X12"	15	284968955	Unreliable
+	"2001"	"2001"	"Contact with steam and hot vapours"	"X13"	2	284968955	Unreliable
+	"2001"	"2001"	"Contact with hot air and gases"	"X14"	4	284968955	Unreliable
+	"2001"	"2001"	"Contact with hot household appliances"	"X15"	5	284968955	Unreliable
+	"2001"	"2001"	"Contact with hot heating appliances, radiators and pipes"	"X16"	11	284968955	Unreliable
+	"2001"	"2001"	"Contact with other hot metals"	"X18"	2	284968955	Unreliable
+	"2001"	"2001"	"Contact with other and unspecified heat and hot substances"	"X19"	12	284968955	Unreliable
+	"2001"	"2001"	"Contact with venomous snakes and lizards"	"X20"	7	284968955	Unreliable
+	"2001"	"2001"	"Contact with venomous spiders"	"X21"	5	284968955	Unreliable
+	"2001"	"2001"	"Contact with scorpions"	"X22"	1	284968955	Unreliable
+	"2001"	"2001"	"Contact with hornets, wasps and bees"	"X23"	43	284968955	0.0
+	"2001"	"2001"	"Contact with other specified venomous arthropods"	"X25"	4	284968955	Unreliable
+	"2001"	"2001"	"Contact with unspecified venomous animal or plant"	"X29"	1	284968955	Unreliable
+	"2001"	"2001"	"Exposure to excessive natural heat"	"X30"	300	284968955	0.1
+	"2001"	"2001"	"Exposure to excessive natural cold"	"X31"	599	284968955	0.2
+	"2001"	"2001"	"Exposure to sunlight"	"X32"	3	284968955	Unreliable
+	"2001"	"2001"	"Victim of lightning"	"X33"	44	284968955	0.0
+	"2001"	"2001"	"Victim of avalanche, landslide and other earth movements"	"X36"	28	284968955	0.0
+	"2001"	"2001"	"Victim of cataclysmic storm"	"X37"	54	284968955	0.0
+	"2001"	"2001"	"Victim of flood"	"X38"	35	284968955	0.0
+	"2001"	"2001"	"Exposure to other and unspecified forces of nature"	"X39"	37	284968955	0.0
+	"2001"	"2001"	"Overexertion and strenuous or repetitive movements"	"X50"	8	284968955	Unreliable
+	"2001"	"2001"	"Prolonged stay in weightless environment"	"X52"	1	284968955	Unreliable
+	"2001"	"2001"	"Lack of food"	"X53"	87	284968955	0.0
+	"2001"	"2001"	"Unspecified privation"	"X57"	41	284968955	0.0
+	"2001"	"2001"	"Exposure to other specified factors"	"X58"	38	284968955	0.0
+	"2001"	"2001"	"Exposure to unspecified factor"	"X59"	7218	284968955	2.5
+	"2001"	"2001"	"Sequelae of other accidents"	"Y86"	996	284968955	0.3
+"Total"	"2001"	"2001"			17760	284968955	6.2
+	"2002"	"2002"	"Struck by thrown, projected or falling object"	"W20"	721	287625193	0.3
+	"2002"	"2002"	"Striking against or struck by sports equipment"	"W21"	16	287625193	Unreliable
+	"2002"	"2002"	"Striking against or struck by other objects"	"W22"	127	287625193	0.0
+	"2002"	"2002"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	115	287625193	0.0
+	"2002"	"2002"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	91	287625193	0.0
+	"2002"	"2002"	"Contact with sharp glass"	"W25"	25	287625193	0.0
+	"2002"	"2002"	"Contact with knife, sword or dagger"	"W26"	6	287625193	Unreliable
+	"2002"	"2002"	"Contact with nonpowered hand tool"	"W27"	4	287625193	Unreliable
+	"2002"	"2002"	"Contact with powered lawnmower"	"W28"	53	287625193	0.0
+	"2002"	"2002"	"Contact with other powered hand tools and household machinery"	"W29"	17	287625193	Unreliable
+	"2002"	"2002"	"Contact with agricultural machinery"	"W30"	289	287625193	0.1
+	"2002"	"2002"	"Contact with other and unspecified machinery"	"W31"	272	287625193	0.1
+	"2002"	"2002"	"Explosion and rupture of boiler"	"W35"	5	287625193	Unreliable
+	"2002"	"2002"	"Explosion and rupture of gas cylinder"	"W36"	9	287625193	Unreliable
+	"2002"	"2002"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	10	287625193	Unreliable
+	"2002"	"2002"	"Explosion and rupture of other specified pressurized devices"	"W38"	3	287625193	Unreliable
+	"2002"	"2002"	"Discharge of firework"	"W39"	5	287625193	Unreliable
+	"2002"	"2002"	"Explosion of other materials"	"W40"	137	287625193	0.0
+	"2002"	"2002"	"Foreign body entering into or through eye or natural orifice"	"W44"	19	287625193	Unreliable
+	"2002"	"2002"	"Foreign body or object entering through skin"	"W45"	4	287625193	Unreliable
+	"2002"	"2002"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	37	287625193	0.0
+	"2002"	"2002"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	14	287625193	Unreliable
+	"2002"	"2002"	"Striking against or bumped into by another person"	"W51"	12	287625193	Unreliable
+	"2002"	"2002"	"Bitten or struck by dog"	"W54"	18	287625193	Unreliable
+	"2002"	"2002"	"Bitten or struck by other mammals"	"W55"	75	287625193	0.0
+	"2002"	"2002"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	13	287625193	Unreliable
+	"2002"	"2002"	"Exposure to other and unspecified animate mechanical forces"	"W64"	12	287625193	Unreliable
+	"2002"	"2002"	"Accidental suffocation and strangulation in bed"	"W75"	509	287625193	0.2
+	"2002"	"2002"	"Other accidental hanging and strangulation"	"W76"	297	287625193	0.1
+	"2002"	"2002"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	57	287625193	0.0
+	"2002"	"2002"	"Inhalation of gastric contents"	"W78"	369	287625193	0.1
+	"2002"	"2002"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	819	287625193	0.3
+	"2002"	"2002"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	2940	287625193	1.0
+	"2002"	"2002"	"Confined to or trapped in a low-oxygen environment"	"W81"	19	287625193	Unreliable
+	"2002"	"2002"	"Other specified threats to breathing"	"W83"	203	287625193	0.1
+	"2002"	"2002"	"Unspecified threat to breathing"	"W84"	304	287625193	0.1
+	"2002"	"2002"	"Exposure to electric transmission lines"	"W85"	109	287625193	0.0
+	"2002"	"2002"	"Exposure to other specified electric current"	"W86"	124	287625193	0.0
+	"2002"	"2002"	"Exposure to unspecified electric current"	"W87"	198	287625193	0.1
+	"2002"	"2002"	"Exposure to excessive heat of man-made origin"	"W92"	9	287625193	Unreliable
+	"2002"	"2002"	"Exposure to excessive cold of man-made origin"	"W93"	1	287625193	Unreliable
+	"2002"	"2002"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	13	287625193	Unreliable
+	"2002"	"2002"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	8	287625193	Unreliable
+	"2002"	"2002"	"Contact with hot tap-water"	"X11"	40	287625193	0.0
+	"2002"	"2002"	"Contact with other hot fluids"	"X12"	15	287625193	Unreliable
+	"2002"	"2002"	"Contact with steam and hot vapours"	"X13"	4	287625193	Unreliable
+	"2002"	"2002"	"Contact with hot air and gases"	"X14"	2	287625193	Unreliable
+	"2002"	"2002"	"Contact with hot household appliances"	"X15"	5	287625193	Unreliable
+	"2002"	"2002"	"Contact with hot heating appliances, radiators and pipes"	"X16"	18	287625193	Unreliable
+	"2002"	"2002"	"Contact with hot engines, machinery and tools"	"X17"	1	287625193	Unreliable
+	"2002"	"2002"	"Contact with other hot metals"	"X18"	1	287625193	Unreliable
+	"2002"	"2002"	"Contact with other and unspecified heat and hot substances"	"X19"	8	287625193	Unreliable
+	"2002"	"2002"	"Contact with venomous snakes and lizards"	"X20"	3	287625193	Unreliable
+	"2002"	"2002"	"Contact with venomous spiders"	"X21"	10	287625193	Unreliable
+	"2002"	"2002"	"Contact with scorpions"	"X22"	1	287625193	Unreliable
+	"2002"	"2002"	"Contact with hornets, wasps and bees"	"X23"	54	287625193	0.0
+	"2002"	"2002"	"Contact with centipedes and venomous millipedes (tropical)"	"X24"	1	287625193	Unreliable
+	"2002"	"2002"	"Contact with other specified venomous arthropods"	"X25"	7	287625193	Unreliable
+	"2002"	"2002"	"Exposure to excessive natural heat"	"X30"	350	287625193	0.1
+	"2002"	"2002"	"Exposure to excessive natural cold"	"X31"	646	287625193	0.2
+	"2002"	"2002"	"Exposure to sunlight"	"X32"	1	287625193	Unreliable
+	"2002"	"2002"	"Victim of lightning"	"X33"	66	287625193	0.0
+	"2002"	"2002"	"Victim of avalanche, landslide and other earth movements"	"X36"	31	287625193	0.0
+	"2002"	"2002"	"Victim of cataclysmic storm"	"X37"	63	287625193	0.0
+	"2002"	"2002"	"Victim of flood"	"X38"	9	287625193	Unreliable
+	"2002"	"2002"	"Exposure to other and unspecified forces of nature"	"X39"	53	287625193	0.0
+	"2002"	"2002"	"Overexertion and strenuous or repetitive movements"	"X50"	10	287625193	Unreliable
+	"2002"	"2002"	"Prolonged stay in weightless environment"	"X52"	1	287625193	Unreliable
+	"2002"	"2002"	"Lack of food"	"X53"	78	287625193	0.0
+	"2002"	"2002"	"Unspecified privation"	"X57"	39	287625193	0.0
+	"2002"	"2002"	"Exposure to other specified factors"	"X58"	39	287625193	0.0
+	"2002"	"2002"	"Exposure to unspecified factor"	"X59"	6550	287625193	2.3
+	"2002"	"2002"	"Sequelae of other accidents"	"Y86"	1007	287625193	0.4
+"Total"	"2002"	"2002"			17201	287625193	6.0
+	"2003"	"2003"	"Struck by thrown, projected or falling object"	"W20"	692	290107933	0.2
+	"2003"	"2003"	"Striking against or struck by sports equipment"	"W21"	10	290107933	Unreliable
+	"2003"	"2003"	"Striking against or struck by other objects"	"W22"	107	290107933	0.0
+	"2003"	"2003"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	136	290107933	0.0
+	"2003"	"2003"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	115	290107933	0.0
+	"2003"	"2003"	"Contact with sharp glass"	"W25"	22	290107933	0.0
+	"2003"	"2003"	"Contact with knife, sword or dagger"	"W26"	8	290107933	Unreliable
+	"2003"	"2003"	"Contact with nonpowered hand tool"	"W27"	5	290107933	Unreliable
+	"2003"	"2003"	"Contact with powered lawnmower"	"W28"	53	290107933	0.0
+	"2003"	"2003"	"Contact with other powered hand tools and household machinery"	"W29"	11	290107933	Unreliable
+	"2003"	"2003"	"Contact with agricultural machinery"	"W30"	271	290107933	0.1
+	"2003"	"2003"	"Contact with other and unspecified machinery"	"W31"	254	290107933	0.1
+	"2003"	"2003"	"Explosion and rupture of boiler"	"W35"	5	290107933	Unreliable
+	"2003"	"2003"	"Explosion and rupture of gas cylinder"	"W36"	8	290107933	Unreliable
+	"2003"	"2003"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	11	290107933	Unreliable
+	"2003"	"2003"	"Explosion and rupture of other specified pressurized devices"	"W38"	6	290107933	Unreliable
+	"2003"	"2003"	"Discharge of firework"	"W39"	11	290107933	Unreliable
+	"2003"	"2003"	"Explosion of other materials"	"W40"	147	290107933	0.1
+	"2003"	"2003"	"Exposure to high-pressure jet"	"W41"	1	290107933	Unreliable
+	"2003"	"2003"	"Foreign body entering into or through eye or natural orifice"	"W44"	20	290107933	0.0
+	"2003"	"2003"	"Foreign body or object entering through skin"	"W45"	2	290107933	Unreliable
+	"2003"	"2003"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	33	290107933	0.0
+	"2003"	"2003"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	6	290107933	Unreliable
+	"2003"	"2003"	"Striking against or bumped into by another person"	"W51"	11	290107933	Unreliable
+	"2003"	"2003"	"Crushed, pushed or stepped on by crowd or human stampede"	"W52"	22	290107933	0.0
+	"2003"	"2003"	"Bitten or struck by dog"	"W54"	32	290107933	0.0
+	"2003"	"2003"	"Bitten or struck by other mammals"	"W55"	78	290107933	0.0
+	"2003"	"2003"	"Contact with marine animal"	"W56"	1	290107933	Unreliable
+	"2003"	"2003"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	12	290107933	Unreliable
+	"2003"	"2003"	"Exposure to other and unspecified animate mechanical forces"	"W64"	9	290107933	Unreliable
+	"2003"	"2003"	"Accidental suffocation and strangulation in bed"	"W75"	497	290107933	0.2
+	"2003"	"2003"	"Other accidental hanging and strangulation"	"W76"	277	290107933	0.1
+	"2003"	"2003"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	46	290107933	0.0
+	"2003"	"2003"	"Inhalation of gastric contents"	"W78"	393	290107933	0.1
+	"2003"	"2003"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	875	290107933	0.3
+	"2003"	"2003"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3004	290107933	1.0
+	"2003"	"2003"	"Confined to or trapped in a low-oxygen environment"	"W81"	16	290107933	Unreliable
+	"2003"	"2003"	"Other specified threats to breathing"	"W83"	210	290107933	0.1
+	"2003"	"2003"	"Unspecified threat to breathing"	"W84"	261	290107933	0.1
+	"2003"	"2003"	"Exposure to electric transmission lines"	"W85"	96	290107933	0.0
+	"2003"	"2003"	"Exposure to other specified electric current"	"W86"	108	290107933	0.0
+	"2003"	"2003"	"Exposure to unspecified electric current"	"W87"	172	290107933	0.1
+	"2003"	"2003"	"Exposure to excessive heat of man-made origin"	"W92"	7	290107933	Unreliable
+	"2003"	"2003"	"Exposure to excessive cold of man-made origin"	"W93"	3	290107933	Unreliable
+	"2003"	"2003"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	10	290107933	Unreliable
+	"2003"	"2003"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	11	290107933	Unreliable
+	"2003"	"2003"	"Contact with hot tap-water"	"X11"	26	290107933	0.0
+	"2003"	"2003"	"Contact with other hot fluids"	"X12"	12	290107933	Unreliable
+	"2003"	"2003"	"Contact with steam and hot vapours"	"X13"	5	290107933	Unreliable
+	"2003"	"2003"	"Contact with hot air and gases"	"X14"	2	290107933	Unreliable
+	"2003"	"2003"	"Contact with hot household appliances"	"X15"	10	290107933	Unreliable
+	"2003"	"2003"	"Contact with hot heating appliances, radiators and pipes"	"X16"	16	290107933	Unreliable
+	"2003"	"2003"	"Contact with other and unspecified heat and hot substances"	"X19"	6	290107933	Unreliable
+	"2003"	"2003"	"Contact with venomous snakes and lizards"	"X20"	2	290107933	Unreliable
+	"2003"	"2003"	"Contact with venomous spiders"	"X21"	8	290107933	Unreliable
+	"2003"	"2003"	"Contact with hornets, wasps and bees"	"X23"	66	290107933	0.0
+	"2003"	"2003"	"Contact with other specified venomous arthropods"	"X25"	18	290107933	Unreliable
+	"2003"	"2003"	"Exposure to excessive natural heat"	"X30"	273	290107933	0.1
+	"2003"	"2003"	"Exposure to excessive natural cold"	"X31"	620	290107933	0.2
+	"2003"	"2003"	"Exposure to sunlight"	"X32"	3	290107933	Unreliable
+	"2003"	"2003"	"Victim of lightning"	"X33"	47	290107933	0.0
+	"2003"	"2003"	"Victim of earthquake"	"X34"	2	290107933	Unreliable
+	"2003"	"2003"	"Victim of avalanche, landslide and other earth movements"	"X36"	30	290107933	0.0
+	"2003"	"2003"	"Victim of cataclysmic storm"	"X37"	75	290107933	0.0
+	"2003"	"2003"	"Victim of flood"	"X38"	26	290107933	0.0
+	"2003"	"2003"	"Exposure to other and unspecified forces of nature"	"X39"	64	290107933	0.0
+	"2003"	"2003"	"Overexertion and strenuous or repetitive movements"	"X50"	14	290107933	Unreliable
+	"2003"	"2003"	"Lack of food"	"X53"	31	290107933	0.0
+	"2003"	"2003"	"Unspecified privation"	"X57"	3	290107933	Unreliable
+	"2003"	"2003"	"Exposure to other specified factors"	"X58"	33	290107933	0.0
+	"2003"	"2003"	"Exposure to unspecified factor"	"X59"	6630	290107933	2.3
+	"2003"	"2003"	"Sequelae of other accidents"	"Y86"	1008	290107933	0.3
+"Total"	"2003"	"2003"			17115	290107933	5.9
+	"2004"	"2004"	"Struck by thrown, projected or falling object"	"W20"	702	292805298	0.2
+	"2004"	"2004"	"Striking against or struck by sports equipment"	"W21"	10	292805298	Unreliable
+	"2004"	"2004"	"Striking against or struck by other objects"	"W22"	121	292805298	0.0
+	"2004"	"2004"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	134	292805298	0.0
+	"2004"	"2004"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	134	292805298	0.0
+	"2004"	"2004"	"Contact with sharp glass"	"W25"	23	292805298	0.0
+	"2004"	"2004"	"Contact with knife, sword or dagger"	"W26"	2	292805298	Unreliable
+	"2004"	"2004"	"Contact with nonpowered hand tool"	"W27"	6	292805298	Unreliable
+	"2004"	"2004"	"Contact with powered lawnmower"	"W28"	61	292805298	0.0
+	"2004"	"2004"	"Contact with other powered hand tools and household machinery"	"W29"	14	292805298	Unreliable
+	"2004"	"2004"	"Contact with agricultural machinery"	"W30"	299	292805298	0.1
+	"2004"	"2004"	"Contact with other and unspecified machinery"	"W31"	362	292805298	0.1
+	"2004"	"2004"	"Explosion and rupture of boiler"	"W35"	5	292805298	Unreliable
+	"2004"	"2004"	"Explosion and rupture of gas cylinder"	"W36"	12	292805298	Unreliable
+	"2004"	"2004"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	9	292805298	Unreliable
+	"2004"	"2004"	"Explosion and rupture of other specified pressurized devices"	"W38"	2	292805298	Unreliable
+	"2004"	"2004"	"Discharge of firework"	"W39"	2	292805298	Unreliable
+	"2004"	"2004"	"Explosion of other materials"	"W40"	148	292805298	0.1
+	"2004"	"2004"	"Exposure to high-pressure jet"	"W41"	2	292805298	Unreliable
+	"2004"	"2004"	"Foreign body entering into or through eye or natural orifice"	"W44"	31	292805298	0.0
+	"2004"	"2004"	"Foreign body or object entering through skin"	"W45"	1	292805298	Unreliable
+	"2004"	"2004"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	30	292805298	0.0
+	"2004"	"2004"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	8	292805298	Unreliable
+	"2004"	"2004"	"Striking against or bumped into by another person"	"W51"	5	292805298	Unreliable
+	"2004"	"2004"	"Bitten or struck by dog"	"W54"	27	292805298	0.0
+	"2004"	"2004"	"Bitten or struck by other mammals"	"W55"	77	292805298	0.0
+	"2004"	"2004"	"Contact with marine animal"	"W56"	2	292805298	Unreliable
+	"2004"	"2004"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	5	292805298	Unreliable
+	"2004"	"2004"	"Bitten or struck by crocodile or alligator"	"W58"	1	292805298	Unreliable
+	"2004"	"2004"	"Exposure to other and unspecified animate mechanical forces"	"W64"	14	292805298	Unreliable
+	"2004"	"2004"	"Accidental suffocation and strangulation in bed"	"W75"	596	292805298	0.2
+	"2004"	"2004"	"Other accidental hanging and strangulation"	"W76"	252	292805298	0.1
+	"2004"	"2004"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	48	292805298	0.0
+	"2004"	"2004"	"Inhalation of gastric contents"	"W78"	377	292805298	0.1
+	"2004"	"2004"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	878	292805298	0.3
+	"2004"	"2004"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3215	292805298	1.1
+	"2004"	"2004"	"Confined to or trapped in a low-oxygen environment"	"W81"	16	292805298	Unreliable
+	"2004"	"2004"	"Other specified threats to breathing"	"W83"	231	292805298	0.1
+	"2004"	"2004"	"Unspecified threat to breathing"	"W84"	278	292805298	0.1
+	"2004"	"2004"	"Exposure to electric transmission lines"	"W85"	94	292805298	0.0
+	"2004"	"2004"	"Exposure to other specified electric current"	"W86"	73	292805298	0.0
+	"2004"	"2004"	"Exposure to unspecified electric current"	"W87"	215	292805298	0.1
+	"2004"	"2004"	"Exposure to excessive heat of man-made origin"	"W92"	13	292805298	Unreliable
+	"2004"	"2004"	"Exposure to excessive cold of man-made origin"	"W93"	1	292805298	Unreliable
+	"2004"	"2004"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	9	292805298	Unreliable
+	"2004"	"2004"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	9	292805298	Unreliable
+	"2004"	"2004"	"Contact with hot tap-water"	"X11"	30	292805298	0.0
+	"2004"	"2004"	"Contact with other hot fluids"	"X12"	8	292805298	Unreliable
+	"2004"	"2004"	"Contact with steam and hot vapours"	"X13"	7	292805298	Unreliable
+	"2004"	"2004"	"Contact with hot air and gases"	"X14"	4	292805298	Unreliable
+	"2004"	"2004"	"Contact with hot household appliances"	"X15"	12	292805298	Unreliable
+	"2004"	"2004"	"Contact with hot heating appliances, radiators and pipes"	"X16"	14	292805298	Unreliable
+	"2004"	"2004"	"Contact with hot engines, machinery and tools"	"X17"	4	292805298	Unreliable
+	"2004"	"2004"	"Contact with other hot metals"	"X18"	1	292805298	Unreliable
+	"2004"	"2004"	"Contact with other and unspecified heat and hot substances"	"X19"	4	292805298	Unreliable
+	"2004"	"2004"	"Contact with venomous snakes and lizards"	"X20"	6	292805298	Unreliable
+	"2004"	"2004"	"Contact with venomous spiders"	"X21"	14	292805298	Unreliable
+	"2004"	"2004"	"Contact with scorpions"	"X22"	1	292805298	Unreliable
+	"2004"	"2004"	"Contact with hornets, wasps and bees"	"X23"	52	292805298	0.0
+	"2004"	"2004"	"Contact with other specified venomous arthropods"	"X25"	7	292805298	Unreliable
+	"2004"	"2004"	"Contact with unspecified venomous animal or plant"	"X29"	1	292805298	Unreliable
+	"2004"	"2004"	"Exposure to excessive natural heat"	"X30"	226	292805298	0.1
+	"2004"	"2004"	"Exposure to excessive natural cold"	"X31"	676	292805298	0.2
+	"2004"	"2004"	"Victim of lightning"	"X33"	46	292805298	0.0
+	"2004"	"2004"	"Victim of avalanche, landslide and other earth movements"	"X36"	30	292805298	0.0
+	"2004"	"2004"	"Victim of cataclysmic storm"	"X37"	63	292805298	0.0
+	"2004"	"2004"	"Victim of flood"	"X38"	22	292805298	0.0
+	"2004"	"2004"	"Exposure to other and unspecified forces of nature"	"X39"	39	292805298	0.0
+	"2004"	"2004"	"Overexertion and strenuous or repetitive movements"	"X50"	12	292805298	Unreliable
+	"2004"	"2004"	"Lack of food"	"X53"	26	292805298	0.0
+	"2004"	"2004"	"Unspecified privation"	"X57"	1	292805298	Unreliable
+	"2004"	"2004"	"Exposure to other specified factors"	"X58"	25	292805298	0.0
+	"2004"	"2004"	"Exposure to unspecified factor"	"X59"	6173	292805298	2.1
+	"2004"	"2004"	"Sequelae of other accidents"	"Y86"	958	292805298	0.3
+"Total"	"2004"	"2004"			17016	292805298	5.8
+	"2005"	"2005"	"Struck by thrown, projected or falling object"	"W20"	699	295516599	0.2
+	"2005"	"2005"	"Striking against or struck by sports equipment"	"W21"	11	295516599	Unreliable
+	"2005"	"2005"	"Striking against or struck by other objects"	"W22"	144	295516599	0.0
+	"2005"	"2005"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	103	295516599	0.0
+	"2005"	"2005"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	130	295516599	0.0
+	"2005"	"2005"	"Contact with sharp glass"	"W25"	12	295516599	Unreliable
+	"2005"	"2005"	"Contact with knife, sword or dagger"	"W26"	6	295516599	Unreliable
+	"2005"	"2005"	"Contact with nonpowered hand tool"	"W27"	5	295516599	Unreliable
+	"2005"	"2005"	"Contact with powered lawnmower"	"W28"	57	295516599	0.0
+	"2005"	"2005"	"Contact with other powered hand tools and household machinery"	"W29"	5	295516599	Unreliable
+	"2005"	"2005"	"Contact with agricultural machinery"	"W30"	314	295516599	0.1
+	"2005"	"2005"	"Contact with other and unspecified machinery"	"W31"	311	295516599	0.1
+	"2005"	"2005"	"Explosion and rupture of boiler"	"W35"	3	295516599	Unreliable
+	"2005"	"2005"	"Explosion and rupture of gas cylinder"	"W36"	7	295516599	Unreliable
+	"2005"	"2005"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	13	295516599	Unreliable
+	"2005"	"2005"	"Explosion and rupture of other specified pressurized devices"	"W38"	3	295516599	Unreliable
+	"2005"	"2005"	"Discharge of firework"	"W39"	4	295516599	Unreliable
+	"2005"	"2005"	"Explosion of other materials"	"W40"	147	295516599	0.0
+	"2005"	"2005"	"Foreign body entering into or through eye or natural orifice"	"W44"	32	295516599	0.0
+	"2005"	"2005"	"Foreign body or object entering through skin"	"W45"	5	295516599	Unreliable
+	"2005"	"2005"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	45	295516599	0.0
+	"2005"	"2005"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	16	295516599	Unreliable
+	"2005"	"2005"	"Striking against or bumped into by another person"	"W51"	10	295516599	Unreliable
+	"2005"	"2005"	"Bitten or struck by dog"	"W54"	33	295516599	0.0
+	"2005"	"2005"	"Bitten or struck by other mammals"	"W55"	80	295516599	0.0
+	"2005"	"2005"	"Contact with marine animal"	"W56"	2	295516599	Unreliable
+	"2005"	"2005"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	9	295516599	Unreliable
+	"2005"	"2005"	"Bitten or struck by crocodile or alligator"	"W58"	1	295516599	Unreliable
+	"2005"	"2005"	"Contact with plant thorns and spines and sharp leaves"	"W60"	1	295516599	Unreliable
+	"2005"	"2005"	"Exposure to other and unspecified animate mechanical forces"	"W64"	9	295516599	Unreliable
+	"2005"	"2005"	"Accidental suffocation and strangulation in bed"	"W75"	573	295516599	0.2
+	"2005"	"2005"	"Other accidental hanging and strangulation"	"W76"	274	295516599	0.1
+	"2005"	"2005"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	50	295516599	0.0
+	"2005"	"2005"	"Inhalation of gastric contents"	"W78"	333	295516599	0.1
+	"2005"	"2005"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	864	295516599	0.3
+	"2005"	"2005"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3189	295516599	1.1
+	"2005"	"2005"	"Confined to or trapped in a low-oxygen environment"	"W81"	14	295516599	Unreliable
+	"2005"	"2005"	"Other specified threats to breathing"	"W83"	235	295516599	0.1
+	"2005"	"2005"	"Unspecified threat to breathing"	"W84"	368	295516599	0.1
+	"2005"	"2005"	"Exposure to electric transmission lines"	"W85"	105	295516599	0.0
+	"2005"	"2005"	"Exposure to other specified electric current"	"W86"	118	295516599	0.0
+	"2005"	"2005"	"Exposure to unspecified electric current"	"W87"	175	295516599	0.1
+	"2005"	"2005"	"Exposure to excessive heat of man-made origin"	"W92"	11	295516599	Unreliable
+	"2005"	"2005"	"Exposure to excessive cold of man-made origin"	"W93"	2	295516599	Unreliable
+	"2005"	"2005"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	9	295516599	Unreliable
+	"2005"	"2005"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	6	295516599	Unreliable
+	"2005"	"2005"	"Contact with hot tap-water"	"X11"	43	295516599	0.0
+	"2005"	"2005"	"Contact with other hot fluids"	"X12"	19	295516599	Unreliable
+	"2005"	"2005"	"Contact with hot air and gases"	"X14"	2	295516599	Unreliable
+	"2005"	"2005"	"Contact with hot household appliances"	"X15"	5	295516599	Unreliable
+	"2005"	"2005"	"Contact with hot heating appliances, radiators and pipes"	"X16"	14	295516599	Unreliable
+	"2005"	"2005"	"Contact with hot engines, machinery and tools"	"X17"	3	295516599	Unreliable
+	"2005"	"2005"	"Contact with other hot metals"	"X18"	1	295516599	Unreliable
+	"2005"	"2005"	"Contact with other and unspecified heat and hot substances"	"X19"	9	295516599	Unreliable
+	"2005"	"2005"	"Contact with venomous snakes and lizards"	"X20"	7	295516599	Unreliable
+	"2005"	"2005"	"Contact with venomous spiders"	"X21"	10	295516599	Unreliable
+	"2005"	"2005"	"Contact with hornets, wasps and bees"	"X23"	82	295516599	0.0
+	"2005"	"2005"	"Contact with other specified venomous arthropods"	"X25"	6	295516599	Unreliable
+	"2005"	"2005"	"Exposure to excessive natural heat"	"X30"	466	295516599	0.2
+	"2005"	"2005"	"Exposure to excessive natural cold"	"X31"	700	295516599	0.2
+	"2005"	"2005"	"Exposure to sunlight"	"X32"	1	295516599	Unreliable
+	"2005"	"2005"	"Victim of lightning"	"X33"	48	295516599	0.0
+	"2005"	"2005"	"Victim of avalanche, landslide and other earth movements"	"X36"	37	295516599	0.0
+	"2005"	"2005"	"Victim of cataclysmic storm"	"X37"	874	295516599	0.3
+	"2005"	"2005"	"Victim of flood"	"X38"	12	295516599	Unreliable
+	"2005"	"2005"	"Exposure to other and unspecified forces of nature"	"X39"	41	295516599	0.0
+	"2005"	"2005"	"Overexertion and strenuous or repetitive movements"	"X50"	11	295516599	Unreliable
+	"2005"	"2005"	"Lack of food"	"X53"	17	295516599	Unreliable
+	"2005"	"2005"	"Lack of water"	"X54"	2	295516599	Unreliable
+	"2005"	"2005"	"Unspecified privation"	"X57"	2	295516599	Unreliable
+	"2005"	"2005"	"Exposure to other specified factors"	"X58"	53	295516599	0.0
+	"2005"	"2005"	"Exposure to unspecified factor"	"X59"	6551	295516599	2.2
+	"2005"	"2005"	"Sequelae of other accidents"	"Y86"	967	295516599	0.3
+"Total"	"2005"	"2005"			18526	295516599	6.3
+	"2006"	"2006"	"Struck by thrown, projected or falling object"	"W20"	708	298379912	0.2
+	"2006"	"2006"	"Striking against or struck by sports equipment"	"W21"	13	298379912	Unreliable
+	"2006"	"2006"	"Striking against or struck by other objects"	"W22"	122	298379912	0.0
+	"2006"	"2006"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	119	298379912	0.0
+	"2006"	"2006"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	104	298379912	0.0
+	"2006"	"2006"	"Contact with sharp glass"	"W25"	32	298379912	0.0
+	"2006"	"2006"	"Contact with knife, sword or dagger"	"W26"	3	298379912	Unreliable
+	"2006"	"2006"	"Contact with nonpowered hand tool"	"W27"	7	298379912	Unreliable
+	"2006"	"2006"	"Contact with powered lawnmower"	"W28"	65	298379912	0.0
+	"2006"	"2006"	"Contact with other powered hand tools and household machinery"	"W29"	12	298379912	Unreliable
+	"2006"	"2006"	"Contact with agricultural machinery"	"W30"	305	298379912	0.1
+	"2006"	"2006"	"Contact with other and unspecified machinery"	"W31"	331	298379912	0.1
+	"2006"	"2006"	"Explosion and rupture of boiler"	"W35"	10	298379912	Unreliable
+	"2006"	"2006"	"Explosion and rupture of gas cylinder"	"W36"	9	298379912	Unreliable
+	"2006"	"2006"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	17	298379912	Unreliable
+	"2006"	"2006"	"Explosion and rupture of other specified pressurized devices"	"W38"	8	298379912	Unreliable
+	"2006"	"2006"	"Discharge of firework"	"W39"	8	298379912	Unreliable
+	"2006"	"2006"	"Explosion of other materials"	"W40"	140	298379912	0.0
+	"2006"	"2006"	"Foreign body entering into or through eye or natural orifice"	"W44"	21	298379912	0.0
+	"2006"	"2006"	"Foreign body or object entering through skin"	"W45"	9	298379912	Unreliable
+	"2006"	"2006"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	41	298379912	0.0
+	"2006"	"2006"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	9	298379912	Unreliable
+	"2006"	"2006"	"Striking against or bumped into by another person"	"W51"	3	298379912	Unreliable
+	"2006"	"2006"	"Bitten by rat"	"W53"	1	298379912	Unreliable
+	"2006"	"2006"	"Bitten or struck by dog"	"W54"	32	298379912	0.0
+	"2006"	"2006"	"Bitten or struck by other mammals"	"W55"	72	298379912	0.0
+	"2006"	"2006"	"Contact with marine animal"	"W56"	1	298379912	Unreliable
+	"2006"	"2006"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	7	298379912	Unreliable
+	"2006"	"2006"	"Bitten or struck by crocodile or alligator"	"W58"	2	298379912	Unreliable
+	"2006"	"2006"	"Bitten or crushed by other reptiles"	"W59"	1	298379912	Unreliable
+	"2006"	"2006"	"Contact with plant thorns and spines and sharp leaves"	"W60"	1	298379912	Unreliable
+	"2006"	"2006"	"Exposure to other and unspecified animate mechanical forces"	"W64"	9	298379912	Unreliable
+	"2006"	"2006"	"Accidental suffocation and strangulation in bed"	"W75"	661	298379912	0.2
+	"2006"	"2006"	"Other accidental hanging and strangulation"	"W76"	283	298379912	0.1
+	"2006"	"2006"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	44	298379912	0.0
+	"2006"	"2006"	"Inhalation of gastric contents"	"W78"	351	298379912	0.1
+	"2006"	"2006"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	872	298379912	0.3
+	"2006"	"2006"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3109	298379912	1.0
+	"2006"	"2006"	"Confined to or trapped in a low-oxygen environment"	"W81"	7	298379912	Unreliable
+	"2006"	"2006"	"Other specified threats to breathing"	"W83"	191	298379912	0.1
+	"2006"	"2006"	"Unspecified threat to breathing"	"W84"	394	298379912	0.1
+	"2006"	"2006"	"Exposure to electric transmission lines"	"W85"	93	298379912	0.0
+	"2006"	"2006"	"Exposure to other specified electric current"	"W86"	115	298379912	0.0
+	"2006"	"2006"	"Exposure to unspecified electric current"	"W87"	184	298379912	0.1
+	"2006"	"2006"	"Exposure to excessive heat of man-made origin"	"W92"	6	298379912	Unreliable
+	"2006"	"2006"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	10	298379912	Unreliable
+	"2006"	"2006"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	4	298379912	Unreliable
+	"2006"	"2006"	"Contact with hot tap-water"	"X11"	32	298379912	0.0
+	"2006"	"2006"	"Contact with other hot fluids"	"X12"	11	298379912	Unreliable
+	"2006"	"2006"	"Contact with steam and hot vapours"	"X13"	6	298379912	Unreliable
+	"2006"	"2006"	"Contact with hot air and gases"	"X14"	3	298379912	Unreliable
+	"2006"	"2006"	"Contact with hot household appliances"	"X15"	13	298379912	Unreliable
+	"2006"	"2006"	"Contact with hot heating appliances, radiators and pipes"	"X16"	13	298379912	Unreliable
+	"2006"	"2006"	"Contact with hot engines, machinery and tools"	"X17"	1	298379912	Unreliable
+	"2006"	"2006"	"Contact with other hot metals"	"X18"	1	298379912	Unreliable
+	"2006"	"2006"	"Contact with other and unspecified heat and hot substances"	"X19"	9	298379912	Unreliable
+	"2006"	"2006"	"Contact with venomous snakes and lizards"	"X20"	8	298379912	Unreliable
+	"2006"	"2006"	"Contact with venomous spiders"	"X21"	4	298379912	Unreliable
+	"2006"	"2006"	"Contact with scorpions"	"X22"	1	298379912	Unreliable
+	"2006"	"2006"	"Contact with hornets, wasps and bees"	"X23"	61	298379912	0.0
+	"2006"	"2006"	"Contact with other specified venomous arthropods"	"X25"	8	298379912	Unreliable
+	"2006"	"2006"	"Contact with venomous marine animals and plants"	"X26"	1	298379912	Unreliable
+	"2006"	"2006"	"Exposure to excessive natural heat"	"X30"	622	298379912	0.2
+	"2006"	"2006"	"Exposure to excessive natural cold"	"X31"	519	298379912	0.2
+	"2006"	"2006"	"Victim of lightning"	"X33"	47	298379912	0.0
+	"2006"	"2006"	"Victim of avalanche, landslide and other earth movements"	"X36"	25	298379912	0.0
+	"2006"	"2006"	"Victim of cataclysmic storm"	"X37"	75	298379912	0.0
+	"2006"	"2006"	"Victim of flood"	"X38"	10	298379912	Unreliable
+	"2006"	"2006"	"Exposure to other and unspecified forces of nature"	"X39"	42	298379912	0.0
+	"2006"	"2006"	"Overexertion and strenuous or repetitive movements"	"X50"	13	298379912	Unreliable
+	"2006"	"2006"	"Travel and motion"	"X51"	1	298379912	Unreliable
+	"2006"	"2006"	"Lack of food"	"X53"	22	298379912	0.0
+	"2006"	"2006"	"Exposure to other specified factors"	"X58"	68	298379912	0.0
+	"2006"	"2006"	"Exposure to unspecified factor"	"X59"	6345	298379912	2.1
+	"2006"	"2006"	"Sequelae of other accidents"	"Y86"	996	298379912	0.3
+"Total"	"2006"	"2006"			17503	298379912	5.9
+	"2007"	"2007"	"Struck by thrown, projected or falling object"	"W20"	664	301231207	0.2
+	"2007"	"2007"	"Striking against or struck by sports equipment"	"W21"	20	301231207	0.0
+	"2007"	"2007"	"Striking against or struck by other objects"	"W22"	128	301231207	0.0
+	"2007"	"2007"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	153	301231207	0.1
+	"2007"	"2007"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	86	301231207	0.0
+	"2007"	"2007"	"Contact with sharp glass"	"W25"	25	301231207	0.0
+	"2007"	"2007"	"Contact with knife, sword or dagger"	"W26"	6	301231207	Unreliable
+	"2007"	"2007"	"Contact with nonpowered hand tool"	"W27"	4	301231207	Unreliable
+	"2007"	"2007"	"Contact with powered lawnmower"	"W28"	59	301231207	0.0
+	"2007"	"2007"	"Contact with other powered hand tools and household machinery"	"W29"	10	301231207	Unreliable
+	"2007"	"2007"	"Contact with agricultural machinery"	"W30"	252	301231207	0.1
+	"2007"	"2007"	"Contact with other and unspecified machinery"	"W31"	321	301231207	0.1
+	"2007"	"2007"	"Explosion and rupture of boiler"	"W35"	6	301231207	Unreliable
+	"2007"	"2007"	"Explosion and rupture of gas cylinder"	"W36"	9	301231207	Unreliable
+	"2007"	"2007"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	17	301231207	Unreliable
+	"2007"	"2007"	"Explosion and rupture of other specified pressurized devices"	"W38"	7	301231207	Unreliable
+	"2007"	"2007"	"Discharge of firework"	"W39"	10	301231207	Unreliable
+	"2007"	"2007"	"Explosion of other materials"	"W40"	111	301231207	0.0
+	"2007"	"2007"	"Foreign body entering into or through eye or natural orifice"	"W44"	23	301231207	0.0
+	"2007"	"2007"	"Foreign body or object entering through skin"	"W45"	7	301231207	Unreliable
+	"2007"	"2007"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	60	301231207	0.0
+	"2007"	"2007"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	8	301231207	Unreliable
+	"2007"	"2007"	"Striking against or bumped into by another person"	"W51"	12	301231207	Unreliable
+	"2007"	"2007"	"Bitten or struck by dog"	"W54"	32	301231207	0.0
+	"2007"	"2007"	"Bitten or struck by other mammals"	"W55"	76	301231207	0.0
+	"2007"	"2007"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	11	301231207	Unreliable
+	"2007"	"2007"	"Exposure to other and unspecified animate mechanical forces"	"W64"	9	301231207	Unreliable
+	"2007"	"2007"	"Accidental suffocation and strangulation in bed"	"W75"	741	301231207	0.2
+	"2007"	"2007"	"Other accidental hanging and strangulation"	"W76"	244	301231207	0.1
+	"2007"	"2007"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	42	301231207	0.0
+	"2007"	"2007"	"Inhalation of gastric contents"	"W78"	315	301231207	0.1
+	"2007"	"2007"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	940	301231207	0.3
+	"2007"	"2007"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3089	301231207	1.0
+	"2007"	"2007"	"Confined to or trapped in a low-oxygen environment"	"W81"	25	301231207	0.0
+	"2007"	"2007"	"Other specified threats to breathing"	"W83"	201	301231207	0.1
+	"2007"	"2007"	"Unspecified threat to breathing"	"W84"	400	301231207	0.1
+	"2007"	"2007"	"Exposure to electric transmission lines"	"W85"	88	301231207	0.0
+	"2007"	"2007"	"Exposure to other specified electric current"	"W86"	90	301231207	0.0
+	"2007"	"2007"	"Exposure to unspecified electric current"	"W87"	191	301231207	0.1
+	"2007"	"2007"	"Exposure to excessive heat of man-made origin"	"W92"	8	301231207	Unreliable
+	"2007"	"2007"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	12	301231207	Unreliable
+	"2007"	"2007"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	9	301231207	Unreliable
+	"2007"	"2007"	"Contact with hot tap-water"	"X11"	34	301231207	0.0
+	"2007"	"2007"	"Contact with other hot fluids"	"X12"	13	301231207	Unreliable
+	"2007"	"2007"	"Contact with steam and hot vapours"	"X13"	1	301231207	Unreliable
+	"2007"	"2007"	"Contact with hot air and gases"	"X14"	3	301231207	Unreliable
+	"2007"	"2007"	"Contact with hot household appliances"	"X15"	4	301231207	Unreliable
+	"2007"	"2007"	"Contact with hot heating appliances, radiators and pipes"	"X16"	13	301231207	Unreliable
+	"2007"	"2007"	"Contact with hot engines, machinery and tools"	"X17"	2	301231207	Unreliable
+	"2007"	"2007"	"Contact with other hot metals"	"X18"	1	301231207	Unreliable
+	"2007"	"2007"	"Contact with other and unspecified heat and hot substances"	"X19"	9	301231207	Unreliable
+	"2007"	"2007"	"Contact with venomous snakes and lizards"	"X20"	7	301231207	Unreliable
+	"2007"	"2007"	"Contact with venomous spiders"	"X21"	8	301231207	Unreliable
+	"2007"	"2007"	"Contact with hornets, wasps and bees"	"X23"	54	301231207	0.0
+	"2007"	"2007"	"Contact with other specified venomous arthropods"	"X25"	4	301231207	Unreliable
+	"2007"	"2007"	"Exposure to excessive natural heat"	"X30"	309	301231207	0.1
+	"2007"	"2007"	"Exposure to excessive natural cold"	"X31"	711	301231207	0.2
+	"2007"	"2007"	"Victim of lightning"	"X33"	46	301231207	0.0
+	"2007"	"2007"	"Victim of avalanche, landslide and other earth movements"	"X36"	26	301231207	0.0
+	"2007"	"2007"	"Victim of cataclysmic storm"	"X37"	84	301231207	0.0
+	"2007"	"2007"	"Victim of flood"	"X38"	22	301231207	0.0
+	"2007"	"2007"	"Exposure to other and unspecified forces of nature"	"X39"	19	301231207	Unreliable
+	"2007"	"2007"	"Overexertion and strenuous or repetitive movements"	"X50"	9	301231207	Unreliable
+	"2007"	"2007"	"Lack of food"	"X53"	8	301231207	Unreliable
+	"2007"	"2007"	"Lack of water"	"X54"	2	301231207	Unreliable
+	"2007"	"2007"	"Unspecified privation"	"X57"	1	301231207	Unreliable
+	"2007"	"2007"	"Exposure to other specified factors"	"X58"	46	301231207	0.0
+	"2007"	"2007"	"Exposure to unspecified factor causing fracture"	"X59.0"	3596	301231207	1.2
+	"2007"	"2007"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	2423	301231207	0.8
+	"2007"	"2007"	"Sequelae of other accidents"	"Y86"	1067	301231207	0.4
+"Total"	"2007"	"2007"			17043	301231207	5.7
+	"2008"	"2008"	"Struck by thrown, projected or falling object"	"W20"	741	304093966	0.2
+	"2008"	"2008"	"Striking against or struck by sports equipment"	"W21"	12	304093966	Unreliable
+	"2008"	"2008"	"Striking against or struck by other objects"	"W22"	122	304093966	0.0
+	"2008"	"2008"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	120	304093966	0.0
+	"2008"	"2008"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	112	304093966	0.0
+	"2008"	"2008"	"Contact with sharp glass"	"W25"	19	304093966	Unreliable
+	"2008"	"2008"	"Contact with knife, sword or dagger"	"W26"	3	304093966	Unreliable
+	"2008"	"2008"	"Contact with nonpowered hand tool"	"W27"	3	304093966	Unreliable
+	"2008"	"2008"	"Contact with powered lawnmower"	"W28"	43	304093966	0.0
+	"2008"	"2008"	"Contact with other powered hand tools and household machinery"	"W29"	13	304093966	Unreliable
+	"2008"	"2008"	"Contact with agricultural machinery"	"W30"	282	304093966	0.1
+	"2008"	"2008"	"Contact with other and unspecified machinery"	"W31"	299	304093966	0.1
+	"2008"	"2008"	"Explosion and rupture of boiler"	"W35"	2	304093966	Unreliable
+	"2008"	"2008"	"Explosion and rupture of gas cylinder"	"W36"	10	304093966	Unreliable
+	"2008"	"2008"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	10	304093966	Unreliable
+	"2008"	"2008"	"Explosion and rupture of other specified pressurized devices"	"W38"	1	304093966	Unreliable
+	"2008"	"2008"	"Discharge of firework"	"W39"	6	304093966	Unreliable
+	"2008"	"2008"	"Explosion of other materials"	"W40"	131	304093966	0.0
+	"2008"	"2008"	"Foreign body entering into or through eye or natural orifice"	"W44"	22	304093966	0.0
+	"2008"	"2008"	"Foreign body or object entering through skin"	"W45"	5	304093966	Unreliable
+	"2008"	"2008"	"Contact with hypodermic needle"	"W46"	1	304093966	Unreliable
+	"2008"	"2008"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	47	304093966	0.0
+	"2008"	"2008"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	10	304093966	Unreliable
+	"2008"	"2008"	"Striking against or bumped into by another person"	"W51"	6	304093966	Unreliable
+	"2008"	"2008"	"Bitten or struck by dog"	"W54"	27	304093966	0.0
+	"2008"	"2008"	"Bitten or struck by other mammals"	"W55"	75	304093966	0.0
+	"2008"	"2008"	"Contact with marine animal"	"W56"	1	304093966	Unreliable
+	"2008"	"2008"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	12	304093966	Unreliable
+	"2008"	"2008"	"Exposure to other and unspecified animate mechanical forces"	"W64"	13	304093966	Unreliable
+	"2008"	"2008"	"Accidental suffocation and strangulation in bed"	"W75"	809	304093966	0.3
+	"2008"	"2008"	"Other accidental hanging and strangulation"	"W76"	242	304093966	0.1
+	"2008"	"2008"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	43	304093966	0.0
+	"2008"	"2008"	"Inhalation of gastric contents"	"W78"	322	304093966	0.1
+	"2008"	"2008"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1021	304093966	0.3
+	"2008"	"2008"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3023	304093966	1.0
+	"2008"	"2008"	"Confined to or trapped in a low-oxygen environment"	"W81"	8	304093966	Unreliable
+	"2008"	"2008"	"Other specified threats to breathing"	"W83"	187	304093966	0.1
+	"2008"	"2008"	"Unspecified threat to breathing"	"W84"	470	304093966	0.2
+	"2008"	"2008"	"Exposure to electric transmission lines"	"W85"	84	304093966	0.0
+	"2008"	"2008"	"Exposure to other specified electric current"	"W86"	61	304093966	0.0
+	"2008"	"2008"	"Exposure to unspecified electric current"	"W87"	154	304093966	0.1
+	"2008"	"2008"	"Exposure to man-made visible and ultraviolet light"	"W89"	1	304093966	Unreliable
+	"2008"	"2008"	"Exposure to excessive heat of man-made origin"	"W92"	2	304093966	Unreliable
+	"2008"	"2008"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	13	304093966	Unreliable
+	"2008"	"2008"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	6	304093966	Unreliable
+	"2008"	"2008"	"Contact with hot tap-water"	"X11"	31	304093966	0.0
+	"2008"	"2008"	"Contact with other hot fluids"	"X12"	12	304093966	Unreliable
+	"2008"	"2008"	"Contact with hot household appliances"	"X15"	4	304093966	Unreliable
+	"2008"	"2008"	"Contact with hot heating appliances, radiators and pipes"	"X16"	14	304093966	Unreliable
+	"2008"	"2008"	"Contact with hot engines, machinery and tools"	"X17"	3	304093966	Unreliable
+	"2008"	"2008"	"Contact with other hot metals"	"X18"	1	304093966	Unreliable
+	"2008"	"2008"	"Contact with other and unspecified heat and hot substances"	"X19"	9	304093966	Unreliable
+	"2008"	"2008"	"Contact with venomous snakes and lizards"	"X20"	4	304093966	Unreliable
+	"2008"	"2008"	"Contact with venomous spiders"	"X21"	5	304093966	Unreliable
+	"2008"	"2008"	"Contact with scorpions"	"X22"	1	304093966	Unreliable
+	"2008"	"2008"	"Contact with hornets, wasps and bees"	"X23"	49	304093966	0.0
+	"2008"	"2008"	"Contact with centipedes and venomous millipedes (tropical)"	"X24"	1	304093966	Unreliable
+	"2008"	"2008"	"Contact with other specified venomous arthropods"	"X25"	10	304093966	Unreliable
+	"2008"	"2008"	"Contact with unspecified venomous animal or plant"	"X29"	1	304093966	Unreliable
+	"2008"	"2008"	"Exposure to excessive natural heat"	"X30"	296	304093966	0.1
+	"2008"	"2008"	"Exposure to excessive natural cold"	"X31"	641	304093966	0.2
+	"2008"	"2008"	"Victim of lightning"	"X33"	29	304093966	0.0
+	"2008"	"2008"	"Victim of avalanche, landslide and other earth movements"	"X36"	40	304093966	0.0
+	"2008"	"2008"	"Victim of cataclysmic storm"	"X37"	134	304093966	0.0
+	"2008"	"2008"	"Victim of flood"	"X38"	7	304093966	Unreliable
+	"2008"	"2008"	"Exposure to other and unspecified forces of nature"	"X39"	20	304093966	0.0
+	"2008"	"2008"	"Overexertion and strenuous or repetitive movements"	"X50"	7	304093966	Unreliable
+	"2008"	"2008"	"Travel and motion"	"X51"	1	304093966	Unreliable
+	"2008"	"2008"	"Lack of food"	"X53"	23	304093966	0.0
+	"2008"	"2008"	"Lack of water"	"X54"	1	304093966	Unreliable
+	"2008"	"2008"	"Unspecified privation"	"X57"	3	304093966	Unreliable
+	"2008"	"2008"	"Exposure to other specified factors"	"X58"	57	304093966	0.0
+	"2008"	"2008"	"Exposure to unspecified factor causing fracture"	"X59.0"	3529	304093966	1.2
+	"2008"	"2008"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	2382	304093966	0.8
+	"2008"	"2008"	"Sequelae of other accidents"	"Y86"	1103	304093966	0.4
+"Total"	"2008"	"2008"			17012	304093966	5.6
+	"2009"	"2009"	"Struck by thrown, projected or falling object"	"W20"	630	306771529	0.2
+	"2009"	"2009"	"Striking against or struck by sports equipment"	"W21"	13	306771529	Unreliable
+	"2009"	"2009"	"Striking against or struck by other objects"	"W22"	112	306771529	0.0
+	"2009"	"2009"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	140	306771529	0.0
+	"2009"	"2009"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	76	306771529	0.0
+	"2009"	"2009"	"Contact with sharp glass"	"W25"	20	306771529	0.0
+	"2009"	"2009"	"Contact with knife, sword or dagger"	"W26"	1	306771529	Unreliable
+	"2009"	"2009"	"Contact with nonpowered hand tool"	"W27"	5	306771529	Unreliable
+	"2009"	"2009"	"Contact with powered lawnmower"	"W28"	84	306771529	0.0
+	"2009"	"2009"	"Contact with other powered hand tools and household machinery"	"W29"	11	306771529	Unreliable
+	"2009"	"2009"	"Contact with agricultural machinery"	"W30"	273	306771529	0.1
+	"2009"	"2009"	"Contact with other and unspecified machinery"	"W31"	259	306771529	0.1
+	"2009"	"2009"	"Explosion and rupture of boiler"	"W35"	2	306771529	Unreliable
+	"2009"	"2009"	"Explosion and rupture of gas cylinder"	"W36"	12	306771529	Unreliable
+	"2009"	"2009"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	10	306771529	Unreliable
+	"2009"	"2009"	"Explosion and rupture of other specified pressurized devices"	"W38"	5	306771529	Unreliable
+	"2009"	"2009"	"Discharge of firework"	"W39"	4	306771529	Unreliable
+	"2009"	"2009"	"Explosion of other materials"	"W40"	78	306771529	0.0
+	"2009"	"2009"	"Exposure to noise"	"W42"	1	306771529	Unreliable
+	"2009"	"2009"	"Foreign body entering into or through eye or natural orifice"	"W44"	25	306771529	0.0
+	"2009"	"2009"	"Foreign body or object entering through skin"	"W45"	4	306771529	Unreliable
+	"2009"	"2009"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	34	306771529	0.0
+	"2009"	"2009"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	10	306771529	Unreliable
+	"2009"	"2009"	"Striking against or bumped into by another person"	"W51"	11	306771529	Unreliable
+	"2009"	"2009"	"Bitten or struck by dog"	"W54"	32	306771529	0.0
+	"2009"	"2009"	"Bitten or struck by other mammals"	"W55"	68	306771529	0.0
+	"2009"	"2009"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	10	306771529	Unreliable
+	"2009"	"2009"	"Contact with plant thorns and spines and sharp leaves"	"W60"	1	306771529	Unreliable
+	"2009"	"2009"	"Exposure to other and unspecified animate mechanical forces"	"W64"	14	306771529	Unreliable
+	"2009"	"2009"	"Accidental suffocation and strangulation in bed"	"W75"	717	306771529	0.2
+	"2009"	"2009"	"Other accidental hanging and strangulation"	"W76"	259	306771529	0.1
+	"2009"	"2009"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	34	306771529	0.0
+	"2009"	"2009"	"Inhalation of gastric contents"	"W78"	264	306771529	0.1
+	"2009"	"2009"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1018	306771529	0.3
+	"2009"	"2009"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3088	306771529	1.0
+	"2009"	"2009"	"Confined to or trapped in a low-oxygen environment"	"W81"	6	306771529	Unreliable
+	"2009"	"2009"	"Other specified threats to breathing"	"W83"	167	306771529	0.1
+	"2009"	"2009"	"Unspecified threat to breathing"	"W84"	386	306771529	0.1
+	"2009"	"2009"	"Exposure to electric transmission lines"	"W85"	71	306771529	0.0
+	"2009"	"2009"	"Exposure to other specified electric current"	"W86"	65	306771529	0.0
+	"2009"	"2009"	"Exposure to unspecified electric current"	"W87"	167	306771529	0.1
+	"2009"	"2009"	"Exposure to excessive heat of man-made origin"	"W92"	6	306771529	Unreliable
+	"2009"	"2009"	"Exposure to excessive cold of man-made origin"	"W93"	2	306771529	Unreliable
+	"2009"	"2009"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	11	306771529	Unreliable
+	"2009"	"2009"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	7	306771529	Unreliable
+	"2009"	"2009"	"Contact with hot tap-water"	"X11"	23	306771529	0.0
+	"2009"	"2009"	"Contact with other hot fluids"	"X12"	8	306771529	Unreliable
+	"2009"	"2009"	"Contact with steam and hot vapours"	"X13"	5	306771529	Unreliable
+	"2009"	"2009"	"Contact with hot air and gases"	"X14"	1	306771529	Unreliable
+	"2009"	"2009"	"Contact with hot household appliances"	"X15"	5	306771529	Unreliable
+	"2009"	"2009"	"Contact with hot heating appliances, radiators and pipes"	"X16"	12	306771529	Unreliable
+	"2009"	"2009"	"Contact with hot engines, machinery and tools"	"X17"	1	306771529	Unreliable
+	"2009"	"2009"	"Contact with other hot metals"	"X18"	1	306771529	Unreliable
+	"2009"	"2009"	"Contact with other and unspecified heat and hot substances"	"X19"	4	306771529	Unreliable
+	"2009"	"2009"	"Contact with venomous snakes and lizards"	"X20"	5	306771529	Unreliable
+	"2009"	"2009"	"Contact with venomous spiders"	"X21"	6	306771529	Unreliable
+	"2009"	"2009"	"Contact with hornets, wasps and bees"	"X23"	55	306771529	0.0
+	"2009"	"2009"	"Contact with centipedes and venomous millipedes (tropical)"	"X24"	1	306771529	Unreliable
+	"2009"	"2009"	"Contact with other specified venomous arthropods"	"X25"	10	306771529	Unreliable
+	"2009"	"2009"	"Contact with unspecified venomous animal or plant"	"X29"	3	306771529	Unreliable
+	"2009"	"2009"	"Exposure to excessive natural heat"	"X30"	352	306771529	0.1
+	"2009"	"2009"	"Exposure to excessive natural cold"	"X31"	616	306771529	0.2
+	"2009"	"2009"	"Victim of lightning"	"X33"	31	306771529	0.0
+	"2009"	"2009"	"Victim of avalanche, landslide and other earth movements"	"X36"	19	306771529	Unreliable
+	"2009"	"2009"	"Victim of cataclysmic storm"	"X37"	31	306771529	0.0
+	"2009"	"2009"	"Victim of flood"	"X38"	15	306771529	Unreliable
+	"2009"	"2009"	"Exposure to other and unspecified forces of nature"	"X39"	20	306771529	0.0
+	"2009"	"2009"	"Overexertion and strenuous or repetitive movements"	"X50"	10	306771529	Unreliable
+	"2009"	"2009"	"Lack of food"	"X53"	14	306771529	Unreliable
+	"2009"	"2009"	"Unspecified privation"	"X57"	4	306771529	Unreliable
+	"2009"	"2009"	"Exposure to other specified factors"	"X58"	44	306771529	0.0
+	"2009"	"2009"	"Exposure to unspecified factor causing fracture"	"X59.0"	3233	306771529	1.1
+	"2009"	"2009"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	1865	306771529	0.6
+	"2009"	"2009"	"Sequelae of other accidents"	"Y86"	1006	306771529	0.3
+"Total"	"2009"	"2009"			15613	306771529	5.1
+	"2010"	"2010"	"Struck by thrown, projected or falling object"	"W20"	627	308745538	0.2
+	"2010"	"2010"	"Striking against or struck by sports equipment"	"W21"	18	308745538	Unreliable
+	"2010"	"2010"	"Striking against or struck by other objects"	"W22"	134	308745538	0.0
+	"2010"	"2010"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	107	308745538	0.0
+	"2010"	"2010"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	56	308745538	0.0
+	"2010"	"2010"	"Contact with sharp glass"	"W25"	13	308745538	Unreliable
+	"2010"	"2010"	"Contact with knife, sword or dagger"	"W26"	4	308745538	Unreliable
+	"2010"	"2010"	"Contact with nonpowered hand tool"	"W27"	4	308745538	Unreliable
+	"2010"	"2010"	"Contact with powered lawnmower"	"W28"	73	308745538	0.0
+	"2010"	"2010"	"Contact with other powered hand tools and household machinery"	"W29"	11	308745538	Unreliable
+	"2010"	"2010"	"Contact with agricultural machinery"	"W30"	278	308745538	0.1
+	"2010"	"2010"	"Contact with other and unspecified machinery"	"W31"	256	308745538	0.1
+	"2010"	"2010"	"Explosion and rupture of boiler"	"W35"	1	308745538	Unreliable
+	"2010"	"2010"	"Explosion and rupture of gas cylinder"	"W36"	12	308745538	Unreliable
+	"2010"	"2010"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	8	308745538	Unreliable
+	"2010"	"2010"	"Explosion and rupture of other specified pressurized devices"	"W38"	5	308745538	Unreliable
+	"2010"	"2010"	"Discharge of firework"	"W39"	1	308745538	Unreliable
+	"2010"	"2010"	"Explosion of other materials"	"W40"	151	308745538	0.0
+	"2010"	"2010"	"Foreign body entering into or through eye or natural orifice"	"W44"	29	308745538	0.0
+	"2010"	"2010"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	45	308745538	0.0
+	"2010"	"2010"	"Striking against or bumped into by another person"	"W51"	8	308745538	Unreliable
+	"2010"	"2010"	"Crushed, pushed or stepped on by crowd or human stampede"	"W52"	1	308745538	Unreliable
+	"2010"	"2010"	"Bitten or struck by dog"	"W54"	38	308745538	0.0
+	"2010"	"2010"	"Bitten or struck by other mammals"	"W55"	71	308745538	0.0
+	"2010"	"2010"	"Contact with marine animal"	"W56"	4	308745538	Unreliable
+	"2010"	"2010"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	5	308745538	Unreliable
+	"2010"	"2010"	"Bitten or crushed by other reptiles"	"W59"	1	308745538	Unreliable
+	"2010"	"2010"	"Exposure to other and unspecified animate mechanical forces"	"W64"	6	308745538	Unreliable
+	"2010"	"2010"	"Accidental suffocation and strangulation in bed"	"W75"	684	308745538	0.2
+	"2010"	"2010"	"Other accidental hanging and strangulation"	"W76"	257	308745538	0.1
+	"2010"	"2010"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	30	308745538	0.0
+	"2010"	"2010"	"Inhalation of gastric contents"	"W78"	301	308745538	0.1
+	"2010"	"2010"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1081	308745538	0.4
+	"2010"	"2010"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3188	308745538	1.0
+	"2010"	"2010"	"Confined to or trapped in a low-oxygen environment"	"W81"	12	308745538	Unreliable
+	"2010"	"2010"	"Other specified threats to breathing"	"W83"	148	308745538	0.0
+	"2010"	"2010"	"Unspecified threat to breathing"	"W84"	464	308745538	0.2
+	"2010"	"2010"	"Exposure to electric transmission lines"	"W85"	63	308745538	0.0
+	"2010"	"2010"	"Exposure to other specified electric current"	"W86"	69	308745538	0.0
+	"2010"	"2010"	"Exposure to unspecified electric current"	"W87"	179	308745538	0.1
+	"2010"	"2010"	"Exposure to excessive heat of man-made origin"	"W92"	2	308745538	Unreliable
+	"2010"	"2010"	"Exposure to excessive cold of man-made origin"	"W93"	1	308745538	Unreliable
+	"2010"	"2010"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	10	308745538	Unreliable
+	"2010"	"2010"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	7	308745538	Unreliable
+	"2010"	"2010"	"Contact with hot tap-water"	"X11"	30	308745538	0.0
+	"2010"	"2010"	"Contact with other hot fluids"	"X12"	7	308745538	Unreliable
+	"2010"	"2010"	"Contact with hot air and gases"	"X14"	2	308745538	Unreliable
+	"2010"	"2010"	"Contact with hot household appliances"	"X15"	2	308745538	Unreliable
+	"2010"	"2010"	"Contact with hot heating appliances, radiators and pipes"	"X16"	7	308745538	Unreliable
+	"2010"	"2010"	"Contact with hot engines, machinery and tools"	"X17"	1	308745538	Unreliable
+	"2010"	"2010"	"Contact with other hot metals"	"X18"	1	308745538	Unreliable
+	"2010"	"2010"	"Contact with other and unspecified heat and hot substances"	"X19"	6	308745538	Unreliable
+	"2010"	"2010"	"Contact with venomous snakes and lizards"	"X20"	9	308745538	Unreliable
+	"2010"	"2010"	"Contact with venomous spiders"	"X21"	7	308745538	Unreliable
+	"2010"	"2010"	"Contact with hornets, wasps and bees"	"X23"	52	308745538	0.0
+	"2010"	"2010"	"Contact with other specified venomous arthropods"	"X25"	12	308745538	Unreliable
+	"2010"	"2010"	"Exposure to excessive natural heat"	"X30"	474	308745538	0.2
+	"2010"	"2010"	"Exposure to excessive natural cold"	"X31"	710	308745538	0.2
+	"2010"	"2010"	"Exposure to sunlight"	"X32"	1	308745538	Unreliable
+	"2010"	"2010"	"Victim of lightning"	"X33"	29	308745538	0.0
+	"2010"	"2010"	"Victim of earthquake"	"X34"	2	308745538	Unreliable
+	"2010"	"2010"	"Victim of avalanche, landslide and other earth movements"	"X36"	31	308745538	0.0
+	"2010"	"2010"	"Victim of cataclysmic storm"	"X37"	47	308745538	0.0
+	"2010"	"2010"	"Victim of flood"	"X38"	39	308745538	0.0
+	"2010"	"2010"	"Exposure to other and unspecified forces of nature"	"X39"	9	308745538	Unreliable
+	"2010"	"2010"	"Overexertion and strenuous or repetitive movements"	"X50"	10	308745538	Unreliable
+	"2010"	"2010"	"Lack of food"	"X53"	15	308745538	Unreliable
+	"2010"	"2010"	"Lack of water"	"X54"	1	308745538	Unreliable
+	"2010"	"2010"	"Exposure to other specified factors"	"X58"	36	308745538	0.0
+	"2010"	"2010"	"Exposure to unspecified factor causing fracture"	"X59.0"	3394	308745538	1.1
+	"2010"	"2010"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	2294	308745538	0.7
+	"2010"	"2010"	"Sequelae of other accidents"	"Y86"	987	308745538	0.3
+"Total"	"2010"	"2010"			16678	308745538	5.4
+	"2011"	"2011"	"Struck by thrown, projected or falling object"	"W20"	676	311591917	0.2
+	"2011"	"2011"	"Striking against or struck by sports equipment"	"W21"	13	311591917	Unreliable
+	"2011"	"2011"	"Striking against or struck by other objects"	"W22"	138	311591917	0.0
+	"2011"	"2011"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	137	311591917	0.0
+	"2011"	"2011"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	92	311591917	0.0
+	"2011"	"2011"	"Contact with sharp glass"	"W25"	20	311591917	0.0
+	"2011"	"2011"	"Contact with knife, sword or dagger"	"W26"	3	311591917	Unreliable
+	"2011"	"2011"	"Contact with nonpowered hand tool"	"W27"	5	311591917	Unreliable
+	"2011"	"2011"	"Contact with powered lawnmower"	"W28"	66	311591917	0.0
+	"2011"	"2011"	"Contact with other powered hand tools and household machinery"	"W29"	12	311591917	Unreliable
+	"2011"	"2011"	"Contact with agricultural machinery"	"W30"	235	311591917	0.1
+	"2011"	"2011"	"Contact with other and unspecified machinery"	"W31"	283	311591917	0.1
+	"2011"	"2011"	"Explosion and rupture of gas cylinder"	"W36"	7	311591917	Unreliable
+	"2011"	"2011"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	10	311591917	Unreliable
+	"2011"	"2011"	"Explosion and rupture of other specified pressurized devices"	"W38"	2	311591917	Unreliable
+	"2011"	"2011"	"Discharge of firework"	"W39"	5	311591917	Unreliable
+	"2011"	"2011"	"Explosion of other materials"	"W40"	118	311591917	0.0
+	"2011"	"2011"	"Foreign body entering into or through eye or natural orifice"	"W44"	27	311591917	0.0
+	"2011"	"2011"	"Foreign body or object entering through skin"	"W45"	4	311591917	Unreliable
+	"2011"	"2011"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	52	311591917	0.0
+	"2011"	"2011"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	4	311591917	Unreliable
+	"2011"	"2011"	"Striking against or bumped into by another person"	"W51"	6	311591917	Unreliable
+	"2011"	"2011"	"Bitten or struck by dog"	"W54"	34	311591917	0.0
+	"2011"	"2011"	"Bitten or struck by other mammals"	"W55"	72	311591917	0.0
+	"2011"	"2011"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	7	311591917	Unreliable
+	"2011"	"2011"	"Exposure to other and unspecified animate mechanical forces"	"W64"	7	311591917	Unreliable
+	"2011"	"2011"	"Accidental suffocation and strangulation in bed"	"W75"	692	311591917	0.2
+	"2011"	"2011"	"Other accidental hanging and strangulation"	"W76"	233	311591917	0.1
+	"2011"	"2011"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	16	311591917	Unreliable
+	"2011"	"2011"	"Inhalation of gastric contents"	"W78"	327	311591917	0.1
+	"2011"	"2011"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1173	311591917	0.4
+	"2011"	"2011"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3208	311591917	1.0
+	"2011"	"2011"	"Confined to or trapped in a low-oxygen environment"	"W81"	4	311591917	Unreliable
+	"2011"	"2011"	"Other specified threats to breathing"	"W83"	165	311591917	0.1
+	"2011"	"2011"	"Unspecified threat to breathing"	"W84"	424	311591917	0.1
+	"2011"	"2011"	"Exposure to electric transmission lines"	"W85"	72	311591917	0.0
+	"2011"	"2011"	"Exposure to other specified electric current"	"W86"	42	311591917	0.0
+	"2011"	"2011"	"Exposure to unspecified electric current"	"W87"	194	311591917	0.1
+	"2011"	"2011"	"Exposure to excessive heat of man-made origin"	"W92"	4	311591917	Unreliable
+	"2011"	"2011"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	12	311591917	Unreliable
+	"2011"	"2011"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	2	311591917	Unreliable
+	"2011"	"2011"	"Contact with hot tap-water"	"X11"	27	311591917	0.0
+	"2011"	"2011"	"Contact with other hot fluids"	"X12"	8	311591917	Unreliable
+	"2011"	"2011"	"Contact with steam and hot vapours"	"X13"	2	311591917	Unreliable
+	"2011"	"2011"	"Contact with hot air and gases"	"X14"	4	311591917	Unreliable
+	"2011"	"2011"	"Contact with hot household appliances"	"X15"	1	311591917	Unreliable
+	"2011"	"2011"	"Contact with hot heating appliances, radiators and pipes"	"X16"	13	311591917	Unreliable
+	"2011"	"2011"	"Contact with hot engines, machinery and tools"	"X17"	2	311591917	Unreliable
+	"2011"	"2011"	"Contact with other hot metals"	"X18"	1	311591917	Unreliable
+	"2011"	"2011"	"Contact with other and unspecified heat and hot substances"	"X19"	7	311591917	Unreliable
+	"2011"	"2011"	"Contact with venomous snakes and lizards"	"X20"	9	311591917	Unreliable
+	"2011"	"2011"	"Contact with venomous spiders"	"X21"	3	311591917	Unreliable
+	"2011"	"2011"	"Contact with hornets, wasps and bees"	"X23"	71	311591917	0.0
+	"2011"	"2011"	"Contact with other specified venomous arthropods"	"X25"	8	311591917	Unreliable
+	"2011"	"2011"	"Contact with unspecified venomous animal or plant"	"X29"	3	311591917	Unreliable
+	"2011"	"2011"	"Exposure to excessive natural heat"	"X30"	587	311591917	0.2
+	"2011"	"2011"	"Exposure to excessive natural cold"	"X31"	672	311591917	0.2
+	"2011"	"2011"	"Victim of lightning"	"X33"	24	311591917	0.0
+	"2011"	"2011"	"Victim of avalanche, landslide and other earth movements"	"X36"	22	311591917	0.0
+	"2011"	"2011"	"Victim of cataclysmic storm"	"X37"	584	311591917	0.2
+	"2011"	"2011"	"Victim of flood"	"X38"	25	311591917	0.0
+	"2011"	"2011"	"Exposure to other and unspecified forces of nature"	"X39"	30	311591917	0.0
+	"2011"	"2011"	"Overexertion and strenuous or repetitive movements"	"X50"	16	311591917	Unreliable
+	"2011"	"2011"	"Travel and motion"	"X51"	1	311591917	Unreliable
+	"2011"	"2011"	"Lack of food"	"X53"	18	311591917	Unreliable
+	"2011"	"2011"	"Exposure to other specified factors"	"X58"	37	311591917	0.0
+	"2011"	"2011"	"Exposure to unspecified factor causing fracture"	"X59.0"	3249	311591917	1.0
+	"2011"	"2011"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	2622	311591917	0.8
+	"2011"	"2011"	"Sequelae of other accidents"	"Y86"	1110	311591917	0.4
+"Total"	"2011"	"2011"			17759	311591917	5.7
+	"2012"	"2012"	"Struck by thrown, projected or falling object"	"W20"	729	313914040	0.2
+	"2012"	"2012"	"Striking against or struck by sports equipment"	"W21"	12	313914040	Unreliable
+	"2012"	"2012"	"Striking against or struck by other objects"	"W22"	118	313914040	0.0
+	"2012"	"2012"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	106	313914040	0.0
+	"2012"	"2012"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	97	313914040	0.0
+	"2012"	"2012"	"Contact with sharp glass"	"W25"	22	313914040	0.0
+	"2012"	"2012"	"Contact with knife, sword or dagger"	"W26"	3	313914040	Unreliable
+	"2012"	"2012"	"Contact with nonpowered hand tool"	"W27"	4	313914040	Unreliable
+	"2012"	"2012"	"Contact with powered lawnmower"	"W28"	82	313914040	0.0
+	"2012"	"2012"	"Contact with other powered hand tools and household machinery"	"W29"	11	313914040	Unreliable
+	"2012"	"2012"	"Contact with agricultural machinery"	"W30"	255	313914040	0.1
+	"2012"	"2012"	"Contact with other and unspecified machinery"	"W31"	275	313914040	0.1
+	"2012"	"2012"	"Explosion and rupture of boiler"	"W35"	2	313914040	Unreliable
+	"2012"	"2012"	"Explosion and rupture of gas cylinder"	"W36"	4	313914040	Unreliable
+	"2012"	"2012"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	12	313914040	Unreliable
+	"2012"	"2012"	"Explosion and rupture of other specified pressurized devices"	"W38"	5	313914040	Unreliable
+	"2012"	"2012"	"Discharge of firework"	"W39"	8	313914040	Unreliable
+	"2012"	"2012"	"Explosion of other materials"	"W40"	110	313914040	0.0
+	"2012"	"2012"	"Exposure to high-pressure jet"	"W41"	2	313914040	Unreliable
+	"2012"	"2012"	"Foreign body entering into or through eye or natural orifice"	"W44"	29	313914040	0.0
+	"2012"	"2012"	"Foreign body or object entering through skin"	"W45"	3	313914040	Unreliable
+	"2012"	"2012"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	43	313914040	0.0
+	"2012"	"2012"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	6	313914040	Unreliable
+	"2012"	"2012"	"Striking against or bumped into by another person"	"W51"	9	313914040	Unreliable
+	"2012"	"2012"	"Bitten or struck by dog"	"W54"	34	313914040	0.0
+	"2012"	"2012"	"Bitten or struck by other mammals"	"W55"	80	313914040	0.0
+	"2012"	"2012"	"Contact with marine animal"	"W56"	1	313914040	Unreliable
+	"2012"	"2012"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	5	313914040	Unreliable
+	"2012"	"2012"	"Exposure to other and unspecified animate mechanical forces"	"W64"	9	313914040	Unreliable
+	"2012"	"2012"	"Accidental suffocation and strangulation in bed"	"W75"	798	313914040	0.3
+	"2012"	"2012"	"Other accidental hanging and strangulation"	"W76"	264	313914040	0.1
+	"2012"	"2012"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	16	313914040	Unreliable
+	"2012"	"2012"	"Inhalation of gastric contents"	"W78"	313	313914040	0.1
+	"2012"	"2012"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1138	313914040	0.4
+	"2012"	"2012"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3183	313914040	1.0
+	"2012"	"2012"	"Confined to or trapped in a low-oxygen environment"	"W81"	9	313914040	Unreliable
+	"2012"	"2012"	"Other specified threats to breathing"	"W83"	86	313914040	0.0
+	"2012"	"2012"	"Unspecified threat to breathing"	"W84"	431	313914040	0.1
+	"2012"	"2012"	"Exposure to electric transmission lines"	"W85"	61	313914040	0.0
+	"2012"	"2012"	"Exposure to other specified electric current"	"W86"	51	313914040	0.0
+	"2012"	"2012"	"Exposure to unspecified electric current"	"W87"	167	313914040	0.1
+	"2012"	"2012"	"Exposure to excessive heat of man-made origin"	"W92"	3	313914040	Unreliable
+	"2012"	"2012"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	5	313914040	Unreliable
+	"2012"	"2012"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	2	313914040	Unreliable
+	"2012"	"2012"	"Contact with hot tap-water"	"X11"	21	313914040	0.0
+	"2012"	"2012"	"Contact with other hot fluids"	"X12"	12	313914040	Unreliable
+	"2012"	"2012"	"Contact with steam and hot vapours"	"X13"	3	313914040	Unreliable
+	"2012"	"2012"	"Contact with hot air and gases"	"X14"	3	313914040	Unreliable
+	"2012"	"2012"	"Contact with hot household appliances"	"X15"	4	313914040	Unreliable
+	"2012"	"2012"	"Contact with hot heating appliances, radiators and pipes"	"X16"	7	313914040	Unreliable
+	"2012"	"2012"	"Contact with hot engines, machinery and tools"	"X17"	1	313914040	Unreliable
+	"2012"	"2012"	"Contact with other and unspecified heat and hot substances"	"X19"	6	313914040	Unreliable
+	"2012"	"2012"	"Contact with venomous snakes and lizards"	"X20"	6	313914040	Unreliable
+	"2012"	"2012"	"Contact with venomous spiders"	"X21"	7	313914040	Unreliable
+	"2012"	"2012"	"Contact with hornets, wasps and bees"	"X23"	59	313914040	0.0
+	"2012"	"2012"	"Contact with centipedes and venomous millipedes (tropical)"	"X24"	1	313914040	Unreliable
+	"2012"	"2012"	"Contact with other specified venomous arthropods"	"X25"	9	313914040	Unreliable
+	"2012"	"2012"	"Contact with unspecified venomous animal or plant"	"X29"	1	313914040	Unreliable
+	"2012"	"2012"	"Exposure to excessive natural heat"	"X30"	474	313914040	0.2
+	"2012"	"2012"	"Exposure to excessive natural cold"	"X31"	494	313914040	0.2
+	"2012"	"2012"	"Victim of lightning"	"X33"	29	313914040	0.0
+	"2012"	"2012"	"Victim of avalanche, landslide and other earth movements"	"X36"	36	313914040	0.0
+	"2012"	"2012"	"Victim of cataclysmic storm"	"X37"	138	313914040	0.0
+	"2012"	"2012"	"Victim of flood"	"X38"	5	313914040	Unreliable
+	"2012"	"2012"	"Exposure to other and unspecified forces of nature"	"X39"	31	313914040	0.0
+	"2012"	"2012"	"Overexertion and strenuous or repetitive movements"	"X50"	10	313914040	Unreliable
+	"2012"	"2012"	"Prolonged stay in weightless environment"	"X52"	1	313914040	Unreliable
+	"2012"	"2012"	"Lack of food"	"X53"	23	313914040	0.0
+	"2012"	"2012"	"Lack of water"	"X54"	1	313914040	Unreliable
+	"2012"	"2012"	"Unspecified privation"	"X57"	4	313914040	Unreliable
+	"2012"	"2012"	"Exposure to other specified factors"	"X58"	43	313914040	0.0
+	"2012"	"2012"	"Exposure to unspecified factor causing fracture"	"X59.0"	3354	313914040	1.1
+	"2012"	"2012"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	2561	313914040	0.8
+	"2012"	"2012"	"Sequelae of other accidents"	"Y86"	1152	313914040	0.4
+"Total"	"2012"	"2012"			17099	313914040	5.4
+	"2013"	"2013"	"Struck by thrown, projected or falling object"	"W20"	650	316128839	0.2
+	"2013"	"2013"	"Striking against or struck by sports equipment"	"W21"	9	316128839	Unreliable
+	"2013"	"2013"	"Striking against or struck by other objects"	"W22"	152	316128839	0.0
+	"2013"	"2013"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	88	316128839	0.0
+	"2013"	"2013"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	94	316128839	0.0
+	"2013"	"2013"	"Contact with sharp glass"	"W25"	18	316128839	Unreliable
+	"2013"	"2013"	"Contact with knife, sword or dagger"	"W26"	1	316128839	Unreliable
+	"2013"	"2013"	"Contact with nonpowered hand tool"	"W27"	7	316128839	Unreliable
+	"2013"	"2013"	"Contact with powered lawnmower"	"W28"	88	316128839	0.0
+	"2013"	"2013"	"Contact with other powered hand tools and household machinery"	"W29"	16	316128839	Unreliable
+	"2013"	"2013"	"Contact with agricultural machinery"	"W30"	236	316128839	0.1
+	"2013"	"2013"	"Contact with other and unspecified machinery"	"W31"	258	316128839	0.1
+	"2013"	"2013"	"Explosion and rupture of gas cylinder"	"W36"	6	316128839	Unreliable
+	"2013"	"2013"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	3	316128839	Unreliable
+	"2013"	"2013"	"Explosion and rupture of other specified pressurized devices"	"W38"	2	316128839	Unreliable
+	"2013"	"2013"	"Discharge of firework"	"W39"	6	316128839	Unreliable
+	"2013"	"2013"	"Explosion of other materials"	"W40"	128	316128839	0.0
+	"2013"	"2013"	"Exposure to noise"	"W42"	1	316128839	Unreliable
+	"2013"	"2013"	"Foreign body entering into or through eye or natural orifice"	"W44"	33	316128839	0.0
+	"2013"	"2013"	"Foreign body or object entering through skin"	"W45"	4	316128839	Unreliable
+	"2013"	"2013"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	48	316128839	0.0
+	"2013"	"2013"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	3	316128839	Unreliable
+	"2013"	"2013"	"Striking against or bumped into by another person"	"W51"	9	316128839	Unreliable
+	"2013"	"2013"	"Bitten or struck by dog"	"W54"	35	316128839	0.0
+	"2013"	"2013"	"Bitten or struck by other mammals"	"W55"	59	316128839	0.0
+	"2013"	"2013"	"Contact with marine animal"	"W56"	3	316128839	Unreliable
+	"2013"	"2013"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	13	316128839	Unreliable
+	"2013"	"2013"	"Contact with plant thorns and spines and sharp leaves"	"W60"	2	316128839	Unreliable
+	"2013"	"2013"	"Exposure to other and unspecified animate mechanical forces"	"W64"	9	316128839	Unreliable
+	"2013"	"2013"	"Accidental suffocation and strangulation in bed"	"W75"	903	316128839	0.3
+	"2013"	"2013"	"Other accidental hanging and strangulation"	"W76"	247	316128839	0.1
+	"2013"	"2013"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	27	316128839	0.0
+	"2013"	"2013"	"Inhalation of gastric contents"	"W78"	319	316128839	0.1
+	"2013"	"2013"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1177	316128839	0.4
+	"2013"	"2013"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3368	316128839	1.1
+	"2013"	"2013"	"Confined to or trapped in a low-oxygen environment"	"W81"	3	316128839	Unreliable
+	"2013"	"2013"	"Other specified threats to breathing"	"W83"	114	316128839	0.0
+	"2013"	"2013"	"Unspecified threat to breathing"	"W84"	443	316128839	0.1
+	"2013"	"2013"	"Exposure to electric transmission lines"	"W85"	66	316128839	0.0
+	"2013"	"2013"	"Exposure to other specified electric current"	"W86"	44	316128839	0.0
+	"2013"	"2013"	"Exposure to unspecified electric current"	"W87"	147	316128839	0.0
+	"2013"	"2013"	"Exposure to excessive heat of man-made origin"	"W92"	4	316128839	Unreliable
+	"2013"	"2013"	"Exposure to excessive cold of man-made origin"	"W93"	1	316128839	Unreliable
+	"2013"	"2013"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	11	316128839	Unreliable
+	"2013"	"2013"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	4	316128839	Unreliable
+	"2013"	"2013"	"Contact with hot tap-water"	"X11"	24	316128839	0.0
+	"2013"	"2013"	"Contact with other hot fluids"	"X12"	10	316128839	Unreliable
+	"2013"	"2013"	"Contact with steam and hot vapours"	"X13"	1	316128839	Unreliable
+	"2013"	"2013"	"Contact with hot household appliances"	"X15"	4	316128839	Unreliable
+	"2013"	"2013"	"Contact with hot heating appliances, radiators and pipes"	"X16"	8	316128839	Unreliable
+	"2013"	"2013"	"Contact with other and unspecified heat and hot substances"	"X19"	7	316128839	Unreliable
+	"2013"	"2013"	"Contact with venomous snakes and lizards"	"X20"	4	316128839	Unreliable
+	"2013"	"2013"	"Contact with venomous spiders"	"X21"	7	316128839	Unreliable
+	"2013"	"2013"	"Contact with scorpions"	"X22"	1	316128839	Unreliable
+	"2013"	"2013"	"Contact with hornets, wasps and bees"	"X23"	62	316128839	0.0
+	"2013"	"2013"	"Contact with other specified venomous arthropods"	"X25"	13	316128839	Unreliable
+	"2013"	"2013"	"Contact with unspecified venomous animal or plant"	"X29"	4	316128839	Unreliable
+	"2013"	"2013"	"Exposure to excessive natural heat"	"X30"	372	316128839	0.1
+	"2013"	"2013"	"Exposure to excessive natural cold"	"X31"	725	316128839	0.2
+	"2013"	"2013"	"Victim of lightning"	"X33"	23	316128839	0.0
+	"2013"	"2013"	"Victim of avalanche, landslide and other earth movements"	"X36"	34	316128839	0.0
+	"2013"	"2013"	"Victim of cataclysmic storm"	"X37"	63	316128839	0.0
+	"2013"	"2013"	"Victim of flood"	"X38"	42	316128839	0.0
+	"2013"	"2013"	"Exposure to other and unspecified forces of nature"	"X39"	26	316128839	0.0
+	"2013"	"2013"	"Overexertion and strenuous or repetitive movements"	"X50"	13	316128839	Unreliable
+	"2013"	"2013"	"Travel and motion"	"X51"	1	316128839	Unreliable
+	"2013"	"2013"	"Lack of food"	"X53"	17	316128839	Unreliable
+	"2013"	"2013"	"Unspecified privation"	"X57"	3	316128839	Unreliable
+	"2013"	"2013"	"Exposure to other specified factors"	"X58"	47	316128839	0.0
+	"2013"	"2013"	"Exposure to unspecified factor causing fracture"	"X59.0"	3063	316128839	1.0
+	"2013"	"2013"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	2344	316128839	0.7
+	"2013"	"2013"	"Sequelae of other accidents"	"Y86"	1127	316128839	0.4
+"Total"	"2013"	"2013"			16904	316128839	5.3
+	"2014"	"2014"	"Struck by thrown, projected or falling object"	"W20"	742	318857056	0.2
+	"2014"	"2014"	"Striking against or struck by sports equipment"	"W21"	5	318857056	Unreliable
+	"2014"	"2014"	"Striking against or struck by other objects"	"W22"	152	318857056	0.0
+	"2014"	"2014"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	91	318857056	0.0
+	"2014"	"2014"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	110	318857056	0.0
+	"2014"	"2014"	"Contact with sharp glass"	"W25"	22	318857056	0.0
+	"2014"	"2014"	"Contact with knife, sword or dagger"	"W26"	5	318857056	Unreliable
+	"2014"	"2014"	"Contact with nonpowered hand tool"	"W27"	3	318857056	Unreliable
+	"2014"	"2014"	"Contact with powered lawnmower"	"W28"	72	318857056	0.0
+	"2014"	"2014"	"Contact with other powered hand tools and household machinery"	"W29"	4	318857056	Unreliable
+	"2014"	"2014"	"Contact with agricultural machinery"	"W30"	191	318857056	0.1
+	"2014"	"2014"	"Contact with other and unspecified machinery"	"W31"	304	318857056	0.1
+	"2014"	"2014"	"Explosion and rupture of boiler"	"W35"	3	318857056	Unreliable
+	"2014"	"2014"	"Explosion and rupture of gas cylinder"	"W36"	7	318857056	Unreliable
+	"2014"	"2014"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	9	318857056	Unreliable
+	"2014"	"2014"	"Explosion and rupture of other specified pressurized devices"	"W38"	2	318857056	Unreliable
+	"2014"	"2014"	"Discharge of firework"	"W39"	6	318857056	Unreliable
+	"2014"	"2014"	"Explosion of other materials"	"W40"	116	318857056	0.0
+	"2014"	"2014"	"Exposure to high-pressure jet"	"W41"	1	318857056	Unreliable
+	"2014"	"2014"	"Foreign body entering into or through eye or natural orifice"	"W44"	26	318857056	0.0
+	"2014"	"2014"	"Foreign body or object entering through skin"	"W45"	3	318857056	Unreliable
+	"2014"	"2014"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	61	318857056	0.0
+	"2014"	"2014"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	2	318857056	Unreliable
+	"2014"	"2014"	"Striking against or bumped into by another person"	"W51"	7	318857056	Unreliable
+	"2014"	"2014"	"Bitten or struck by dog"	"W54"	36	318857056	0.0
+	"2014"	"2014"	"Bitten or struck by other mammals"	"W55"	83	318857056	0.0
+	"2014"	"2014"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	6	318857056	Unreliable
+	"2014"	"2014"	"Exposure to other and unspecified animate mechanical forces"	"W64"	9	318857056	Unreliable
+	"2014"	"2014"	"Accidental suffocation and strangulation in bed"	"W75"	913	318857056	0.3
+	"2014"	"2014"	"Other accidental hanging and strangulation"	"W76"	235	318857056	0.1
+	"2014"	"2014"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	13	318857056	Unreliable
+	"2014"	"2014"	"Inhalation of gastric contents"	"W78"	295	318857056	0.1
+	"2014"	"2014"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1169	318857056	0.4
+	"2014"	"2014"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3352	318857056	1.1
+	"2014"	"2014"	"Confined to or trapped in a low-oxygen environment"	"W81"	9	318857056	Unreliable
+	"2014"	"2014"	"Other specified threats to breathing"	"W83"	88	318857056	0.0
+	"2014"	"2014"	"Unspecified threat to breathing"	"W84"	506	318857056	0.2
+	"2014"	"2014"	"Exposure to electric transmission lines"	"W85"	58	318857056	0.0
+	"2014"	"2014"	"Exposure to other specified electric current"	"W86"	48	318857056	0.0
+	"2014"	"2014"	"Exposure to unspecified electric current"	"W87"	151	318857056	0.0
+	"2014"	"2014"	"Exposure to excessive heat of man-made origin"	"W92"	4	318857056	Unreliable
+	"2014"	"2014"	"Exposure to excessive cold of man-made origin"	"W93"	4	318857056	Unreliable
+	"2014"	"2014"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	1	318857056	Unreliable
+	"2014"	"2014"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	1	318857056	Unreliable
+	"2014"	"2014"	"Contact with hot tap-water"	"X11"	26	318857056	0.0
+	"2014"	"2014"	"Contact with other hot fluids"	"X12"	13	318857056	Unreliable
+	"2014"	"2014"	"Contact with steam and hot vapours"	"X13"	2	318857056	Unreliable
+	"2014"	"2014"	"Contact with hot air and gases"	"X14"	1	318857056	Unreliable
+	"2014"	"2014"	"Contact with hot household appliances"	"X15"	5	318857056	Unreliable
+	"2014"	"2014"	"Contact with hot heating appliances, radiators and pipes"	"X16"	14	318857056	Unreliable
+	"2014"	"2014"	"Contact with hot engines, machinery and tools"	"X17"	2	318857056	Unreliable
+	"2014"	"2014"	"Contact with other hot metals"	"X18"	2	318857056	Unreliable
+	"2014"	"2014"	"Contact with other and unspecified heat and hot substances"	"X19"	5	318857056	Unreliable
+	"2014"	"2014"	"Contact with venomous snakes and lizards"	"X20"	5	318857056	Unreliable
+	"2014"	"2014"	"Contact with venomous spiders"	"X21"	7	318857056	Unreliable
+	"2014"	"2014"	"Contact with hornets, wasps and bees"	"X23"	64	318857056	0.0
+	"2014"	"2014"	"Contact with other specified venomous arthropods"	"X25"	11	318857056	Unreliable
+	"2014"	"2014"	"Contact with unspecified venomous animal or plant"	"X29"	4	318857056	Unreliable
+	"2014"	"2014"	"Exposure to excessive natural heat"	"X30"	244	318857056	0.1
+	"2014"	"2014"	"Exposure to excessive natural cold"	"X31"	930	318857056	0.3
+	"2014"	"2014"	"Exposure to sunlight"	"X32"	1	318857056	Unreliable
+	"2014"	"2014"	"Victim of lightning"	"X33"	25	318857056	0.0
+	"2014"	"2014"	"Victim of unspecified effect of earthquake"	"X34.9"	1	318857056	Unreliable
+	"2014"	"2014"	"Victim of avalanche, landslide and other earth movements"	"X36"	85	318857056	0.0
+	"2014"	"2014"	"Victim of cataclysmic storm"	"X37"	61	318857056	0.0
+	"2014"	"2014"	"Victim of flood"	"X38"	8	318857056	Unreliable
+	"2014"	"2014"	"Exposure to other and unspecified forces of nature"	"X39"	22	318857056	0.0
+	"2014"	"2014"	"Overexertion and strenuous or repetitive movements"	"X50"	9	318857056	Unreliable
+	"2014"	"2014"	"Lack of food"	"X53"	12	318857056	Unreliable
+	"2014"	"2014"	"Lack of water"	"X54"	1	318857056	Unreliable
+	"2014"	"2014"	"Unspecified privation"	"X57"	1	318857056	Unreliable
+	"2014"	"2014"	"Exposure to other specified factors"	"X58"	47	318857056	0.0
+	"2014"	"2014"	"Exposure to unspecified factor causing fracture"	"X59.0"	2989	318857056	0.9
+	"2014"	"2014"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	2859	318857056	0.9
+	"2014"	"2014"	"Sequelae of other accidents"	"Y86"	1049	318857056	0.3
+"Total"	"2014"	"2014"			17430	318857056	5.5
+	"2015"	"2015"	"Struck by thrown, projected or falling object"	"W20"	629	321418820	0.2
+	"2015"	"2015"	"Striking against or struck by sports equipment"	"W21"	7	321418820	Unreliable
+	"2015"	"2015"	"Striking against or struck by other objects"	"W22"	120	321418820	0.0
+	"2015"	"2015"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	58	321418820	0.0
+	"2015"	"2015"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	88	321418820	0.0
+	"2015"	"2015"	"Contact with sharp glass"	"W25"	21	321418820	0.0
+	"2015"	"2015"	"Contact with knife, sword or dagger"	"W26"	1	321418820	Unreliable
+	"2015"	"2015"	"Contact with nonpowered hand tool"	"W27"	4	321418820	Unreliable
+	"2015"	"2015"	"Contact with powered lawnmower"	"W28"	91	321418820	0.0
+	"2015"	"2015"	"Contact with other powered hand tools and household machinery"	"W29"	3	321418820	Unreliable
+	"2015"	"2015"	"Contact with agricultural machinery"	"W30"	199	321418820	0.1
+	"2015"	"2015"	"Contact with other and unspecified machinery"	"W31"	263	321418820	0.1
+	"2015"	"2015"	"Explosion and rupture of gas cylinder"	"W36"	6	321418820	Unreliable
+	"2015"	"2015"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	8	321418820	Unreliable
+	"2015"	"2015"	"Explosion and rupture of other specified pressurized devices"	"W38"	4	321418820	Unreliable
+	"2015"	"2015"	"Discharge of firework"	"W39"	8	321418820	Unreliable
+	"2015"	"2015"	"Explosion of other materials"	"W40"	86	321418820	0.0
+	"2015"	"2015"	"Foreign body entering into or through eye or natural orifice"	"W44"	30	321418820	0.0
+	"2015"	"2015"	"Foreign body or object entering through skin"	"W45"	6	321418820	Unreliable
+	"2015"	"2015"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	50	321418820	0.0
+	"2015"	"2015"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	7	321418820	Unreliable
+	"2015"	"2015"	"Striking against or bumped into by another person"	"W51"	4	321418820	Unreliable
+	"2015"	"2015"	"Bitten or struck by dog"	"W54"	36	321418820	0.0
+	"2015"	"2015"	"Bitten or struck by other mammals"	"W55"	68	321418820	0.0
+	"2015"	"2015"	"Contact with marine animal"	"W56"	4	321418820	Unreliable
+	"2015"	"2015"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	3	321418820	Unreliable
+	"2015"	"2015"	"Bitten or struck by crocodile or alligator"	"W58"	1	321418820	Unreliable
+	"2015"	"2015"	"Exposure to other and unspecified animate mechanical forces"	"W64"	5	321418820	Unreliable
+	"2015"	"2015"	"Accidental suffocation and strangulation in bed"	"W75"	979	321418820	0.3
+	"2015"	"2015"	"Other accidental hanging and strangulation"	"W76"	221	321418820	0.1
+	"2015"	"2015"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	28	321418820	0.0
+	"2015"	"2015"	"Inhalation of gastric contents"	"W78"	275	321418820	0.1
+	"2015"	"2015"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1269	321418820	0.4
+	"2015"	"2015"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3507	321418820	1.1
+	"2015"	"2015"	"Confined to or trapped in a low-oxygen environment"	"W81"	4	321418820	Unreliable
+	"2015"	"2015"	"Other specified threats to breathing"	"W83"	40	321418820	0.0
+	"2015"	"2015"	"Unspecified threat to breathing"	"W84"	591	321418820	0.2
+	"2015"	"2015"	"Exposure to electric transmission lines"	"W85"	53	321418820	0.0
+	"2015"	"2015"	"Exposure to other specified electric current"	"W86"	51	321418820	0.0
+	"2015"	"2015"	"Exposure to unspecified electric current"	"W87"	120	321418820	0.0
+	"2015"	"2015"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	6	321418820	Unreliable
+	"2015"	"2015"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	9	321418820	Unreliable
+	"2015"	"2015"	"Contact with hot tap-water"	"X11"	22	321418820	0.0
+	"2015"	"2015"	"Contact with other hot fluids"	"X12"	12	321418820	Unreliable
+	"2015"	"2015"	"Contact with steam and hot vapours"	"X13"	1	321418820	Unreliable
+	"2015"	"2015"	"Contact with hot household appliances"	"X15"	2	321418820	Unreliable
+	"2015"	"2015"	"Contact with hot heating appliances, radiators and pipes"	"X16"	13	321418820	Unreliable
+	"2015"	"2015"	"Contact with hot engines, machinery and tools"	"X17"	1	321418820	Unreliable
+	"2015"	"2015"	"Contact with other hot metals"	"X18"	1	321418820	Unreliable
+	"2015"	"2015"	"Contact with other and unspecified heat and hot substances"	"X19"	4	321418820	Unreliable
+	"2015"	"2015"	"Contact with venomous snakes and lizards"	"X20"	6	321418820	Unreliable
+	"2015"	"2015"	"Contact with venomous spiders"	"X21"	7	321418820	Unreliable
+	"2015"	"2015"	"Contact with hornets, wasps and bees"	"X23"	66	321418820	0.0
+	"2015"	"2015"	"Contact with other specified venomous arthropods"	"X25"	11	321418820	Unreliable
+	"2015"	"2015"	"Contact with unspecified venomous animal or plant"	"X29"	6	321418820	Unreliable
+	"2015"	"2015"	"Exposure to excessive natural heat"	"X30"	339	321418820	0.1
+	"2015"	"2015"	"Exposure to excessive natural cold"	"X31"	815	321418820	0.3
+	"2015"	"2015"	"Exposure to sunlight"	"X32"	1	321418820	Unreliable
+	"2015"	"2015"	"Victim of lightning"	"X33"	26	321418820	0.0
+	"2015"	"2015"	"Victim of avalanche, landslide and other earth movements"	"X36"	15	321418820	Unreliable
+	"2015"	"2015"	"Victim of cataclysmic storm"	"X37"	54	321418820	0.0
+	"2015"	"2015"	"Victim of flood"	"X38"	74	321418820	0.0
+	"2015"	"2015"	"Exposure to other and unspecified forces of nature"	"X39"	13	321418820	Unreliable
+	"2015"	"2015"	"Overexertion and strenuous or repetitive movements"	"X50"	9	321418820	Unreliable
+	"2015"	"2015"	"Lack of food"	"X53"	18	321418820	Unreliable
+	"2015"	"2015"	"Lack of water"	"X54"	4	321418820	Unreliable
+	"2015"	"2015"	"Unspecified privation"	"X57"	1	321418820	Unreliable
+	"2015"	"2015"	"Exposure to other specified factors"	"X58"	32	321418820	0.0
+	"2015"	"2015"	"Exposure to unspecified factor causing fracture"	"X59.0"	3179	321418820	1.0
+	"2015"	"2015"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	3751	321418820	1.2
+	"2015"	"2015"	"Sequelae of other accidents"	"Y86"	1077	321418820	0.3
+"Total"	"2015"	"2015"			18523	321418820	5.8
+	"2016"	"2016"	"Struck by thrown, projected or falling object"	"W20"	646	323127513	0.2
+	"2016"	"2016"	"Striking against or struck by sports equipment"	"W21"	4	323127513	Unreliable
+	"2016"	"2016"	"Striking against or struck by other objects"	"W22"	140	323127513	0.0
+	"2016"	"2016"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	123	323127513	0.0
+	"2016"	"2016"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	79	323127513	0.0
+	"2016"	"2016"	"Contact with sharp glass"	"W25"	31	323127513	0.0
+	"2016"	"2016"	"Contact with knife, sword or dagger"	"W26"	2	323127513	Unreliable
+	"2016"	"2016"	"Contact with nonpowered hand tool"	"W27"	5	323127513	Unreliable
+	"2016"	"2016"	"Contact with powered lawnmower"	"W28"	100	323127513	0.0
+	"2016"	"2016"	"Contact with other powered hand tools and household machinery"	"W29"	12	323127513	Unreliable
+	"2016"	"2016"	"Contact with agricultural machinery"	"W30"	246	323127513	0.1
+	"2016"	"2016"	"Contact with other and unspecified machinery"	"W31"	285	323127513	0.1
+	"2016"	"2016"	"Explosion and rupture of boiler"	"W35"	1	323127513	Unreliable
+	"2016"	"2016"	"Explosion and rupture of gas cylinder"	"W36"	7	323127513	Unreliable
+	"2016"	"2016"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	7	323127513	Unreliable
+	"2016"	"2016"	"Explosion and rupture of other specified pressurized devices"	"W38"	3	323127513	Unreliable
+	"2016"	"2016"	"Discharge of firework"	"W39"	5	323127513	Unreliable
+	"2016"	"2016"	"Explosion of other materials"	"W40"	106	323127513	0.0
+	"2016"	"2016"	"Foreign body entering into or through eye or natural orifice"	"W44"	25	323127513	0.0
+	"2016"	"2016"	"Foreign body or object entering through skin"	"W45"	2	323127513	Unreliable
+	"2016"	"2016"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	35	323127513	0.0
+	"2016"	"2016"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	5	323127513	Unreliable
+	"2016"	"2016"	"Striking against or bumped into by another person"	"W51"	6	323127513	Unreliable
+	"2016"	"2016"	"Bitten or struck by dog"	"W54"	31	323127513	0.0
+	"2016"	"2016"	"Bitten or struck by other mammals"	"W55"	83	323127513	0.0
+	"2016"	"2016"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	9	323127513	Unreliable
+	"2016"	"2016"	"Bitten or struck by crocodile or alligator"	"W58"	2	323127513	Unreliable
+	"2016"	"2016"	"Exposure to other and unspecified animate mechanical forces"	"W64"	21	323127513	0.0
+	"2016"	"2016"	"Accidental suffocation and strangulation in bed"	"W75"	922	323127513	0.3
+	"2016"	"2016"	"Other accidental hanging and strangulation"	"W76"	202	323127513	0.1
+	"2016"	"2016"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	18	323127513	Unreliable
+	"2016"	"2016"	"Inhalation of gastric contents"	"W78"	271	323127513	0.1
+	"2016"	"2016"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1310	323127513	0.4
+	"2016"	"2016"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3248	323127513	1.0
+	"2016"	"2016"	"Confined to or trapped in a low-oxygen environment"	"W81"	6	323127513	Unreliable
+	"2016"	"2016"	"Other specified threats to breathing"	"W83"	55	323127513	0.0
+	"2016"	"2016"	"Unspecified threat to breathing"	"W84"	578	323127513	0.2
+	"2016"	"2016"	"Exposure to electric transmission lines"	"W85"	77	323127513	0.0
+	"2016"	"2016"	"Exposure to other specified electric current"	"W86"	52	323127513	0.0
+	"2016"	"2016"	"Exposure to unspecified electric current"	"W87"	131	323127513	0.0
+	"2016"	"2016"	"Exposure to excessive heat of man-made origin"	"W92"	4	323127513	Unreliable
+	"2016"	"2016"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	17	323127513	Unreliable
+	"2016"	"2016"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	8	323127513	Unreliable
+	"2016"	"2016"	"Contact with hot tap-water"	"X11"	24	323127513	0.0
+	"2016"	"2016"	"Contact with other hot fluids"	"X12"	14	323127513	Unreliable
+	"2016"	"2016"	"Contact with steam and hot vapours"	"X13"	1	323127513	Unreliable
+	"2016"	"2016"	"Contact with hot air and gases"	"X14"	2	323127513	Unreliable
+	"2016"	"2016"	"Contact with hot household appliances"	"X15"	8	323127513	Unreliable
+	"2016"	"2016"	"Contact with hot heating appliances, radiators and pipes"	"X16"	9	323127513	Unreliable
+	"2016"	"2016"	"Contact with hot engines, machinery and tools"	"X17"	1	323127513	Unreliable
+	"2016"	"2016"	"Contact with other hot metals"	"X18"	1	323127513	Unreliable
+	"2016"	"2016"	"Contact with other and unspecified heat and hot substances"	"X19"	5	323127513	Unreliable
+	"2016"	"2016"	"Contact with venomous snakes and lizards"	"X20"	5	323127513	Unreliable
+	"2016"	"2016"	"Contact with venomous spiders"	"X21"	5	323127513	Unreliable
+	"2016"	"2016"	"Contact with hornets, wasps and bees"	"X23"	76	323127513	0.0
+	"2016"	"2016"	"Contact with other specified venomous arthropods"	"X25"	10	323127513	Unreliable
+	"2016"	"2016"	"Contact with unspecified venomous animal or plant"	"X29"	5	323127513	Unreliable
+	"2016"	"2016"	"Exposure to excessive natural heat"	"X30"	458	323127513	0.1
+	"2016"	"2016"	"Exposure to excessive natural cold"	"X31"	731	323127513	0.2
+	"2016"	"2016"	"Exposure to sunlight"	"X32"	2	323127513	Unreliable
+	"2016"	"2016"	"Victim of lightning"	"X33"	36	323127513	0.0
+	"2016"	"2016"	"Victim of avalanche, landslide and other earth movements"	"X36"	33	323127513	0.0
+	"2016"	"2016"	"Victim of cataclysmic storm"	"X37"	66	323127513	0.0
+	"2016"	"2016"	"Victim of flood"	"X38"	42	323127513	0.0
+	"2016"	"2016"	"Exposure to other and unspecified forces of nature"	"X39"	15	323127513	Unreliable
+	"2016"	"2016"	"Overexertion and strenuous or repetitive movements"	"X50"	12	323127513	Unreliable
+	"2016"	"2016"	"Travel and motion"	"X51"	1	323127513	Unreliable
+	"2016"	"2016"	"Lack of food"	"X53"	24	323127513	0.0
+	"2016"	"2016"	"Lack of water"	"X54"	1	323127513	Unreliable
+	"2016"	"2016"	"Unspecified privation"	"X57"	1	323127513	Unreliable
+	"2016"	"2016"	"Exposure to other specified factors"	"X58"	71	323127513	0.0
+	"2016"	"2016"	"Exposure to unspecified factor causing fracture"	"X59.0"	2951	323127513	0.9
+	"2016"	"2016"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	3556	323127513	1.1
+	"2016"	"2016"	"Sequelae of other accidents"	"Y86"	1221	323127513	0.4
+"Total"	"2016"	"2016"			18307	323127513	5.7
+	"2017"	"2017"	"Struck by thrown, projected or falling object"	"W20"	659	325719178	0.2
+	"2017"	"2017"	"Striking against or struck by sports equipment"	"W21"	14	325719178	Unreliable
+	"2017"	"2017"	"Striking against or struck by other objects"	"W22"	133	325719178	0.0
+	"2017"	"2017"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	121	325719178	0.0
+	"2017"	"2017"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	57	325719178	0.0
+	"2017"	"2017"	"Contact with sharp glass"	"W25"	37	325719178	0.0
+	"2017"	"2017"	"Contact with knife, sword or dagger"	"W26"	5	325719178	Unreliable
+	"2017"	"2017"	"Contact with nonpowered hand tool"	"W27"	4	325719178	Unreliable
+	"2017"	"2017"	"Contact with powered lawnmower"	"W28"	88	325719178	0.0
+	"2017"	"2017"	"Contact with other powered hand tools and household machinery"	"W29"	14	325719178	Unreliable
+	"2017"	"2017"	"Contact with agricultural machinery"	"W30"	265	325719178	0.1
+	"2017"	"2017"	"Contact with other and unspecified machinery"	"W31"	250	325719178	0.1
+	"2017"	"2017"	"Explosion and rupture of boiler"	"W35"	5	325719178	Unreliable
+	"2017"	"2017"	"Explosion and rupture of gas cylinder"	"W36"	5	325719178	Unreliable
+	"2017"	"2017"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	11	325719178	Unreliable
+	"2017"	"2017"	"Explosion and rupture of other specified pressurized devices"	"W38"	2	325719178	Unreliable
+	"2017"	"2017"	"Discharge of firework"	"W39"	8	325719178	Unreliable
+	"2017"	"2017"	"Explosion of other materials"	"W40"	122	325719178	0.0
+	"2017"	"2017"	"Foreign body entering into or through eye or natural orifice"	"W44"	26	325719178	0.0
+	"2017"	"2017"	"Foreign body or object entering through skin"	"W45"	4	325719178	Unreliable
+	"2017"	"2017"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	20	325719178	0.0
+	"2017"	"2017"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	8	325719178	Unreliable
+	"2017"	"2017"	"Striking against or bumped into by another person"	"W51"	5	325719178	Unreliable
+	"2017"	"2017"	"Bitten or struck by dog"	"W54"	36	325719178	0.0
+	"2017"	"2017"	"Bitten or struck by other mammals"	"W55"	73	325719178	0.0
+	"2017"	"2017"	"Contact with marine animal"	"W56"	2	325719178	Unreliable
+	"2017"	"2017"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	7	325719178	Unreliable
+	"2017"	"2017"	"Exposure to other and unspecified animate mechanical forces"	"W64"	9	325719178	Unreliable
+	"2017"	"2017"	"Accidental suffocation and strangulation in bed"	"W75"	1044	325719178	0.3
+	"2017"	"2017"	"Other accidental hanging and strangulation"	"W76"	213	325719178	0.1
+	"2017"	"2017"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	25	325719178	0.0
+	"2017"	"2017"	"Inhalation of gastric contents"	"W78"	286	325719178	0.1
+	"2017"	"2017"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1537	325719178	0.5
+	"2017"	"2017"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3393	325719178	1.0
+	"2017"	"2017"	"Confined to or trapped in a low-oxygen environment"	"W81"	5	325719178	Unreliable
+	"2017"	"2017"	"Other specified threats to breathing"	"W83"	36	325719178	0.0
+	"2017"	"2017"	"Unspecified threat to breathing"	"W84"	407	325719178	0.1
+	"2017"	"2017"	"Exposure to electric transmission lines"	"W85"	63	325719178	0.0
+	"2017"	"2017"	"Exposure to other specified electric current"	"W86"	49	325719178	0.0
+	"2017"	"2017"	"Exposure to unspecified electric current"	"W87"	142	325719178	0.0
+	"2017"	"2017"	"Exposure to unspecified type of radiation"	"W91"	1	325719178	Unreliable
+	"2017"	"2017"	"Exposure to excessive heat of man-made origin"	"W92"	1	325719178	Unreliable
+	"2017"	"2017"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	9	325719178	Unreliable
+	"2017"	"2017"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	6	325719178	Unreliable
+	"2017"	"2017"	"Contact with hot tap-water"	"X11"	31	325719178	0.0
+	"2017"	"2017"	"Contact with other hot fluids"	"X12"	6	325719178	Unreliable
+	"2017"	"2017"	"Contact with steam and hot vapours"	"X13"	6	325719178	Unreliable
+	"2017"	"2017"	"Contact with hot air and gases"	"X14"	6	325719178	Unreliable
+	"2017"	"2017"	"Contact with hot household appliances"	"X15"	3	325719178	Unreliable
+	"2017"	"2017"	"Contact with hot heating appliances, radiators and pipes"	"X16"	20	325719178	0.0
+	"2017"	"2017"	"Contact with other hot metals"	"X18"	5	325719178	Unreliable
+	"2017"	"2017"	"Contact with other and unspecified heat and hot substances"	"X19"	7	325719178	Unreliable
+	"2017"	"2017"	"Contact with venomous snakes and lizards"	"X20"	4	325719178	Unreliable
+	"2017"	"2017"	"Contact with venomous spiders"	"X21"	8	325719178	Unreliable
+	"2017"	"2017"	"Contact with hornets, wasps and bees"	"X23"	89	325719178	0.0
+	"2017"	"2017"	"Contact with other specified venomous arthropods"	"X25"	9	325719178	Unreliable
+	"2017"	"2017"	"Contact with unspecified venomous animal or plant"	"X29"	1	325719178	Unreliable
+	"2017"	"2017"	"Exposure to excessive natural heat"	"X30"	465	325719178	0.1
+	"2017"	"2017"	"Exposure to excessive natural cold"	"X31"	804	325719178	0.2
+	"2017"	"2017"	"Victim of lightning"	"X33"	19	325719178	Unreliable
+	"2017"	"2017"	"Victim of avalanche, landslide and other earth movements"	"X36"	13	325719178	Unreliable
+	"2017"	"2017"	"Victim of cataclysmic storm"	"X37"	132	325719178	0.0
+	"2017"	"2017"	"Victim of flood"	"X38"	27	325719178	0.0
+	"2017"	"2017"	"Exposure to other and unspecified forces of nature"	"X39"	14	325719178	Unreliable
+	"2017"	"2017"	"Overexertion and strenuous or repetitive movements"	"X50"	11	325719178	Unreliable
+	"2017"	"2017"	"Lack of food"	"X53"	27	325719178	0.0
+	"2017"	"2017"	"Unspecified privation"	"X57"	1	325719178	Unreliable
+	"2017"	"2017"	"Exposure to other specified factors"	"X58"	61	325719178	0.0
+	"2017"	"2017"	"Exposure to unspecified factor causing fracture"	"X59.0"	2956	325719178	0.9
+	"2017"	"2017"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	3650	325719178	1.1
+	"2017"	"2017"	"Sequelae of other accidents"	"Y86"	1190	325719178	0.4
+"Total"	"2017"	"2017"			18772	325719178	5.8
+	"2018"	"2018"	"Struck by thrown, projected or falling object"	"W20"	657	327167434	0.2
+	"2018"	"2018"	"Striking against or struck by sports equipment"	"W21"	8	327167434	Unreliable
+	"2018"	"2018"	"Striking against or struck by other objects"	"W22"	151	327167434	0.0
+	"2018"	"2018"	"Caught, crushed, jammed or pinched in or between objects"	"W23"	129	327167434	0.0
+	"2018"	"2018"	"Contact with lifting and transmission devices, not elsewhere classified"	"W24"	73	327167434	0.0
+	"2018"	"2018"	"Contact with sharp glass"	"W25"	29	327167434	0.0
+	"2018"	"2018"	"Contact with knife, sword or dagger"	"W26"	3	327167434	Unreliable
+	"2018"	"2018"	"Contact with nonpowered hand tool"	"W27"	5	327167434	Unreliable
+	"2018"	"2018"	"Contact with powered lawnmower"	"W28"	96	327167434	0.0
+	"2018"	"2018"	"Contact with other powered hand tools and household machinery"	"W29"	8	327167434	Unreliable
+	"2018"	"2018"	"Contact with agricultural machinery"	"W30"	221	327167434	0.1
+	"2018"	"2018"	"Contact with other and unspecified machinery"	"W31"	231	327167434	0.1
+	"2018"	"2018"	"Explosion and rupture of boiler"	"W35"	3	327167434	Unreliable
+	"2018"	"2018"	"Explosion and rupture of gas cylinder"	"W36"	3	327167434	Unreliable
+	"2018"	"2018"	"Explosion and rupture of pressurized tyre, pipe or hose"	"W37"	6	327167434	Unreliable
+	"2018"	"2018"	"Explosion and rupture of other specified pressurized devices"	"W38"	2	327167434	Unreliable
+	"2018"	"2018"	"Discharge of firework"	"W39"	3	327167434	Unreliable
+	"2018"	"2018"	"Explosion of other materials"	"W40"	110	327167434	0.0
+	"2018"	"2018"	"Foreign body entering into or through eye or natural orifice"	"W44"	30	327167434	0.0
+	"2018"	"2018"	"Foreign body or object entering through skin"	"W45"	6	327167434	Unreliable
+	"2018"	"2018"	"Exposure to other and unspecified inanimate mechanical forces"	"W49"	42	327167434	0.0
+	"2018"	"2018"	"Hit, struck, kicked, twisted, bitten or scratched by another person"	"W50"	7	327167434	Unreliable
+	"2018"	"2018"	"Striking against or bumped into by another person"	"W51"	4	327167434	Unreliable
+	"2018"	"2018"	"Bitten or struck by dog"	"W54"	35	327167434	0.0
+	"2018"	"2018"	"Bitten or struck by other mammals"	"W55"	87	327167434	0.0
+	"2018"	"2018"	"Contact with marine animal"	"W56"	1	327167434	Unreliable
+	"2018"	"2018"	"Bitten or stung by nonvenomous insect and other nonvenomous arthropods"	"W57"	8	327167434	Unreliable
+	"2018"	"2018"	"Bitten or struck by crocodile or alligator"	"W58"	1	327167434	Unreliable
+	"2018"	"2018"	"Exposure to other and unspecified animate mechanical forces"	"W64"	11	327167434	Unreliable
+	"2018"	"2018"	"Accidental suffocation and strangulation in bed"	"W75"	940	327167434	0.3
+	"2018"	"2018"	"Other accidental hanging and strangulation"	"W76"	202	327167434	0.1
+	"2018"	"2018"	"Threat to breathing due to cave-in, falling earth and other substances"	"W77"	21	327167434	0.0
+	"2018"	"2018"	"Inhalation of gastric contents"	"W78"	286	327167434	0.1
+	"2018"	"2018"	"Inhalation and ingestion of food causing obstruction of respiratory tract"	"W79"	1588	327167434	0.5
+	"2018"	"2018"	"Inhalation and ingestion of other objects causing obstruction of respiratory tract"	"W80"	3210	327167434	1.0
+	"2018"	"2018"	"Confined to or trapped in a low-oxygen environment"	"W81"	9	327167434	Unreliable
+	"2018"	"2018"	"Other specified threats to breathing"	"W83"	58	327167434	0.0
+	"2018"	"2018"	"Unspecified threat to breathing"	"W84"	387	327167434	0.1
+	"2018"	"2018"	"Exposure to electric transmission lines"	"W85"	89	327167434	0.0
+	"2018"	"2018"	"Exposure to other specified electric current"	"W86"	48	327167434	0.0
+	"2018"	"2018"	"Exposure to unspecified electric current"	"W87"	183	327167434	0.1
+	"2018"	"2018"	"Exposure to excessive heat of man-made origin"	"W92"	4	327167434	Unreliable
+	"2018"	"2018"	"Exposure to high and low air pressure and changes in air pressure"	"W94"	9	327167434	Unreliable
+	"2018"	"2018"	"Contact with hot drinks, food, fats and cooking oils"	"X10"	9	327167434	Unreliable
+	"2018"	"2018"	"Contact with hot tap-water"	"X11"	42	327167434	0.0
+	"2018"	"2018"	"Contact with other hot fluids"	"X12"	5	327167434	Unreliable
+	"2018"	"2018"	"Contact with steam and hot vapours"	"X13"	3	327167434	Unreliable
+	"2018"	"2018"	"Contact with hot air and gases"	"X14"	2	327167434	Unreliable
+	"2018"	"2018"	"Contact with hot household appliances"	"X15"	8	327167434	Unreliable
+	"2018"	"2018"	"Contact with hot heating appliances, radiators and pipes"	"X16"	12	327167434	Unreliable
+	"2018"	"2018"	"Contact with hot engines, machinery and tools"	"X17"	1	327167434	Unreliable
+	"2018"	"2018"	"Contact with other and unspecified heat and hot substances"	"X19"	10	327167434	Unreliable
+	"2018"	"2018"	"Contact with venomous snakes and lizards"	"X20"	4	327167434	Unreliable
+	"2018"	"2018"	"Contact with venomous spiders"	"X21"	4	327167434	Unreliable
+	"2018"	"2018"	"Contact with hornets, wasps and bees"	"X23"	77	327167434	0.0
+	"2018"	"2018"	"Contact with other specified venomous arthropods"	"X25"	8	327167434	Unreliable
+	"2018"	"2018"	"Contact with unspecified venomous animal or plant"	"X29"	2	327167434	Unreliable
+	"2018"	"2018"	"Exposure to excessive natural heat"	"X30"	535	327167434	0.2
+	"2018"	"2018"	"Exposure to excessive natural cold"	"X31"	1008	327167434	0.3
+	"2018"	"2018"	"Exposure to sunlight"	"X32"	1	327167434	Unreliable
+	"2018"	"2018"	"Victim of lightning"	"X33"	23	327167434	0.0
+	"2018"	"2018"	"Victim of avalanche, landslide and other earth movements"	"X36"	26	327167434	0.0
+	"2018"	"2018"	"Victim of cataclysmic storm"	"X37"	76	327167434	0.0
+	"2018"	"2018"	"Victim of flood"	"X38"	44	327167434	0.0
+	"2018"	"2018"	"Exposure to other and unspecified forces of nature"	"X39"	14	327167434	Unreliable
+	"2018"	"2018"	"Overexertion and strenuous or repetitive movements"	"X50"	18	327167434	Unreliable
+	"2018"	"2018"	"Lack of food"	"X53"	24	327167434	0.0
+	"2018"	"2018"	"Lack of water"	"X54"	1	327167434	Unreliable
+	"2018"	"2018"	"Exposure to other specified factors"	"X58"	62	327167434	0.0
+	"2018"	"2018"	"Exposure to unspecified factor causing fracture"	"X59.0"	2539	327167434	0.8
+	"2018"	"2018"	"Exposure to unspecified factor causing other and unspecified injury"	"X59.9"	3543	327167434	1.1
+	"2018"	"2018"	"Sequelae of other accidents"	"Y86"	996	327167434	0.3
+"Total"	"2018"	"2018"			18101	327167434	5.5
+"Total"					350187	6088633001	5.8
+"---"
+"Dataset: Underlying Cause of Death, 1999-2018"
+"Query Parameters:"
+"ICD-10 113 Cause List: Other and unspecified nontransport accidents and their sequelae"
+"(W20-W31,W35-W64,W75-W99,X10-X39,X50-X59,Y86)"
+"Group By: Year; Cause of death"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Feb 13, 2020 2:39:22 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2018 on CDC WONDER Online Database, released in 2020. Data are from the Multiple Cause of Death Files, 1999-2018, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Feb 13, 2020 2:39:22 PM"
+"---"
+Messages:
+"1. Selections made to any variable in [ICD-10 Codes, ICD-10 113 Cause List] cause equivalent selections in the other variables."
+"More Information: http://wonder.cdc.gov/wonder/help/faq.html#related-variables."
+"2. Rows with zero Deaths are hidden, but the Population values in those rows are included in the totals. Use Quick Options above"
+"to show zero rows."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"6. The population figures for year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018"
+"postcensal series released by NCHS on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for"
+"year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS"
+"on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The"
+"population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal"
+"series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18,"
+"2012. Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race"
+"estimates of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on"
+"October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999"
+"intercensal series of July 1 estimates. Population figures for the infant age groups are the number of live births."
+"<br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published reports, due to"
+"use of the population estimates which were available at the time of release."
+"7. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."
+"8. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Caution should be used in interpreting these data. More"
+"information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"9. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#ICD-10 Changes."
