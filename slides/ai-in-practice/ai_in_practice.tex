@@ -1,44 +1,73 @@
 % Input common header
 \input{../ai_for_risk_header}
 
-\title{Implementing Artificial Intelligence in Practice}
+\title{Artificial Intelligence in Practice}
 \begin{document}
 \maketitle
 
+
 \begin{frame}
-\frametitle{Managing AI Model Risk: Buzzwords That Matter}
+\frametitle{Good market understanding (still) trumps technology}
+    \centering
+\smartdiagramset{
+	back arrow disabled=true,
+}
+\smartdiagram[flow diagram:verticall]{Market,
+  Data, AI}
+
+  In practice
+  \begin{itemize}
+    \item Do research (e.g. \href{https://en.wikipedia.org/wiki/Design\_thinking}{design thinking}, exploratory data analyses)
+    \item Define actions
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Artificial intelligence and risk: more buzzwords that matter}
 \begin{itemize}
 \item Agile: \href{https://agilemanifesto.org/}{agilemanifesto.org}
 \item TDD: \href{https://www.oreilly.com/library/view/test-driven-development/0321146530/}{Kent Beck, {\it Test Driven Development: By Example}}
 \item DevOps: \href{https://landing.google.com/sre/books/}{Google's {\it Site Reliability Engineering}}
 \end{itemize}
 \begin{center}
-\includegraphics[height=0.35\textheight]{figures/Codex_Aemilianensis}
+\includegraphics[height=0.35\textheight]{graphics/Codex_Aemilianensis}
 \end{center}
 Source: \url{https://commons.wikimedia.org/wiki/File:Codex_Aemilianensis.jpg}
 \end{frame}
 
+
 \begin{frame}
 \frametitle{Standard Model Metrics (Almost) Never Matter}
+
+\begin{itemize}
+    \item \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy\_score.html}{Accuracy} \cite{aletras2016predicting, echr-2}
+    \item \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc\_auc\_score.html\#sklearn.metrics.roc\_auc\_score}{ROC-AUC}
+    \item Translation into business impact
+    \item Model performance in the wild, or life is not a Kaggle competition\newline
+\end{itemize}
+
+\begin{columns}
+    \begin{column}{.3\textwidth}
+\begin{figure}[ht]
+    \includegraphics[height=0.4\textheight]{graphics/1953_Bowman_Yogi_Berra}
+\end{figure}
+\end{column}
+\begin{column}{.3\textwidth}
+    \emph{In theory, there is no difference between theory and practice. \newline
+    In practice, there is.}\newline
+    Yogi Berra
+\end{column}
+\begin{column}{.3\textwidth}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}
-\frametitle{The Biggest Danger Posed by AI is Dishonest Practitioners}
-Either (likely) unknowlingly: https://peerj.com/articles/cs-93/
-
-Or (possibly) knowingly: ???
-\end{frame}
-
-% \begin{frame}
-% \frametitle{Forrest Gump was Right About AI}
-% \begin{itemize}
-% \item AI is as AI does
-% \item AI is like a box of chocolates, you never know what you're gonna get
-% \end{itemize}
-% \end{frame}
 
 \begin{frame}
-\frametitle{Is deploying AI different?}
+\frametitle{Deploying AI}
+
+Is deploying AI different?\newline
 
 No, since it is still is software
 \begin{itemize}
@@ -53,11 +82,11 @@ Yes, since it is not standard software
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{Making AI Work for Enterprise, Another Sports Analogy}
-\begin{itemize}
-\item Minimize friction
-\item Work smart
-\end{itemize}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{References}
+    \setbeamertemplate{bibliography item}[text]
+    \bibliographystyle{amsalpha}
+    \bibliography{../../references.bib}
 \end{frame}
 \end{document}
