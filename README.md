@@ -3,7 +3,7 @@
 ## Quickstart
 
 * `git clone` the repository and `cd` into the root directory.
-* For the exercise Jupyter notebooks, install python dependencies with `pip install -r requirements.txt` in a virtual environment. Requires libglpk-dev for `fake_data_for_learning`.
+* For the exercise Jupyter notebooks, install python dependencies with `pip install -r requirements.txt` in a virtual environment, e.g. with [venv](https://docs.python.org/3/library/venv.html) for [conda](https://docs.conda.io/en/latest/). Requires libglpk-dev for `fake_data_for_learning`.
 
 ## Workshop topics
 
