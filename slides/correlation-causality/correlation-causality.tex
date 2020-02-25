@@ -238,18 +238,25 @@ Hit rate example: $U = \{\textrm{product\_type}, \textrm{rating}\}$, $V= \{\text
 
 \begin{frame}
 \frametitle{Causal hit rate}
+Typical quantity of interest: \emph{average treatment effect} or \emph{ATE}
 \begin{columns}[T] % align columns
     \begin{column}{.48\textwidth}
     $P(\textrm{hit}=1 | \textrm{days}=d)$\newline
     
-    \input{graphics/given_days}
+    \input{graphics/given_days}\newline\newline
+    
+    Example ATE: \newline
+    $P(\textrm{hit}=1 | \textrm{days} = 2) $\newline
+    $\quad - P(\textrm{hit}=1 | \textrm{days} = 3) \approx  16\%$
     \end{column}%
 %    \hfill%
     \begin{column}{.48\textwidth}
         $P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$\newline
         
-          \input{graphics/do_days}
-
+          \input{graphics/do_days}\newline \newline
+	Example causal ATE: \newline
+	$P(\textrm{hit}=1 |\jpdo(\textrm{days} )= 2)$\newline
+	$\quad - P(\textrm{hit}=1 | \jpdo(\textrm{days}) = 3) \approx 8\%$
          \end{column}%
     \end{columns}
 
