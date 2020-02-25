@@ -4,7 +4,7 @@
 
 * `git clone` the repository and `cd` into the root directory.
 * For the exercise Jupyter notebooks
-  * create a virutual environment (recommended)  e.g. with [venv](https://docs.python.org/3/library/venv.html) for [conda](https://docs.conda.io/en/latest/).
+  * create a virutual environment (recommended)  e.g. with [venv](https://docs.python.org/3/library/venv.html), [conda](https://docs.conda.io/en/latest/) or other.
   
   * install python dependencies with `pip install -r requirements.txt` in a virtual environment,  Requires libglpk-dev for `fake_data_for_learning`.
 
