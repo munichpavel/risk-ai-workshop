@@ -26,3 +26,21 @@
 * [Examples and exercises](notebooks/causal-models-exercises.ipynb)
 
 ## [Artificial intelligence in practice](slides/ai-in-practice)
+
+## Relate python packages
+
+In the exercise notebooks and `requirements.txt` you see which python packages I used in creating and solving the exercises, though this list is far from exhaustive. Below are some (additional) python packages that may be useful
+
+## Graph visualization
+
+* [graphviz](https://graphviz.readthedocs.io/en/stable/)
+* [networkx](https://networkx.github.io/), plus many graph operations
+
+## Bayesian networks, causal inference
+
+* [pgmpy](https://pgmpy.org/)
+* [brent](https://koaning.github.io/brent/)
+* [causalgraphicalmodels](https://github.com/ijmbarr/causalgraphicalmodels)
+* [causality](https://github.com/akelleh/causality)
+* [dowhy](https://microsoft.github.io/dowhy/)
+* [pyro](https://pyro.ai/)
