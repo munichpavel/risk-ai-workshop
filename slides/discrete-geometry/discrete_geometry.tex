@@ -217,7 +217,7 @@ See e.g. \cite{pearl2016causal}, chapter 2.
 \begin{definition}
 An undirected path $p$ in a DAG $G$ is \emph{blocked} by a set of nodes $C$ if and only if
 \begin{enumerate}
-\item $p$ contains a chain of nodes $X \to Y \to Z$, or a fork $X \rightarrow Y \leftarrow Z$ such that $Y \in C$, or
+\item $p$ contains a chain of nodes $X \to Y \to Z$, or a fork $X \leftarrow Y \rightarrow Z$ such that $Y \in C$, or
 \item $p$ contains a collider $X \to Y \leftarrow Z$ such that $Y \notin C$ and descendant of $Y$ is in $C$.
 \end{enumerate}
 \end{definition}
