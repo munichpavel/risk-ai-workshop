@@ -78,6 +78,8 @@ notebooks/.ipynb_checkpoints
 *.pdf
 *.fdb_latexmk
 *.fls
+*.bbl
+*.blg
 
 # OS X
 .DS_Store
