@@ -12,3 +12,5 @@ fake-data-for-learning
 
 pytest
 flake8
+
+bump2version
