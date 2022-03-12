@@ -63,9 +63,11 @@ target/
 
 # local environment file
 .env
+.envrc
 
 # Notebook files
-notebooks/.ipynb_checkpoints
+.ipynb_checkpoints
+_*.ipynb
 
 # LaTeX files
 *.aux
@@ -80,6 +82,14 @@ notebooks/.ipynb_checkpoints
 *.fls
 *.bbl
 *.blg
+
+## images, must force add if really needed
+*.png
+*.jpeg
+*.jpg
+*.m4a
+
+*.html
 
 # OS X
 .DS_Store
