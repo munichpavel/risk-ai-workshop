@@ -15,12 +15,12 @@ requirements = [
 
 setup_requirements = [
     'pytest-runner',
-    # TODO(munichpavel): put setup requirements (distutils extensions, etc.) here
+    # TODO put setup requirements (distutils extensions, etc.) here
 ]
 
 test_requirements = [
     'pytest',
-    # TODO: put package test requirements here
+    # TODO put package test requirements here
 ]
 
 setup(
@@ -40,8 +40,9 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
-	    'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.6',
     ],
+    python_requires='>=3.6,<3.10',  # Upper bound due to pypoman
     test_suite='tests',
     tests_require=test_requirements,
     setup_requires=setup_requirements,

@@ -1,5 +1,7 @@
 # Risk, Artificial Intelligence and Discrete Geometry
 
+![ci](https://github.com/munichpavel/risk-ai-workshop/actions/workflows/ci.yml/badge.svg)
+
 ## Quickstart
 
 * `git clone` the repository and `cd` into the root directory.
@@ -57,10 +59,14 @@ Once an initial release has been created for a new workshop, create subsequent t
 
 ## Release history
 
-### v2020-02-uni-lj
+### Latest
 
-Created prior to the above versioning scheme, workshop at University of Ljublana in February, 2020.
+Add github action for automated testing
 
 ### v2022.0.1
 
 Add initial exercises and methods for Simpson's paradox.
+
+### v2020-02-uni-lj
+
+Created prior to the above versioning scheme, workshop at University of Ljublana in February, 2020.
