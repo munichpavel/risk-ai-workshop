@@ -88,6 +88,7 @@ _*.ipynb
 *.jpeg
 *.jpg
 *.m4a
+*.dot
 
 *.html
 

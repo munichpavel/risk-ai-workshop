@@ -1,7 +1,0 @@
-digraph {
-	rankdir=LR
-	node [shape=circle]
-	gender
-	admission
-	gender -> admission
-}
