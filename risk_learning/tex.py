@@ -6,7 +6,8 @@ import subprocess
 
 def build_pdf_latex(filepath: Path, outdir: Path):
     subprocess.run(
-        ['pdflatex', f'-output-directory={outdir}', filepath]
+        ['pdflatex', f'-output-directory={outdir}', filepath],
+        cwd=filepath.parent.as_posix()
     )
 
 
@@ -18,4 +19,4 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    build_pdf_latex(args.filepath, args.outdir)
+    build_pdf_latex(Path(args.filepath), Path(args.outdir))
