@@ -1,3 +1,4 @@
+# Notebook examples
 jupyter
 ipykernel
 matplotlib
@@ -5,12 +6,18 @@ pandas
 numpy
 scikit-learn>=0.21.3
 sklearn-pandas
+
+# Causality
 graphviz
 brent
+causalgraphicalmodels
 
+# Fake data
 fake-data-for-learning
 
+# Linting and testing
 pytest
 flake8
 
+# Version mgmt
 bump2version
