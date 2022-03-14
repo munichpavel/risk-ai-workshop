@@ -65,6 +65,7 @@ test_call_dir = Path(os.getcwd())
     'filepath',
     [
         test_call_dir / 'slides' / 'ai-for-risk' / 'ai_for_risk.tex',
+        test_call_dir / 'slides' / 'discrete-geometry' / 'discrete_geometry.tex',
     ]
 )
 def test_on_disk_latex_build(tmpdir, filepath):
