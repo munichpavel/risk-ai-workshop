@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CI-CD
 
 # Controls when the workflow will run
 on: push
@@ -38,3 +38,32 @@ jobs:
         run: "python -m pytest -vv -m notebook"
       - name: "Run latex tests for ${{ matrix.python-version }}"
         run: "python -m pytest -vv -m latex"
+
+  deliver:
+    runs-on: ubuntu-latest
+    needs: tests
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - uses: "actions/checkout@v2"
+      - uses: "actions/setup-python@v2"
+        with:
+          python-version: "${{ matrix.python-version }}"
+      - name: "Install dependencies for latex slide delivery"
+        run: |
+          sudo apt-get install texlive-latex-extra
+          python -VV
+          python -m site
+          python -m pip install .
+
+      - name: "Create slides"
+        run: |
+          mkdir -p tex_out
+          python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/ai-for-risk/ai_for_risk.tex --outdir ${{ github.workspace }}/tex_out
+          cd tex_out
+          ls -al
+      - name: "Archive slide artifacts"
+        uses: actions/upload-artifact@v3
+        with:
+          name: risk-ai-slides
+          path: ${{ github.workspace }}/tex_out/*.pdf
