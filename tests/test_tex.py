@@ -8,11 +8,11 @@ import pytest
 from risk_learning.tex import build_pdf_latex
 
 
-def test_single_filebuild_pdf_latex(tmpdir):
+def test_single_file_build_pdf_latex(tmpdir):
     """Test if pdf file for inputted latex file gets built"""
     tex_dir = Path(tmpdir)
 
-    text = r'''\documentclass{book}
+    text = r'''\documentclass[aspectratio=169, xcolor=dvipsnames]{beamer}
 \begin{document}
 \title{\textbf{It's a story}}
 \maketitle
@@ -26,6 +26,32 @@ def test_single_filebuild_pdf_latex(tmpdir):
     build_pdf_latex(filepath=tex_path, outdir=tex_dir)
 
     assert (tex_dir / (tex_path.stem + '.pdf')).exists()
+
+
+def test_multiple_file_build_pdf_latex(tmpdir):
+    parent_dir = Path(tmpdir)
+    tex_dir =  parent_dir / 'tex-files'
+    tex_dir.mkdir(parents=True)
+
+    main_text = r'''\input{../a_header}
+\begin{document}
+\title{\textbf{It's a story}}
+\maketitle
+
+\end{document}
+'''
+    main_tex_path = tex_dir / 'example.tex'
+    with open(main_tex_path, 'w') as fp:
+        fp.write(main_text)
+
+    header_text = r'\documentclass[aspectratio=169, xcolor=dvipsnames]{beamer}'
+    header_tex_path = parent_dir / 'a_header.tex'
+    with open(header_tex_path, 'w') as fp:
+        fp.write(header_text)
+
+    build_pdf_latex(filepath=main_tex_path, outdir=tex_dir)
+
+    assert (tex_dir / (main_tex_path.stem + '.pdf')).exists()
 
 
 # Test(s) with on-disk files
