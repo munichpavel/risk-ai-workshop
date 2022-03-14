@@ -8,6 +8,7 @@ import pytest
 from risk_learning.tex import build_pdf_latex
 
 
+@pytest.mark.latex
 def test_single_file_build_pdf_latex(tmpdir):
     """Test if pdf file for inputted latex file gets built"""
     tex_dir = Path(tmpdir)
@@ -28,9 +29,10 @@ def test_single_file_build_pdf_latex(tmpdir):
     assert (tex_dir / (tex_path.stem + '.pdf')).exists()
 
 
+@pytest.mark.latex
 def test_multiple_file_build_pdf_latex(tmpdir):
     parent_dir = Path(tmpdir)
-    tex_dir =  parent_dir / 'tex-files'
+    tex_dir = parent_dir / 'tex-files'
     tex_dir.mkdir(parents=True)
 
     main_text = r'''\input{../a_header}
@@ -58,13 +60,14 @@ def test_multiple_file_build_pdf_latex(tmpdir):
 test_call_dir = Path(os.getcwd())
 
 
+@pytest.mark.latex
 @pytest.mark.parametrize(
     'filepath',
     [
         test_call_dir / 'slides' / 'ai-for-risk' / 'ai_for_risk.tex',
     ]
 )
-def test_build_read_pdf_latex(tmpdir, filepath):
+def test_on_disk_latex_build(tmpdir, filepath):
 
     # Test setup -- folder structure
     test_texdir = Path(tmpdir) / 'tex'

@@ -32,5 +32,9 @@ jobs:
 
       - name: "Run tox targets for ${{ matrix.python-version }}"
         run: "python -m tox"
-      - name: "Run tests for ${{ matrix.python-version }}"
-        run: "python -m pytest -vv"
+      - name: "Run unit tests for ${{ matrix.python-version }}"
+        run: "python -m pytest -vv -m 'not latex and not notebook'"
+      - name: "Run notebook tests for ${{ matrix.python-version }}"
+        run: "python -m pytest -vv -m notebook"
+      - name: "Run latex tests for ${{ matrix.python-version }}"
+        run: "python -m pytest -vv -m latex"

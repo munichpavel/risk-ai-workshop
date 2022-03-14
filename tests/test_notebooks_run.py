@@ -15,6 +15,7 @@ cwd = Path(os.getcwd())
 notebook_dir = cwd / 'notebooks'
 
 
+@pytest.mark.notebook
 @pytest.mark.parametrize(
     'notebook_path',
     [
