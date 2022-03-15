@@ -12,6 +12,8 @@ from risk_learning.tex import build_pdf_latex
 def test_single_file_build_pdf_latex(tmpdir):
     """Test if pdf file for inputted latex file gets built"""
     tex_dir = Path(tmpdir)
+    out_dir = tex_dir / 'out'
+    out_dir.mkdir()
 
     text = r'''\documentclass[aspectratio=169, xcolor=dvipsnames]{beamer}
 \begin{document}
@@ -24,9 +26,9 @@ def test_single_file_build_pdf_latex(tmpdir):
     with open(tex_path, 'w') as fp:
         fp.write(text)
 
-    build_pdf_latex(filepath=tex_path, outdir=tex_dir)
+    build_pdf_latex(filepath=tex_path, outdir=out_dir)
 
-    assert (tex_dir / (tex_path.stem + '.pdf')).exists()
+    assert (out_dir / (tex_path.stem + '.pdf')).exists()
 
 
 @pytest.mark.latex
@@ -34,6 +36,8 @@ def test_multiple_file_build_pdf_latex(tmpdir):
     parent_dir = Path(tmpdir)
     tex_dir = parent_dir / 'tex-files'
     tex_dir.mkdir(parents=True)
+    out_dir = parent_dir / 'out'
+    out_dir.mkdir()
 
     main_text = r'''\input{../a_header}
 \begin{document}
@@ -51,9 +55,9 @@ def test_multiple_file_build_pdf_latex(tmpdir):
     with open(header_tex_path, 'w') as fp:
         fp.write(header_text)
 
-    build_pdf_latex(filepath=main_tex_path, outdir=tex_dir)
+    build_pdf_latex(filepath=main_tex_path, outdir=out_dir)
 
-    assert (tex_dir / (main_tex_path.stem + '.pdf')).exists()
+    assert (out_dir / (main_tex_path.stem + '.pdf')).exists()
 
 
 # Test(s) with on-disk files
