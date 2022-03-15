@@ -1,6 +1,6 @@
 # Risk, Artificial Intelligence and Discrete Geometry
 
-![ci](https://github.com/munichpavel/risk-ai-workshop/actions/workflows/ci.yml/badge.svg)
+![ci](https://github.com/munichpavel/risk-ai-workshop/actions/workflows/ci-cd.yml/badge.svg)
 
 ## Quickstart
 
