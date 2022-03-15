@@ -61,7 +61,9 @@ Once an initial release has been created for a new workshop, create subsequent t
 
 ### Latest
 
-Add github action for automated testing, with unit, notebook-run and latex-slides-build test coverage
+Add github actions workflow for automated testing, with unit, notebook-run and latex-slides-build
+
+Add github actions job for continuous delivery of slide artifacts
 
 ### v2022.0.1
 
