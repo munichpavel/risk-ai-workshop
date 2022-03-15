@@ -6,41 +6,42 @@ name: CI-CD
 on: push
 
 jobs:
-  # tests:
-  #   name: "Python ${{ matrix.python-version }}"
-  #   runs-on: "ubuntu-latest"
+  tests:
+    name: "Python ${{ matrix.python-version }}"
+    runs-on: "ubuntu-latest"
 
-  #   strategy:
-  #     matrix:
-  #       python-version: ["3.6", "3.7", "3.8", "3.9"]
+    strategy:
+      matrix:
+        python-version: ["3.6", "3.7", "3.8", "3.9"]
 
-  #   steps:
-  #     - uses: "actions/checkout@v2"
-  #     - uses: "actions/setup-python@v2"
-  #       with:
-  #         python-version: "${{ matrix.python-version }}"
-  #     - name: "Install dependencies"
-  #       run: |
-  #         sudo apt-get install graphviz
-  #         sudo apt-get install texlive-latex-extra
-  #         python -VV
-  #         python -m site
-  #         python -m pip install --upgrade pip setuptools wheel
-  #         python -m pip install --upgrade coverage[toml] virtualenv tox tox-gh-actions
-  #         python -m pip install -r requirements.txt
-  #         python -m pip install .
+    steps:
+      - uses: "actions/checkout@v2"
+      - uses: "actions/setup-python@v2"
+        with:
+          python-version: "${{ matrix.python-version }}"
+      - name: "Install dependencies"
+        run: |
+          sudo apt-get install graphviz
+          sudo apt-get install texlive-latex-extra
+          python -VV
+          python -m site
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install --upgrade coverage[toml] virtualenv tox tox-gh-actions
+          python -m pip install -r requirements.txt
+          python -m pip install .
 
-  #     - name: "Run tox targets for ${{ matrix.python-version }}"
-  #       run: "python -m tox"
-  #     - name: "Run unit tests for ${{ matrix.python-version }}"
-  #       run: "python -m pytest -vv -m 'not latex and not notebook'"
-  #     - name: "Run notebook tests for ${{ matrix.python-version }}"
-  #       run: "python -m pytest -vv -m notebook"
-  #     - name: "Run latex tests for ${{ matrix.python-version }}"
-  #       run: "python -m pytest -vv -m latex"
+      - name: "Run tox targets for ${{ matrix.python-version }}"
+        run: "python -m tox"
+      - name: "Run unit tests for ${{ matrix.python-version }}"
+        run: "python -m pytest -vv -m 'not latex and not notebook'"
+      - name: "Run notebook tests for ${{ matrix.python-version }}"
+        run: "python -m pytest -vv -m notebook"
+      - name: "Run latex tests for ${{ matrix.python-version }}"
+        run: "python -m pytest -vv -m latex"
+
   deliver:
     runs-on: ubuntu-latest
-    # needs: tests
+    needs: tests
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -58,6 +59,7 @@ jobs:
       - name: "Create slides"
         run: |
           mkdir -p tex_out
+
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/ai-for-risk/ai_for_risk.tex --outdir ${{ github.workspace }}/tex_out
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/discrete-geometry/discrete_geometry.tex --outdir ${{ github.workspace }}/tex_out
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/correlation-causality/correlation-causality.tex --outdir ${{ github.workspace }}/tex_out

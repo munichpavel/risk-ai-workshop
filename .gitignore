@@ -83,6 +83,7 @@ notebooks/data/
 *.fls
 *.bbl
 *.blg
+*.pdf
 
 ## images, must force add if really needed
 *.dot

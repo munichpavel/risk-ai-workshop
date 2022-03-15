@@ -1,5 +1,6 @@
 """LaTex build and preview functionality"""
 
+import os
 from pathlib import Path
 import subprocess
 import shutil
@@ -7,31 +8,28 @@ import shutil
 
 def build_pdf_latex(filepath: Path, outdir: Path):
     '''
-    Perform combination of pdf latex and bibtex, using the recipe taught to me
-    by https://www.sfu.ca/~nilten/ way back when
+    Perform pdflatex. bibtex unfortunately out of scope (I tried and failed).
     '''
 
-    n_reps_pdf_latex = 2
+    # Change to parent dir of tex file. I tried and failed to use
+    # subprocess.run's cwd argument. It seemed ok locally, but not in ci / cd
+    # See https://github.com/munichpavel/risk-ai-workshop/issues/12
+    original_wd = os.getcwd()
+    os.chdir(filepath.parent)
 
-    for _ in range(n_reps_pdf_latex):
-        subprocess.run(
-            ['pdflatex', filepath],
-            cwd=filepath.parent.as_posix()
-        )
+    n_reps_pdflatex = 2
 
-    # bibtex
-    subprocess.run(
-        ['bibtex', filepath],
-        cwd=filepath.parent.as_posix()
-    )
+    for _ in range(n_reps_pdflatex):
+        subprocess.run(['pdflatex', filepath.stem])
 
-    # pdflatex again, this time use output directory
-    for _ in range(n_reps_pdf_latex):
-        subprocess.run(
-            ['pdflatex', filepath],
-            cwd=filepath.parent.as_posix()
-        )
+    subprocess.run(['bibtex', filepath.stem])
 
+    for _ in range(n_reps_pdflatex):
+        subprocess.run(['pdflatex', filepath.stem])
+
+    os.chdir(original_wd)
+
+    # copy pdf to output directory
     pdf_out_filename = filepath.stem + '.pdf'
     shutil.copy(
         src=filepath.parent / pdf_out_filename,
