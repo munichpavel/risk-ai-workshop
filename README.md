@@ -12,19 +12,20 @@
 
 ## Workshop topics
 
+Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.yml), and can be accessed by clicking on the `Artifacts` section of a workflow run, as in the below screenshot
+
+![slides-artifacts-screenshot](docs/resources/slides-artifact-click.png)
+
 ## Artificial intelligence for risk management
 
-* [Slides](slides/ai-for-risk)
 * [Examples and exercises](notebooks/model-selection-exercises.ipynb)
 
 ## Discrete geometry for risk
 
-* [Slides](slides/discrete-geometry)
 * Examples and exercises: [graphical models](notebooks/graphical-models-exercises.ipynb), [probability polytopes](notebooks/probability-polytope-exercises.ipynb)
 
 ## Correlation and causality
 
-* [Slides](slides/correlation-causality)
 * [Examples and exercises](notebooks/causal-models-exercises.ipynb)
 
 ## [Artificial intelligence in practice](slides/ai-in-practice)
