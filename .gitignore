@@ -68,6 +68,7 @@ target/
 # Notebook files
 .ipynb_checkpoints
 _*.ipynb
+notebooks/data/
 
 # LaTeX files
 *.aux
@@ -84,10 +85,6 @@ _*.ipynb
 *.blg
 
 ## images, must force add if really needed
-*.png
-*.jpeg
-*.jpg
-*.m4a
 *.dot
 
 *.html

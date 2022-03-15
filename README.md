@@ -61,7 +61,7 @@ Once an initial release has been created for a new workshop, create subsequent t
 
 ### Latest
 
-Add github action for automated testing
+Add github action for automated testing, with unit, notebook-run and latex-slides-build test coverage
 
 ### v2022.0.1
 

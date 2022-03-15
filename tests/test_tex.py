@@ -65,7 +65,9 @@ test_call_dir = Path(os.getcwd())
     'filepath',
     [
         test_call_dir / 'slides' / 'ai-for-risk' / 'ai_for_risk.tex',
-        test_call_dir / 'slides' / 'discrete-geometry' / 'discrete_geometry.tex',
+        test_call_dir / 'slides' / 'discrete-geometry' / 'discrete_geometry.tex',  # noqa: E501
+        test_call_dir / 'slides' / 'correlation-causality' / 'correlation-causality.tex',  # noqa: E501
+        test_call_dir / 'slides' / 'ai-in-practice' / 'ai_in_practice.tex',
     ]
 )
 def test_on_disk_latex_build(tmpdir, filepath):
@@ -98,10 +100,5 @@ def test_on_disk_latex_build(tmpdir, filepath):
     )
 
     outpath = lecture_dir / (filepath.stem + '.pdf')
-
-    # for p in test_texdir.glob('*'):
-    #     print(p)
-    for p in lecture_dir.glob('*'):
-        print(p)
 
     assert outpath.exists()
