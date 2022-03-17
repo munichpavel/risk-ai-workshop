@@ -68,7 +68,6 @@ target/
 # Notebook files
 .ipynb_checkpoints
 _*.ipynb
-notebooks/data/
 
 # LaTeX files
 *.aux
