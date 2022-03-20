@@ -9,6 +9,7 @@ numpy
 scikit-learn>=0.21.3
 sklearn-pandas
 dvc
+PyYAML
 
 # Causality
 graphviz

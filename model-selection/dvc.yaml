@@ -1,0 +1,13 @@
+stages:
+  prepare:
+    cmd: python prepare.py ../notebooks/data/default.csv
+    deps:
+    - ../notebooks/data/default.csv
+    - prepare.py
+    params:
+    - prepare.seed
+    - prepare.target_col
+    - prepare.test_split
+    - prepare.train_split
+    outs:
+    - ../notebooks/data/prepared
