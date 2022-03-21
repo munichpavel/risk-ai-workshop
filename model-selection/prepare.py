@@ -32,7 +32,7 @@ project_root = Path(os.environ['PROJECT_ROOT'])
 data_dir = project_root / 'notebooks' / 'data'
 
 df = pd.read_csv(in_path)
-y = df[[target_col]]
+y = df[target_col]
 non_target_cols = [c for c in df.columns if c != target_col]
 
 X = df[non_target_cols]
@@ -61,4 +61,6 @@ out_dict = dict(
 )
 
 for data_filename in out_dict.values():
-    data_filename['data'].to_csv(outdir / data_filename['filename'])
+    data_filename['data'].to_csv(
+        outdir / data_filename['filename'], index=False
+    )

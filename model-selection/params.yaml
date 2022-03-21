@@ -3,3 +3,6 @@ prepare:
   test_split: 0.20
   seed: 42
   target_col: "default"
+
+train:
+  seed: 42

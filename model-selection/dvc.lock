@@ -7,8 +7,8 @@ stages:
       md5: d715df1be2dc95e252c4a46d0432d042
       size: 60026
     - path: prepare.py
-      md5: 6bc135052af55685a18a7351e70b0491
-      size: 1985
+      md5: dc93a5a87f17f2e593508bb688120f62
+      size: 2010
     params:
       params.yaml:
         prepare.seed: 42
@@ -17,6 +17,6 @@ stages:
         prepare.train_split: 0.4
     outs:
     - path: ../notebooks/data/prepared
-      md5: 8531e0b0c656ed69f68fd2c906850fd4.dir
-      size: 157864
+      md5: 97e15b987c965e8a39a0aa073facad57.dir
+      size: 60078
       nfiles: 6
