@@ -1,4 +1,4 @@
-import sys
+from typing import Union
 import random
 import os
 from pathlib import Path
@@ -9,7 +9,7 @@ import pandas as pd
 from model_selection.utils import get_params
 
 
-def get_validation_split_ratio(train_ratio: float, test_ratio: float) -> float:
+def validate_split_ratios(train_ratio: float, test_ratio: float) -> None:
     error_msg = ''
     if train_ratio <= 0 or train_ratio >= 1:
         error_msg += "Train split ratio of {train_ratio} is invalid.\n"
@@ -27,16 +27,14 @@ def get_validation_split_ratio(train_ratio: float, test_ratio: float) -> float:
     if len(error_msg) > 0:
         raise ValueError(error_msg)
 
-    return validation_ratio
 
-
-def main(data_path: str, params: dict) -> None:
+def main(data_path: str, params: dict) -> Union[None, Exception]:
     random.seed(params["seed"])
     train_ratio = params["train_ratio"]
     test_ratio = params["test_ratio"]
     target_col = params["target_col"]
 
-    validation_ratio = get_validation_split_ratio(train_ratio, test_ratio)
+    validate_split_ratios(train_ratio, test_ratio)
 
     project_root = Path(os.environ['PROJECT_ROOT'])
     data_dir = project_root / 'notebooks' / 'data'

@@ -43,22 +43,20 @@ def test_get_params():
 
 # Test split script
 @pytest.mark.parametrize(
-    'train_ratio,test_ratio,expected,ExpectedException',
+    'train_ratio,test_ratio,ExpectedException',
     [
-        (0.6, 0.2, 0.2, None),
-        (0.9, 0.9, None, ValueError),
-        (-0.5, 0.8, None, ValueError),
-        (0.5, -0.3, None, ValueError),
+        (0.6, 0.2, None),
+        (0.9, 0.9, ValueError),
+        (-0.5, 0.8, ValueError),
+        (0.5, -0.3, ValueError),
     ]
 )
 def test_get_validation_ratio_split(
-    train_ratio, test_ratio, expected, ExpectedException
+    train_ratio, test_ratio, ExpectedException
 ):
 
     if ExpectedException is None:
-        res = split.get_validation_split_ratio(train_ratio, test_ratio)
-        assert res == approx(expected)
-
+        split.validate_split_ratios(train_ratio, test_ratio)
     else:
         with pytest.raises(ExpectedException):
-            split.get_validation_split_ratio(train_ratio, test_ratio)
+            split.validate_split_ratios(train_ratio, test_ratio)
