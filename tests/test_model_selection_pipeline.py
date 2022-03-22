@@ -24,7 +24,7 @@ def test_pipeline_runs(tmpdir, monkeypatch):
         dst=data_dir_test
     )
 
-    monkeypatch.setenv('PROJECT_ROOT', PROJECT_ROOT)
+    monkeypatch.setenv('PROJECT_ROOT', tmpdir.as_posix())
 
     out = subprocess.run([
         'python', 'split.py',

@@ -58,7 +58,7 @@ def main(data_path: str, params: dict) -> None:
     )
 
     # TODO shouldn't this come from dvc run command???
-    outdir = data_dir / 'prepared'
+    outdir = data_dir / 'split'
     outdir.mkdir(exist_ok=True)
 
     out_dict = dict(
