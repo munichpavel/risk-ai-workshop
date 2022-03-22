@@ -28,7 +28,7 @@ def test_pipeline_runs(tmpdir, monkeypatch):
 
     out = subprocess.run([
         'python', 'split.py',
-        (data_dir_test / 'default.csv').as_posix()
+        '--data_path', (data_dir_test / 'default.csv').as_posix()
     ], cwd=MODEL_SELECTION_DIR, check=True)
 
     assert out.returncode == 0

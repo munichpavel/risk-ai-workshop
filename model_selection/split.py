@@ -30,10 +30,7 @@ def get_validation_split_ratio(train_ratio: float, test_ratio: float) -> float:
     return validation_ratio
 
 
-if __name__ == '__main__':
-    in_path = sys.argv[1]
-
-    params = yaml.safe_load(open("params.yaml"))["split"]
+def main(data_path: str, params: dict) -> None:
     random.seed(params["seed"])
     train_ratio = params["train_ratio"]
     test_ratio = params["test_ratio"]
@@ -44,7 +41,7 @@ if __name__ == '__main__':
     project_root = Path(os.environ['PROJECT_ROOT'])
     data_dir = project_root / 'notebooks' / 'data'
 
-    df = pd.read_csv(in_path)
+    df = pd.read_csv(data_path)
     y = df[target_col]
     non_target_cols = [c for c in df.columns if c != target_col]
 
@@ -77,3 +74,19 @@ if __name__ == '__main__':
         data_filename['data'].to_csv(
             outdir / data_filename['filename'], index=False
         )
+
+
+if __name__ == '__main__':
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description='Split data for model selection'
+    )
+    parser.add_argument(
+        '--data_path', type=str, help='path for input data'
+    )
+    args = parser.parse_args()
+
+    params = yaml.safe_load(open("params.yaml"))["split"]
+
+    main(args.data_path, params)
