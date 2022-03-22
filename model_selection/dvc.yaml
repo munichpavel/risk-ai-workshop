@@ -11,3 +11,12 @@ stages:
     - prepare.train_split
     outs:
     - ../notebooks/data/prepared
+  train:
+    cmd: python train.py
+    deps:
+    - ../notebooks/data/prepared
+    - train
+    params:
+    - prepare.seed
+    outs:
+    - ../notebooks/data/train
