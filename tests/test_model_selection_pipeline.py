@@ -6,7 +6,7 @@ import pytest
 from pytest import approx
 
 import model_selection
-from model_selection import split
+from model_selection import utils, split
 
 PROJECT_ROOT = Path(__file__).parent.parent
 MODEL_SELECTION_DIR = Path(model_selection.__file__).parent
@@ -24,7 +24,7 @@ def test_pipeline_runs(tmpdir, monkeypatch):
         dst=data_dir_test
     )
 
-    monkeypatch.setenv('PROJECT_ROOT', tmpdir.as_posix())
+    monkeypatch.setenv('PROJECT_ROOT', PROJECT_ROOT)
 
     out = subprocess.run([
         'python', 'split.py',
@@ -34,6 +34,14 @@ def test_pipeline_runs(tmpdir, monkeypatch):
     assert out.returncode == 0
 
 
+# Test model selection utils
+def test_get_params():
+    '''Weak test for shared function to read model selection parameters'''
+    params = utils.get_params()
+    assert isinstance(params, dict)
+
+
+# Test split script
 @pytest.mark.parametrize(
     'train_ratio,test_ratio,expected,ExpectedException',
     [

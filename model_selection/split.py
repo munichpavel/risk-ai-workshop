@@ -3,10 +3,10 @@ import random
 import os
 from pathlib import Path
 
-import yaml
-
 from sklearn.model_selection import train_test_split
 import pandas as pd
+
+from model_selection.utils import get_params
 
 
 def get_validation_split_ratio(train_ratio: float, test_ratio: float) -> float:
@@ -87,6 +87,7 @@ if __name__ == '__main__':
     )
     args = parser.parse_args()
 
-    params = yaml.safe_load(open("params.yaml"))["split"]
+    params = get_params()
+    node_params = params["split"]
 
-    main(args.data_path, params)
+    main(args.data_path, node_params)
