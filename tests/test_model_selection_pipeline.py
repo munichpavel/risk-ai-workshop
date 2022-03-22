@@ -9,6 +9,7 @@ MODEL_SELECTION_DIR = Path(model_selection.__file__).parent
 
 
 def test_pipeline_runs(tmpdir, monkeypatch):
+    '''Weak end-to-end test'''
 
     tmpdir = Path(tmpdir)
     data_dir_test = tmpdir / 'notebooks' / 'data'
@@ -22,8 +23,9 @@ def test_pipeline_runs(tmpdir, monkeypatch):
     monkeypatch.setenv('PROJECT_ROOT', tmpdir.as_posix())
 
     out = subprocess.run([
-        'python', 'prepare.py',
+        'python', 'split.py',
         (data_dir_test / 'default.csv').as_posix()
     ], cwd=MODEL_SELECTION_DIR, check=True)
 
     assert out.returncode == 0
+

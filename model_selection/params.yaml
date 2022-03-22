@@ -1,4 +1,4 @@
-prepare:
+split:
   train_split: 0.40
   test_split: 0.20
   seed: 42

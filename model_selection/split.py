@@ -3,7 +3,6 @@ import random
 import os
 from pathlib import Path
 
-
 import yaml
 
 from sklearn.model_selection import train_test_split
@@ -11,7 +10,7 @@ import pandas as pd
 
 in_path = sys.argv[1]
 
-params = yaml.safe_load(open("params.yaml"))["prepare"]
+params = yaml.safe_load(open("params.yaml"))["split"]
 random.seed(params["seed"])
 train_split = params["train_split"]
 test_split = params["test_split"]
