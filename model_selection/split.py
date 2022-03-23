@@ -32,18 +32,18 @@ def main(data_path: str, params: dict) -> Union[None, Exception]:
     random.seed(params["seed"])
     train_ratio = params["train_ratio"]
     test_ratio = params["test_ratio"]
-    target_col = params["target_col"]
 
     validate_split_ratios(train_ratio, test_ratio)
 
     project_root = Path(os.environ['PROJECT_ROOT'])
     data_dir = project_root / 'notebooks' / 'data'
 
-    df = pd.read_csv(data_path)
-    y = df[target_col]
-    non_target_cols = [c for c in df.columns if c != target_col]
+    target_col = params["target_col"]
+    non_target_cols = params["non_target_cols"]
+    df = pd.read_csv(data_path, usecols=non_target_cols + [target_col])
 
     X = df[non_target_cols]
+    y = df[target_col]
 
     # Split into train + validation  / test sets
     X_train_validate, X_test, y_train_validate, y_test = train_test_split(

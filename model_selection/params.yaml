@@ -3,6 +3,7 @@ split:
   test_ratio: 0.20
   seed: 42
   target_col: "default"
+  non_target_cols: ["gender", "occupation"]
 
 train:
   seed: 42
