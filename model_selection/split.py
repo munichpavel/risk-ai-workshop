@@ -52,9 +52,11 @@ def main(
         X, y, test_size=test_ratio, random_state=stage_params["seed"]
     )
 
+    train_ratio_after_test_split = train_ratio / (1 - test_ratio)
     X_train, X_validate, y_train, y_validate = train_test_split(
         X_train_validate, y_train_validate,
-        train_size=train_ratio, random_state=stage_params["seed"]
+        train_size=train_ratio_after_test_split,
+        random_state=stage_params["seed"]
     )
 
     outdir = data_dir / stage_name
