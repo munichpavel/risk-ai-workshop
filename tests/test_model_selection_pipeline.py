@@ -3,7 +3,6 @@ import shutil
 import subprocess
 
 import pytest
-from pytest import approx
 
 import model_selection
 from model_selection import utils, split
@@ -23,7 +22,6 @@ def test_pipeline_runs(tmpdir, monkeypatch):
         src=PROJECT_ROOT / 'notebooks' / 'data' / 'default.csv',
         dst=data_dir_test
     )
-
     monkeypatch.setenv('PROJECT_ROOT', tmpdir.as_posix())
 
     out = subprocess.run([
@@ -31,7 +29,11 @@ def test_pipeline_runs(tmpdir, monkeypatch):
         '--data_path', (data_dir_test / 'default.csv').as_posix()
     ], cwd=MODEL_SELECTION_DIR, check=True)
 
+    # Test that script ran without error
     assert out.returncode == 0
+
+    # Test output data shapes
+    node_name = 'split'
 
 
 # Test model selection utils
@@ -54,7 +56,6 @@ def test_get_params():
 def test_get_validation_ratio_split(
     train_ratio, test_ratio, ExpectedException
 ):
-
     if ExpectedException is None:
         split.validate_split_ratios(train_ratio, test_ratio)
     else:

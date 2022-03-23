@@ -28,18 +28,20 @@ def validate_split_ratios(train_ratio: float, test_ratio: float) -> None:
         raise ValueError(error_msg)
 
 
-def main(data_path: str, params: dict) -> Union[None, Exception]:
-    random.seed(params["seed"])
-    train_ratio = params["train_ratio"]
-    test_ratio = params["test_ratio"]
+def main(
+    stage_name: str, stage_params: dict, data_path: str
+) -> Union[None, Exception]:
+    random.seed(stage_params["seed"])
+    train_ratio = stage_params["train_ratio"]
+    test_ratio = stage_params["test_ratio"]
 
     validate_split_ratios(train_ratio, test_ratio)
 
     project_root = Path(os.environ['PROJECT_ROOT'])
     data_dir = project_root / 'notebooks' / 'data'
 
-    target_col = params["target_col"]
-    non_target_cols = params["non_target_cols"]
+    target_col = stage_params["target_col"]
+    non_target_cols = stage_params["non_target_cols"]
     df = pd.read_csv(data_path, usecols=non_target_cols + [target_col])
 
     X = df[non_target_cols]
@@ -47,16 +49,15 @@ def main(data_path: str, params: dict) -> Union[None, Exception]:
 
     # Split into train + validation  / test sets
     X_train_validate, X_test, y_train_validate, y_test = train_test_split(
-        X, y, test_size=test_ratio, random_state=params["seed"]
+        X, y, test_size=test_ratio, random_state=stage_params["seed"]
     )
 
     X_train, X_validate, y_train, y_validate = train_test_split(
         X_train_validate, y_train_validate,
-        train_size=train_ratio, random_state=params["seed"]
+        train_size=train_ratio, random_state=stage_params["seed"]
     )
 
-    # TODO shouldn't this come from dvc run command???
-    outdir = data_dir / 'split'
+    outdir = data_dir / stage_name
     outdir.mkdir(exist_ok=True)
 
     out_dict = dict(
@@ -86,6 +87,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     params = get_params()
-    node_params = params["split"]
+    stage_name = 'split'
+    stage_params = params[stage_name]
 
-    main(args.data_path, node_params)
+    main(stage_name, stage_params, args.data_path)
