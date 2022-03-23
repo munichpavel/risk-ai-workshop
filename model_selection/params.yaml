@@ -5,5 +5,5 @@ split:
   target_col: "default"
   non_target_cols: ["gender", "occupation"]
 
-train:
+fit:
   seed: 42

@@ -32,13 +32,13 @@ def test_pipeline_runs(tmpdir, monkeypatch):
 
     # Split stage
     in_path = data_dir_test / 'default.csv'
-    out = subprocess.run([
+    split_out = subprocess.run([
         'python', 'split.py',
         '--data_path', in_path.as_posix()
     ], cwd=MODEL_SELECTION_DIR, check=True)
 
     # Test that script ran without error
-    assert out.returncode == 0
+    assert split_out.returncode == 0
 
     # Test number of output data files
     stage_name = 'split'
@@ -70,6 +70,24 @@ def test_pipeline_runs(tmpdir, monkeypatch):
         actual_shapes.append(df.shape)
 
     assert frozenset(actual_shapes) == expected_shapes
+
+    # Model selection stage
+    stage_name = 'fit'
+    stage_params = params[stage_name]
+
+    fit_out = subprocess.run([
+        'python', 'fit.py',
+        '--input_data_stage', 'split',
+        '--feature_filename', 'X-train.csv',
+        '--target_filename', 'y-train.csv'
+    ], cwd=MODEL_SELECTION_DIR, check=True)
+
+    # Test that script ran without error
+    assert fit_out.returncode == 0
+
+    out_file_paths = list((data_dir_test / stage_name).glob('*'))
+
+    assert len(out_file_paths) == 1  # TODO change
 
 
 # Test model selection utils
