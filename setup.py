@@ -29,7 +29,7 @@ setup(
     author="Paul Larsen",
     author_email='munichpavel@gmail.com',
     url='https://github.com/munichpavel/risk_learning',
-    packages=find_packages(include=['risk_learning']),
+    packages=find_packages(),
     include_package_data=True,
     install_requires=requirements,
     license="MIT license",

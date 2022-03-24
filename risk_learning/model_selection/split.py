@@ -6,7 +6,7 @@ from pathlib import Path
 from sklearn.model_selection import train_test_split
 import pandas as pd
 
-from model_selection.utils import get_params
+from risk_learning.model_selection.utils import get_params
 
 
 def validate_split_ratios(train_ratio: float, test_ratio: float) -> None:

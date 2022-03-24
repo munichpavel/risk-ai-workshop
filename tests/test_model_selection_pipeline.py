@@ -7,11 +7,11 @@ from itertools import product
 import pytest
 import pandas as pd
 
-import model_selection
-from model_selection import utils, split
+import risk_learning.model_selection
+from risk_learning.model_selection import utils, split
 
 PROJECT_ROOT = Path(__file__).parent.parent
-MODEL_SELECTION_DIR = Path(model_selection.__file__).parent
+MODEL_SELECTION_DIR = Path(risk_learning.model_selection.__file__).parent
 
 
 def test_pipeline_runs(tmpdir, monkeypatch):

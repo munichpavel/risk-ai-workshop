@@ -6,7 +6,7 @@ import pandas as pd
 
 from sklearn.linear_model import LogisticRegression
 
-from model_selection.utils import get_params
+from risk_learning.model_selection.utils import get_params
 
 
 def main(
