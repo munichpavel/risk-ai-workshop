@@ -26,7 +26,7 @@ def main(
     clf = LogisticRegression()
     clf_name = 'logistic-regression'
 
-    clf.fit(X, y)
+    clf.fit(X, y.values.ravel())
 
     dump(clf, out_dir / (clf_name + '.joblib'))
 
