@@ -10,31 +10,31 @@ import pandas as pd
 
 from risk_learning.model_selection import utils, split
 
-PROJECT_ROOT = Path(os.environ['PROJECT_ROOT'])
-MODEL_SELECTION_REPO_DIR = PROJECT_ROOT / 'risk_learning' / 'model_selection'
-
 
 def test_pipeline_runs(tmpdir, monkeypatch):
     '''Weak end-to-end test'''
-
     ############
     # Test setup
     ############
+    project_root = Path(os.environ['PROJECT_ROOT'])
+    model_selection_repo_dir = (
+        project_root / 'risk_learning' / 'model_selection'
+    )
     params = utils.get_params()  # Violate Uncle Bob "locate where used" due to env var monkeypatch below  # noqa: E501
 
     tmpdir = Path(tmpdir)
-    data_dir_test = tmpdir / 'notebooks' / 'data'
-    data_dir_test.mkdir(parents=True)
+    data_dir = tmpdir / 'notebooks' / 'data'
+    data_dir.mkdir(parents=True)
 
     shutil.copy(
-        src=PROJECT_ROOT / 'notebooks' / 'data' / 'default.csv',
-        dst=data_dir_test
+        src=project_root / 'notebooks' / 'data' / 'default.csv',
+        dst=data_dir
     )
     params_dir_test = tmpdir / 'risk_learning' / 'model_selection'
     params_dir_test.mkdir(parents=True)
 
     shutil.copy(
-        src=PROJECT_ROOT / 'risk_learning' / 'model_selection' / 'params.yaml',
+        src=project_root / 'risk_learning' / 'model_selection' / 'params.yaml',
         dst=params_dir_test
     )
     monkeypatch.setenv('PROJECT_ROOT', tmpdir.as_posix())
@@ -42,11 +42,11 @@ def test_pipeline_runs(tmpdir, monkeypatch):
     #############
     # Split stage
     #############
-    in_path = data_dir_test / 'default.csv'
+    in_path = data_dir / 'default.csv'
     split_out = subprocess.run([
         'python', 'split.py',
         '--data_path', in_path.as_posix()
-    ], cwd=MODEL_SELECTION_REPO_DIR, check=True)
+    ], cwd=model_selection_repo_dir, check=True)
     # ], check=True)
 
     # Test that script ran without error
@@ -54,7 +54,7 @@ def test_pipeline_runs(tmpdir, monkeypatch):
 
     # Test number of output data files
     stage_name = 'split'
-    out_file_paths = list((data_dir_test / stage_name).glob('*'))
+    out_file_paths = list((data_dir / stage_name).glob('*'))
     assert len(out_file_paths) == 3 * 2  # = number of splits * data sets per split  # noqa: E501
 
     # Test shape of output data
@@ -94,12 +94,33 @@ def test_pipeline_runs(tmpdir, monkeypatch):
         '--input_data_stage', 'split',  # TODO drop this???
         '--feature_filename', 'X-train.csv',
         '--target_filename', 'y-train.csv'
-    ], cwd=MODEL_SELECTION_REPO_DIR, check=True)
+    ], cwd=model_selection_repo_dir, check=True)
 
     # Test that script ran without error
     assert fit_out.returncode == 0
 
-    out_file_paths = list((data_dir_test / stage_name).glob('*'))
+    out_file_paths = list((data_dir / stage_name).glob('*'))
+
+    assert len(out_file_paths) == 1  # TODO change if more than one model
+
+    ################
+    # Evaluate stage
+    ################
+    stage_name = 'evaluate'
+    stage_params = params[stage_name]
+
+    evaluate_out = subprocess.run([
+        'python', 'evaluate.py',
+        '--input_data_stage', 'split',  # TODO drop this???
+        '--feature_filename', 'X-validate.csv',
+        '--target_filename', 'y-validate.csv',
+        '--model_filename', 'logistic-regression.joblib',  # FIXME: un-hard-code  # noqa: E501
+        '--out_filename', 'scores.json'
+    ], cwd=model_selection_repo_dir, check=True)
+
+    assert evaluate_out.returncode == 0
+
+    out_file_paths = list((data_dir / stage_name).glob('*'))
 
     assert len(out_file_paths) == 1  # TODO change if more than one model
 

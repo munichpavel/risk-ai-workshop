@@ -7,3 +7,5 @@ split:
 
 fit:
   seed: 42
+
+evaluate:
