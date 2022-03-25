@@ -5,6 +5,9 @@ name: CI-CD
 # Controls when the workflow will run
 on: push
 
+env:
+  PROJECT_ROOT: ${{ github.workspace }}
+
 jobs:
   tests:
     name: "Python ${{ matrix.python-version }}"
@@ -29,9 +32,6 @@ jobs:
           python -m pip install --upgrade coverage[toml] virtualenv tox tox-gh-actions
           python -m pip install -r requirements.txt
           python -m pip install .
-      - name: "Set environment variables"
-        run: |
-          export PROJECT_ROOT=${{ github.workspace }}
       - name: "Run tox targets for ${{ matrix.python-version }}"
         run: "python -m tox"
       - name: "Run unit tests for ${{ matrix.python-version }}"

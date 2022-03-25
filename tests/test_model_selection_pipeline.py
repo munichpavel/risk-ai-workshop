@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -7,17 +8,18 @@ from itertools import product
 import pytest
 import pandas as pd
 
-import risk_learning.model_selection
 from risk_learning.model_selection import utils, split
 
-PROJECT_ROOT = Path(__file__).parent.parent
-MODEL_SELECTION_DIR = Path(risk_learning.model_selection.__file__).parent
+PROJECT_ROOT = Path(os.environ['PROJECT_ROOT'])
+MODEL_SELECTION_REPO_DIR = PROJECT_ROOT / 'risk_learning' / 'model_selection'
 
 
 def test_pipeline_runs(tmpdir, monkeypatch):
     '''Weak end-to-end test'''
 
+    ############
     # Test setup
+    ############
     params = utils.get_params()  # Violate Uncle Bob "locate where used" due to env var monkeypatch below  # noqa: E501
 
     tmpdir = Path(tmpdir)
@@ -28,14 +30,24 @@ def test_pipeline_runs(tmpdir, monkeypatch):
         src=PROJECT_ROOT / 'notebooks' / 'data' / 'default.csv',
         dst=data_dir_test
     )
+    params_dir_test = tmpdir / 'risk_learning' / 'model_selection'
+    params_dir_test.mkdir(parents=True)
+
+    shutil.copy(
+        src=PROJECT_ROOT / 'risk_learning' / 'model_selection' / 'params.yaml',
+        dst=params_dir_test
+    )
     monkeypatch.setenv('PROJECT_ROOT', tmpdir.as_posix())
 
+    #############
     # Split stage
+    #############
     in_path = data_dir_test / 'default.csv'
     split_out = subprocess.run([
         'python', 'split.py',
         '--data_path', in_path.as_posix()
-    ], cwd=MODEL_SELECTION_DIR, check=True)
+    ], cwd=MODEL_SELECTION_REPO_DIR, check=True)
+    # ], check=True)
 
     # Test that script ran without error
     assert split_out.returncode == 0
@@ -71,23 +83,25 @@ def test_pipeline_runs(tmpdir, monkeypatch):
 
     assert frozenset(actual_shapes) == expected_shapes
 
-    # Model selection stage
+    ###########
+    # Fit stage
+    ###########
     stage_name = 'fit'
     stage_params = params[stage_name]
 
     fit_out = subprocess.run([
         'python', 'fit.py',
-        '--input_data_stage', 'split',
+        '--input_data_stage', 'split',  # TODO drop this???
         '--feature_filename', 'X-train.csv',
         '--target_filename', 'y-train.csv'
-    ], cwd=MODEL_SELECTION_DIR, check=True)
+    ], cwd=MODEL_SELECTION_REPO_DIR, check=True)
 
     # Test that script ran without error
     assert fit_out.returncode == 0
 
     out_file_paths = list((data_dir_test / stage_name).glob('*'))
 
-    assert len(out_file_paths) == 1  # TODO change
+    assert len(out_file_paths) == 1  # TODO change if more than one model
 
 
 # Test model selection utils

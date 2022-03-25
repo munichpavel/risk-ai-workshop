@@ -1,11 +1,14 @@
 '''Shared functions for model selection'''
+import os
 from pathlib import Path
 
 import yaml
 
-MODULE_DIR = Path(__file__).parent
+PROJECT_ROOT = Path(os.environ['PROJECT_ROOT'])
 
 
 def get_params():
-    params = yaml.safe_load(open(MODULE_DIR / "params.yaml"))
+    params = yaml.safe_load(open(
+        PROJECT_ROOT / 'risk_learning' / 'model_selection' / 'params.yaml'
+    ))
     return params
