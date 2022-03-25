@@ -8,11 +8,15 @@ import subprocess
 import tempfile
 
 import pytest
-import nbformat
+try:
+    import nbformat
+except ModuleNotFoundError as err:
+    print('Skipping import--will get other error laster if needed')
+    print(err)
 
-# Assumes test are called from project root directory
-cwd = Path(os.getcwd())
-notebook_dir = cwd / 'notebooks'
+
+project_root = Path(os.environ['PROJECT_ROOT'])
+notebook_dir = project_root / 'notebooks'
 
 
 @pytest.mark.notebook

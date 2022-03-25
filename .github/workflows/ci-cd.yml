@@ -9,35 +9,61 @@ env:
   PROJECT_ROOT: ${{ github.workspace }}
 
 jobs:
-  tests:
+  test-units:
     name: "Python ${{ matrix.python-version }}"
     runs-on: "ubuntu-latest"
-
     strategy:
       matrix:
         python-version: ["3.6", "3.7", "3.8", "3.9"]
-
     steps:
       - uses: "actions/checkout@v2"
       - uses: "actions/setup-python@v2"
         with:
           python-version: "${{ matrix.python-version }}"
-      - name: "Install dependencies"
-        run: |
-          python -VV
-          python -m site
-          python -m pip install --upgrade pip setuptools wheel
-          python -m pip install --upgrade coverage[toml] virtualenv tox tox-gh-actions
-          python -m pip install -r requirements.txt
-          python -m pip install .
+      - name: "Install generic python dependencies"
+        run: ${{ github.workspace }}/install-python-dependencies.sh
       - name: "Run tox targets for ${{ matrix.python-version }}"
         run: "python -m tox"
       - name: "Run unit tests for ${{ matrix.python-version }}"
         run: "python -m pytest -vv -m 'not latex and not notebook'"
+
+  test-notebooks:
+    name: "Python ${{ matrix.python-version }}"
+    runs-on: "ubuntu-latest"
+    needs: test-units
+    strategy:
+      matrix:
+        python-version: ["3.6", "3.7", "3.8", "3.9"]
+    steps:
+      - uses: "actions/checkout@v2"
+      - uses: "actions/setup-python@v2"
+        with:
+          python-version: "${{ matrix.python-version }}"
+      - name: "Install shared python dependencies"
+        run: ${{ github.workspace }}/install-python-dependencies.sh
+      - name: "Run tox targets for ${{ matrix.python-version }}"
+        run: "python -m tox"
       - name: "Run notebook tests for ${{ matrix.python-version }}"
         run: |
           sudo apt-get install graphviz
           python -m pytest -vv -m notebook
+
+  test-latex:
+    name: "Python ${{ matrix.python-version }}"
+    runs-on: "ubuntu-latest"
+    needs: test-units
+    strategy:
+      matrix:
+        python-version: ["3.6", "3.7", "3.8", "3.9"]
+    steps:
+      - uses: "actions/checkout@v2"
+      - uses: "actions/setup-python@v2"
+        with:
+          python-version: "${{ matrix.python-version }}"
+      - name: "Install generic python dependencies"
+        run: ${{ github.workspace }}/install-python-dependencies.sh
+      - name: "Run tox targets for ${{ matrix.python-version }}"
+        run: "python -m tox"
       - name: "Run latex tests for ${{ matrix.python-version }}"
         run: |
           sudo apt-get install texlive-latex-extra
@@ -45,7 +71,7 @@ jobs:
 
   deliver:
     runs-on: ubuntu-latest
-    needs: tests
+    needs: [test-units, test-notebooks, test-latex]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
