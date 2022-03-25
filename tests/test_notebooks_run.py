@@ -8,11 +8,8 @@ import subprocess
 import tempfile
 
 import pytest
-try:
-    import nbformat
-except ModuleNotFoundError as err:
-    print('Skipping import--will get other error laster if needed')
-    print(err)
+
+import nbformat
 
 
 project_root = Path(os.environ['PROJECT_ROOT'])
