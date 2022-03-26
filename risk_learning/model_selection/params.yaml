@@ -1,7 +1,7 @@
 split:
+  seed: 42
   train_ratio: 0.40
   test_ratio: 0.20
-  seed: 42
   target_col: "default"
   non_target_cols: ["gender", "occupation"]
   file_read_params:

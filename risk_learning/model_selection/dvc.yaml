@@ -5,6 +5,7 @@ stages:
     - ../../notebooks/data/default.csv
     - split.py
     params:
+    - split.file_read_params
     - split.non_target_cols
     - split.seed
     - split.target_col
@@ -12,3 +13,30 @@ stages:
     - split.train_ratio
     outs:
     - ../../notebooks/data/split
+  fit_train:
+    cmd: python fit.py --stage_name fit_train
+    deps:
+    - ../../notebooks/data/split
+    - fit.py
+    params:
+    - fit_train.data_in_folder
+    - fit_train.feature_filename
+    - fit_train.file_read_params
+    - fit_train.model_params
+    - fit_train.seed
+    outs:
+    - ../../notebooks/data/fit_train
+  evaluate_fit_train:
+    cmd: python evaluate.py --stage_name evaluate_fit_train
+    deps:
+    - ../../notebooks/data/fit_train
+    - ../../notebooks/data/split
+    - evaluate.py
+    params:
+    - evaluate_fit_train.data_in_folder
+    - evaluate_fit_train.feature_filename
+    - evaluate_fit_train.file_read_params
+    - evaluate_fit_train.model_in_folder
+    - evaluate_fit_train.target_filename
+    outs:
+    - ../../notebooks/data/evaluate_fit_train
