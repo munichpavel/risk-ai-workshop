@@ -21,7 +21,7 @@ fit_train:
 
 evaluate_fit_train:
   data_in_folder: "split"
-  model_in_folder: "fit_multiple"
+  model_in_folder: "fit_train"
   feature_filename: "X-validate.csv"
   target_filename: "y-validate.csv"
   file_read_params:

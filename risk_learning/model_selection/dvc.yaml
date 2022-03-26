@@ -38,5 +38,5 @@ stages:
     - evaluate_fit_train.file_read_params
     - evaluate_fit_train.model_in_folder
     - evaluate_fit_train.target_filename
-    outs:
-    - ../../notebooks/data/evaluate_fit_train
+    metrics:
+    - ../../notebooks/data/evaluate_fit_train/metrics.json

@@ -4,6 +4,7 @@ import shutil
 import subprocess
 import csv
 from itertools import product
+import json
 
 import pytest
 import pandas as pd
@@ -113,9 +114,16 @@ def test_pipeline_runs(tmpdir, monkeypatch):
 
     assert evaluate_out.returncode == 0
 
-    out_file_paths = list((data_dir / stage_name).glob('*'))
+    out_file_paths = list((data_dir / stage_name).glob('*.json'))
+    assert out_file_paths  # non-empty metric file list
 
-    assert len(out_file_paths) == 1
+    # Assert metric file(s) can be loaded
+    for out_file_path in out_file_paths:
+        with open(out_file_path, 'r') as fp:
+            try:
+                json.load(fp)
+            except json.decoder.JSONDecodeError as err:
+                assert False, err
 
 
 # Test model selection utils

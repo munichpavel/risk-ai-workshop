@@ -16,6 +16,7 @@ def main(stage_name: str, stage_params: dict) -> None:
     outdir = data_dir / stage_name
     outdir.mkdir(exist_ok=True)
 
+    # Read in feature and target data to fit
     X = pd.read_csv(
         input_dir / stage_params['feature_filename'],
         **stage_params['file_read_params']
@@ -24,7 +25,16 @@ def main(stage_name: str, stage_params: dict) -> None:
         input_dir / stage_params['target_filename'],
         **stage_params['file_read_params']
     )
-    model_paths = model_dir.glob('*.joblib')
+
+    # Read in models
+    model_path_extension = 'joblib'
+    model_paths = list(model_dir.glob(f'*.{model_path_extension}'))
+    if not model_paths:
+        raise FileNotFoundError(
+            f'No {model_path_extension} files found in {model_dir}'
+        )
+
+    # Evaluate models
     with open(outdir / 'metrics.json', "w") as fp:
         for model_path in model_paths:
             clf = joblib.load(model_path)

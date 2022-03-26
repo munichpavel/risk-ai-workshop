@@ -64,18 +64,17 @@ stages:
       size: 60078
       nfiles: 6
     - path: evaluate.py
-      md5: 619e83e2f47a65bad3f9d43705be8a17
-      size: 1621
+      md5: 58d242348544b6e575ef97aac0738dbc
+      size: 1905
     params:
       params.yaml:
         evaluate_fit_train.data_in_folder: split
         evaluate_fit_train.feature_filename: X-validate.csv
         evaluate_fit_train.file_read_params:
           delimiter: ','
-        evaluate_fit_train.model_in_folder: fit_multiple
+        evaluate_fit_train.model_in_folder: fit_train
         evaluate_fit_train.target_filename: y-validate.csv
     outs:
-    - path: ../../notebooks/data/evaluate_fit_train
-      md5: 5ead5be114fb5ce2bc30e263ac0bed97.dir
-      size: 0
-      nfiles: 1
+    - path: ../../notebooks/data/evaluate_fit_train/metrics.json
+      md5: 612312aaf288c8a4db3bd8f1ce61fbf6
+      size: 39
