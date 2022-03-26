@@ -1,5 +1,3 @@
-from typing import Union
-import random
 import os
 from pathlib import Path
 
@@ -29,7 +27,6 @@ def validate_split_ratios(train_ratio: float, test_ratio: float) -> None:
 def main(
     stage_name: str, stage_params: dict, data_path: str
 ) -> None:
-    random.seed(stage_params['seed'])
     train_ratio = stage_params['train_ratio']
     test_ratio = stage_params['test_ratio']
 
