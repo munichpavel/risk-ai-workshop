@@ -1,22 +1,14 @@
 stages:
-  prepare:
-    cmd: python prepare.py ../notebooks/data/default.csv
+  split:
+    cmd: python split.py --data_path /Users/pauldev/delo/projects/risk-ai-workshop/notebooks/data/default.csv
     deps:
-    - ../notebooks/data/default.csv
-    - prepare.py
+    - ../../notebooks/data/default.csv
+    - split.py
     params:
-    - prepare.seed
-    - prepare.target_col
-    - prepare.test_split
-    - prepare.train_split
+    - split.non_target_cols
+    - split.seed
+    - split.target_col
+    - split.test_ratio
+    - split.train_ratio
     outs:
-    - ../notebooks/data/prepared
-  train:
-    cmd: python train.py
-    deps:
-    - ../notebooks/data/prepared
-    - train
-    params:
-    - prepare.seed
-    outs:
-    - ../notebooks/data/train
+    - ../../notebooks/data/split

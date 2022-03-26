@@ -47,7 +47,6 @@ def test_pipeline_runs(tmpdir, monkeypatch):
         'python', 'split.py',
         '--data_path', in_path.as_posix()
     ], cwd=model_selection_repo_dir, check=True)
-    # ], check=True)
 
     # Test that script ran without error
     assert split_out.returncode == 0
@@ -86,14 +85,12 @@ def test_pipeline_runs(tmpdir, monkeypatch):
     ###########
     # Fit stage
     ###########
-    stage_name = 'fit'
+    stage_name = 'fit_train'
     stage_params = params[stage_name]
 
     fit_out = subprocess.run([
         'python', 'fit.py',
-        '--input_data_stage', 'split',  # TODO drop this???
-        '--feature_filename', 'X-train.csv',
-        '--target_filename', 'y-train.csv'
+        '--stage_name', stage_name
     ], cwd=model_selection_repo_dir, check=True)
 
     # Test that script ran without error
@@ -101,28 +98,24 @@ def test_pipeline_runs(tmpdir, monkeypatch):
 
     out_file_paths = list((data_dir / stage_name).glob('*'))
 
-    assert len(out_file_paths) == 1  # TODO change if more than one model
+    assert len(out_file_paths) == len(stage_params['model_params'])
 
     ################
     # Evaluate stage
     ################
-    stage_name = 'evaluate'
+    stage_name = 'evaluate_fit_train'
     stage_params = params[stage_name]
 
     evaluate_out = subprocess.run([
         'python', 'evaluate.py',
-        '--input_data_stage', 'split',  # TODO drop this???
-        '--feature_filename', 'X-validate.csv',
-        '--target_filename', 'y-validate.csv',
-        '--model_filename', 'logistic-regression.joblib',  # FIXME: un-hard-code  # noqa: E501
-        '--out_filename', 'scores.json'
+        '--stage_name', stage_name
     ], cwd=model_selection_repo_dir, check=True)
 
     assert evaluate_out.returncode == 0
 
     out_file_paths = list((data_dir / stage_name).glob('*'))
 
-    assert len(out_file_paths) == 1  # TODO change if more than one model
+    assert len(out_file_paths) == 1
 
 
 # Test model selection utils

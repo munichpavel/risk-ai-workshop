@@ -6,8 +6,6 @@ from pathlib import Path
 from sklearn.model_selection import train_test_split
 import pandas as pd
 
-from risk_learning.model_selection.utils import get_params
-
 
 def validate_split_ratios(train_ratio: float, test_ratio: float) -> None:
     error_msg = ''
@@ -30,33 +28,36 @@ def validate_split_ratios(train_ratio: float, test_ratio: float) -> None:
 
 def main(
     stage_name: str, stage_params: dict, data_path: str
-) -> Union[None, Exception]:
-    random.seed(stage_params["seed"])
-    train_ratio = stage_params["train_ratio"]
-    test_ratio = stage_params["test_ratio"]
+) -> None:
+    random.seed(stage_params['seed'])
+    train_ratio = stage_params['train_ratio']
+    test_ratio = stage_params['test_ratio']
 
     validate_split_ratios(train_ratio, test_ratio)
 
     project_root = Path(os.environ['PROJECT_ROOT'])
     data_dir = project_root / 'notebooks' / 'data'
 
-    target_col = stage_params["target_col"]
-    non_target_cols = stage_params["non_target_cols"]
-    df = pd.read_csv(data_path, usecols=non_target_cols + [target_col])
+    target_col = stage_params['target_col']
+    non_target_cols = stage_params['non_target_cols']
+    df = pd.read_csv(
+        data_path, usecols=non_target_cols + [target_col],
+        **stage_params['file_read_params']
+    )
 
     X = df[non_target_cols]
     y = df[target_col]
 
     # Split into train + validation  / test sets
     X_train_validate, X_test, y_train_validate, y_test = train_test_split(
-        X, y, test_size=test_ratio, random_state=stage_params["seed"]
+        X, y, test_size=test_ratio, random_state=stage_params['seed']
     )
 
     train_ratio_after_test_split = train_ratio / (1 - test_ratio)
     X_train, X_validate, y_train, y_validate = train_test_split(
         X_train_validate, y_train_validate,
         train_size=train_ratio_after_test_split,
-        random_state=stage_params["seed"]
+        random_state=stage_params['seed']
     )
 
     outdir = data_dir / stage_name
@@ -79,6 +80,7 @@ def main(
 
 if __name__ == '__main__':
     import argparse
+    from risk_learning.model_selection.utils import get_params
 
     parser = argparse.ArgumentParser(
         description='Split data for model selection'

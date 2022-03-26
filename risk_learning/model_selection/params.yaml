@@ -4,8 +4,25 @@ split:
   seed: 42
   target_col: "default"
   non_target_cols: ["gender", "occupation"]
+  file_read_params:
+    delimiter: ","
 
-fit:
+fit_train:
   seed: 42
+  data_in_folder: "split"
+  feature_filename: "X-train.csv"
+  target_filename: "y-train.csv"
+  file_read_params:
+    delimiter: ","
+  model_params:
+    logistic_regression:
+      name: "LogisticRegression"
+      hyperparams: {C: 1}
 
-evaluate:
+evaluate_fit_train:
+  data_in_folder: "split"
+  model_in_folder: "fit_multiple"
+  feature_filename: "X-validate.csv"
+  target_filename: "y-validate.csv"
+  file_read_params:
+    delimiter: ","

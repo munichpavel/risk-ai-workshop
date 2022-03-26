@@ -6,54 +6,47 @@ import pandas as pd
 
 from sklearn.linear_model import LogisticRegression
 
-from risk_learning.model_selection.utils import get_params
 
-
-def main(
-    stage_name: str, stage_params: dict,
-    input_data_stage: str,
-    feature_filename: str, target_filename: str
-) -> None:
+def main(stage_name: str, stage_params: dict) -> None:
     project_root = Path(os.environ['PROJECT_ROOT'])
     data_dir = project_root / 'notebooks' / 'data'
-    input_dir = data_dir / input_data_stage
+    input_dir = data_dir / stage_params['data_in_folder']
     out_dir = data_dir / stage_name
     out_dir.mkdir(exist_ok=True)
 
-    X = pd.read_csv(input_dir / feature_filename)
-    y = pd.read_csv(input_dir / target_filename)
+    X = pd.read_csv(
+        input_dir / stage_params['feature_filename'],
+        **stage_params['file_read_params']
+    )
+    y = pd.read_csv(
+        input_dir / stage_params['target_filename'],
+        **stage_params['file_read_params']
+    )
 
-    clf = LogisticRegression()
-    clf_name = 'logistic-regression'
+    model_params = stage_params['model_params']
+    for model_name, model_metadata in model_params.items():
+        # FIXME alternative to eval???
+        clf = eval(model_metadata['name'])(**model_metadata['hyperparams'])
+        clf.fit(X, y.values.ravel())
 
-    clf.fit(X, y.values.ravel())
-
-    dump(clf, out_dir / (clf_name + '.joblib'))
+        dump(clf, out_dir / (model_name + '.joblib'))
 
 
 if __name__ == '__main__':
     import argparse
+    from risk_learning.model_selection.utils import get_params
 
     parser = argparse.ArgumentParser(
-        description='Try different models for model selection'
+        description='Fit model(s)'
     )
     parser.add_argument(
-        '--input_data_stage', type=str, help='stage name for input data'
+        '--stage_name', type=str, help='stage name'
     )
-    parser.add_argument(
-        '--feature_filename', type=str, help='filename for features to train'
-    )
-    parser.add_argument(
-        '--target_filename', type=str, help='filename for target to train'
-    )
+
     args = parser.parse_args()
 
     params = get_params()
-    stage_name = 'fit'
+    stage_name = args.stage_name
     stage_params = params[stage_name]
 
-    main(
-        stage_name, stage_params,
-        args.input_data_stage,
-        args.feature_filename, args.target_filename
-    )
+    main(stage_name, stage_params)

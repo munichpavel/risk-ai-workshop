@@ -20,3 +20,26 @@ stages:
       md5: 97e15b987c965e8a39a0aa073facad57.dir
       size: 60078
       nfiles: 6
+  split:
+    cmd: python split.py --data_path /Users/pauldev/delo/projects/risk-ai-workshop/notebooks/data/default.csv
+    deps:
+    - path: ../../notebooks/data/default.csv
+      md5: d715df1be2dc95e252c4a46d0432d042
+      size: 60026
+    - path: split.py
+      md5: 6f15457a7a6ba1262980f843ab377c64
+      size: 3000
+    params:
+      params.yaml:
+        split.non_target_cols:
+        - gender
+        - occupation
+        split.seed: 42
+        split.target_col: default
+        split.test_ratio: 0.2
+        split.train_ratio: 0.4
+    outs:
+    - path: ../../notebooks/data/split
+      md5: f5919c6851e633951b660ff4bfc00709.dir
+      size: 60078
+      nfiles: 6
