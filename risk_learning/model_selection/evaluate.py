@@ -35,14 +35,18 @@ def main(stage_name: str, stage_params: dict) -> None:
         )
 
     # Evaluate models
-    with open(outdir / 'metrics.json', "w") as fp:
-        for model_path in model_paths:
+    for model_path in model_paths:
+        model_name = model_path.stem
+        with open(outdir / f'metrics_{model_name}.json', "w") as fp:
             clf = joblib.load(model_path)
             predictions_by_class = clf.predict_proba(X)
             predictions = predictions_by_class[:, 1]
             avg_prec = metrics.average_precision_score(y, predictions)
 
-            json.dump({"avg_prec": avg_prec}, fp, indent=4)
+            json.dump(
+                {"avg_prec": avg_prec},
+                fp, indent=4
+            )
 
 
 if __name__ == '__main__':

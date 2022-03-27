@@ -18,6 +18,9 @@ fit_train:
     logistic_regression:
       name: "LogisticRegression"
       hyperparams: {C: 1}
+    decision_tree_classifier:
+      name: "DecisionTreeClassifier"
+      hyperparams: {criterion: gini}
 
 evaluate_fit_train:
   data_in_folder: "split"

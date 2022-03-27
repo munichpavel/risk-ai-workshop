@@ -5,6 +5,7 @@ from joblib import dump
 import pandas as pd
 
 from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
 
 
 def main(stage_name: str, stage_params: dict) -> None:

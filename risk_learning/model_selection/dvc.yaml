@@ -39,4 +39,4 @@ stages:
     - evaluate_fit_train.model_in_folder
     - evaluate_fit_train.target_filename
     metrics:
-    - ../../notebooks/data/evaluate_fit_train/metrics.json
+    - ../../notebooks/data/evaluate_fit_train
