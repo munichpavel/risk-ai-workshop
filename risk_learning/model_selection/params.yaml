@@ -3,7 +3,7 @@ split:
   train_ratio: 0.40
   test_ratio: 0.20
   target_col: "default"
-  non_target_cols: ["gender", "occupation"]
+  non_target_cols: ["gender", "occupation", "car"]
   file_read_params:
     delimiter: ","
 
@@ -17,10 +17,13 @@ fit_train:
   model_params:
     logistic_regression:
       name: "LogisticRegression"
-      hyperparams: {C: 1}
+      hyperparams: {"C": 1}
     decision_tree_classifier:
       name: "DecisionTreeClassifier"
-      hyperparams: {criterion: gini}
+      hyperparams: {"criterion": gini}
+    random_forest_classifier:
+      name: "RandomForestClassifier"
+      hyperparams: {'n_estimators': 10}
 
 evaluate_fit_train:
   data_in_folder: "split"
