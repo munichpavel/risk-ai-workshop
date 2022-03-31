@@ -84,10 +84,13 @@ _*.ipynb
 *.blg
 *.pdf
 
-## images, must force add if really needed
+# images, must force add if really needed
 *.dot
-
+graphics/
 *.html
+
+# data files, must force add if really needed
+*.csv
 
 # OS X
 .DS_Store
