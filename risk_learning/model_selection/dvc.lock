@@ -4,8 +4,8 @@ stages:
     cmd: python split.py --data_path /Users/pauldev/delo/projects/risk-ai-workshop/notebooks/data/default.csv
     deps:
     - path: ../../notebooks/data/default.csv
-      md5: 13bdcb74267fa659982508cf24f4fd08
-      size: 80030
+      md5: 2aae0cd29d1a975f4f4b4f25b11608e4
+      size: 80035
     - path: split.py
       md5: 7721a93bfff7ab7edc277e3a517ee89b
       size: 2966
@@ -16,22 +16,22 @@ stages:
         split.non_target_cols:
         - gender
         - occupation
-        - car
+        - activity
         split.seed: 42
         split.target_col: default
         split.test_ratio: 0.2
         split.train_ratio: 0.4
     outs:
     - path: ../../notebooks/data/split
-      md5: 9e6996484794e5b018c6769e14e88f4b.dir
-      size: 80090
+      md5: d5d4f26a1bce634ec71595ab72e22cf8.dir
+      size: 80105
       nfiles: 6
   fit_train:
     cmd: python fit.py --stage_name fit_train
     deps:
     - path: ../../notebooks/data/split
-      md5: 9e6996484794e5b018c6769e14e88f4b.dir
-      size: 80090
+      md5: d5d4f26a1bce634ec71595ab72e22cf8.dir
+      size: 80105
       nfiles: 6
     - path: fit.py
       md5: a0597487a6c51a4dc1f140f2c20459b7
@@ -58,19 +58,19 @@ stages:
         fit_train.seed: 42
     outs:
     - path: ../../notebooks/data/fit_train
-      md5: 4ec77161107b6c367325637fd9efe503.dir
-      size: 15141
+      md5: 74a9b56faf9f80751616e3d83cc9a84a.dir
+      size: 14724
       nfiles: 3
   evaluate_fit_train:
     cmd: python evaluate.py --stage_name evaluate_fit_train
     deps:
     - path: ../../notebooks/data/fit_train
-      md5: 4ec77161107b6c367325637fd9efe503.dir
-      size: 15141
+      md5: 74a9b56faf9f80751616e3d83cc9a84a.dir
+      size: 14724
       nfiles: 3
     - path: ../../notebooks/data/split
-      md5: 9e6996484794e5b018c6769e14e88f4b.dir
-      size: 80090
+      md5: d5d4f26a1bce634ec71595ab72e22cf8.dir
+      size: 80105
       nfiles: 6
     - path: evaluate.py
       md5: 799f8592e0a64fc8f4d6153cc4200f50
@@ -85,6 +85,6 @@ stages:
         evaluate_fit_train.target_filename: y-validate.csv
     outs:
     - path: ../../notebooks/data/evaluate_fit_train
-      md5: 43f6c75ed0fae2eb53e8307ad59b2567.dir
+      md5: 79c41eff72c805510772e0fa7796c15b.dir
       size: 114
       nfiles: 3

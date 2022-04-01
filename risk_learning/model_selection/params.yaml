@@ -3,7 +3,7 @@ split:
   train_ratio: 0.40
   test_ratio: 0.20
   target_col: "default"
-  non_target_cols: ["gender", "occupation", "car"]
+  non_target_cols: ["gender", "occupation", "activity"]
   file_read_params:
     delimiter: ","
 
