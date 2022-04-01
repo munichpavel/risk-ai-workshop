@@ -6,7 +6,8 @@ import numpy as np
 import pandas as pd
 
 from risk_learning.simpson import (
-    compute_margin, transform_data_array_component, get_flat_combinations
+    compute_margin, transform_data_array_component,
+    get_flat_combinations, make_feature_combination_score_array,
 )
 
 
@@ -203,3 +204,27 @@ def test_get_flat_combinations(coords, expected):
         )
 
         assert (shapes_equal and rows_equal)
+
+
+def test_make_feature_combination_scores_array():
+    feature_combinations = pd.DataFrame(
+        [
+            [0, 0],
+            [0, 1],
+            [1, 0],
+            [1, 1]
+        ], columns=('first', 'second')
+    )
+    scores = pd.Series([-0.5, -0.25, 0.25, 0.5])
+
+    expected = xr.DataArray(
+        [
+            [-0.5, -0.25],
+            [0.25, 0.5]
+        ],
+        coords=dict(first=[0, 1], second=[0, 1])
+    )
+
+    res = make_feature_combination_score_array(feature_combinations, scores)
+
+    xr.testing.assert_equal(res, expected)

@@ -4,6 +4,7 @@ from itertools import product
 
 import xarray as xr
 import pandas as pd
+import numpy as np
 
 
 def compute_margin(a_data_array, non_margin_sel: dict) -> float:
@@ -31,3 +32,29 @@ def get_flat_combinations(coords: dict) -> pd.DataFrame:
         flat_combination_values, columns=flat_combination_cols
     )
     return flat_combinations
+
+
+def make_feature_combination_score_array(
+    feature_combinations: pd.DataFrame, scores: pd.Series
+) -> xr.DataArray:
+    '''TODO refactor, maybe break into smaller functions with tests'''
+    coord_names = feature_combinations.columns
+    coords = {}
+    for coord_name in coord_names:
+        feature_vals = list(set(feature_combinations[coord_name]))
+        coords[coord_name] = feature_vals
+
+    # Get score array shape
+    score_shape = []
+    for vals in coords.values():
+        score_shape.append(len(vals))
+
+    score_array = xr.DataArray(
+        np.zeros(score_shape),
+        coords=coords
+    )
+    for row_idx, feature_series in feature_combinations.iterrows():
+        feature_dict = feature_series.to_dict()
+        score_array[feature_dict] = scores[row_idx]
+
+    return score_array
