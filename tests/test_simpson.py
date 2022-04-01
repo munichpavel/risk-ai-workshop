@@ -3,9 +3,10 @@ import pytest
 
 import xarray as xr
 import numpy as np
+import pandas as pd
 
 from risk_learning.simpson import (
-    compute_margin, transform_data_array_component
+    compute_margin, transform_data_array_component, get_flat_combinations
 )
 
 
@@ -131,3 +132,74 @@ def test_transform_data_array_component(
 
     res = transform_data_array_component(a_data_array, component_function)
     assert res == expected
+
+
+@pytest.mark.parametrize(
+    'coords,expected',
+    [
+        (
+            dict(
+                first=[0, 1],
+                second=[0, 1]
+            ),
+            pd.DataFrame(
+                [
+                    [0, 0],
+                    [0, 1],
+                    [1, 0],
+                    [1, 1]
+                ], columns=('first', 'second')
+            )
+        ),
+        (
+            dict(
+                first=[0, 1],
+                second=[0, 1]
+            ),
+            pd.DataFrame(
+                [
+                    [1, 1],
+                    [0, 0],
+                    [0, 1],
+                    [1, 0]
+                ], columns=('first', 'second')
+            )
+        ),
+        (
+            dict(
+                first=[0, 1],
+                second=[0, 1],
+                third=[0, 1]
+            ),
+            pd.DataFrame(
+                [
+                    (0, 0, 0),
+                    (0, 0, 1),
+                    (0, 1, 0),
+                    (0, 1, 1),
+                    (1, 0, 0),
+                    (1, 0, 1),
+                    (1, 1, 0),
+                    (1, 1, 1)
+                ],
+                columns=('first', 'second', 'third')
+            )
+        )
+    ]
+)
+def test_get_flat_combinations(coords, expected):
+    res = get_flat_combinations(coords)
+
+    frames_equal = res.equals(expected)
+    if frames_equal:
+        assert True
+    # If frames not identical, check shape same and rows same as sets
+    else:
+        shapes_equal = res.shape == expected.shape
+
+        rows_equal = (
+            set([tuple(row) for row in res.values.tolist()])
+            == set([tuple(row) for row in expected.values.tolist()])
+        )
+
+        assert (shapes_equal and rows_equal)
