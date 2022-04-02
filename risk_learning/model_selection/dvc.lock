@@ -4,7 +4,7 @@ stages:
     cmd: python split.py --data_path /Users/pauldev/delo/projects/risk-ai-workshop/notebooks/data/default.csv
     deps:
     - path: ../../notebooks/data/default.csv
-      md5: 6f00e16a8c65ed6e115f125c5a4ab6d1
+      md5: 36d91a9998e0e89c3a5d709b3f27de94
       size: 80035
     - path: split.py
       md5: 7721a93bfff7ab7edc277e3a517ee89b
@@ -23,14 +23,14 @@ stages:
         split.train_ratio: 0.4
     outs:
     - path: ../../notebooks/data/split
-      md5: a4d5661b38e2b5cbac51a11284f8de49.dir
+      md5: 32df93aab08a754f430181e5a5136bb7.dir
       size: 80105
       nfiles: 6
   fit_train:
     cmd: python fit.py --stage_name fit_train
     deps:
     - path: ../../notebooks/data/split
-      md5: a4d5661b38e2b5cbac51a11284f8de49.dir
+      md5: 32df93aab08a754f430181e5a5136bb7.dir
       size: 80105
       nfiles: 6
     - path: fit.py
@@ -47,29 +47,32 @@ stages:
             name: LogisticRegression
             hyperparams:
               C: 1
+              random_state: 42
           decision_tree_classifier:
             name: DecisionTreeClassifier
             hyperparams:
               criterion: gini
+              random_state: 42
           random_forest_classifier:
             name: RandomForestClassifier
             hyperparams:
               n_estimators: 10
+              random_state: 42
         fit_train.seed: 42
     outs:
     - path: ../../notebooks/data/fit_train
-      md5: 28be5adbdcb6176bff5e4c346a0a935e.dir
-      size: 15300
+      md5: 35f49a13a82747f7a5d1b65f3d4ea523.dir
+      size: 15303
       nfiles: 3
   evaluate_fit_train:
     cmd: python evaluate.py --stage_name evaluate_fit_train
     deps:
     - path: ../../notebooks/data/fit_train
-      md5: 28be5adbdcb6176bff5e4c346a0a935e.dir
-      size: 15300
+      md5: 35f49a13a82747f7a5d1b65f3d4ea523.dir
+      size: 15303
       nfiles: 3
     - path: ../../notebooks/data/split
-      md5: a4d5661b38e2b5cbac51a11284f8de49.dir
+      md5: 32df93aab08a754f430181e5a5136bb7.dir
       size: 80105
       nfiles: 6
     - path: evaluate.py

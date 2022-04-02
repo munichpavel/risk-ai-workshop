@@ -17,13 +17,13 @@ fit_train:
   model_params:
     logistic_regression:
       name: "LogisticRegression"
-      hyperparams: {"C": 1}
+      hyperparams: {"C": 1, "random_state": 42}
     decision_tree_classifier:
       name: "DecisionTreeClassifier"
-      hyperparams: {"criterion": gini}
+      hyperparams: {"criterion": gini, "random_state": 42}
     random_forest_classifier:
       name: "RandomForestClassifier"
-      hyperparams: {'n_estimators': 10}
+      hyperparams: {'n_estimators': 10, "random_state": 42}
 
 evaluate_fit_train:
   data_in_folder: "split"
