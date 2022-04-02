@@ -23,7 +23,7 @@ split_out = subprocess.run([
 ###################
 fit_out = subprocess.run([
     'python', 'fit.py',
-    '--stage_name', 'fit_train',  # TODO drop this???
+    '--stage_name', 'fit_train',
 
 ], cwd=model_selection_repo_dir, check=True)
 
@@ -34,3 +34,11 @@ evaluate_out = subprocess.run([
     'python', 'evaluate.py', '--stage_name', 'evaluate_fit_train'
 ], cwd=model_selection_repo_dir, check=True)
 
+####################################################
+# Fit selected model with training + validation data
+####################################################
+fit_out = subprocess.run([
+    'python', 'fit.py',
+    '--stage_name', 'fit_selected_model',
+
+], cwd=model_selection_repo_dir, check=True)

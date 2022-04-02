@@ -172,6 +172,17 @@ def test_pipeline_runs(tmpdir, monkeypatch):
             except json.decoder.JSONDecodeError as err:
                 assert False, err
 
+    ####################################################
+    # Fit selected model with training + validation data
+    ####################################################
+    fit_selected_out = subprocess.run([
+        'python', 'fit.py',
+        '--stage_name', 'fit_selected_model',
+
+    ], cwd=model_selection_repo_dir, check=True)
+
+    assert fit_selected_out.returncode == 0
+
 
 def test_model_training_population_scores(tmpdir, monkeypatch):
     '''TODO refactor away (some) duplication with above end-to-end'''

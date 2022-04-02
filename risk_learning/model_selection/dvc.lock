@@ -34,12 +34,13 @@ stages:
       size: 80105
       nfiles: 6
     - path: fit.py
-      md5: a0597487a6c51a4dc1f140f2c20459b7
-      size: 1525
+      md5: 4cfb45598c60ced76e36b49748e61dc4
+      size: 1842
     params:
       params.yaml:
         fit_train.data_in_folder: split
-        fit_train.feature_filename: X-train.csv
+        fit_train.feature_filenames:
+        - X-train.csv
         fit_train.file_read_params:
           delimiter: ','
         fit_train.model_params:
@@ -59,6 +60,8 @@ stages:
               n_estimators: 10
               random_state: 42
         fit_train.seed: 42
+        fit_train.target_filenames:
+        - y-train.csv
     outs:
     - path: ../../notebooks/data/fit_train
       md5: 9d2ca461e071ad97b363f8181f7127a8.dir
@@ -100,3 +103,36 @@ stages:
           delimiter: ','
         evaluate_fit_train.model_in_folder: fit_train
         evaluate_fit_train.target_filename: y-validate.csv
+  fit_selected_model:
+    cmd: python fit.py --stage_name fit_selected_model
+    deps:
+    - path: ../../notebooks/data/split
+      md5: 0c7aca45eb51d6b5ec170f7b20c49d8f.dir
+      size: 80105
+      nfiles: 6
+    - path: fit.py
+      md5: 4cfb45598c60ced76e36b49748e61dc4
+      size: 1842
+    params:
+      params.yaml:
+        fit_selected_model.data_in_folder: split
+        fit_selected_model.feature_filenames:
+        - X-train.csv
+        - X-validate.csv
+        fit_selected_model.file_read_params:
+          delimiter: ','
+        fit_selected_model.model_params:
+          random_forest_classifier:
+            name: RandomForestClassifier
+            hyperparams:
+              n_estimators: 10
+              random_state: 42
+        fit_selected_model.seed: 42
+        fit_selected_model.target_filenames:
+        - y-train.csv
+        - y-validate.csv
+    outs:
+    - path: ../../notebooks/data/fit_selected_model
+      md5: 51c8ae6a8ac74d2cfc757cf86d13d905.dir
+      size: 15346
+      nfiles: 1
