@@ -10,8 +10,8 @@ split:
 fit_train:
   seed: 42
   data_in_folder: "split"
-  feature_filename: "X-train.csv"
-  target_filename: "y-train.csv"
+  feature_filenames: ["X-train.csv"]
+  target_filenames: ["y-train.csv"]
   file_read_params:
     delimiter: ","
   model_params:
@@ -39,3 +39,15 @@ data_models:
     occupation: [0, 1]
     activity: [0, 1]
     default: [0, 1]
+
+fit_selected_model:
+  seed: 42
+  data_in_folder: "split"
+  feature_filenames: ["X-train.csv", "X-validate.csv"]
+  target_filenames: ["y-train.csv", "y-validate.csv"]
+  file_read_params:
+    delimiter: ","
+  model_params:
+    random_forest_classifier:
+      name: "RandomForestClassifier"
+      hyperparams: {'n_estimators': 10, "random_state": 42}

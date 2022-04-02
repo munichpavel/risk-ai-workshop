@@ -16,12 +16,49 @@ from risk_learning.model_selection import utils, split
 
 
 # Test model selection utils
-def test_get_params():
+def test_utils_get_params():
     '''Weak test for shared function to read model selection parameters'''
     params = utils.get_params()
     assert isinstance(params, dict)
 
 
+@pytest.mark.parametrize(
+    'pandases,expected',
+    [
+        (
+            [
+                pd.DataFrame(dict(noshes=['knish', 'matzah'], rating=[0, 3])),
+                pd.DataFrame(dict(noshes=['knish', 'bagel'], rating=[1, 2]))
+            ],
+            pd.DataFrame(
+                dict(
+                    noshes=['knish', 'matzah', 'knish', 'bagel'],
+                    rating=[0, 3, 1, 2]
+                )
+            )
+        ),
+        (
+            [
+                pd.Series(['knish', 'matzah'], name='noshes'),
+                pd.Series(['knish', 'bagel'], name='noshes')
+            ],
+            pd.Series(
+                ['knish', 'matzah', 'knish', 'bagel'], name='noshes'
+            )
+        )
+    ]
+)
+def test_utils_vconcat_pandases(pandases, expected):
+    res = utils.vconcat_pandases(pandases)
+    if isinstance(pandases[0], pd.DataFrame):
+        pd.testing.assert_frame_equal(res, expected)
+    elif isinstance(pandases[0], pd.Series):
+        pd.testing.assert_series_equal(res, expected)
+    else:
+        assert False, 'only pandas dataframes or series in scope'
+
+
+# Test model selection pipeline
 def test_pipeline_runs(tmpdir, monkeypatch):
     '''Weak end-to-end test'''
     ############

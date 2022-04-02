@@ -8,6 +8,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 
+from risk_learning.model_selection import utils
+
 
 def main(stage_name: str, stage_params: dict) -> None:
     project_root = Path(os.environ['PROJECT_ROOT'])
@@ -16,14 +18,24 @@ def main(stage_name: str, stage_params: dict) -> None:
     out_dir = data_dir / stage_name
     out_dir.mkdir(exist_ok=True)
 
-    X = pd.read_csv(
-        input_dir / stage_params['feature_filename'],
-        **stage_params['file_read_params']
-    )
-    y = pd.read_csv(
-        input_dir / stage_params['target_filename'],
-        **stage_params['file_read_params']
-    )
+    Xs = []
+    for feature_filename in stage_params['feature_filenames']:
+        Xi = pd.read_csv(
+            input_dir / feature_filename,
+            **stage_params['file_read_params']
+        )
+        Xs.append(Xi)
+
+    ys = []
+    for target_filenames in stage_params['target_filenames']:
+        yi = pd.read_csv(
+            input_dir / target_filenames,
+            **stage_params['file_read_params']
+        )
+        ys.append(yi)
+
+    X = utils.vconcat_pandases(Xs)
+    y = utils.vconcat_pandases(ys)
 
     model_params = stage_params['model_params']
     for model_name, model_metadata in model_params.items():
