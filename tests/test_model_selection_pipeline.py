@@ -178,12 +178,12 @@ def test_model_training_population_scores(tmpdir, monkeypatch):
             metrics = yaml.safe_load(fp)
         if (
             metrics[score_expected_lower_name]
-            > metrics[score_expected_higher_name]
+            >= metrics[score_expected_higher_name]
         ):
             msg += (
                 f'\nScore expectation failed for {metric_path.stem}:\n'
                 f'{score_expected_lower_name} of {metrics[score_expected_lower_name]}\n'  # noqa: E501
-                f'higher than {score_expected_higher_name} of {metrics[score_expected_higher_name]}'  # noqa: E501
+                f'not lower than {score_expected_higher_name} of {metrics[score_expected_higher_name]}'  # noqa: E501
             )
 
     assert not msg, msg  # TODO make less slick? E.g. if msg !='': assert False, msg ...  # noqa: E501
