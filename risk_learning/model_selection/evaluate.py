@@ -44,7 +44,6 @@ def main(
     # Evaluate models
     feature_combination_dict = {}
     for feature_name, domain_values in domain_value_params.items():
-        print(feature_name, target_col)
         if feature_name == target_col:
             print('Target column, not a feature. Skipping.')
             continue
