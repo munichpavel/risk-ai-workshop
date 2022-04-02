@@ -42,3 +42,11 @@ fit_out = subprocess.run([
     '--stage_name', 'fit_selected_model',
 
 ], cwd=model_selection_repo_dir, check=True)
+
+
+######################################
+# Evaluate selected model on test data
+######################################
+evaluate_selected_out = subprocess.run([
+    'python', 'evaluate.py', '--stage_name', 'evaluate_fit_test'
+], cwd=model_selection_repo_dir, check=True)

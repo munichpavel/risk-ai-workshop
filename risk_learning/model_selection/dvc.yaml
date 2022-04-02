@@ -54,3 +54,16 @@ stages:
     - fit_selected_model.target_filenames
     outs:
     - ../../notebooks/data/fit_selected_model
+  evaluate_fit_test:
+    cmd: python evaluate.py --stage_name evaluate_fit_test
+    deps:
+    - ../../notebooks/data/fit_test
+    - ../../notebooks/data/split
+    - evaluate.py
+    params:
+    - data_models
+    - evaluate_fit_test.data_in_folder
+    - evaluate_fit_test.feature_filename
+    - evaluate_fit_test.file_read_params
+    - evaluate_fit_test.model_in_folder
+    - evaluate_fit_test.target_filename

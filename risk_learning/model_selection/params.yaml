@@ -51,3 +51,12 @@ fit_selected_model:
     random_forest_classifier:
       name: "RandomForestClassifier"
       hyperparams: {'n_estimators': 10, "random_state": 42}
+
+evaluate_fit_test:
+  data_in_folder: "split"
+  model_in_folder: "fit_selected_model"
+  feature_filename: "X-test.csv"
+  target_filename: "y-test.csv"
+  file_read_params:
+    delimiter: ","
+

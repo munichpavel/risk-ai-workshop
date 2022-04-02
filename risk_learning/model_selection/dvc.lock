@@ -136,3 +136,39 @@ stages:
       md5: 51c8ae6a8ac74d2cfc757cf86d13d905.dir
       size: 15346
       nfiles: 1
+  evaluate_fit_test:
+    cmd: python evaluate.py --stage_name evaluate_fit_test
+    deps:
+    - path: ../../notebooks/data/fit_test
+      md5: d751713988987e9331980363e24189ce.dir
+      size: 0
+      nfiles: 0
+    - path: ../../notebooks/data/split
+      md5: 0c7aca45eb51d6b5ec170f7b20c49d8f.dir
+      size: 80105
+      nfiles: 6
+    - path: evaluate.py
+      md5: 1c2b057f7e416ce42fda1444981f7444
+      size: 3385
+    params:
+      params.yaml:
+        data_models:
+          domain_values:
+            gender:
+            - 0
+            - 1
+            occupation:
+            - 0
+            - 1
+            activity:
+            - 0
+            - 1
+            default:
+            - 0
+            - 1
+        evaluate_fit_test.data_in_folder: split
+        evaluate_fit_test.feature_filename: X-test.csv
+        evaluate_fit_test.file_read_params:
+          delimiter: ','
+        evaluate_fit_test.model_in_folder: fit_selected_model
+        evaluate_fit_test.target_filename: y-test.csv

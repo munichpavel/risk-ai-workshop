@@ -183,8 +183,17 @@ def test_pipeline_runs(tmpdir, monkeypatch):
 
     assert fit_selected_out.returncode == 0
 
+    ######################################
+    # Evaluate selected model on test data
+    ######################################
+    evaluate_selected_out = subprocess.run([
+        'python', 'evaluate.py', '--stage_name', 'evaluate_fit_test'
+    ], cwd=model_selection_repo_dir, check=True)
 
-def test_model_training_population_scores(tmpdir, monkeypatch):
+    assert evaluate_selected_out.returncode == 0
+
+
+def test_population_scores(tmpdir, monkeypatch):
     '''TODO refactor away (some) duplication with above end-to-end'''
     # Test setup
     project_root = Path(os.environ['PROJECT_ROOT'])
@@ -222,6 +231,20 @@ def test_model_training_population_scores(tmpdir, monkeypatch):
     # Read in metric results
     msg = ''
     for metric_path in (data_dir / 'evaluate_fit_train').glob('*.json'):
+        with open(metric_path, 'r') as fp:
+            metrics = yaml.safe_load(fp)
+        if (
+            metrics[score_expected_lower_name]
+            >= metrics[score_expected_higher_name]
+        ):
+            msg += (
+                f'\nScore expectation failed for {metric_path.stem}:\n'
+                f'{score_expected_lower_name} of {metrics[score_expected_lower_name]}\n'  # noqa: E501
+                f'not lower than {score_expected_higher_name} of {metrics[score_expected_higher_name]}'  # noqa: E501
+            )
+
+    # TODO refactor away some RY from above
+    for metric_path in (data_dir / 'evaluate_selected_model').glob('*.json'):
         with open(metric_path, 'r') as fp:
             metrics = yaml.safe_load(fp)
         if (
