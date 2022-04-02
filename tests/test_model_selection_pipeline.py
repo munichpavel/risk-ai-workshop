@@ -5,11 +5,19 @@ import subprocess
 import csv
 from itertools import product
 import json
+from distutils.dir_util import copy_tree
 
 import pytest
 import pandas as pd
 
 from risk_learning.model_selection import utils, split
+
+
+# Test model selection utils
+def test_get_params():
+    '''Weak test for shared function to read model selection parameters'''
+    params = utils.get_params()
+    assert isinstance(params, dict)
 
 
 def test_pipeline_runs(tmpdir, monkeypatch):
@@ -126,11 +134,37 @@ def test_pipeline_runs(tmpdir, monkeypatch):
                 assert False, err
 
 
-# Test model selection utils
-def test_get_params():
-    '''Weak test for shared function to read model selection parameters'''
-    params = utils.get_params()
-    assert isinstance(params, dict)
+def test_model_training_population_scores(tmpdir, monkeypatch):
+    '''TODO refactor away (some) duplication with above end-to-end'''
+    # Test setup
+    project_root = Path(os.environ['PROJECT_ROOT'])
+    model_selection_repo_dir = (
+        project_root / 'risk_learning' / 'model_selection'
+    )
+
+    tmpdir = Path(tmpdir)
+    data_dir = tmpdir / 'notebooks' / 'data'
+    data_dir.mkdir(parents=True)
+
+    shutil.copy(
+        src=project_root / 'notebooks' / 'data' / 'default.csv',
+        dst=data_dir
+    )
+    model_selection_test_dir = tmpdir / 'risk_learning' / 'model_selection'
+    model_selection_test_dir.mkdir(parents=True)
+
+    copy_tree(
+        src=model_selection_repo_dir.as_posix(),
+        dst=model_selection_test_dir.as_posix()
+    )
+    monkeypatch.setenv('PROJECT_ROOT', tmpdir.as_posix())
+
+    out = subprocess.run(
+        ['python', 'run-pipeline.py'],
+        cwd=model_selection_test_dir, check=True
+    )
+
+    assert out.returncode == 0
 
 
 # Test split script
