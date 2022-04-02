@@ -1,5 +1,5 @@
 {
-    "avg_precision": 0.8202358108949457,
+    "avg_precision": 1.0,
     "mean_female_score": 0.5,
-    "mean_male_score": 0.5718510767052032
+    "mean_male_score": 0.5
 }
