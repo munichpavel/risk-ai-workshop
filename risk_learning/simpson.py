@@ -51,6 +51,7 @@ def make_feature_combination_score_array(
 
     score_array = xr.DataArray(
         np.zeros(score_shape),
+        dims=coords.keys(),
         coords=coords
     )
     for row_idx, feature_series in feature_combinations.iterrows():

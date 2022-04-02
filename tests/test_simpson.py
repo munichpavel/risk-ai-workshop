@@ -222,6 +222,7 @@ def test_make_feature_combination_scores_array():
             [-0.5, -0.25],
             [0.25, 0.5]
         ],
+        dims=('first', 'second'),
         coords=dict(first=[0, 1], second=[0, 1])
     )
 
