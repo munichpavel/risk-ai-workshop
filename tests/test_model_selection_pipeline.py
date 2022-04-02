@@ -168,8 +168,8 @@ def test_model_training_population_scores(tmpdir, monkeypatch):
 
     assert out.returncode == 0
 
-    score_expected_lower_name = 'mean_female_score'
-    score_expected_higher_name = 'mean_male_score'
+    score_expected_lower_name = 'mean_male_score'
+    score_expected_higher_name = 'mean_female_score'
 
     # Read in metric results
     msg = ''
