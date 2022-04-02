@@ -32,7 +32,7 @@ jobs:
           python -m pip install .
       - name: "Run tox targets for ${{ matrix.python-version }}"
         run: "python -m tox"
-      - name: "Run unit tests for ${{ matrix.python-version }}"
+      - name: "Run package tests for ${{ matrix.python-version }}"
         run: "python -m pytest -vv -m 'not latex and not notebook'"
       - name: "Run notebook tests for ${{ matrix.python-version }}"
         run: |
