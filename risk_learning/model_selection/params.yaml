@@ -32,3 +32,10 @@ evaluate_fit_train:
   target_filename: "y-validate.csv"
   file_read_params:
     delimiter: ","
+
+data_models:
+  domain_values:
+    gender: [0, 1]
+    occupation: [0, 1]
+    activity: [0, 1]
+    default: [0, 1]

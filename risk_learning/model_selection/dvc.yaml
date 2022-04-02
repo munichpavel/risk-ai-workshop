@@ -33,6 +33,7 @@ stages:
     - ../../notebooks/data/split
     - evaluate.py
     params:
+    - data_models
     - evaluate_fit_train.data_in_folder
     - evaluate_fit_train.feature_filename
     - evaluate_fit_train.file_read_params
