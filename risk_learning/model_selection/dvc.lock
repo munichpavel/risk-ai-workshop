@@ -4,7 +4,7 @@ stages:
     cmd: python split.py --data_path /Users/pauldev/delo/projects/risk-ai-workshop/notebooks/data/default.csv
     deps:
     - path: ../../notebooks/data/default.csv
-      md5: d2ab23f756270578f4e50fd97af77423
+      md5: 6f00e16a8c65ed6e115f125c5a4ab6d1
       size: 80035
     - path: split.py
       md5: 7721a93bfff7ab7edc277e3a517ee89b
@@ -23,14 +23,14 @@ stages:
         split.train_ratio: 0.4
     outs:
     - path: ../../notebooks/data/split
-      md5: 4aa9669f683679a0aadcc13007ccf7b5.dir
+      md5: a4d5661b38e2b5cbac51a11284f8de49.dir
       size: 80105
       nfiles: 6
   fit_train:
     cmd: python fit.py --stage_name fit_train
     deps:
     - path: ../../notebooks/data/split
-      md5: 4aa9669f683679a0aadcc13007ccf7b5.dir
+      md5: a4d5661b38e2b5cbac51a11284f8de49.dir
       size: 80105
       nfiles: 6
     - path: fit.py
@@ -58,18 +58,18 @@ stages:
         fit_train.seed: 42
     outs:
     - path: ../../notebooks/data/fit_train
-      md5: 038c9f2407b071b20e215afb4a862bb6.dir
-      size: 15444
+      md5: 28be5adbdcb6176bff5e4c346a0a935e.dir
+      size: 15300
       nfiles: 3
   evaluate_fit_train:
     cmd: python evaluate.py --stage_name evaluate_fit_train
     deps:
     - path: ../../notebooks/data/fit_train
-      md5: 038c9f2407b071b20e215afb4a862bb6.dir
-      size: 15444
+      md5: 28be5adbdcb6176bff5e4c346a0a935e.dir
+      size: 15300
       nfiles: 3
     - path: ../../notebooks/data/split
-      md5: 4aa9669f683679a0aadcc13007ccf7b5.dir
+      md5: a4d5661b38e2b5cbac51a11284f8de49.dir
       size: 80105
       nfiles: 6
     - path: evaluate.py
@@ -97,8 +97,3 @@ stages:
           delimiter: ','
         evaluate_fit_train.model_in_folder: fit_train
         evaluate_fit_train.target_filename: y-validate.csv
-    outs:
-    - path: ../../notebooks/data/evaluate_fit_train
-      md5: d46ecc602b4cf9a7785abd35ed3de1a0.dir
-      size: 363
-      nfiles: 3
