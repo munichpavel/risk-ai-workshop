@@ -1,7 +1,7 @@
 '''Shared functions for model selection'''
 import os
 from pathlib import Path
-from typing import Union
+from typing import Iterator, Union
 
 import yaml
 
@@ -19,7 +19,7 @@ def get_params():
 
 
 def vconcat_pandases(
-    pandases: list[Union[pd.DataFrame, pd.Series]]
+    pandases: Iterator[Union[pd.DataFrame, pd.Series]]
 ) -> Union[pd.DataFrame, pd.Series]:
 
     res = pd.concat(pandases, axis=0)
