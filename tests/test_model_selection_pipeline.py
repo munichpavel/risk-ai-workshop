@@ -10,6 +10,8 @@ from distutils.dir_util import copy_tree
 import pytest
 import pandas as pd
 
+import yaml
+
 from risk_learning.model_selection import utils, split
 
 
@@ -165,6 +167,26 @@ def test_model_training_population_scores(tmpdir, monkeypatch):
     )
 
     assert out.returncode == 0
+
+    score_expected_lower_name = 'mean_female_score'
+    score_expected_higher_name = 'mean_male_score'
+
+    # Read in metric results
+    msg = ''
+    for metric_path in (data_dir / 'evaluate_fit_train').glob('*.json'):
+        with open(metric_path, 'r') as fp:
+            metrics = yaml.safe_load(fp)
+        if (
+            metrics[score_expected_lower_name]
+            >= metrics[score_expected_higher_name]
+        ):
+            msg += (
+                f'\nScore expectation failed for {metric_path.stem}:\n'
+                f'{score_expected_lower_name} of {metrics[score_expected_lower_name]}\n'  # noqa: E501
+                f'not lower than {score_expected_higher_name} of {metrics[score_expected_higher_name]}'  # noqa: E501
+            )
+
+    assert not msg, msg  # TODO make less slick? E.g. if msg !='': assert False, msg ...  # noqa: E501
 
 
 # Test split script
