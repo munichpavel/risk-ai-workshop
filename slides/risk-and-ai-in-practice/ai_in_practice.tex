@@ -25,13 +25,26 @@
     \end{center}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Manage spurious correlations}
+\begin{frame}{Manage spurious correlations}
     \framesubtitle{Example of credit scoring for loans}
+    \begin{columns}[T] % align columns
+        \begin{column}{.6\textwidth}
+            Artificial credit scoring data
+            \newline\newline
+            \input{graphics/default}\newline
+        \end{column}%
+    %    \hfill%
+        \begin{column}{.4\textwidth}
+            \textbf{gender}: 0 for female, 1 for male \footnote{
+                Some current and future credit data will likely\newline have a non-binary gender category.
+            } \newline
+            \textbf{occupation}: 0 for education, 1 for health \newline
+            \textbf{activity}: 0 for low account activity, 1 for high account activity \newline
+            \textbf{default}: 0 for no-default, 1 for default \newline
+        \end{column}%
+        \end{columns}
 
-    Fake data:\newline\newline
-    \input{graphics/default}\newline
-    \end{frame}
+\end{frame}
 
 
 \begin{frame}
