@@ -1,30 +1,41 @@
 % Input common header
 \input{../ai_for_risk_header}
 
-\title{Artificial Intelligence in Practice}
+\title{Risk and Artificial Intelligence in Practice: Credit Scoring and Bias}
 \begin{document}
 \maketitle
 
+\begin{frame}
+    \frametitle{Overview}
+    \begin{itemize}
+        \item Manage spurious correlations: Don't let the data speak (dangerous) nonsense
+        \item Manage operational risk: Automate everything that makes sense
+    \end{itemize}
+\end{frame}
 
 \begin{frame}
-\frametitle{Good market understanding (still) trumps technology}
+\frametitle{Manage spurious correlations}
+\framesubtitle{Don't outsource thinking to algorithms}
     \begin{center}
 \smartdiagramset{
 	back arrow disabled=true,
 }
-\smartdiagram[flow diagram:verticall]{Market,
+\smartdiagram[flow diagram:verticall]{Reality,
   Data, AI}
     \end{center}
-  In practice
-  \begin{itemize}
-    \item Do research (e.g. \href{https://en.wikipedia.org/wiki/Design\_thinking}{design thinking}, exploratory data analyses)
-    \item Define actions
-  \end{itemize}
 \end{frame}
+
+\begin{frame}
+    \frametitle{Manage spurious correlations}
+    \framesubtitle{Example of credit scoring for loans}
+
+    Fake data:\newline\newline
+    \input{graphics/default}\newline
+    \end{frame}
 
 
 \begin{frame}
-\frametitle{Artificial intelligence and risk: more buzzwords that matter}
+\frametitle{Managing Human Nature in Software}
 \begin{itemize}
 \item Agile: \href{https://agilemanifesto.org/}{agilemanifesto.org}
 \item TDD: \href{https://www.oreilly.com/library/view/test-driven-development/0321146530/}{Kent Beck, {\it Test Driven Development: By Example}}
