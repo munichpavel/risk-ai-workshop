@@ -62,9 +62,13 @@ Once an initial release has been created for a new workshop, create subsequent t
 
 ### Latest
 
+### v2022.0.2
+
 Add github actions workflow for automated testing, with unit, notebook-run and latex-slides-build
 
 Add github actions job for continuous delivery of slide artifacts
+
+Add example of model selection pipeline for artificial credit scoring data
 
 ### v2022.0.1
 
