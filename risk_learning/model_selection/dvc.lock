@@ -4,7 +4,7 @@ stages:
     cmd: python split.py --data_path /Users/pauldev/delo/projects/risk-ai-workshop/notebooks/data/default.csv
     deps:
     - path: ../../notebooks/data/default.csv
-      md5: 7114556989e5e964532b04482a1df75e
+      md5: 7b47c0de00823a5a5e7b284a58030e15
       size: 80035
     - path: split.py
       md5: 7721a93bfff7ab7edc277e3a517ee89b
@@ -23,14 +23,14 @@ stages:
         split.train_ratio: 0.4
     outs:
     - path: ../../notebooks/data/split
-      md5: 0c7aca45eb51d6b5ec170f7b20c49d8f.dir
+      md5: 30516898e437ab4cd95d305460dc00a9.dir
       size: 80105
       nfiles: 6
   fit_train:
     cmd: python fit.py --stage_name fit_train
     deps:
     - path: ../../notebooks/data/split
-      md5: 0c7aca45eb51d6b5ec170f7b20c49d8f.dir
+      md5: 30516898e437ab4cd95d305460dc00a9.dir
       size: 80105
       nfiles: 6
     - path: fit.py
@@ -64,18 +64,18 @@ stages:
         - y-train.csv
     outs:
     - path: ../../notebooks/data/fit_train
-      md5: 9d2ca461e071ad97b363f8181f7127a8.dir
-      size: 19047
+      md5: f3393185669a307bff130370ce9e91dc.dir
+      size: 16743
       nfiles: 3
   evaluate_fit_train:
     cmd: python evaluate.py --stage_name evaluate_fit_train
     deps:
     - path: ../../notebooks/data/fit_train
-      md5: 9d2ca461e071ad97b363f8181f7127a8.dir
-      size: 19047
+      md5: f3393185669a307bff130370ce9e91dc.dir
+      size: 16743
       nfiles: 3
     - path: ../../notebooks/data/split
-      md5: 0c7aca45eb51d6b5ec170f7b20c49d8f.dir
+      md5: 30516898e437ab4cd95d305460dc00a9.dir
       size: 80105
       nfiles: 6
     - path: evaluate.py
@@ -107,7 +107,7 @@ stages:
     cmd: python fit.py --stage_name fit_selected_model
     deps:
     - path: ../../notebooks/data/split
-      md5: 0c7aca45eb51d6b5ec170f7b20c49d8f.dir
+      md5: 30516898e437ab4cd95d305460dc00a9.dir
       size: 80105
       nfiles: 6
     - path: fit.py
@@ -133,8 +133,8 @@ stages:
         - y-validate.csv
     outs:
     - path: ../../notebooks/data/fit_selected_model
-      md5: 51c8ae6a8ac74d2cfc757cf86d13d905.dir
-      size: 15346
+      md5: c7093f3af68e1348bce1182865cfc33d.dir
+      size: 13474
       nfiles: 1
   evaluate_fit_test:
     cmd: python evaluate.py --stage_name evaluate_fit_test
@@ -144,7 +144,7 @@ stages:
       size: 0
       nfiles: 0
     - path: ../../notebooks/data/split
-      md5: 0c7aca45eb51d6b5ec170f7b20c49d8f.dir
+      md5: 30516898e437ab4cd95d305460dc00a9.dir
       size: 80105
       nfiles: 6
     - path: evaluate.py
