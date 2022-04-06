@@ -1,8 +1,15 @@
 % Input common header
 \input{../ai_for_risk_header}
-\title{Risk, Artificial Intelligence and Discrete Geometry}
+\title{Artificial Intelligence, Risk and Discrete Geometry}
 \begin{document}
 \maketitle
+
+\begin{frame}{Risk, Regulation and Artificial Intelligence\footnote{What about discrete geometry? Just wait \ldots it shows up soon and keeps reappearing}}
+  \framesubtitle{\ldots in one diagram}
+  \begin{center}
+    \includegraphics[width=0.3\textheight]{graphics/exuberance-crisis-regulation}
+  \end{center}
+\end{frame}
 
 \begin{frame}
 \frametitle{Human are amazing at navigating a world that does not make sense}
@@ -16,7 +23,7 @@
   \node[inner sep=0pt, right=0.5cm of grass] (door)  {
     \includegraphics[width=.4\textheight]{graphics/keep_door_closed}
   };
-   
+
 \end{tikzpicture}
 
 \end{frame}
@@ -45,45 +52,79 @@ Source: \href{https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-con
 \end{frame}
 
 \begin{frame}
-\frametitle{Artificial Intelligence Does Not Exist, But ...}
-\includegraphics[width=0.8\textwidth]{graphics/alpha_go}
+  \frametitle{Artificial Intelligence Does Not Exist, But ...}
+  \includegraphics[width=0.8\textwidth]{graphics/alpha_go}
 
-Source: \href{https://www.technologyreview.com/s/612923/how-alphazero-has-rewritten-the-rules-of-gameplay-on-its-own/}{MIT Technology Review}
+  Source: \href{https://www.technologyreview.com/s/612923/how-alphazero-has-rewritten-the-rules-of-gameplay-on-its-own/}{MIT Technology Review}
 \end{frame}
 
 \begin{frame}
-\frametitle{AI Struggles With Context}
-The scientist named the population, after their distinctive horn, Ovid’s Unicorn. These four-horned, silver-white unicorns were previously unknown to science.\newline
+  \frametitle{AI Struggles With Context}
+  The scientist named the population, after their distinctive horn, Ovid’s Unicorn. These four-horned, silver-white unicorns were previously unknown to science.\newline
 
-Source: \href{https://www.lesswrong.com/posts/4AHXDwcGab5PhKhHT/humans-who-are-not-concentrating-are-not-general}{https://www.lesswrong.com/posts/4AHXDwcGab5PhKhHT/humans-who-are-not-concentrating-are-not-general}
+  Source: \href{https://www.lesswrong.com/posts/4AHXDwcGab5PhKhHT/humans-who-are-not-concentrating-are-not-general}{https://www.lesswrong.com/posts/4AHXDwcGab5PhKhHT/humans-who-are-not-concentrating-are-not-general}
 \end{frame}
 
 \begin{frame}
-\frametitle{AI Struggles With Bias}
-\includegraphics[width=\textwidth]{graphics/facial_bias}
+  \frametitle{AI Struggles With Bias}
+  \includegraphics[width=\textwidth]{graphics/facial_bias}
 
-Source: \href{https://www.nytimes.com/2018/02/09/technology/facial-recognition-race-artificial-intelligence.html}{New York Times}
+  Source: \href{https://www.nytimes.com/2018/02/09/technology/facial-recognition-race-artificial-intelligence.html}{New York Times}
 
-See also: \href{https://www.theverge.com/2018/1/12/16882408/google-racist-gorillas-photo-recognition-algorithm-ai}{James Vincent, The Verge, Google 'fixed' its racist algorithm by removing gorillas from its image-labeling tech}
+  See also: \href{https://www.theverge.com/2018/1/12/16882408/google-racist-gorillas-photo-recognition-algorithm-ai}{James Vincent, The Verge, Google 'fixed' its racist algorithm by removing gorillas from its image-labeling tech}
 \end{frame}
 
-
 \begin{frame}
-\frametitle{AI Struggles With Human Behavior}
-\href{run:graphics/siri_smart_sarcasm.m4a}{Siri Compliments}
+  \frametitle{AI Struggles With Human Behavior}
+  \href{run:graphics/siri_smart_sarcasm.m4a}{Siri Compliments}
 
-\begin{center}
-\includegraphics[height=0.7\textheight]{graphics/siri_transcript}
-\end{center}
+  \begin{center}
+    \includegraphics[height=0.7\textheight]{graphics/siri_transcript}
+  \end{center}
+\end{frame}
+
+\begin{frame}{AI: Where is the crisis?}
+  \framesubtitle{Hint, it is not financial, but societal \ldots}
+  \begin{quotation}
+    AI systems used in education or vocational training, notably for determining access or assigning persons to educational and vocational training institutions or to evaluate persons on tests as part of or as a precondition for their education should be considered high-risk.
+  \end{quotation}
+  From \href{https://eur-lex.europa.eu/resource.html?uri=cellar:e0649735-a372-11eb-9585-01aa75ed71a1.0001.02/DOC_1&format=PDF}{paragraph 35 of the AI Act}
+  \newline
+  \href{https://www.fastcompany.com/90342596/schools-are-quietly-turning-to-ai-to-help-pick-who-gets-in-what-could-go-wrong}{FastCompany: AI in admissions, what could go wrong?}
+  \newline
+  \href{https://www.wired.com/story/algorithm-set-students-grades-altered-futures/}{Wired: The algorithms that keep students out of college}
+  \newline
+  \href{https://www.theverge.com/2020/8/17/21372045/uk-a-level-results-algorithm-biased-coronavirus-covid-19-pandemic-university-applications}{Verge: UK ditches biased algorithm for university admission}
+
+\end{frame}
+
+\begin{frame}{Risk}
+  \framesubtitle{A cheeky guide to financial services risk types}
+  \begin{block}{The risk of losing money due to \ldots}
+    \begin{itemize}
+      \item Credit: counter-party default
+      \item Market: market movements
+      \item Operational: something going wrong that shouldn't
+      \item Liquidity: funding mismatches
+      \item Insurance: unexpected loss of premiums or increase of claims
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{\ldots and the regulation that results from disasters big and small}
+    \href{https://www.bis.org/basel_framework/}{Basil Framework (banking)},
+    \href{https://www.eiopa.europa.eu/browse/solvency-2_en}{Solvency II (insurance)},
+    \href{https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX\%3A52021PC0206}{The AI Act (EU)},
+    \href{https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Meldung/2020/meldung\_2020\_05\_25\_KAIT\_en.html}{IT Requirements for German Asset Managers}
+  \end{block}
 \end{frame}
 
 \begin{frame}
 \frametitle{Workshop topics}
 \begin{enumerate}
-\item Artificial intelligence for risk
-\item Discrete geometry for artificial intelligence
+\item Introduction
+\item Discrete geometry for artificial intelligence and risk
 \item Correlation and causation
-\item Putting artificial intelligence into action
+\item Risk and AI in practice
 \end{enumerate}
 \end{frame}
 
@@ -92,8 +133,8 @@ See also: \href{https://www.theverge.com/2018/1/12/16882408/google-racist-gorill
 
 \begin{itemize}
 \item For each topic, lecture + tutorial
-\item Emphasis on examples with data, thanks to python package \href{https://munichpavel.github.io/fake-data-for-learning/}{fake-data-for-learning}
-\item Light on non-mathematical definitions, thanks to 
+\item Emphasis on examples with data produced via python package \href{https://munichpavel.github.io/fake-data-for-learning/}{fake-data-for-learning}
+\item Light on non-mathematical definitions, thanks to
 \end{itemize}
 \centering
 \includegraphics[width=0.3\textheight]{graphics/pi_wittgenstein}
