@@ -64,10 +64,10 @@ jobs:
         run: |
           mkdir -p tex_out
 
-          python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/ai-for-risk/ai_for_risk.tex --outdir ${{ github.workspace }}/tex_out
+          python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/intro/ai-risk-and-discrete-geometry.tex --outdir ${{ github.workspace }}/tex_out
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/discrete-geometry/discrete_geometry.tex --outdir ${{ github.workspace }}/tex_out
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/correlation-causality/correlation-causality.tex --outdir ${{ github.workspace }}/tex_out
-          python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/ai-in-practice/ai_in_practice.tex --outdir ${{ github.workspace }}/tex_out
+          python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/risk-and-ai-in-practice/risk-ai-practice.tex --outdir ${{ github.workspace }}/tex_out
 
           cd tex_out
           ls -al
