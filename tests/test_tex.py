@@ -68,10 +68,10 @@ test_call_dir = Path(os.getcwd())
 @pytest.mark.parametrize(
     'filepath',
     [
-        test_call_dir / 'slides' / 'ai-for-risk' / 'ai_for_risk.tex',
+        test_call_dir / 'slides' / 'intro' / 'ai-risk-and-discrete-geometry.tex',  # noqa: E501
         test_call_dir / 'slides' / 'discrete-geometry' / 'discrete_geometry.tex',  # noqa: E501
         test_call_dir / 'slides' / 'correlation-causality' / 'correlation-causality.tex',  # noqa: E501
-        test_call_dir / 'slides' / 'ai-in-practice' / 'ai_in_practice.tex',
+        test_call_dir / 'slides' / 'risk-and-ai-in-practice' / 'risk-ai-practice.tex',  # noqa: E501
     ]
 )
 def test_on_disk_latex_build(tmpdir, filepath):
