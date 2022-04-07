@@ -20,11 +20,12 @@ notebook_dir = project_root / 'notebooks'
 @pytest.mark.parametrize(
     'notebook_path',
     [
-        notebook_dir / 'causal-models-exercises.ipynb',
         notebook_dir / 'graphical-models-exercises.ipynb',
-        notebook_dir / 'model-selection-exercises.ipynb',
         notebook_dir / 'probability-polytope-exercises.ipynb',
         notebook_dir / 'simpsons-paradox-exercises.ipynb',
+        notebook_dir / 'causal-models-exercises.ipynb',
+        notebook_dir / 'model-selection-examples.ipynb',
+        notebook_dir / 'model-selection-exercises.ipynb',
     ]
 )
 def test_ipynb(notebook_path, monkeypatch, tmpdir):
