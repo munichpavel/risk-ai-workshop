@@ -58,67 +58,58 @@
         \includegraphics[height=0.3\textheight]{graphics/berkeley_later}\newline
         \cite{Bickel398}
     \end{figure}
+\end{frame}
 
+\begin{frame}{A brief, biased history of causality}
+    \begin{itemize}
+        \item Aristotle, 384 - 322 BC
+        \item Isaac Newton, 1643 - 1727 AD
+        \item David Hume, 1711 - 1776 AD
+        \item Francis Galton, 1822 - 1900 AD, Karl Pearson, 1857 - 1936 AD
+        \item Judea Pearl, b. 1936 AD
+    \end{itemize}
 \end{frame}
 
 
-\begin{frame}
-\frametitle{A brief, biased history of causality}
-\begin{itemize}
-\item Aristotle, 384 - 322 BC
-\item Isaac Newton, 1643 - 1727 AD
-\item David Hume, 1711 - 1776 AD
-\item Francis Galton, 1822 - 1900 AD, Karl Pearson, 1857 - 1936 AD
-\item Judea Pearl, b. 1936 AD
-\end{itemize}
+\begin{frame}{Counterfactuals and causality}
+    Ideal: Intervention + \href{https://en.wikipedia.org/wiki/Multiverse}{Multiverse} $\rightarrow$ Causality\newline
+
+    Examples:
+    \begin{itemize}
+        \item Medical treatment (e.g. \href{https://en.wikipedia.org/wiki/Simpson\%27s_paradox\#Kidney_stone_treatment}{kidney stone treatment})
+        \item Social outomes (e.g. \href{https://en.wikipedia.org/wiki/Simpson\%27s_paradox\#UC_Berkeley_gender_bias}{university admissions})
+        \item Business outcomes (e.g. \href{https://en.wikipedia.org/wiki/Click-through\_rate}{click-through rate}, hit rate)\newline
+    \end{itemize}
+
+    In-practice:
+    \begin{itemize}
+        \item Correlation: approximate multiverse by comparing intervention at $t$ to result at $t-1$
+        \item Random population: approximate multiverse by splitting sample well
+        \item A / B testing: random populations A / B + intervention in one
+    \end{itemize}
 \end{frame}
 
-
-\begin{frame}
-\frametitle{Counterfactuals and causality}
-Ideal: Intervention + \href{https://en.wikipedia.org/wiki/Multiverse}{Multiverse} $\rightarrow$ Causality\newline
-
-Examples:
-\begin{itemize}
-\item Medical treatment (e.g. \href{https://en.wikipedia.org/wiki/Simpson\%27s_paradox\#Kidney_stone_treatment}{kidney stone treatment})
-\item Social outomes (e.g. \href{https://en.wikipedia.org/wiki/Simpson\%27s_paradox\#UC_Berkeley_gender_bias}{university admissions})
-\item Business outcomes (e.g. \href{https://en.wikipedia.org/wiki/Click-through\_rate}{click-through rate}, hit rate)\newline
-\end{itemize}
-
-In-practice:
-\begin{itemize}
-    \item Correlation: approximate multiverse by comparing intervention at $t$ to result at $t-1$
-    \item Random population: approximate multiverse by splitting sample well
-    \item A / B testing: random populations A / B + intervention in one
-\end{itemize}
-\end{frame}
-
-
-
-
-\begin{frame}
-\frametitle{Counterfactual example: hit rate for insurance}
-Variables:
-\begin{itemize}
-\item product\_type: Client line of business
-\item days: Number of days to generate quote
-\item rating: Binary indication of client risk
-\item hit: Binary, 1 for success (binding the quote), 0 for failure\newline
-\end{itemize}
-
-Fake data:\newline\newline
-\input{graphics/hits}\newline
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{Counterfactual example: hit rate for insurance}
+\begin{frame}{Counterfactual example: hit rate for insurance}
     Variables:
     \begin{itemize}
-    \item product\_type: Client line of business
-    \item days: Number of days to generate quote
-    \item rating: Binary indication of client risk
-    \item hit: Binary, 1 for success (binding the quote), 0 for failure\newline
+        \item product\_type: Client line of business
+        \item days: Number of days to generate quote
+        \item rating: Binary indication of client risk
+        \item hit: Binary, 1 for success (binding the quote), 0 for failure\newline
+    \end{itemize}
+
+    Fake data:\newline\newline
+    \input{graphics/hits}\newline
+\end{frame}
+
+
+\begin{frame}{Counterfactual example: hit rate for insurance}
+    Variables:
+    \begin{itemize}
+        \item product\_type: Client line of business
+        \item days: Number of days to generate quote
+        \item rating: Binary indication of client risk
+        \item hit: Binary, 1 for success (binding the quote), 0 for failure\newline
     \end{itemize}
 
     \begin{figure}[ht]
@@ -126,74 +117,65 @@ Fake data:\newline\newline
     \end{figure}
 \end{frame}
 
+\begin{frame}{Non-counterfactual approach: condition and query}
 
+    Goal: estimate effect of $\textrm{days}$ on $\textrm{hit}$.\newline
 
-\begin{frame}
-\frametitle{Non-counterfactual approach: condition and query}
-
-Goal: estimate effect of $\textrm{days}$ on $\textrm{hit}$.\newline
-
-Calculate
-\begin{itemize}
-\item $P(\textrm{hit}=1 | \textrm{days} = 0) - P(\textrm{hit}=1 | \textrm{days} = 1)$,
-\item $P(\textrm{hit}=1 | \textrm{days} = 1) - P(\textrm{hit}=1 | \textrm{days} = 2)$,
-\item $\ldots$ \newline
-\end{itemize}
-
-From exercise Jupyter notebook:\newline
-\input{graphics/given_days}
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{The Structural Causal Model}
-    The definitions in following slides are from \cite{pearl2007mathematics}, \cite{pearl2016causal}.
-\begin{definition}
-    A \emph{structural causal model} $M$ consists of two sets of variables $U, V$ and a set of functions $F$, where
-
+    Calculate
     \begin{itemize}
-        \item $U$ are considered \emph{exogenous}, or background variables,
-        \item $V$ are the \emph{causal} variables, i.e. that can be manipulated, and
-        \item $F$ are the functions that represent the process of assigning values to elements of $V$ based on other values in $U, V$, e.g. $v_i = f(u, v)$.
+        \item $P(\textrm{hit}=1 | \textrm{days} = 0) - P(\textrm{hit}=1 | \textrm{days} = 1)$,
+        \item $P(\textrm{hit}=1 | \textrm{days} = 1) - P(\textrm{hit}=1 | \textrm{days} = 2)$,
+        \item $\ldots$ \newline
     \end{itemize}
 
-    We denote by $G$ the graph induced on $U, V$ by the functions $F$, and call it the \emph{causal graph} of $(U, V, F)$.\newline
-\end{definition}
-
-Hit rate example: $U = \{\textrm{product\_type}, \textrm{rating}\}$, $V= \{\textrm{days}, \textrm{hit}\}$, $F\leftrightarrow$ sample from conditional probabilty tables in directed graphical model.
+    From exercise Jupyter notebook:\newline
+    \input{graphics/given_days}
 \end{frame}
 
 
-\begin{frame}
-    \frametitle{Formalizing interventions: the intuition of ``do"}
+\begin{frame}{The Structural Causal Model}
+    The definitions in following slides are from \cite{pearl2007mathematics}, \cite{pearl2016causal}.
+    \begin{definition}
+        A \emph{structural causal model} $M$ consists of two sets of variables $U, V$ and a set of functions $F$, where
+
+        \begin{itemize}
+            \item $U$ are considered \emph{exogenous}, or background variables,
+            \item $V$ are the \emph{causal} variables, i.e. that can be manipulated, and
+            \item $F$ are the functions that represent the process of assigning values to elements of $V$ based on other values in $U, V$, e.g. $v_i = f(u, v)$.
+        \end{itemize}
+
+        We denote by $G$ the graph induced on $U, V$ by the functions $F$, and call it the \emph{causal graph} of $(U, V, F)$.\newline
+    \end{definition}
+
+    Hit rate example: $U = \{\textrm{product\_type}, \textrm{rating}\}$, $V= \{\textrm{days}, \textrm{hit}\}$, $F\leftrightarrow$ sample from conditional probabilty tables in directed graphical model.
+\end{frame}
+
+\begin{frame}{Formalizing interventions: the intuition of ``do"}
     For business application, quantity of interest is not $P(\textrm{hit}=1 | \textrm{days}=d)$, but intervention $$P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$$.\newline
     \begin{figure}[ht]
         \includegraphics[height=0.4\textwidth]{graphics/do_days}
     \end{figure}
 \end{frame}
 
-
-\begin{frame}
-\frametitle{Formalizing interventions: the intuition of ``do"}
+\begin{frame}{Formalizing interventions: the intuition of ``do"}
     For business application, quantity of interest is effect of intervention / counterfactual %$P(\textrm{hit}=1 | \textrm{days}=d)$, but intervention $$P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$$.\newline
-\begin{columns}[T] % align columns
-    \begin{column}{.48\textwidth}
-    Not $P(\textrm{hit}=1 | \textrm{days}=d)$\newline
-    \begin{figure}[ht]
-        $G = $ \includegraphics[height=0.55\textwidth]{graphics/given_days}
-    \end{figure}
-    \end{column}%
-%    \hfill%
-    \begin{column}{.48\textwidth}
-        but $P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$\newline
-               \begin{figure}[ht]
-             $G' = G_{\underline{\textrm{days}}} =$
-             \includegraphics[height=0.55\textwidth]{graphics/do_days}
+    \begin{columns}[T] % align columns
+        \begin{column}{.48\textwidth}
+        Not $P(\textrm{hit}=1 | \textrm{days}=d)$\newline
+        \begin{figure}[ht]
+            $G = $ \includegraphics[height=0.55\textwidth]{graphics/given_days}
         \end{figure}
-         \end{column}%
+        \end{column}%
+    %    \hfill%
+        \begin{column}{.48\textwidth}
+            but $P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$\newline
+                \begin{figure}[ht]
+                $G' = G_{\underline{\textrm{days}}} =$
+                \includegraphics[height=0.55\textwidth]{graphics/do_days}
+            \end{figure}
+        \end{column}%
     \end{columns}
 \end{frame}
-
 
 \begin{frame}
 \frametitle{Formalizing interventions: the intuition of ``do"}
@@ -211,8 +193,7 @@ Hit rate example: $U = \{\textrm{product\_type}, \textrm{rating}\}$, $V= \{\text
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Formalizing interventions: the intuition of ``do"}
+\begin{frame}{Formalizing interventions: the intuition of ``do"}
     \vspace{-1.5cm}
     \begin{tikzpicture}
         \node[] (q_0) at (0, 0) { };
@@ -234,84 +215,79 @@ Hit rate example: $U = \{\textrm{product\_type}, \textrm{rating}\}$, $V= \{\text
     References: \cite{pearl2016causal}, \cite{chmp}
 \end{frame}
 
-\begin{frame}
-\frametitle{Causal hit rate}
-Typical quantity of interest: \emph{average treatment effect} or \emph{ATE}
-\begin{columns}[T] % align columns
-    \begin{column}{.48\textwidth}
-        $P(\textrm{hit}=1 | \textrm{days}=d)$\newline
+\begin{frame}{Causal hit rate}
+    Typical quantity of interest: \emph{average treatment effect} or \emph{ATE}
+    \begin{columns}[T] % align columns
+        \begin{column}{.48\textwidth}
+            $P(\textrm{hit}=1 | \textrm{days}=d)$\newline
 
-        \input{graphics/given_days}\newline\newline
+            \input{graphics/given_days}\newline\newline
 
-        Example ATE: \newline
-        $P(\textrm{hit}=1 | \textrm{days} = 2) $\newline
-        $\quad - P(\textrm{hit}=1 | \textrm{days} = 3) \approx  16\%$
-    \end{column}%
-    \begin{column}{.48\textwidth}
-        $P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$\newline
+            Example ATE: \newline
+            $P(\textrm{hit}=1 | \textrm{days} = 2) $\newline
+            $\quad - P(\textrm{hit}=1 | \textrm{days} = 3) \approx  16\%$
+        \end{column}%
+        \begin{column}{.48\textwidth}
+            $P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$\newline
 
-          \input{graphics/do_days}\newline \newline
-	Example causal ATE: \newline
-	$P(\textrm{hit}=1 |\jpdo(\textrm{days} )= 2)$\newline
-	$\quad - P(\textrm{hit}=1 | \jpdo(\textrm{days}) = 3) \approx 8\%$
-         \end{column}%
+            \input{graphics/do_days}\newline \newline
+            Example causal ATE: \newline
+            $P(\textrm{hit}=1 |\jpdo(\textrm{days} )= 2)$\newline
+            $\quad - P(\textrm{hit}=1 | \jpdo(\textrm{days}) = 3) \approx 8\%$
+        \end{column}%
     \end{columns}
 
 \end{frame}
 
-\begin{frame}
-\frametitle{Judea Pearl's Rules of Causality}
+\begin{frame}{Judea Pearl's Rules of Causality}
 
-Let $X$, $Y$ , $Z$ and $W$ be arbitrary disjoint sets of nodes in a DAG $G$. Let $G_\underline{X}$ be the graph obtained by removing all arrows pointing into (nodes of) $X$.
-Denote by $G_{\overline{X}}$ the graph obtained by removing all arrows pointing out of $X$. If, e.g. we remove arrows pointing out of $X$ and into $Z$, we the resulting graph is denoted by $G_{\underline{X} \overline{Z}}$
+    Let $X$, $Y$ , $Z$ and $W$ be arbitrary disjoint sets of nodes in a DAG $G$. Let $G_\underline{X}$ be the graph obtained by removing all arrows pointing into (nodes of) $X$.
+    Denote by $G_{\overline{X}}$ the graph obtained by removing all arrows pointing out of $X$. If, e.g. we remove arrows pointing out of $X$ and into $Z$, we the resulting graph is denoted by $G_{\underline{X} \overline{Z}}$
 
-Rule 1: Insertion / deletion of observations
-\begin{equation*}
-P(y | \jpdo(x), z, w) = P(y | \jpdo(x), w) \textrm{ if } (Y \ci Z | X, W)_{G_{\overline{X}}}
-\end{equation*}
+    Rule 1: Insertion / deletion of observations
+    \begin{equation*}
+        P(y | \jpdo(x), z, w) = P(y | \jpdo(x), w) \textrm{ if } (Y \ci Z | X, W)_{G_{\overline{X}}}
+    \end{equation*}
 
-Rule 2: Action / observation exchange
-\begin{equation*}
-P(y | \jpdo(x), \jpdo(z), w) = P(y | \jpdo(x), z, w) \textrm{ if } (Y \ci Z | X, W)_{G_{\overline{X} \underline{Z}}}
-\end{equation*}
+    Rule 2: Action / observation exchange
+    \begin{equation*}
+        P(y | \jpdo(x), \jpdo(z), w) = P(y | \jpdo(x), z, w) \textrm{ if } (Y \ci Z | X, W)_{G_{\overline{X} \underline{Z}}}
+    \end{equation*}
 
-Rule 3: Insertion / deletion of actions
-\begin{equation*}
-P(y | \jpdo(x), \jpdo(z), w) = P(y | \jpdo(x), w) \textrm{ if } (Y \ci Z | X, W)_{G_{\overline{X} \overline{Z(W)}}},
-\end{equation*}
+    Rule 3: Insertion / deletion of actions
+    \begin{equation*}
+        P(y | \jpdo(x), \jpdo(z), w) = P(y | \jpdo(x), w) \textrm{ if } (Y \ci Z | X, W)_{G_{\overline{X} \overline{Z(W)}}},
+    \end{equation*}
 
-where $Z(W)$ is the set of $Z$-nodes that are not ancestors of any $W$-node in $G_\underline{X}$.
+    where $Z(W)$ is the set of $Z$-nodes that are not ancestors of any $W$-node in $G_\underline{X}$.
 
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Special cases of the causal rules}
+\begin{frame}{Special cases of the causal rules}
 
-By judicious setting of sets of nodes to be empty, we obtain some useful corollaries of the causal rules.
-\newline
+    By judicious setting of sets of nodes to be empty, we obtain some useful corollaries of the causal rules.
+    \newline
 
-Rule 1': Insertion / deletion of observations, with $W = \emptyset$
-\begin{equation*}
-    P(y | \jpdo(x), z) = P(y | \jpdo(x)) \textrm{ if } (Y \ci Z | X)_{G_{\overline{X}}}
-\end{equation*}
+    Rule 1': Insertion / deletion of observations, with $W = \emptyset$
+    \begin{equation*}
+        P(y | \jpdo(x), z) = P(y | \jpdo(x)) \textrm{ if } (Y \ci Z | X)_{G_{\overline{X}}}
+    \end{equation*}
 
-Rule 2': Action / observation exchange, with $X = \emptyset$
-\begin{equation*}
-P(y | \jpdo(z), w) = P(y | z, w) \textrm{ if } (Y \ci Z | W)_{G_{ \underline{Z}}}
-\end{equation*}
+    Rule 2': Action / observation exchange, with $X = \emptyset$
+    \begin{equation*}
+        P(y | \jpdo(z), w) = P(y | z, w) \textrm{ if } (Y \ci Z | W)_{G_{ \underline{Z}}}
+    \end{equation*}
 
-Rule 3': Insertion / deletion of actions, with $X, W = \emptyset$
-\begin{equation*}
-P(y | \jpdo(z)) = P(y) \textrm{ if } (Y \ci Z )_{G_{\overline{Z}}}
-\end{equation*}
+    Rule 3': Insertion / deletion of actions, with $X, W = \emptyset$
+    \begin{equation*}
+        P(y | \jpdo(z)) = P(y) \textrm{ if } (Y \ci Z )_{G_{\overline{Z}}}
+    \end{equation*}
 
-\onslide<2->\textcolor{blue}{$\implies$ d-separation + causal rules = \emph{adjustment formulas}: $\jpdo$ queries as normal queries.}
+    \onslide<2->\textcolor{blue}{$\implies$ d-separation + causal rules = \emph{adjustment formulas}: $\jpdo$ queries as normal queries.}
 \end{frame}
 
-
-\begin{frame}[allowframebreaks]
-    \frametitle{References}
+\begin{frame}[allowframebreaks]{References}
     \setbeamertemplate{bibliography item}[text]
     \bibliographystyle{amsalpha}
     \bibliography{../references.bib}
