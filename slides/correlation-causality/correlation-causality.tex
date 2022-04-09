@@ -92,7 +92,7 @@
 \begin{frame}{Counterfactual example: hit rate for insurance}
     Variables:
     \begin{itemize}
-        \item product\_type: Client line of business
+        \item producttype: Client line of business
         \item days: Number of days to generate quote
         \item rating: Binary indication of client risk
         \item hit: Binary, 1 for success (binding the quote), 0 for failure\newline
@@ -106,14 +106,14 @@
 \begin{frame}{Counterfactual example: hit rate for insurance}
     Variables:
     \begin{itemize}
-        \item product\_type: Client line of business
+        \item producttype: Client line of business
         \item days: Number of days to generate quote
         \item rating: Binary indication of client risk
         \item hit: Binary, 1 for success (binding the quote), 0 for failure\newline
     \end{itemize}
 
     \begin{figure}[ht]
-    \includegraphics[height=0.6\textheight]{graphics/hits}
+        \includegraphics[height=0.4\textheight]{graphics/hits}
     \end{figure}
 \end{frame}
 
@@ -147,7 +147,7 @@
         We denote by $G$ the graph induced on $U, V$ by the functions $F$, and call it the \emph{causal graph} of $(U, V, F)$.\newline
     \end{definition}
 
-    Hit rate example: $U = \{\textrm{product\_type}, \textrm{rating}\}$, $V= \{\textrm{days}, \textrm{hit}\}$, $F\leftrightarrow$ sample from conditional probabilty tables in directed graphical model.
+    Hit rate example: $U = \{\textrm{producttype}, \textrm{rating}\}$, $V= \{\textrm{days}, \textrm{hit}\}$, $F\leftrightarrow$ sample from conditional probabilty tables in directed graphical model.
 \end{frame}
 
 \begin{frame}{Formalizing interventions: the intuition of ``do"}
@@ -185,10 +185,10 @@
         \end{figure}
         \vspace{-0.5cm}
         \begin{align}
-        P_{G'}( & \textrm{product\_type} = p, \textrm{rating} = r) \nonumber \\
-        & = P_G( \textrm{product\_type} = p, \textrm{rating} = r) \\
-        P_{G'}(&\textrm{hit}=1 | \textrm{product\_type} = p, \textrm{rating} = r) \nonumber  \\
-        & = P_G(\textrm{hit}=1 | \textrm{product\_type} = p, \textrm{rating} = r)
+        P_{G'}( & \textrm{producttype} = p, \textrm{rating} = r) \nonumber \\
+        & = P_G( \textrm{producttype} = p, \textrm{rating} = r) \\
+        P_{G'}(&\textrm{hit}=1 | \textrm{producttype} = p, \textrm{rating} = r) \nonumber  \\
+        & = P_G(\textrm{hit}=1 | \textrm{producttype} = p, \textrm{rating} = r)
         \end{align}
 \end{frame}
 
@@ -205,12 +205,12 @@
     \begin{align*}
         P(&\textrm{hit}=1 | \jpdo(\textrm{days})=d) \\
         & = P_{G'}(\textrm{hit}=1 | \textrm{days}=d) \textrm{, by definition} \\
-        & = \sum_{p, r} P_{G'}(\textrm{hit}=1 | \textrm{days}=d, \textrm{product\_type} = p, \textrm{rating} = r) \\
-        & \qquad  \qquad P_{G'}(\textrm{product\_type} = p, \textrm{rating} = r | \textrm{days}=d)\textrm{, by total probability} \\
-        & = \sum_{p, r} P_{G'}(\textrm{hit}=1 | \textrm{days}=d, \textrm{product\_type} = p, \textrm{rating} = r) \\
-        & \qquad  \qquad P_{G'}(\textrm{product\_type} = p, \textrm{rating} = r), \textrm{ by substitution} \\
-        & =  \sum_{p, r} P_{G}(\textrm{hit}=1 | \textrm{days}=d, \textrm{product\_type} = p, \textrm{rating} = r) \\
-        & \qquad  \qquad P_{G}(\textrm{product\_type} = p, \textrm{rating} = r), \textrm{ our \emph{adjustment} formula}
+        & = \sum_{p, r} P_{G'}(\textrm{hit}=1 | \textrm{days}=d, \textrm{producttype} = p, \textrm{rating} = r) \\
+        & \qquad  \qquad P_{G'}(\textrm{producttype} = p, \textrm{rating} = r | \textrm{days}=d)\textrm{, by total probability} \\
+        & = \sum_{p, r} P_{G'}(\textrm{hit}=1 | \textrm{days}=d, \textrm{producttype} = p, \textrm{rating} = r) \\
+        & \qquad  \qquad P_{G'}(\textrm{producttype} = p, \textrm{rating} = r), \textrm{ by substitution} \\
+        & =  \sum_{p, r} P_{G}(\textrm{hit}=1 | \textrm{days}=d, \textrm{producttype} = p, \textrm{rating} = r) \\
+        & \qquad  \qquad P_{G}(\textrm{producttype} = p, \textrm{rating} = r), \textrm{ our \emph{adjustment} formula}
     \end{align*}
     References: \cite{pearl2016causal}, \cite{chmp}
 \end{frame}
