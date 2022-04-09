@@ -8,21 +8,18 @@
 
 \begin{frame}
 \frametitle{Why causality matters}
-
-   \centering
+    \centering
     \begin{tikzpicture}
- 
-    \node[inner sep=0pt] (proxy_caption) at (0,0){
-        Because correlation is a proxy.
-    };
+        \node[inner sep=0pt] (proxy_caption) at (0,0){
+            Because correlation is a proxy.
+        };
 
-    \node[inner sep=0pt, below=0.5 of proxy_caption] (proxy) at (0,0) {
-        \fbox{
-            \includegraphics[width=.75\textheight]{graphics/spiders_spelling}
-        }
-    };
-  
-\end{tikzpicture}
+        \node[inner sep=0pt, below=0.5 of proxy_caption] (proxy) at (0,0) {
+            \fbox{
+                \includegraphics[width=.75\textheight]{graphics/spiders_spelling}
+            }
+        };
+    \end{tikzpicture}
 
 \cite{spurious-spiders-spelling}
 \end{frame}
@@ -40,7 +37,7 @@
             \includegraphics[width=.9\textheight]{graphics/mediterranean}
         }
     };
-     
+
 \end{tikzpicture}
 
 \cite{estruch2013primary}
@@ -50,9 +47,9 @@
 \begin{frame}
     \frametitle{Simpson's paradox: cautionary tales}
     Simpson's paradox: a phenomenon in probability and statistics in which a trend appears disappears or reverses depending on grouping of data. \cite{simpson-wikipedia}, \cite{pearl2016causal} \newline
-    
+
     Example: University of California, Berkeley 1973 admission figures\newline
-    
+
     \begin{figure}[ht]
         \includegraphics[height=0.15\textheight]{graphics/berkeley}\newline
         \cite{freedman1998statistics}
@@ -61,7 +58,7 @@
         \includegraphics[height=0.3\textheight]{graphics/berkeley_later}\newline
         \cite{Bickel398}
     \end{figure}
-    
+
 \end{frame}
 
 
@@ -123,7 +120,7 @@ Fake data:\newline\newline
     \item rating: Binary indication of client risk
     \item hit: Binary, 1 for success (binding the quote), 0 for failure\newline
     \end{itemize}
-    
+
     \begin{figure}[ht]
     \includegraphics[height=0.6\textheight]{graphics/hits}
     \end{figure}
@@ -152,10 +149,10 @@ From exercise Jupyter notebook:\newline
     \frametitle{The Structural Causal Model}
     The definitions in following slides are from \cite{pearl2007mathematics}, \cite{pearl2016causal}.
 \begin{definition}
-    A \emph{structural causal model} $M$ consists of two sets of variables $U, V$ and a set of functions $F$, where 
-    
+    A \emph{structural causal model} $M$ consists of two sets of variables $U, V$ and a set of functions $F$, where
+
     \begin{itemize}
-        \item $U$ are considered \emph{exogenous}, or background variables, 
+        \item $U$ are considered \emph{exogenous}, or background variables,
         \item $V$ are the \emph{causal} variables, i.e. that can be manipulated, and
         \item $F$ are the functions that represent the process of assigning values to elements of $V$ based on other values in $U, V$, e.g. $v_i = f(u, v)$.
     \end{itemize}
@@ -171,7 +168,7 @@ Hit rate example: $U = \{\textrm{product\_type}, \textrm{rating}\}$, $V= \{\text
     \frametitle{Formalizing interventions: the intuition of ``do"}
     For business application, quantity of interest is not $P(\textrm{hit}=1 | \textrm{days}=d)$, but intervention $$P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$$.\newline
     \begin{figure}[ht]
-\includegraphics[height=0.4\textwidth]{graphics/do_days}
+        \includegraphics[height=0.4\textwidth]{graphics/do_days}
     \end{figure}
 \end{frame}
 
@@ -216,43 +213,43 @@ Hit rate example: $U = \{\textrm{product\_type}, \textrm{rating}\}$, $V= \{\text
 
 \begin{frame}
 \frametitle{Formalizing interventions: the intuition of ``do"}
-	\vspace{-1.5cm}
-	\begin{figure}[ht]
-	\hspace{8cm}
-             \includegraphics[height=0.45\textheight]{graphics/do_days}
-        \end{figure}
-        \vspace{-2.5cm}
-        \begin{align*}
-         P(&\textrm{hit}=1 | \jpdo(\textrm{days})=d) \\
-         & = P_{G'}(\textrm{hit}=1 | \textrm{days}=d) \textrm{, by definition} \\
+    \vspace{-1.5cm}
+    \begin{tikzpicture}
+        \node[] (q_0) at (0, 0) { };
+        \node[] (q_1) [right=9cm of q_0]{
+            \includegraphics[width=.35\textwidth]{graphics/do_days}
+        };
+    \end{tikzpicture}
+    \vspace{-2.5cm}
+    \begin{align*}
+        P(&\textrm{hit}=1 | \jpdo(\textrm{days})=d) \\
+        & = P_{G'}(\textrm{hit}=1 | \textrm{days}=d) \textrm{, by definition} \\
         & = \sum_{p, r} P_{G'}(\textrm{hit}=1 | \textrm{days}=d, \textrm{product\_type} = p, \textrm{rating} = r) \\
         & \qquad  \qquad P_{G'}(\textrm{product\_type} = p, \textrm{rating} = r | \textrm{days}=d)\textrm{, by total probability} \\
         & = \sum_{p, r} P_{G'}(\textrm{hit}=1 | \textrm{days}=d, \textrm{product\_type} = p, \textrm{rating} = r) \\
         & \qquad  \qquad P_{G'}(\textrm{product\_type} = p, \textrm{rating} = r), \textrm{ by substitution} \\
         & =  \sum_{p, r} P_{G}(\textrm{hit}=1 | \textrm{days}=d, \textrm{product\_type} = p, \textrm{rating} = r) \\
-        & \qquad  \qquad P_{G}(\textrm{product\_type} = p, \textrm{rating} = r), \textrm{ our \emph{adjustment} formula} 
-        \end{align*}
-        References: \cite{pearl2016causal}, \cite{chmp}
+        & \qquad  \qquad P_{G}(\textrm{product\_type} = p, \textrm{rating} = r), \textrm{ our \emph{adjustment} formula}
+    \end{align*}
+    References: \cite{pearl2016causal}, \cite{chmp}
 \end{frame}
-
 
 \begin{frame}
 \frametitle{Causal hit rate}
 Typical quantity of interest: \emph{average treatment effect} or \emph{ATE}
 \begin{columns}[T] % align columns
     \begin{column}{.48\textwidth}
-    $P(\textrm{hit}=1 | \textrm{days}=d)$\newline
-    
-    \input{graphics/given_days}\newline\newline
-    
-    Example ATE: \newline
-    $P(\textrm{hit}=1 | \textrm{days} = 2) $\newline
-    $\quad - P(\textrm{hit}=1 | \textrm{days} = 3) \approx  16\%$
+        $P(\textrm{hit}=1 | \textrm{days}=d)$\newline
+
+        \input{graphics/given_days}\newline\newline
+
+        Example ATE: \newline
+        $P(\textrm{hit}=1 | \textrm{days} = 2) $\newline
+        $\quad - P(\textrm{hit}=1 | \textrm{days} = 3) \approx  16\%$
     \end{column}%
-%    \hfill%
     \begin{column}{.48\textwidth}
         $P(\textrm{hit}=1 | \jpdo(\textrm{days}=d))$\newline
-        
+
           \input{graphics/do_days}\newline \newline
 	Example causal ATE: \newline
 	$P(\textrm{hit}=1 |\jpdo(\textrm{days} )= 2)$\newline
@@ -265,7 +262,7 @@ Typical quantity of interest: \emph{average treatment effect} or \emph{ATE}
 \begin{frame}
 \frametitle{Judea Pearl's Rules of Causality}
 
-Let $X$, $Y$ , $Z$ and $W$ be arbitrary disjoint sets of nodes in a DAG $G$. Let $G_\underline{X}$ be the graph obtained by removing all arrows pointing into (nodes of) $X$. 
+Let $X$, $Y$ , $Z$ and $W$ be arbitrary disjoint sets of nodes in a DAG $G$. Let $G_\underline{X}$ be the graph obtained by removing all arrows pointing into (nodes of) $X$.
 Denote by $G_{\overline{X}}$ the graph obtained by removing all arrows pointing out of $X$. If, e.g. we remove arrows pointing out of $X$ and into $Z$, we the resulting graph is denoted by $G_{\underline{X} \overline{Z}}$
 
 Rule 1: Insertion / deletion of observations
