@@ -23,7 +23,7 @@ jobs:
       - uses: "actions/setup-python@v2"
         with:
           python-version: "${{ matrix.python-version }}"
-      - name: "Install dependencies"
+      - name: "Install package dependencies"
         run: |
           python -VV
           python -m site
@@ -35,14 +35,30 @@ jobs:
         run: "python -m tox"
       - name: "Run package tests for ${{ matrix.python-version }}, ${{ matrix.os }}"
         run: "python -m pytest -vv -m 'not latex and not notebook'"
-      - name: "Run notebook tests for ${{ matrix.python-version }}, ${{ matrix.os }}"
+      - name: "Run notebook tests for ${{ matrix.python-version }} if ubuntu os"
         run: |
+          echo "${{ matrix.os }}"
           sudo apt-get install graphviz
           python -m pytest -vv -m notebook
-      - name: "Run latex tests for ${{ matrix.python-version }}, ${{ matrix.os }}"
+        if: matrix.os == 'ubuntu-latest'
+      - name: "Run notebook tests for ${{ matrix.python-version }} if mac os"
         run: |
+          echo "${{ matrix.os }}"
+          brew install graphviz
+          python -m pytest -vv -m notebook
+        if: matrix.os == 'macos-latest'
+      - name: "Run latex tests for ${{ matrix.python-version }} if ubuntu os"
+        run: |
+          echo "${{ matrix.os }}"
           sudo apt-get install texlive-latex-extra
           python -m pytest -vv -m latex
+        if: matrix.os == 'ubuntu-latest'
+      - name: "Run latex tests for ${{ matrix.python-version }} if mac os"
+        run: |
+          echo "${{ matrix.os }}"
+          brew install texlive
+          python -m pytest -vv -m latex
+        if: matrix.os == 'macos-latest'
 
   deliver:
     runs-on: ubuntu-latest
