@@ -36,28 +36,42 @@ def test_ipynb(notebook_path, monkeypatch, tmpdir):
     monkeypatch.setenv('CC_FIG_DIR', str(tmpdir))
     monkeypatch.setenv('EXPERIMENTS_DIR', str(tmpdir))
 
-    nb, errors = _notebook_run(notebook_path)
+    errors = _notebook_run_errors(notebook_path)
     assert errors == []
 
 
-def _notebook_run(path):
+def _notebook_run_errors(path):
     """
     Execute a notebook via nbconvert and collect output.
-    """
-    with tempfile.NamedTemporaryFile(suffix=".ipynb") as fout:
-        args = [
-            "python", "-m", "nbconvert", "--to", "notebook", "--execute",
-            "--ExecutePreprocessor.timeout=60",
-            "--output", fout.name, path
-        ]
-        subprocess.check_call(args)
 
-        fout.seek(0)
-        nb = nbformat.read(fout, nbformat.current_nbformat)
+    Idiosyncratic implementation partially due to windows NamedTemporaryFile +
+    subprocess quirks. See
+
+    https://stackoverflow.com/questions/46497842/passing-namedtemporaryfile-to-a-subprocess-on-windows
+
+    and
+
+    https://github.com/bravoserver/bravo/issues/111#issuecomment-826990
+    """
+
+    file = tempfile.NamedTemporaryFile(suffix=".ipynb", delete=False)
+
+    args = [
+        "python", "-m", "nbconvert", "--to", "notebook", "--execute",
+        "--ExecutePreprocessor.timeout=60",
+        "--output", file.name, path
+    ]
+    subprocess.check_call(args)
+
+    file.seek(0)
+    nb = nbformat.read(file, nbformat.current_nbformat)
 
     errors = [
         output for cell in nb.cells if "outputs" in cell
         for output in cell["outputs"] if output.output_type == "error"
     ]
 
-    return nb, errors
+    file.close()
+    os.unlink(file.name)
+
+    return errors
