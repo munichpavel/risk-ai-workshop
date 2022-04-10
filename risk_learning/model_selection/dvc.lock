@@ -122,10 +122,10 @@ stages:
         fit_selected_model.file_read_params:
           delimiter: ','
         fit_selected_model.model_params:
-          random_forest_classifier:
-            name: RandomForestClassifier
+          decision_tree_classifier:
+            name: DecisionTreeClassifier
             hyperparams:
-              n_estimators: 10
+              criterion: gini
               random_state: 42
         fit_selected_model.seed: 42
         fit_selected_model.target_filenames:
@@ -133,8 +133,8 @@ stages:
         - y-validate.csv
     outs:
     - path: ../../notebooks/data/fit_selected_model
-      md5: c7093f3af68e1348bce1182865cfc33d.dir
-      size: 13474
+      md5: da2928f3589d7867e86ca93caac00c82.dir
+      size: 2135
       nfiles: 1
   evaluate_fit_test:
     cmd: python evaluate.py --stage_name evaluate_fit_test

@@ -48,9 +48,9 @@ fit_selected_model:
   file_read_params:
     delimiter: ","
   model_params:
-    random_forest_classifier:
-      name: "RandomForestClassifier"
-      hyperparams: {'n_estimators': 10, "random_state": 42}
+    decision_tree_classifier:
+      name: "DecisionTreeClassifier"
+      hyperparams: {"criterion": gini, "random_state": 42}
 
 evaluate_fit_test:
   data_in_folder: "split"
