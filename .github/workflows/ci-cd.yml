@@ -54,7 +54,7 @@ jobs:
       - name: "Run notebook tests for ${{ matrix.python-version }} if windows os"
         run: |
           echo "${{ matrix.os }}"
-          winget install graphviz
+          choco install graphviz
           python -m pytest -vv -m notebook
         if: matrix.os == 'windows-latest'
       - name: "Run latex tests for ${{ matrix.python-version }} if ubuntu os"
