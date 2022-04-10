@@ -57,7 +57,7 @@ stages:
   evaluate_fit_test:
     cmd: python evaluate.py --stage_name evaluate_fit_test
     deps:
-    - ../../notebooks/data/fit_test
+    - ../../notebooks/data/fit_selected_model
     - ../../notebooks/data/split
     - evaluate.py
     params:

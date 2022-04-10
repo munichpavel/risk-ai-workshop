@@ -139,10 +139,10 @@ stages:
   evaluate_fit_test:
     cmd: python evaluate.py --stage_name evaluate_fit_test
     deps:
-    - path: ../../notebooks/data/fit_test
-      md5: d751713988987e9331980363e24189ce.dir
-      size: 0
-      nfiles: 0
+    - path: ../../notebooks/data/fit_selected_model
+      md5: da2928f3589d7867e86ca93caac00c82.dir
+      size: 2135
+      nfiles: 1
     - path: ../../notebooks/data/split
       md5: 30516898e437ab4cd95d305460dc00a9.dir
       size: 80105
