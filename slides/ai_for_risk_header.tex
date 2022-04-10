@@ -1,16 +1,13 @@
 % See https://tex.stackexchange.com/questions/409500/option-clash-hyper-ref-colorlinks-and-transparent
 % for useful tips on clashes and what does and doesn't need to be explicitly loaded here
-\documentclass[aspectratio=169, xcolor=dvipsnames]{beamer}
+\documentclass[aspectratio=169, xcolor=dvipsnames, hyperref={colorlinks}]{beamer}
 \usecolortheme[named=Blue]{structure}
 \setbeamertemplate{itemize items}[circle]
 
 \usepackage{smartdiagram}
 \usepackage{tikz}
 \usetikzlibrary{bayesnet}
-
 \usepackage{booktabs}
-
-
 
 \author{Dr. Paul Larsen}
 \date{\today}
