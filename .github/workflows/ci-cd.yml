@@ -10,12 +10,12 @@ env:
 
 jobs:
   tests:
-    name: "Python ${{ matrix.python-version }}"
+    name: "Python ${{ matrix.python-version }} on ${{ matrix.os }}"
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-        os: ["ubuntu-latest"]
+        os: ["ubuntu-latest", "macos-latest"]
         python-version: ["3.6", "3.7", "3.8", "3.9"]
 
     steps:
@@ -31,15 +31,15 @@ jobs:
           python -m pip install --upgrade coverage[toml] virtualenv tox tox-gh-actions
           python -m pip install -r requirements.txt
           python -m pip install .
-      - name: "Run tox targets for ${{ matrix.python-version }}"
+      - name: "Run tox targets for ${{ matrix.python-version }}, ${{ matrix.os }}"
         run: "python -m tox"
-      - name: "Run package tests for ${{ matrix.python-version }}"
+      - name: "Run package tests for ${{ matrix.python-version }}, ${{ matrix.os }}"
         run: "python -m pytest -vv -m 'not latex and not notebook'"
-      - name: "Run notebook tests for ${{ matrix.python-version }}"
+      - name: "Run notebook tests for ${{ matrix.python-version }}, ${{ matrix.os }}"
         run: |
           sudo apt-get install graphviz
           python -m pytest -vv -m notebook
-      - name: "Run latex tests for ${{ matrix.python-version }}"
+      - name: "Run latex tests for ${{ matrix.python-version }}, ${{ matrix.os }}"
         run: |
           sudo apt-get install texlive-latex-extra
           python -m pytest -vv -m latex
