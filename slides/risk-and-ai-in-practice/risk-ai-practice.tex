@@ -1,26 +1,26 @@
 % Input common header
 \input{../ai_for_risk_header}
 
-\title{Risk and Artificial Intelligence: Credit Scoring and Bias in Practice}
+\title{Risk and Artificial Intelligence: Credit Scoring in Practice}
 \begin{document}
 \maketitle
 
-\begin{frame}
-    \frametitle{Overview}
+\begin{frame}{Operational Risk in Credit Scoring}
+    \framesubtitle{Model Risk and Process Risk}
     \begin{block}{The AI Act}
         \begin{quote}
-            Manage correlation risk: Don't let the data speak (dangerous) nonsense
+            Manage model risk: Don't let the data-fed models speak nonsense
         \end{quote}
     \end{block}
     \begin{block}{The Supervisory Requirements for IT in German Asset Managers}
         \begin{quote}
-            Manage operational risk: Automate everything that makes sense
+            Manage process risk: Automate everything that makes sense
         \end{quote}
     \end{block}
 \end{frame}
 
 \begin{frame}
-\frametitle{Manage correlation risk}
+\frametitle{Manage Model Risk}
 \framesubtitle{Don't outsource thinking to algorithms}
     \begin{center}
 \smartdiagramset{
@@ -31,27 +31,40 @@
     \end{center}
 \end{frame}
 
-\begin{frame}{Manage correlation risk}
+\begin{frame}{Manage Model Risk}
     \framesubtitle{Example of credit scoring for loans}
-    \begin{columns}[T] % align columns
-        \begin{column}{.4\textwidth}
-            Artificial credit scoring data
-            \newline\newline
-            \input{graphics/default}\newline
-        \end{column}%
-    %    \hfill%
-        \begin{column}{.4\textwidth}
-            \textbf{gender}: 0 for female, 1 for male \footnote{
-                Some current and future credit data will likely\newline have a non-binary gender category.
-            } \newline
-            \textbf{occupation}: 0 for education, 1 for health \newline
-            \textbf{activity}: 0 for low account activity, 1 for high account activity \newline
-            \textbf{default}: 0 for no-default, 1 for default \newline
-        \end{column}%
-        \end{columns}
+
+    \href{https://github.com/munichpavel/risk-ai-workshop/blob/main/notebooks/data/default.csv}{Artificial credit scoring data sample}:
+    \newline\newline
+    \input{graphics/default}
+    \newline
+    \newline
+    \textbf{gender}: 0 for female, 1 for male \footnote{
+        Some current and future credit data will likely have a non-binary gender category.
+    } \newline
+    \textbf{occupation}: 0 for education, 1 for health \newline
+    \textbf{activity}: 0 for low account activity, 1 for high account activity \newline
+    \textbf{default}: 0 for no-default, 1 for default \newline
+    % \begin{columns}[T] % align columns
+    %     \begin{column}{.6\textwidth}
+    %         Artificial credit scoring data
+    %         \newline\newline
+    %         \input{graphics/default}
+    %         \newline
+    %     \end{column}%
+    % %    \hfill%
+    %     \begin{column}{.3\textwidth}
+    %         \textbf{gender}: 0 for female, 1 for male \footnote{
+    %             Some current and future credit data will likely\newline have a non-binary gender category.
+    %         } \newline
+    %         \textbf{occupation}: 0 for education, 1 for health \newline
+    %         \textbf{activity}: 0 for low account activity, 1 for high account activity \newline
+    %         \textbf{default}: 0 for no-default, 1 for default \newline
+    %     \end{column}%
+    % \end{columns}
 \end{frame}
 
-\begin{frame}{Manage correlation risk}
+\begin{frame}{Manage Model Risk}
     \framesubtitle{Simpson's paradox again}
     Correlations with default:
     \newline
@@ -65,7 +78,7 @@
 
 \end{frame}
 
-\begin{frame}{Manage correlation risk}
+\begin{frame}{Manage Model Risk}
     \framesubtitle{Spurious correlations aren't the only ones to fear}
     \begin{itemize}
         \item Colliders from target to a feature(s)
@@ -74,7 +87,7 @@
 
 \end{frame}
 
-\begin{frame}{Manage correlation risk}
+\begin{frame}{Manage Model Risk}
     \framesubtitle{Collider risk: causality knows direction, correlation doesn't}
     What if we had causal graph with features \textrm{collider}$, \textrm{other}$ and target \textrm{default}?
     \newline
@@ -83,7 +96,7 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Manage correlation risk}
+\begin{frame}{Manage Model Risk}
     \framesubtitle{Data leakage risk: know your process, know your data}
     How I understood credit default pre-practical-experience
     \newline
@@ -93,7 +106,7 @@
 
 \end{frame}
 
-\begin{frame}{Manage correlation risk}
+\begin{frame}{Manage Model Risk}
     \framesubtitle{Data leakage risk II: know your process, know your data}
     How credit default really\footnote{
         more accurately, a less violent projection of reality
@@ -106,7 +119,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Manage operational risk}
+    \frametitle{Manage Process Risk}
     \framesubtitle{Working with human nature in software development}
     \begin{center}
         \includegraphics[height=0.35\textheight]{graphics/Codex_Aemilianensis}
@@ -120,7 +133,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Manage operational risk}
+    \frametitle{Manage Process Risk}
     \framesubtitle{Isn't AI software different?}
     \begin{columns}[T] % align columns
         \begin{column}{.4\textwidth}
@@ -140,7 +153,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Manage operational risk}
+    \frametitle{Manage Process Risk}
     \framesubtitle{Matching low-resolution buzzwords with high-resolution practice}
 
     \begin{block}{Continuous Integration, Continuous Delivery for Machine Learning}
@@ -153,7 +166,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Manage operational risk}
+    \frametitle{Manage Process Risk}
     \framesubtitle{Matching low-resolution buzzwords with high-resolution practice}
     \begin{columns}[T]
         \begin{column}{0.48\textwidth}
