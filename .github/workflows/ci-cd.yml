@@ -53,12 +53,6 @@ jobs:
           sudo apt-get install texlive-latex-extra
           python -m pytest -vv -m latex
         if: matrix.os == 'ubuntu-latest'
-      - name: "Run latex tests for ${{ matrix.python-version }} if mac os"
-        run: |
-          echo "${{ matrix.os }}"
-          brew install texlive
-          python -m pytest -vv -m latex
-        if: matrix.os == 'macos-latest'
 
   deliver:
     runs-on: ubuntu-latest
