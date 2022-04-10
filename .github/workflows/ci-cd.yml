@@ -65,7 +65,7 @@ jobs:
           mkdir -p tex_out
 
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/intro/ai-risk-and-discrete-geometry.tex --outdir ${{ github.workspace }}/tex_out
-          python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/discrete-geometry/discrete_geometry.tex --outdir ${{ github.workspace }}/tex_out
+          python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/discrete-geometry/discrete-geometry.tex --outdir ${{ github.workspace }}/tex_out
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/correlation-causality/correlation-causality.tex --outdir ${{ github.workspace }}/tex_out
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/risk-and-ai-in-practice/risk-ai-practice.tex --outdir ${{ github.workspace }}/tex_out
 

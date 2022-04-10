@@ -69,7 +69,7 @@ test_call_dir = Path(os.getcwd())
     'filepath',
     [
         test_call_dir / 'slides' / 'intro' / 'ai-risk-and-discrete-geometry.tex',  # noqa: E501
-        test_call_dir / 'slides' / 'discrete-geometry' / 'discrete_geometry.tex',  # noqa: E501
+        test_call_dir / 'slides' / 'discrete-geometry' / 'discrete-geometry.tex',  # noqa: E501
         test_call_dir / 'slides' / 'correlation-causality' / 'correlation-causality.tex',  # noqa: E501
         test_call_dir / 'slides' / 'risk-and-ai-in-practice' / 'risk-ai-practice.tex',  # noqa: E501
     ]
