@@ -2,13 +2,12 @@
 
 ![ci](https://github.com/munichpavel/risk-ai-workshop/actions/workflows/ci-cd.yml/badge.svg)
 
-## Quickstart
+## Quick-start
 
 * `git clone` the repository and `cd` into the root directory.
 * For the exercise Jupyter notebooks
-  * create a virutual environment (recommended)  e.g. with [venv](https://docs.python.org/3/library/venv.html), [conda](https://docs.conda.io/en/latest/) or other.
-
-  * install python dependencies with `pip install -r requirements.txt` in a virtual environment,  Requires libglpk-dev for `fake_data_for_learning`.
+  * create a virtual environment (recommended)  e.g. with [venv](https://docs.python.org/3/library/venv.html), [conda](https://docs.conda.io/en/latest/) or other.
+  * install python dependencies with `pip install -r requirements.txt` in a virtual environment. Note: the [fake-data-for-learning package](https://github.com/munichpavel/fake-data-for-learning) has some non-python dependencies; see its [installation instructions](https://github.com/munichpavel/fake-data-for-learning/blob/main/README.md#installation).
 
 ## Workshop topics
 
