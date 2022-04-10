@@ -21,6 +21,9 @@ jobs:
           # Due to pytest install error
           - os: windows-latest
             python-version: "3.6"
+          # Due to nbconvert TypeError
+          - os: windows-latest
+            python-version: "3.7"
 
     steps:
       - uses: "actions/checkout@v2"
