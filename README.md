@@ -63,6 +63,10 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 
 ### Latest
 
+Refactor introduction and concluding lectures
+
+Add ci tests of package and notebooks for mac and windows (latest) operating systems
+
 ### v2022.0.2
 
 Add github actions workflow for automated testing, with unit, notebook-run and latex-slides-build
