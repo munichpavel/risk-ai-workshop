@@ -138,7 +138,6 @@
 \begin{frame}
     \frametitle{Manage Process Risk}
     \framesubtitle{Matching low-resolution buzzwords with high-resolution practice}
-
     \begin{block}{Continuous Integration, Continuous Delivery for Machine Learning}
         (Semi-)automated pipelines for development
         \begin{figure}[ht]
@@ -174,6 +173,28 @@
 \end{frame}
 
 \begin{frame}{Wrapping up}
+    \framesubtitle{How did the credit scoring model perform?}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \href{https://github.com/munichpavel/risk-ai-workshop/blob/main/risk_learning/model_selection/run-pipeline.py}{Our credit scoring AI pipeline}:
+            \begin{figure}[ht]
+                \includegraphics[height=0.5\textheight]{graphics/ml_pipeline}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            On the validation set:
+            \begin{itemize}
+                \item \href{https://github.com/munichpavel/risk-ai-workshop/blob/main/notebooks/data/evaluate_fit_train/metrics_logistic_regression.json}{Logistic regression scores}
+                \item \href{https://github.com/munichpavel/risk-ai-workshop/blob/main/notebooks/data/evaluate_fit_train/metrics_decision_tree_classifier.json}{Decision tree scores}
+                \item \href{https://github.com/munichpavel/risk-ai-workshop/blob/main/notebooks/data/evaluate_fit_train/metrics_random_forest_classifier.json}{Random forest scores}
+            \end{itemize}
+
+            On the test set: \href{https://github.com/munichpavel/risk-ai-workshop/blob/main/notebooks/data/evaluate_fit_test}{Chosen model scores}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Wrapping up, II}
     \framesubtitle{Don't worry: AI won't replace you soon}
     \begin{columns}[T] % align columns
         \begin{column}{.40\textwidth}
