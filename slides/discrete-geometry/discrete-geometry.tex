@@ -13,6 +13,12 @@
     \item Less recent history: graphical models among first non-rules based AI approaches \cite{darwiche2009modeling}
     \item Geometrical formulations of statistical objects, e.g. graphical models and probability polytopes\newline
   \end{itemize}
+  For today $\ldots$
+  \begin{itemize}
+    \item Graphical models
+    \item Probability polytopes
+    \item Geometry of Simpson's Paradox
+  \end{itemize}
 \end{frame}
 
 
@@ -293,6 +299,71 @@
   For an example, see the implementation of \href{https://munichpavel.github.io/fake-data-docs/html/\_modules/fake\_data\_for\_learning/utils.html\#ProbabilityPolytope}{ProbabilityPolytope} of \href{https://munichpavel.github.io/fake-data-for-learning/}{https://munichpavel.github.io/fake-data-for-learning/}.
 
 \end{frame}
+
+\begin{frame}{Geometry of Simpson's Paradox}
+  \framesubtitle{Motivating example and notation}
+  From \href{http://bayes.cs.ucla.edu/PRIMER/primer-ch1.pdf}{Primer on Causality by Pearl, Glymour, Jewell}, table 1.1. is
+
+  \begin{center}
+    \begin{tabular}{ |c|c|c| }
+    \hline
+    Subpopulation & No Treatment & Treatment \\
+    \hline
+    Female & 55 of 80 recover (69\%) & 192 of 263 recover (73\%) \\
+    Male & 234 of 270 recover (87\%) & 81 of 87 recover (93\%) \\
+    Total & 289 of 350 (83\%)) & 273 of 350 (78\%) \\
+    \hline
+    \end{tabular}
+  \end{center}
+  we consider the counts above as being derived from a space of counts along dimensions $(\mathrm{RECOVERED}, \mathrm{GENDER}, \mathrm{TREATED})$ of $\mathbb{N}^2 \times \mathbb{N}^2  \times \mathbb{N}^2$:
+
+  \begin{equation*}
+    U = (u_{ijk})
+  \end{equation*}
+  where
+  \begin{equation*}
+    u_{ijk} = \textrm{counts of } \mathrm{RECOVERED} = i, \mathrm{GENDER} = j, \mathrm{TREATED} = k
+  \end{equation*}
+\end{frame}
+
+\begin{frame}{Geometry of Simpson's Parardox}
+  \framesubtitle{Notation for counts, II}
+  \small{
+    \begin{align*}
+      u_{000} &= \textrm{Count of non-recovered females who received no treatment} \\
+      u_{100} &= \textrm{Count of recovered females who received no treatment} \\
+      u_{010} &= \textrm{Count of non-recovered males who received no treatment} \\
+      u_{110} &= \textrm{Count of recovered males who received no treatment} \\
+      u_{001} &= \textrm{Count of non-recovered females who received treatment} \\
+      u_{101} &= \textrm{Count of recovered females who received treatment} \\
+      u_{011} &= \textrm{Count of non-recovered males who received treatment} \\
+      u_{111} &= \textrm{Count of recovered males who received treatment}
+    \end{align*}
+  }
+
+  \begin{center}
+    \begin{tabular}{ |c|c|c| }
+    \hline
+    Subpopulation & No Treatment & Treatment \\
+    \hline
+    Female & $u_{100}$ of $u_{+00}$ recover (ratio $\frac{u_{100}}{u_{+00}}$) & $u_{101}$ of $u_{+01}$ recover (ratio $\frac{n_{101}}{n_{+01}})$ \\
+    Male & $u_{110}$ of $u_{+10}$  recover (ratio $\frac{u_{110}}{u_{+10}})$ & $u_{111}$ of $u_{+11}$ recover (ratio $\frac{u_{111}}{u_{+11}})$ \\
+    Total & $u_{1+0}$ of $u_{++0}$  recover $\left(\frac{u_{1+1}}{u_{++0}}\right)$ & $n_{1+1}$ of $u_{++1}$  recover (ratio $\frac{u_{1+1}}{u_{++1}})$  \\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Geometry of Simpson's Paradox}
+  Converting counts $u_{ijk}$ to probabilities $p_{ijk}$ (exercise), have quadratic inequalities for this Simpson's paradox example:
+  \begin{align*}
+    p_{101}p_{+00} - p_{100}p_{+01} > 0 \\
+    p_{111}p_{+10} - p_{110}p_{+11} > 0 \\
+    p_{1+1}p_{++0} - p_{1+0}p_{++1} < 0
+  \end{align*}
+\end{frame}
+
+
 
 \begin{frame}[allowframebreaks]
   \frametitle{References}
