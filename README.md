@@ -27,7 +27,7 @@ Examples and exercises: [graphical models](notebooks/graphical-models-exercises.
 
 [Examples and exercises](notebooks/causal-models-exercises.ipynb)
 
-## [Risk and Artificial Intelligence in practice](slides/ai-in-practice)
+## Risk and Artificial Intelligence in practice
 
 * [Model Selection Examples](notebooks/model-selection-examples.ipynb)
 * [Risk and AI in Practice Exercises](notebooks/risk-ai-practice-exercises.ipynb)
