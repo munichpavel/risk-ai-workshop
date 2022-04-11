@@ -17,7 +17,7 @@ Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.
 
 ## Artificial intelligence for risk management
 
-* [Examples and exercises](notebooks/model-selection-exercises.ipynb)
+* [Examples and exercises](notebooks/introduction-examples-exercises.ipynb)
 
 ## Discrete geometry for risk
 
