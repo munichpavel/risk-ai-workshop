@@ -17,17 +17,20 @@ Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.
 
 ## Artificial intelligence for risk management
 
-* [Examples and exercises](notebooks/introduction-examples-exercises.ipynb)
+[Examples and exercises](notebooks/introduction-examples-exercises.ipynb)
 
 ## Discrete geometry for risk
 
-* Examples and exercises: [graphical models](notebooks/graphical-models-exercises.ipynb), [probability polytopes](notebooks/probability-polytope-exercises.ipynb), and [simpson's paradox](notebooks/simpsons-paradox-examples-exercises.ipynb)
+Examples and exercises: [graphical models](notebooks/graphical-models-exercises.ipynb), [probability polytopes](notebooks/probability-polytope-exercises.ipynb), and [simpson's paradox](notebooks/simpsons-paradox-examples-exercises.ipynb)
 
 ## Correlation and causality
 
-* [Examples and exercises](notebooks/causal-models-exercises.ipynb)
+[Examples and exercises](notebooks/causal-models-exercises.ipynb)
 
-## [Artificial intelligence in practice](slides/ai-in-practice)
+## [Risk and Artificial Intelligence in practice](slides/ai-in-practice)
+
+* [Model Selection Examples](notebooks/model-selection-examples.ipynb)
+* [Risk and AI in Practice Exercises](notebooks/risk-ai-practice-exercises.ipynb)
 
 ## Relate python packages
 
