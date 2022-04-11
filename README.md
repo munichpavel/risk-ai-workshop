@@ -66,7 +66,11 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 
 ### Latest
 
-Refactor introduction and concluding lectures
+### v2022.1.0
+
+Refactor introduction and concluding lectures, as well as their exercises
+
+Add simpson's paradox content and exercises to the discrete geometry lecture
 
 Add ci tests of package and notebooks for mac and windows (latest) operating systems
 
