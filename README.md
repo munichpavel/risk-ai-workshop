@@ -21,7 +21,7 @@ Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.
 
 ## Discrete geometry for risk
 
-* Examples and exercises: [graphical models](notebooks/graphical-models-exercises.ipynb), [probability polytopes](notebooks/probability-polytope-exercises.ipynb)
+* Examples and exercises: [graphical models](notebooks/graphical-models-exercises.ipynb), [probability polytopes](notebooks/probability-polytope-exercises.ipynb), and [simpson's paradox](notebooks/simpsons-paradox-examples-exercises.ipynb)
 
 ## Correlation and causality
 
