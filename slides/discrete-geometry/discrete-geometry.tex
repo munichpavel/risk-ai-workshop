@@ -80,7 +80,7 @@
 
   \emph{Notes}
   \begin{itemize}
-    \item Typically `pairs of vertices` does not include self-pairs, but this can be relaxed, leading to graphics with with loops.
+    \item Typically `pairs of vertices` does not include self-pairs, but this can be relaxed, leading to graphs with with loops.
     \item The injectivity requirement can also be relaxed, leading to \emph{multigraphs}.
   \end{itemize}
 \end{frame}
@@ -95,7 +95,7 @@
   \begin{itemize}
     \item For probability distributions admitting a graphical model representation, then graph properties (\emph{d-separation}) imply conditional independence relations.
     \item Conditional independence relations reduce the number of parameters required to specify a probability distribution.
-    \item Graphical models come in two flavors depending on their edges: directed (aka \emph{Bayesian Networks}) and undirected (aka \emph{random Markov fields}.
+    \item Graphical models come in two flavors depending on their edges: directed (aka \emph{Bayesian Networks}) and undirected (aka \emph{random Markov fields}).
   \end{itemize}
 \end{frame}
 
@@ -153,7 +153,7 @@
 
 \begin{frame}{Conditional independence}
 
-  Recall that two random variables $X, Y$ are \emph{independent} if $P(X=x, Y=y) = P(X=x) P(Y=y)$.
+  Recall that two random variables $X, Y$ are \emph{independent} if, for all $x,y$, $P(X=x, Y=y) = P(X=x) P(Y=y)$.
 
   \begin{definition}
     Let $X = (X_1, \ldots, X_m)$ be a probability distribution, and let $A, B, C$ be pair-wise disjoint subsets of ${1, \ldots, m}$, and define $X_A = (X_i)_{i \in A}$. Then $X_A, X_B$ are \emph{conditionally depenedent given $X_C$} if and only if
@@ -200,7 +200,7 @@
     An undirected path $p$ in a DAG $G$ is \emph{blocked} by a set of nodes $C$ if and only if
     \begin{enumerate}
       \item $p$ contains a chain of nodes $X \to Y \to Z$, or a fork $X \leftarrow Y \rightarrow Z$ such that $Y \in C$, or
-      \item $p$ contains a collider $X \to Y \leftarrow Z$ such that $Y \notin C$ and a descendant of $Y$ is in $C$.
+      \item $p$ contains a collider $X \to Y \leftarrow Z$ such that $Y \notin C$ and no descendant of $Y$ is in $C$.
     \end{enumerate}
   \end{definition}
 

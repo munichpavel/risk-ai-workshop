@@ -66,6 +66,8 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 
 ### Latest
 
+Fix typos in discrete geometry slides, including definition of d-separation
+
 ### v2022.1.0
 
 Refactor introduction and concluding lectures, as well as their exercises
