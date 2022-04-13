@@ -197,19 +197,19 @@
 
 \begin{frame}{d-separation in DAGs}
   \begin{definition}
-    An undirected path $p$ in a DAG $G$ is \emph{blocked} by a set of nodes $C$ if and only if
+    An undirected path $p$ in a DAG $G$ is \emph{blocked} by a set of nodes $S$ if and only if
     \begin{enumerate}
-      \item $p$ contains a chain of nodes $X \to Y \to Z$, or a fork $X \leftarrow Y \rightarrow Z$ such that $Y \in C$, or
-      \item $p$ contains a collider $X \to Y \leftarrow Z$ such that $Y \notin C$ and no descendant of $Y$ is in $C$.
+      \item $p$ contains a chain of nodes $X \to Y \to Z$, or a fork $X \leftarrow Y \rightarrow Z$ such that $Y \in S$, or
+      \item $p$ contains a collider $X \to Y \leftarrow Z$ such that $Y \notin S$ and no descendant of $Y$ is in $S$.
     \end{enumerate}
   \end{definition}
 
   \begin{definition}
-    If a set of nodes $C$ blocks every path between two nodes $X$ and $Y$, then $X$ and $Y$ are called \emph{d-separated conditional on $C$}, and we write
-    $$(X \ci Y | C)_{G}$$.
+    If a set of nodes $S$ blocks every path between two nodes $X$ and $Y$, then $X$ and $Y$ are called \emph{d-separated conditional on $S$}, and we write
+    $$(X \ci Y | S)_{G}$$.
   \end{definition}
 
-  By the d-separation teaser theorem, $(X \ci Y | C)_{G}$ implies conditional independence.\newline
+  By the d-separation teaser theorem, $(X \ci Y | S)_{G}$ implies conditional independence.\newline
 \end{frame}
 
 
@@ -225,7 +225,7 @@
 
 \begin{frame}{Probability polytopes}
 
-  \emph{Goal}: Use geometric interpretation of multivariate discrete random variables to generate intersting fake data with few(er) parameters.\newline
+  \emph{Goal}: Use geometric interpretation of multivariate discrete random variables to generate interesting fake data with few(er) parameters.\newline
 
   Example: The family of all $X \sim Bernoulli$ can be represented as
 
