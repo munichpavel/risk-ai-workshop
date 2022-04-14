@@ -11,7 +11,7 @@
 
 ## Workshop topics
 
-Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.yml), and ~~can be accessed by clicking on the `Artifacts` section of a workflow run~~ but I need to add these artifacts to a [release]() as in the issue [Make slide artifacts publicly available](https://github.com/munichpavel/risk-ai-workshop/issues/21). As a workaround, the slides from ci / cd run [#163](https://github.com/munichpavel/risk-ai-workshop/actions/runs/2165826463) are attached to the [bug-fix issue](https://github.com/munichpavel/risk-ai-workshop/issues/21).
+Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.yml), and be found under [releases](https://github.com/munichpavel/risk-ai-workshop/releases). See e.g. [the v2022.1.1 release](https://github.com/munichpavel/risk-ai-workshop/releases/tag/v2022.1.1).
 
 ## Artificial intelligence for risk management
 
@@ -29,15 +29,13 @@ Examples and exercises: [graphical models](notebooks/graphical-models-exercises.
 
 * [Model Selection Examples](notebooks/model-selection-examples.ipynb)
 * [Risk and AI in Practice Exercises](notebooks/risk-ai-practice-exercises.ipynb)
-* [Model Selection Exercises (from 2017 workshop)](notebooks/model-selection-exercises.ipynb
-)
+* [Model Selection Exercises (from 2017 workshop)](notebooks/model-selection-exercises.ipynb)
 
 ## Grading scheme for University of Ljubljana Masters in Mathematical Finance
 
 The number of points for a correct solution for each exercise brings is equal to $2^{\mathrm{number\,of\,stars}}$. For a grade of 8 you have to get at least 6 points, for grade 9 at least 7 points and for 10 at least 8 points.
 
 You have to solve one problem from each of the four sets of problems unless you solved one of the problems with three stars.
-
 
 ## Relate python packages
 
@@ -72,6 +70,8 @@ Once an initial release has been created for a new workshop, create subsequent t
 Note: I do not follow [Semantic Versioning](https://semver.org/) for this project. For the first digit (in semver, `major`), I use the year of the target workshop, and for the last (in semver `patch`), I increment when a chunk of work is done towards giving the workshop. The middle digit (in semver, `minor`) stays on 0 until I give the workshop, when it bumps to 1. Fixes to the given workshop get reflected in the patch versions `yyyy.1.<patch-version>`.
 
 ### Latest
+
+Replace slide publishing workaround with instructions on accessing compiled slides under releases.
 
 ### v2022.1.1
 
