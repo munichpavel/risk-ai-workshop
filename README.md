@@ -29,6 +29,15 @@ Examples and exercises: [graphical models](notebooks/graphical-models-exercises.
 
 * [Model Selection Examples](notebooks/model-selection-examples.ipynb)
 * [Risk and AI in Practice Exercises](notebooks/risk-ai-practice-exercises.ipynb)
+* [Model Selection Exercises (from 2017 workshop)](notebooks/model-selection-exercises.ipynb
+)
+
+## Grading scheme for University of Ljubljana Masters in Mathematical Finance
+
+The number of points for a correct solution for each exercise brings is equal to $2^{\mathrm{number\,of\,stars}}$. For a grade of 8 you have to get at least 6 points, for grade 9 at least 7 points and for 10 at least 8 points.
+
+You have to solve one problem from each of the four sets of problems unless you solved one of the problems with three stars.
+
 
 ## Relate python packages
 
