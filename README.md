@@ -13,19 +13,19 @@
 
 Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.yml), and be found under [releases](https://github.com/munichpavel/risk-ai-workshop/releases). See e.g. [the v2022.1.1 release](https://github.com/munichpavel/risk-ai-workshop/releases/tag/v2022.1.1).
 
-## Artificial intelligence for risk management
+### Artificial intelligence for risk management
 
 [Examples and exercises](notebooks/introduction-examples-exercises.ipynb)
 
-## Discrete geometry for risk
+### Discrete geometry for risk
 
 Examples and exercises: [graphical models](notebooks/graphical-models-exercises.ipynb), [probability polytopes](notebooks/probability-polytope-exercises.ipynb), and [simpson's paradox](notebooks/simpsons-paradox-examples-exercises.ipynb)
 
-## Correlation and causality
+### Correlation and causality
 
 [Examples and exercises](notebooks/causal-models-exercises.ipynb)
 
-## Risk and Artificial Intelligence in practice
+### Risk and Artificial Intelligence in practice
 
 * [Model Selection Examples](notebooks/model-selection-examples.ipynb)
 * [Risk and AI in Practice Exercises](notebooks/risk-ai-practice-exercises.ipynb)
