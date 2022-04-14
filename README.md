@@ -73,7 +73,11 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 
 ### Latest
 
-Fix typos in discrete geometry slides, including definition of d-separation
+### v2022.1.1
+
+* Fix typos in discrete geometry slides, including definition of d-separation
+* Fix hit-rate average treatment effect results in slides
+* Add ci / cd release step to make ci / cd slide artifacts publicly available
 
 ### v2022.1.0
 
