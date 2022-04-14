@@ -11,9 +11,7 @@
 
 ## Workshop topics
 
-Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.yml), and can be accessed by clicking on the `Artifacts` section of a workflow run, as in the below screenshot
-
-![slides-artifacts-screenshot](docs/resources/slides-artifact-click.png)
+Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.yml), and ~~can be accessed by clicking on the `Artifacts` section of a workflow run~~ but I need to add these artifacts to a [release]() as in the issue [Make slide artifacts publicly available](https://github.com/munichpavel/risk-ai-workshop/issues/21). As a workaround, the slides from ci / cd run [#163](https://github.com/munichpavel/risk-ai-workshop/actions/runs/2165826463) are attached to the [bug-fix issue](https://github.com/munichpavel/risk-ai-workshop/issues/21).
 
 ## Artificial intelligence for risk management
 
