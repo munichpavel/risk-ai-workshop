@@ -236,7 +236,24 @@
             $\quad - P(\textrm{hit}=1 | \jpdo(\textrm{days}) = 3) \approx 8\%$
         \end{column}%
     \end{columns}
+\end{frame}
 
+\begin{frame}{Causal hit rate, II}
+    Compute relative average treatment effect for different values of $\textrm{days}$:
+    \begin{align*}
+        \textrm{relative-ate}_G &= \frac{
+            P_G(\textrm{hit}=1 | \textrm{days}=d) - P_G(\textrm{hit}=1 | \textrm{days}=d+1)
+        }{P_G(\textrm{hit}=1 | \textrm{days}=d)} \\
+        \textrm{relative-ate}_{G'} &= \frac{
+            P_G(\textrm{hit}=1 | \jpdo(\textrm{days}=d)) - P_G(\textrm{hit}=1 | \jpdo(\textrm{days}=d+1))
+        }{P_G(\textrm{hit}=1 | \jpdo(\textrm{days}=d))} \\
+        & = \frac{
+            P_{G'}(\textrm{hit}=1 | \textrm{days}=d) - P_{G'}(\textrm{hit}=1 | \textrm{days}=d+1)
+        }{P_{G'}(\textrm{hit}=1 | \textrm{days}=d)}
+    \end{align*}
+    \begin{center}
+        \input{graphics/rel_ates_do_vs_given}
+    \end{center}
 \end{frame}
 
 \begin{frame}{Judea Pearl's Rules of Causality}
