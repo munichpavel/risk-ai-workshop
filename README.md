@@ -57,8 +57,6 @@ In the exercise notebooks and `requirements.txt` you see which python packages I
 
 ## Releases
 
-I follow a semantic-versioning-like convention for releases of `<workshop-year>.<minor>.<patch>`. For now, the `minor` value will be an incrementing integer; as the module being developed in this repo is not planned to be pushed to [pypi](https://pypi.org/), I won't be very strict, and will likely keep `minor` at 0 even if the api changes. If it looks like I would ever give more than one workshop a year, the `minor` value could be used for the month of the workshop.
-
 ### Process of creating a new workshop release
 
 If the release is for a new workshop year, then first manually change the version in the code-base to `<new-year>.0.0`. This release need not be a tagged release, as it is the same as the final release of the previous workshop in an earlier year.
@@ -74,6 +72,8 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 Replace slide publishing workaround with instructions on accessing compiled slides under releases.
 
 Remove (now deprecated) static example ATE result in correlation-causality slides.
+
+Remove RY in release process overview
 
 ### v2022.1.1
 
