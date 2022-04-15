@@ -69,6 +69,8 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 
 ### Latest
 
+### v2022.1.2
+
 Replace slide publishing workaround with instructions on accessing compiled slides under releases.
 
 Remove (now deprecated) static example ATE result in correlation-causality slides.
