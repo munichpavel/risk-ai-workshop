@@ -73,6 +73,8 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 
 Replace slide publishing workaround with instructions on accessing compiled slides under releases.
 
+Remove (now deprecated) static example ATE result in correlation-causality slides.
+
 ### v2022.1.1
 
 * Fix typos in discrete geometry slides, including definition of d-separation
