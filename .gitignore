@@ -100,3 +100,7 @@ graphics/
 
 # scripts
 *.sh
+
+# Working / dev files
+_*.md
+_*.ipynb
