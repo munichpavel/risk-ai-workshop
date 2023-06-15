@@ -69,6 +69,10 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 
 ### Latest
 
+* Update python versions run in ci (drop 3.6, add higher versions)
+* Add escaping of model-selection-notebook correlation tex table columns
+* Fix latex color theme name for Ubuntu
+
 ### v2022.1.2
 
 Replace slide publishing workaround with instructions on accessing compiled slides under releases.
