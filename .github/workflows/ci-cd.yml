@@ -12,19 +12,15 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     strategy:
+      fail-fast: false
       matrix:
         os: ["ubuntu-latest", "macos-latest", "windows-latest", "windows-2019"]
-        python-version: ["3.6", "3.7", "3.8", "3.9"]
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
+
         exclude:
-          # Due to pytest install error
-          - os: windows-latest
-            python-version: "3.6"
           # Due to nbconvert TypeError
           - os: windows-latest
             python-version: "3.7"
-          # Due to pytest install error
-          - os: windows-2019
-            python-version: "3.6"
           # Due to nbconvert TypeError
           - os: windows-2019
             python-version: "3.7"
