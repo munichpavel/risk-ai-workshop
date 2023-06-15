@@ -42,7 +42,7 @@ setup(
         'Natural Language :: English',
         'Programming Language :: Python :: 3.6',
     ],
-    python_requires='>=3.6,<3.10',  # Upper bound due to pypoman
+    python_requires='>=3.6',
     test_suite='tests',
     tests_require=test_requirements,
     setup_requires=setup_requirements,
