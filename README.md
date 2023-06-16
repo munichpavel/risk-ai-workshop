@@ -73,6 +73,7 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 * Add escaping of model-selection-notebook correlation tex table columns
 * Fix latex color theme name for Ubuntu
 * Update github action versions for checkout and setup-python
+* Remove tox, as it duplicated the ci-cd matrix strategy
 
 ### v2022.1.2
 
