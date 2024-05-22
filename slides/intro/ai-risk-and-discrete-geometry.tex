@@ -63,8 +63,7 @@
   \begin{block}{\ldots and the regulation that results from disasters big and small}
     \href{https://www.bis.org/basel_framework/}{Basil Framework (banking)},
     \href{https://www.eiopa.europa.eu/browse/solvency-2_en}{Solvency II (insurance)},
-    \href{https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX\%3A52021PC0206}{The AI Act (EU)},
-    \href{https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Meldung/2020/meldung\_2020\_05\_25\_KAIT\_en.html}{IT Requirements for German Asset Managers}
+    \href{https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html}{The AI Act (EU)}
   \end{block}
 \end{frame}
 
@@ -95,6 +94,9 @@
   \begin{center}
     \huge Artificial Intelligence Does Not Exist
   \end{center}
+
+\vspace{0.5\textheight}
+or so I claimed in the Spring, 2022 Workshop \ldots
 \end{frame}
 
 \begin{frame}{What is AI?}
@@ -120,9 +122,25 @@
 
 \begin{frame}{AI and Risk}
   \framesubtitle{AI struggles with context}
-  The scientist named the population, after their distinctive horn, Ovid's Unicorn. These four-horned, silver-white unicorns were previously unknown to science.\newline
+  \begin{columns}[T] % align columns
+    \begin{column}{.45\textwidth}
+      {\Large 2022 edition, GPT-2}:\newline
 
-  Source: \href{https://www.lesswrong.com/posts/4AHXDwcGab5PhKhHT/humans-who-are-not-concentrating-are-not-general}{https://www.lesswrong.com/posts/4AHXDwcGab5PhKhHT/humans-who-are-not-concentrating-are-not-general}
+      The scientist named the population, after their distinctive horn, Ovid's Unicorn. These four-horned, silver-white unicorns were previously unknown to science.\newline
+
+      Source: \href{https://www.lesswrong.com/posts/4AHXDwcGab5PhKhHT/humans-who-are-not-concentrating-are-not-general}{Humans Who Are Not Concentrating Are Not General Intelligences}
+
+    \end{column}%
+    \begin{column}{.45\textwidth}
+      {\Large 2024 edition, GPT-4}:\newline
+      \begin{center}
+        \includegraphics[width=\textwidth]{graphics/melanie-mitchell-it-challenge}
+      \end{center}
+
+      Source of challenge: \cite{mitchell2019artificial}
+    \end{column}%
+\end{columns}
+
 \end{frame}
 
 \begin{frame}{AI and Risk}
@@ -135,12 +153,29 @@
 \end{frame}
 
 \begin{frame}{AI and Risk}
-  \framesubtitle{AI Struggles With Human Behavior}
-  \href{run:graphics/siri_smart_sarcasm.m4a}{Siri Compliments}
+  \framesubtitle{AI Struggle\sout{s}d With Human Behavior (in 2022)}
+  \begin{columns}[T] % align columns
+    \begin{column}{.45\textwidth}
+      {\Large 2022 edition, GPT-2}:\newline
 
-  \begin{center}
-    \includegraphics[height=0.7\textheight]{graphics/siri_transcript}
-  \end{center}
+      \href{run:graphics/siri_smart_sarcasm.m4a}{Siri Compliments}
+
+      \begin{center}
+        \includegraphics[height=0.6\textheight]{graphics/siri_transcript}
+      \end{center}
+
+    \end{column}%
+    \begin{column}{.45\textwidth}
+      {\Large 2024 edition, GPT-4}:\newline
+
+      \href{run:graphics/chat-gpt-sarcasm.m4a}{ChatGPT Compliments}
+
+      \begin{center}
+        \includegraphics[height=0.6\textheight]{graphics/chat-gpt-4-sarcasm-transcript}
+      \end{center}
+
+    \end{column}%
+\end{columns}
 \end{frame}
 
 \begin{frame}{AI: Where is the crisis?}
@@ -148,7 +183,7 @@
   \href{https://eur-lex.europa.eu/resource.html?uri=cellar:e0649735-a372-11eb-9585-01aa75ed71a1.0001.02/DOC_1&format=PDF}{Paragraph 35 of the AI Act} (emphasis added):
   \newline
   \begin{quotation}
-    AI systems used in education or vocational training, notably for determining access or assigning persons to educational and vocational training institutions or to evaluate persons on tests as part of or as a precondition for their education should be considered high-risk.
+    \noindent AI systems used in education or vocational training, notably for determining access or assigning persons to educational and vocational training institutions or to evaluate persons on tests as part of or as a precondition for their education should be considered high-risk.
   \end{quotation}
   \newline
   $\rightarrow$ \href{https://www.fastcompany.com/90342596/schools-are-quietly-turning-to-ai-to-help-pick-who-gets-in-what-could-go-wrong}{FastCompany: AI in admissions, what could go wrong?}
@@ -163,12 +198,27 @@
   \framesubtitle{High risk AI: access to finance}
   \href{https://eur-lex.europa.eu/resource.html?uri=cellar:e0649735-a372-11eb-9585-01aa75ed71a1.0001.02/DOC_1&format=PDF}{Paragraph 37 of the AI Act} (emphasis added):
   \begin{quotation}
-    AI systems used to evaluate the credit score or creditworthiness of natural persons should be classified as high-risk AI systems, since they determine those persons \textcolor{red}{access to financial resources or essential services} such as housing, electricity, and telecommunication services. AI systems used for this purpose may lead to \textcolor{red}{discrimination} of persons or groups and \textcolor{red}{perpetuate historical patterns of discrimination}, for example based on racial or ethnic origins, disabilities, age, sexual orientation, or create new forms of discriminatory impacts.
+    \noindent AI systems used to evaluate the credit score or creditworthiness of natural persons should be classified as high-risk AI systems, since they determine those persons \textcolor{red}{access to financial resources or essential services} such as housing, electricity, and telecommunication services. AI systems used for this purpose may lead to \textcolor{red}{discrimination} of persons or groups and \textcolor{red}{perpetuate historical patterns of discrimination}, for example based on racial or ethnic origins, disabilities, age, sexual orientation, or create new forms of discriminatory impacts.
   \end{quotation}
   \newline
   $\rightarrow$ \href{https://qz.com/1748321/the-role-of-goldman-sachs-algorithms-in-the-apple-credit-card-scandal/}{Apple Card Controversy: Is its algorithm biased against women?}
   \newline
   $\rightarrow$ \href{https://www.reubenbinns.com/blog/how-to-comply-with-gdpr-article-22-automated-credit-decisions/}{General Data Protection Regulation (EU) on automated credit decisions}
+\end{frame}
+
+\begin{frame}{AI: Where is the crisis?}
+  \framesubtitle{\href{https://www.youtube.com/watch?v=5taE_br3Vr8}{Is AI "far more dangerous than nukes"?}}
+
+From \href{https://futureoflife.org/open-letter/pause-giant-ai-experiments/}{Open Letter to AI Labs: Pause AI Experiments}\newline
+
+\begin{quotation}
+  \noindent [R]ecent months have seen AI labs locked in an out-of-control race to develop and deploy ever more powerful digital minds that no one – not even their creators – can understand, predict, or reliably control.
+
+  \ldots
+
+  \noindent Powerful AI systems should be developed only once we are confident that their effects will be positive and their risks will be manageable.
+\end{quotation}
+
 \end{frame}
 
 \begin{frame}{AI: Where is the crisis?}
@@ -178,7 +228,7 @@
   \newline
   From the introduction of the \href{https://eur-lex.europa.eu/resource.html?uri=cellar:e0649735-a372-11eb-9585-01aa75ed71a1.0001.02/DOC_1&format=PDF}{AI Act} (emphasis added):
   \begin{quotation}
-    By improving prediction, optimising operations and resource allocation, and personalising service delivery, the use of artificial intelligence can support \textcolor{red}{socially and environmentally beneficial outcomes} and provide key competitive advantages to companies and the European economy. Such action is especially needed in high-impact sectors, including climate change, environment and health, the public sector, finance, mobility, home affairs and agriculture. However, the same elements and techniques that power the socio-economic benefits of AI can also bring about \textcolor{red}{new risks or negative consequences for individuals or the society}.
+    \noindent By improving prediction, optimising operations and resource allocation, and personalising service delivery, the use of artificial intelligence can support \textcolor{red}{socially and environmentally beneficial outcomes} and provide key competitive advantages to companies and the European economy. Such action is especially needed in high-impact sectors, including climate change, environment and health, the public sector, finance, mobility, home affairs and agriculture. However, the same elements and techniques that power the socio-economic benefits of AI can also bring about \textcolor{red}{new risks or negative consequences for individuals or the society}.
   \end{quotation}
 
 \end{frame}
@@ -190,7 +240,7 @@
   \newline
   From mathematician \href{https://mathbabe.org/}{Cathy O'Neal}, author of \href{https://en.wikipedia.org/wiki/Weapons_of_Math_Destruction}{\textit{Weapons of Math Destruction}}, to \href{https://slate.com/business/2019/11/apple-card-credit-algorithm-bias-discrimination-women.html}{Slate} (emphasis added):
   \begin{quotation}
-    \textcolor{red}{They look at the upside}—which is faster, scalable, quick decision-making—and \textcolor{red}{they ignore the downside}, which is that they're \textcolor{red}{taking on a lot of risk}.
+    \noindent \textcolor{red}{They look at the upside}—which is faster, scalable, quick decision-making—and \textcolor{red}{they ignore the downside}, which is that they're \textcolor{red}{taking on a lot of risk}.
   \end{quotation}
 
 \end{frame}
@@ -202,7 +252,7 @@
 \item Introduction
 \item Discrete geometry for artificial intelligence and risk
 \item Correlation and causation
-\item Risk and AI in practice
+\item Adversarial regularization regimes for classification tasks
 \end{enumerate}
 \end{frame}
 
@@ -217,5 +267,14 @@
 \centering
 \includegraphics[width=0.3\textheight]{graphics/pi_wittgenstein}
 \end{frame}
+
+\begin{frame}[allowframebreaks]
+  \frametitle{References}
+  \setbeamertemplate{bibliography item}[text]
+  \bibliographystyle{amsalpha}
+  \bibliography{../references.bib}
+\end{frame}
+
+
 
 \end{document}
