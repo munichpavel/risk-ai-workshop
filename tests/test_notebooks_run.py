@@ -27,7 +27,8 @@ notebook_dir = project_root / 'notebooks'
         notebook_dir / 'causal-models-exercises.ipynb',
         notebook_dir / 'model-selection-examples.ipynb',
         notebook_dir / 'model-selection-exercises.ipynb',
-        notebook_dir / 'risk-ai-practice-exercises.ipynb'
+        notebook_dir / 'risk-ai-practice-exercises.ipynb',
+        notebook_dir / 'adversarial-ml-examples-exercises.ipynb'
     ]
 )
 def test_ipynb(notebook_path, monkeypatch, tmpdir):

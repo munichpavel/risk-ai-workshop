@@ -25,11 +25,9 @@ Examples and exercises: [graphical models](notebooks/graphical-models-exercises.
 
 [Examples and exercises](notebooks/causal-models-exercises.ipynb)
 
-### Risk and Artificial Intelligence in practice
+### Adversarial regularization regimes in classification tasks
 
-* [Model Selection Examples](notebooks/model-selection-examples.ipynb)
-* [Risk and AI in Practice Exercises](notebooks/risk-ai-practice-exercises.ipynb)
-* [Model Selection Exercises (from 2017 workshop)](notebooks/model-selection-exercises.ipynb)
+* [Examples and exercises](notebooks/adversarial-ml-examples-exercises.ipynb)
 
 ## Grading scheme for University of Ljubljana Masters in Mathematical Finance
 
