@@ -53,6 +53,20 @@ In the exercise notebooks and `requirements.txt` you see which python packages I
 * [dowhy](https://microsoft.github.io/dowhy/)
 * [pyro](https://pyro.ai/)
 
+## Troubleshooting
+
+If you get a `ModuleNotFoundError: No module named 'risk_learning'` in one of the example notebooks, try the following
+
+1. Make sure you are starting jupyter from your virtual environment, e.g. first run `source venv/bin/activate` or `conda activate`.
+
+1. Ensure you've installed the local package, e.g. with `pip install .`
+
+1. Try adding the python path before calling the jupyter notebook via
+
+    ```console
+    PYTHONPATH=$(pwd) jupyter notebook
+    ```
+
 ## Releases
 
 ### Process of creating a new workshop release
