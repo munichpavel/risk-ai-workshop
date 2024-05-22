@@ -72,6 +72,7 @@ test_call_dir = Path(os.getcwd())
         test_call_dir / 'slides' / 'discrete-geometry' / 'discrete-geometry.tex',  # noqa: E501
         test_call_dir / 'slides' / 'correlation-causality' / 'correlation-causality.tex',  # noqa: E501
         test_call_dir / 'slides' / 'risk-and-ai-in-practice' / 'risk-ai-practice.tex',  # noqa: E501
+        test_call_dir / 'slides' / 'adversarial-regularization-regimes' / 'adversarial.tex',  # noqa: E501
     ]
 )
 def test_on_disk_latex_build(tmpdir, filepath):
