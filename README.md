@@ -79,6 +79,10 @@ Once an initial release has been created for a new workshop, create subsequent t
 
 Note: I do not follow [Semantic Versioning](https://semver.org/) for this project. For the first digit (in semver, `major`), I use the year of the target workshop, and for the last (in semver `patch`), I increment when a chunk of work is done towards giving the workshop. The middle digit (in semver, `minor`) stays on 0 until I give the workshop, when it bumps to 1. Fixes to the given workshop get reflected in the patch versions `yyyy.1.<patch-version>`.
 
+### v2024.1.1
+
+Fix 2024 version for workshop, as some new image files were missing
+
 ### v2024.0.0
 
 * Add adversarial regularization regime slides and exercises as final session
