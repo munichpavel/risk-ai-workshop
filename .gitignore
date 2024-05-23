@@ -104,3 +104,6 @@ graphics/
 # Working / dev files
 _*.md
 _*.ipynb
+
+venv/
+.venv/
