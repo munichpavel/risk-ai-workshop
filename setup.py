@@ -25,7 +25,7 @@ test_requirements = [
 
 setup(
     name='risk_learning',
-    version='2024.1.1',
+    version='2024.1.2',
     author="Paul Larsen",
     author_email='munichpavel@gmail.com',
     url='https://github.com/munichpavel/risk_learning',
