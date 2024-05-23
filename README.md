@@ -4,10 +4,29 @@
 
 ## Quick-start
 
-* `git clone` the repository and `cd` into the root directory.
-* For the exercise Jupyter notebooks
-  * create a virtual environment (recommended)  e.g. with [venv](https://docs.python.org/3/library/venv.html), [conda](https://docs.conda.io/en/latest/) or other.
-  * install python dependencies with `pip install -r requirements.txt` in a virtual environment. Note: the [fake-data-for-learning package](https://github.com/munichpavel/fake-data-for-learning) has some non-python dependencies; see its [installation instructions](https://github.com/munichpavel/fake-data-for-learning/blob/main/README.md#installation).
+
+### Obtaining the repository
+
+Either
+
+`git clone` the repository
+
+OR
+
+download a zipped-version of this repo from GitHub
+
+then `cd` into the created folder
+
+### Running the workshop notebooks in [noteebooks](notebooks/)
+
+#### Option 1, local installation
+
+* create a virtual environment (recommended)  e.g. with [venv](https://docs.python.org/3/library/venv.html), [conda](https://docs.conda.io/en/latest/) or other.
+* install python dependencies with `pip install -r requirements.txt` in a virtual environment. Note: the [fake-data-for-learning package](https://github.com/munichpavel/fake-data-for-learning) has some non-python dependencies; see its [installation instructions](https://github.com/munichpavel/fake-data-for-learning/blob/main/README.md#installation).
+
+#### Option 2, Google Colab
+
+Coming soon.
 
 ## Workshop topics
 
@@ -81,6 +100,8 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 
 ### Latest
 
+* Add concluding slide to introductory presentation
+* Remove older version of causal model exercises notebook
 * Git ignore common virtual environment folders
 
 ### v2024.1.1
