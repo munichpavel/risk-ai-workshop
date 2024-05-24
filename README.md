@@ -26,7 +26,39 @@ then `cd` into the created folder
 
 #### Option 2, Google Colab
 
-Coming soon.
+If you don't mind giving Google access to even more of your data, another option is to use the Google Colab version of hosted notebooks.
+
+**Steps**
+
+1. either clone or download this repository as above
+1. Upload the repository folder to your Google Drive.
+1. To open a notebook in Colab, navigate in your google drive to the notebooks folder, and double click on the notebook you want to open. It should look something like this:
+![openining a notebook from google drive](readme-graphics/open-notebook-from-drive.png)
+1. At the top of each Colab notebook you want to run, add a cell and paste in the contents
+```python
+import os
+from google.colab import drive
+from google.colab import drive
+drive.mount('/content/drive')
+
+os.chdir('/content/drive/My Drive/risk-ai-workshop-main')
+# Debug: if you don't see the top level contents of https://github.com/munichpavel/risk-ai-workshop/tree/d78309e23a2200d6e8dc71f657cefd0693bab51b
+# from the below print statement, then something has gone wrong
+print(os.listdir())
+
+!pip install -r requirements.txt
+```
+
+It should look something like this (after you run it):
+
+![Additional first cell if using Colab](readme-graphics/colab-first-cell.png)
+
+Notes:
+
+* Google will ask you for permissions to access your Google Drive. Please consider carefully before you grant this access.
+* Since Colab already has many dependencies installed, you will likely get a message saying you will have to restart your runtime, hence losing any saved variable values. Once you are sure you have saved anything you don't want to lose, select "Restart Session"
+
+![colab message to restart session for installation of custom dependencies](readme-graphics/colab-restart-session-post-install.png)
 
 ## Workshop topics
 
@@ -106,6 +138,11 @@ Once an initial release has been created for a new workshop, create subsequent t
 ## Release history
 
 Note: I do not follow [Semantic Versioning](https://semver.org/) for this project. For the first digit (in semver, `major`), I use the year of the target workshop, and for the last (in semver `patch`), I increment when a chunk of work is done towards giving the workshop. The middle digit (in semver, `minor`) stays on 0 until I give the workshop, when it bumps to 1. Fixes to the given workshop get reflected in the patch versions `yyyy.1.<patch-version>`.
+
+### Latest
+
+* Update grading schema for 2024 workshop
+* Add more proof details from equalities in lecture on correlation and causality
 
 ### 2024.1.3
 
