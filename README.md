@@ -50,9 +50,18 @@ Examples and exercises: [graphical models](notebooks/graphical-models-exercises.
 
 ## Grading scheme for University of Ljubljana Masters in Mathematical Finance
 
-The number of points for a correct solution for each exercise brings is equal to $2^{\mathrm{number\,of\,stars}}$. For a grade of 8 you have to get at least 6 points, for grade 9 at least 7 points and for 10 at least 8 points.
+### 2024 Workshop
 
-You have to solve one problem from each of the four sets of problems unless you solved one of the problems with three stars.
+Exercise are to be submitted per team to Professor Košir before or on June 24, 2024.
+
+The number of points for a correct solution for each exercise brings is equal to $2^{\mathrm{number\,of\,stars}}$.
+
+The grading for this seminar as part of the course is binary, i.e. "pass" or "no-pass". For a grade of "pass" your team will require
+
+1. at least 8 points, and
+1. at least one correctly solved exercise from each of the four sessions from [workshop topics](#workshop-topics) above.
+
+For an example of the 2nd criterion, to satisfy this criterion for the 2nd topic, [Discrete Geometry for Risk](#discrete-geometry-for-risk), you need to successfully solve at least one problem from one of the three exercise notebooks.
 
 ## Relate python packages
 
