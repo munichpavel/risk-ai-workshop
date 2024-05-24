@@ -141,6 +141,7 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 
 ### 2024.1.4
 
+* Add missing references for adversariality lecture
 * Add google colab instructions
 * Update grading schema for 2024 workshop
 * Add more proof details from equalities in lecture on correlation and causality
