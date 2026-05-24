@@ -8,9 +8,11 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "ipywidgets>=8.1.8",
     "jupyterlab>=4.5.7",
     "matplotlib>=3.10.9",
     "pandas>=3.0.3",
+    "polars>=1.40.1",
     "scikit-learn>=1.8.0",
 ]
 

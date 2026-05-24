@@ -360,8 +360,8 @@ but ...
 ## Workshop outline
 
 1. ~~Introduction~~
-2. Managing high risk AI
-2. Mathematics and statistics of AI cyber risk
+2. Managing high-risk AI
+2. Managing high-risk AI, II
 2. Future of AI risk management
 
 ---
