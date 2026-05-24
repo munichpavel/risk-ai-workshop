@@ -75,9 +75,10 @@ jobs:
       - uses: "actions/setup-python@v2"
         with:
           python-version: "${{ matrix.python-version }}"
-      - name: "Install dependencies for latex slide delivery"
+      - name: "Install dependencies for latex and marp slide delivery"
         run: |
           sudo apt-get install texlive-latex-extra
+          npm install -g @marp-team/marp-cli
           python -VV
           python -m site
           python -m pip install .
@@ -86,7 +87,8 @@ jobs:
         run: |
           mkdir -p tex_out
 
-          python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/intro/ai-risk-and-discrete-geometry.tex --outdir ${{ github.workspace }}/tex_out
+          # python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/intro/ai-risk-and-discrete-geometry.tex --outdir ${{ github.workspace }}/tex_out
+          marp --html 'slides/intro/intro' -o "${{ github.workspace }}/tex_out/intro.pdf"--allow-local-files
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/discrete-geometry/discrete-geometry.tex --outdir ${{ github.workspace }}/tex_out
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/correlation-causality/correlation-causality.tex --outdir ${{ github.workspace }}/tex_out
           python risk_learning/tex.py --filepath ${{ github.workspace }}/slides/adversarial-regularization-regimes/adversarial.tex --outdir ${{ github.workspace }}/tex_out
