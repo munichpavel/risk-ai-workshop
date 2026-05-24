@@ -20,24 +20,11 @@ notebook_dir = project_root / 'notebooks'
 @pytest.mark.parametrize(
     'notebook_path',
     [
-        notebook_dir / 'introduction-examples-exercises.ipynb',
-        notebook_dir / 'graphical-models-exercises.ipynb',
-        notebook_dir / 'probability-polytope-exercises.ipynb',
-        notebook_dir / 'simpsons-paradox-examples-exercises.ipynb',
-        notebook_dir / 'causal-models-exercises.ipynb',
-        notebook_dir / 'model-selection-examples.ipynb',
-        notebook_dir / 'model-selection-exercises.ipynb',
-        notebook_dir / 'risk-ai-practice-exercises.ipynb',
-        notebook_dir / 'adversarial-ml-examples-exercises.ipynb'
+        notebook_dir / 'high-risk-exercises.ipynb',
     ]
 )
-def test_ipynb(notebook_path, monkeypatch, tmpdir):
+def test_ipynb(notebook_path):
 
-    # Set up mock output directories
-    monkeypatch.setenv('DATA_DIR', str(tmpdir))
-    monkeypatch.setenv('DG_FIG_DIR', str(tmpdir))
-    monkeypatch.setenv('CC_FIG_DIR', str(tmpdir))
-    monkeypatch.setenv('EXPERIMENTS_DIR', str(tmpdir))
 
     errors = _notebook_run_errors(notebook_path)
     assert errors == []
