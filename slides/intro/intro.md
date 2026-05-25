@@ -40,6 +40,10 @@ style: |
     font-size: 30px;
   }
 
+  blockquote.small {
+    font-size: 0.6em;
+  }
+
 ---
 
 <style>
@@ -100,8 +104,68 @@ $\ldots$ and the regulation that results from disasters big and small
 
 </div>
 
+
 ---
+
 ## Where is the AI crisis?
+
+Education?
+
+[Paragraph 35 of the AI Act](https://eur-lex.europa.eu/resource.html?uri=cellar:e0649735-a372-11eb-9585-01aa75ed71a1.0001.02/DOC_1&format=PDF) (emphasis added):
+
+<blockquote class="small">
+AI systems used in education or vocational training, notably for determining access or assigning persons to educational and vocational training institutions or to evaluate persons on tests as part of or as a precondition for their education should be considered high-risk.
+</blockquote>
+
+→ [FastCompany: AI in admissions, what could go wrong?](https://www.fastcompany.com/90342596/schools-are-quietly-turning-to-ai-to-help-pick-who-gets-in-what-could-go-wrong)
+
+→ [Wired: The algorithms that keep students out of college](https://www.wired.com/story/algorithm-set-students-grades-altered-futures/)
+
+→ [Verge: UK ditches biased algorithm for university admission](https://www.theverge.com/2020/8/17/21372045/uk-a-level-results-algorithm-biased-coronavirus-covid-19-pandemic-university-applications)
+
+---
+
+## Where is the AI crisis?
+
+Access to finance?
+
+[Paragraph 37 of the AI Act](https://eur-lex.europa.eu/resource.html?uri=cellar:e0649735-a372-11eb-9585-01aa75ed71a1.0001.02/DOC_1&format=PDF) (emphasis added):
+
+<blockquote class="small">
+AI systems used to evaluate the credit score or creditworthiness of natural persons should be classified as high-risk AI systems, since they determine those persons <b>access to financial resources or essential services</b> such as housing, electricity, and telecommunication services. AI systems used for this purpose may lead to <b>discrimination</b> of persons or groups and <b>perpetuate historical patterns of discrimination</b>, for example based on racial or ethnic origins, disabilities, age, sexual orientation, or create new forms of discriminatory impacts.
+</blockquote>
+
+→ [Apple Card Controversy: Is its algorithm biased against women?](https://qz.com/1748321/the-role-of-goldman-sachs-algorithms-in-the-apple-credit-card-scandal/)
+
+→ [General Data Protection Regulation (EU) on automated credit decisions](https://www.reubenbinns.com/blog/how-to-comply-with-gdpr-article-22-automated-credit-decisions/)
+
+---
+
+## Where is the AI crisis?
+
+<!-- _class: split -->
+<div class=ldiv>
+Health and safety?
+
+![h:300 center](graphics/2025-08-02-tesla-settlement-reuters.png)
+<p class="small-text">
+Source: <a href="https://www.reuters.com/legal/litigation/tesla-ordered-by-florida-jury-pay-243-million-fatal-autopilot-crash-2025-08-01/">Reuters, Jonathan Stempel and Abhirup Roy (2025-08-02)</a>
+</p>
+
+</div>
+<div class=rdiv>
+
+![h:150 center](graphics/2026-01-07-character-ai-settlement-cnbc.png)
+<p class="small-text">
+Source: <a href="https://www.cnbc.com/2026/01/07/google-characterai-to-settle-suits-involving-suicides-ai-chatbots.htmls">CNBC: Jennifer Elias (2026-01-07)</a>
+</p>
+
+![h:250 center](graphics/2026-05-15-alphabet-snap-addition-settlement-reuters.png)
+<p class="small-text">
+Source: <a href="https://www.reuters.com/world/us/youtube-snap-settle-school-districts-social-media-addiction-claims-2026-05-16/">Reuters: D.N. Jones and N. Raymond (2026-05-18)</a>.
+</p>
+
+</div>
 
 ---
 ## AI risk is different
