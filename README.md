@@ -139,6 +139,7 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 
 * Correct intro title
 * Add missing dataset(s), image(s), notebook test(s)
+* Add data profiling dependency
 
 ### 2026.1.1
 
