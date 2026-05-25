@@ -8,7 +8,7 @@ resolution-markers = [
 ]
 
 [options]
-exclude-newer = "2026-05-18T07:20:27.26373Z"
+exclude-newer = "2026-05-18T07:35:34.137611Z"
 exclude-newer-span = "P7D"
 
 [[package]]
@@ -2461,6 +2461,7 @@ dependencies = [
     { name = "polars" },
     { name = "scikit-learn", version = "1.7.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "scikit-learn", version = "1.8.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "setuptools" },
 ]
 
 [package.dev-dependencies]
@@ -2480,6 +2481,7 @@ requires-dist = [
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "polars", specifier = ">=1.36.1" },
     { name = "scikit-learn", specifier = ">=1.6.1" },
+    { name = "setuptools", specifier = ">=82.0.1" },
 ]
 
 [package.metadata.requires-dev]

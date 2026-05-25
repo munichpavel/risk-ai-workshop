@@ -343,7 +343,9 @@ seaborn==0.13.2
 send2trash==2.1.0
     # via jupyter-server
 setuptools==82.0.1
-    # via jupyterlab
+    # via
+    #   risk-ai (pyproject.toml)
+    #   jupyterlab
 six==1.17.0
     # via
     #   python-dateutil
