@@ -2,7 +2,7 @@
 
 ## Analytical: Empirical distribution MLE for health insurance claims prediction (*)
 
-Assume that the binary random variable $(\mathbf{X},Y)$ is defined as in the slides "Example: health insurance prediction."
+Assume that the binary random variable $(\mathbf{X},Y) = (X_0, X_1, Y)$ is defined as in the slides about predicting big-claims in health insurance.
 
 For the empirical model, we assign a distinct parameter to each feature subgroup:
 * **Parameters:** $\theta = (p_{1|00}, p_{1|01}, p_{1|10}, p_{1|11})$
@@ -35,3 +35,7 @@ Calculate the empirical MLE model for the train-validation set of records from 2
 ## Bootstrap statistics on the train-validation set for MLE, empirical distribution (**)
 
 Use [empirical bootstrapping](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)) to estimate the mean MLE parameters and their standard deviations on the train-validation set from above.
+
+## Analytical: Decision tree number of parameters (*)
+
+Show that the number of parameters of a decision tree for our binary random variable $(\mathbf{X},Y) = (X_0, X_1, Y)$ of big-claims prediction cannot exceed the number of parameters of the empirical distribution model.
