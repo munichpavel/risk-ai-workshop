@@ -20,6 +20,7 @@ notebook_dir = project_root / 'notebooks'
 @pytest.mark.parametrize(
     'notebook_path',
     [
+        notebook_dir / 'intro-exercises.ipynb',
         notebook_dir / 'high-risk-exercises.ipynb',
     ]
 )

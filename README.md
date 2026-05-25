@@ -138,7 +138,7 @@ Note: I do not follow [Semantic Versioning](https://semver.org/) for this projec
 ### 2026.1.2
 
 * Correct intro title
-* Add missing dataset(s), image(s)
+* Add missing dataset(s), image(s), notebook test(s)
 
 ### 2026.1.1
 
