@@ -180,10 +180,10 @@ Example: before "predicted" big-claim or not $\to$ sort customers into 2 group. 
 
 
 ---
+<!-- _class: math-heavy -->
 ## Beyond a single split: $k$-fold cross-validation
 
-When historical data is limited, a single Train/Validation split removes valuable data from the training process $\to$ risks unrepresentative split, high variance in our error estimate.
-
+When historical data is limited ...
 
 **$k$-fold validation for hyperparameter tuning:**
 * *Partition*: Divide the non-test data into $k$ equal-sized, disjoint folds.
