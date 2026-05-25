@@ -368,7 +368,7 @@ $$
 
 * AI system that affects health, safety or fundamental rights **high-risk**, including access to finance, health or life insurance
 * AI differs from other software due to historical data and optimization, shares importance of human decisions
-* Prediction of big-claims in simple health insurance model as MLE for empirical, logistic regression and decision trees
+* Prediction of health claims as MLE for empirical, logistic regression and decision trees
 
 </div>
 <div class=rdiv>

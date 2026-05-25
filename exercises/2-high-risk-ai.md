@@ -39,3 +39,12 @@ Use [empirical bootstrapping](https://en.wikipedia.org/wiki/Bootstrapping_(stati
 ## Analytical: Decision tree number of parameters (*)
 
 Show that the number of parameters of a decision tree for our binary random variable $(\mathbf{X},Y) = (X_0, X_1, Y)$ of big-claims prediction cannot exceed the number of parameters of the empirical distribution model.
+
+
+## Evaluate fitted logistic regression cluster-assignment on sub-population categories (**)
+
+See the example set-up code at [github.com/munichpavel/risk-ai-workshop/blob/main/notebooks/high-risk-exercises.ipynb](https://github.com/munichpavel/risk-ai-workshop/blob/main/notebooks/high-risk-exercises.ipynb) (or locally)
+
+This task is complicated by the presence of categorial and numerical features. For categorical features, we just take the (Cartesian) product of all possible values, and evaluate the model on those values.
+
+With numerical features in the mix, we need to use some statistics.
