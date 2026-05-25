@@ -2,8 +2,37 @@
 
 ![ci](https://github.com/munichpavel/risk-ai-workshop/actions/workflows/ci-cd.yml/badge.svg)
 
-## Quick-start
 
+
+## Workshop topics
+
+Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.yml), and be found under [releases](https://github.com/munichpavel/risk-ai-workshop/releases). See e.g. [the v2022.1.1 release](https://github.com/munichpavel/risk-ai-workshop/releases/tag/v2022.1.1).
+
+### Artificial intelligence, risk and regulation
+
+Exercises: [exercises/1-intro.md](exercises/1-intro.md)
+
+### Managing high-risk AI I and II
+
+Exercises: [exercises/2-high-risk.md](exercises/2-high-risk-ai.md)
+
+### The future of AI risk management
+
+Exercises [exercises/4-future-ai-risk.md](exercises/4-future-ai-risk.md)
+## Grading scheme for University of Ljubljana Masters in Mathematical Finance
+
+### 2026 Workshop
+
+Exercise are to be submitted per team on [Moodle](https://ucilnica.fmf.uni-lj.si/mod/assign/view.php?id=81840&forceview=1) by June 26, 2026.
+
+The number of points for a correct solution for each exercise brings is equal to $2^{\mathrm{number\,of\,stars}}$.
+
+The grading for this seminar as part of the course is binary, i.e. "pass" or "no-pass". For a grade of "pass" your team will require
+
+1. at least 6 points, and
+1. at least one correctly solved exercise from each of the three sessions from [workshop topics](#workshop-topics) above.
+
+## Developer guide
 
 ### Obtaining the repository
 
@@ -17,12 +46,12 @@ download a zipped-version of this repo from GitHub
 
 then `cd` into the created folder
 
-### Running the workshop notebooks in [noteebooks](notebooks/)
+### Running the workshop notebooks in [notebooks](notebooks/)
 
 #### Option 1, local installation
 
 * create a virtual environment (recommended)  e.g. with [venv](https://docs.python.org/3/library/venv.html), [conda](https://docs.conda.io/en/latest/) or other.
-* install python dependencies with `pip install -r requirements.txt` in a virtual environment. Note: the [fake-data-for-learning package](https://github.com/munichpavel/fake-data-for-learning) has some non-python dependencies; see its [installation instructions](https://github.com/munichpavel/fake-data-for-learning/blob/main/README.md#installation).
+* install python dependencies with `pip install -r requirements-py3.<your-python-version>.txt` in a virtual environment.
 
 #### Option 2, Google Colab
 
@@ -49,7 +78,7 @@ print(os.listdir())
 !pip install -r requirements.txt
 ```
 
-It should look something like this (after you run it):
+It should look structurally something like this after you run it, though contents will change:
 
 ![Additional first cell if using Colab](readme-graphics/colab-first-cell.png)
 
@@ -60,40 +89,6 @@ Notes:
 
 ![colab message to restart session for installation of custom dependencies](readme-graphics/colab-restart-session-post-install.png)
 
-## Workshop topics
-
-Slides are built as part of the repo's [ci-cd pipeline](.github/workflows/ci-cd.yml), and be found under [releases](https://github.com/munichpavel/risk-ai-workshop/releases). See e.g. [the v2022.1.1 release](https://github.com/munichpavel/risk-ai-workshop/releases/tag/v2022.1.1).
-
-### Artificial intelligence for risk management
-
-[Examples and exercises](notebooks/introduction-examples-exercises.ipynb)
-
-### Discrete geometry for risk
-
-Examples and exercises: [graphical models](notebooks/graphical-models-exercises.ipynb), [probability polytopes](notebooks/probability-polytope-exercises.ipynb), and [simpson's paradox](notebooks/simpsons-paradox-examples-exercises.ipynb)
-
-### Correlation and causality
-
-[Examples and exercises](notebooks/causal-models-exercises.ipynb)
-
-### Adversarial regularization regimes in classification tasks
-
-* [Examples and exercises](notebooks/adversarial-ml-examples-exercises.ipynb)
-
-## Grading scheme for University of Ljubljana Masters in Mathematical Finance
-
-### 2024 Workshop
-
-Exercise are to be submitted per team to Professor Košir before or on June 24, 2024.
-
-The number of points for a correct solution for each exercise brings is equal to $2^{\mathrm{number\,of\,stars}}$.
-
-The grading for this seminar as part of the course is binary, i.e. "pass" or "no-pass". For a grade of "pass" your team will require
-
-1. at least 8 points, and
-1. at least one correctly solved exercise from each of the four sessions from [workshop topics](#workshop-topics) above.
-
-For an example of the 2nd criterion, to satisfy this criterion for the 2nd topic, [Discrete Geometry for Risk](#discrete-geometry-for-risk), you need to successfully solve at least one problem from one of the three exercise notebooks.
 
 ## Relate python packages
 
