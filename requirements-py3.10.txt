@@ -342,7 +342,7 @@ seaborn==0.13.2
     # via fg-data-profiling
 send2trash==2.1.0
     # via jupyter-server
-setuptools==82.0.1
+setuptools==69.5.1
     # via
     #   risk-ai (pyproject.toml)
     #   jupyterlab
