@@ -16,7 +16,7 @@ dependencies = [
     "polars>=1.36.1",
     "scikit-learn>=1.6.1",
     "sentence-transformers>=5.5.0",
-    "setuptools<=69.5.1",
+    "setuptools<=78.1.1",
 ]
 
 
