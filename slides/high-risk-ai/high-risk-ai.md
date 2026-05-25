@@ -155,7 +155,7 @@ Note: PhD Thesis from <a href="https://www.hwr-berlin.de/search/kontaktdetail/de
 ---
 ## Technical requirements for high-risk AI
 
-* Data quality and governance (*Article 10*, workshop partially in-scope)
+* Data quality and governance (*Article 10*, workshop in-scope)
 * Technical documentation (*Article 11*, workshop out-of-scope)
 * Record keeping (*Article 12*, workshop out-of-scope)
 * Transparency and provision of information regarding operation (*Article 13*, workshop partially in-scope)
