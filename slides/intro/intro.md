@@ -53,9 +53,7 @@ img[alt~="center"] {
 }
 </style>
 <!-- paginate: false -->
-## AI Risk Management
-
-### Why it's different, why it's important
+## AI, Risk Management and Regulation
 
 Dr. Paul Larsen
 Head of Data and AI, Korapis d.o.o.
