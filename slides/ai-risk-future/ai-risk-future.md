@@ -70,9 +70,10 @@ Head of Data and AI, Korapis d.o.o.
 ![h:40px center](../graphics/KORAPIS-color.jpg)
 
 ---
+<!-- paginate: true -->
 ## Outline
 
-* AI and Cyber Risk
+* AI and Cyber Risk: Jailbreaking an LLM
 * AI and Terminator Risk
 * The Future of AI: AI 2027 vs AI as Normal Technology
 
