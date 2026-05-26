@@ -22,6 +22,7 @@ notebook_dir = project_root / 'notebooks'
     [
         notebook_dir / 'intro-exercises.ipynb',
         notebook_dir / 'high-risk-exercises.ipynb',
+        notebook_dir / 'language-embeddings.ipynb',
     ]
 )
 def test_ipynb(notebook_path):

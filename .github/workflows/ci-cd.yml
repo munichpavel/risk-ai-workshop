@@ -68,6 +68,8 @@ jobs:
           mkdir -p slides_out
           marp --html 'slides/intro/intro.md' -o "${{ github.workspace }}/slides_out/intro.pdf" --allow-local-files
           marp --html 'slides/high-risk-ai/high-risk-ai.md' -o "${{ github.workspace }}/slides_out/high-risk-ai.pdf" --allow-local-files
+          marp --html 'slides/high-risk-ai-2/high-risk-ai-2.md' -o "${{ github.workspace }}/slides_out/high-risk-ai-2.pdf" --allow-local-files
+          marp --html 'slides/ai-risk-future/ai-risk-future.md' -o "${{ github.workspace }}/slides_out/ai-risk-future.pdf" --allow-local-files
           ls -al slides_out
       - name: "Archive slide artifacts"
         uses: actions/upload-artifact@v4
