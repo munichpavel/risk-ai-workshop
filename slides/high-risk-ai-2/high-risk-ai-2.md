@@ -234,18 +234,23 @@ When historical data is limited ...
 ## Transparency of high-risk AI
 <!-- _class: split -->
 <div class='ldiv'>
-
 Article 13(1) of AI Act
 
-> High-risk AI systems shall be designed and developed in such a way as to ensure that their operation is sufficiently transparent to enable deployers to interpret a system’s output and use it appropriately. An appropriate type and degree of transparency shall be ensured with a view to achieving compliance with the relevant obligations of the provider and deployer set out in Section 3.
+<blockquote class='small'>
+High-risk AI systems shall be designed and developed in such a way as to ensure that their operation is sufficiently transparent to enable deployers to interpret a system’s output and use it appropriately. An appropriate type and degree of transparency shall be ensured with a view to achieving compliance with the relevant obligations of the provider and deployer set out in Section 3.
+</blockquote>
 
 </div>
 <div class='rdiv'>
 
-* Logistic regression not considered AI (non-binding guidance), but M. Wiesmann, P. Larsen, [Pathological Regularization Regimes in Classification Tasks](https://arxiv.org/abs/2406.14731)
-* Do we really understand decision trees?
+<div class='ms-text'>
+<ol>
+<li>Logistic regression not considered AI (non-binding guidance), but M. Wiesmann, P. Larsen, <a href=(https://arxiv.org/abs/2406.14731>Pathological Regularization Regimes in Classification Tasks</a></li>
+<li>Do we really understand decision trees?</li>
+</ol>
+</div>
 
-Jesus of Nazareth, Luke 23:31 (NIV):
+Jesus of Nazareth, Luke 23:31:
 
 > For if people do these things when the tree is green, what will happen when it is dry?
 
