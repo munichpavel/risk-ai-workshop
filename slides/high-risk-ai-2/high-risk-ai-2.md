@@ -168,16 +168,43 @@ In linear regression with mean-squared error, generalization error decomposes as
 * *High Bias (underfitting)*: The model family is too rigid or simple to capture the underlying data generating process.
 * *High Variance (overfitting)*: The model is too sensitive and memorizes the historical noise of the training sample.
 
+---
+## Why split historical data?
+
 **Role of data splitting**:
 * *Train Set*: Fits the model parameters (drives bias down).
 * *Validation Set*: Tunes model complexity to find the optimal tradeoff between bias and variance.
 * *Test Set*: A strictly held-out sample to provide an unbiased estimate of final generalization error.
 
+
 ---
-## Data splitting (and more) in practice
+<!-- _class: math-heavy -->
+## Hyperparameter tuning: Logistic regression
 
-Example: before "predicted" big-claim or not $\to$ sort customers into 2 group. New task: find m
+Let $X$ be of size $N\times p$ and $Y$ by $N$-dimensional response variable.
 
+  The \emph{logistic regression estimator} is a $p$-dimensional vector $\hat{\beta}$ solving
+
+  $$
+  \begin{align*}
+    \hat{\beta}(c) &= \underset{\beta\in\mathbb{R}^p}{\mathrm{argmin}}~ -\frac{1}{N} \left( Y^T \log\left(\frac{1}{1 + e^{-X\beta}}\right) + (1 - Y)^T \log\left(1 - \frac{1}{1 + e^{-X\beta}}\right) \right) \\
+    & \hspace{0.5cm} + c||\beta||^2_2
+  \end{align*}
+  $$
+
+  The variable $\beta$ is the $regularization$ (hyper)parameter, and penalizes for large coefficient $\beta$ values to avoid overfitting.
+
+
+---
+
+## Hyperparamter tuning: Decision trees
+
+Hyperparameters include
+
+* the maximum depth of the tree
+* minimum number of samples required to be at a leaf node
+* minimum number of samples required to split an internal node
+* number of features to consider when looking for the best split
 
 ---
 <!-- _class: math-heavy -->
@@ -191,3 +218,62 @@ When historical data is limited ...
 * *Aggregate*: Average the $k$ validation errors to estimate the **generalization error** for that specific hyperparameter configuration.
 * *Select & Retrain*: Choose the hyperparameters that minimized the estimated generalization error, then retrain the final model on the **entire** non-test dataset.
 * *Test*: Evaluate this final model once on the hold-out Test set to report the true generalization error.
+
+---
+## Visualizing decision trees
+
+![h:480 center](graphics/decision_tree_visualization.png)
+
+---
+## Visualizing decision trees
+
+![h:480 center](graphics/deeper_decision_tree_visualization.png)
+
+
+---
+## Transparency of high-risk AI
+<!-- _class: split -->
+<div class='ldiv'>
+
+Article 13(1) of AI Act
+
+> High-risk AI systems shall be designed and developed in such a way as to ensure that their operation is sufficiently transparent to enable deployers to interpret a system’s output and use it appropriately. An appropriate type and degree of transparency shall be ensured with a view to achieving compliance with the relevant obligations of the provider and deployer set out in Section 3.
+
+</div>
+<div class='rdiv'>
+
+* Logistic regression not considered AI (non-binding guidance), but M. Wiesmann, P. Larsen, [Pathological Regularization Regimes in Classification Tasks](https://arxiv.org/abs/2406.14731)
+* Do we really understand decision trees?
+
+Jesus of Nazareth, Luke 23:31 (NIV):
+
+> For if people do these things when the tree is green, what will happen when it is dry?
+
+</div>
+
+---
+## Sherlock explanations and independent verification
+<!-- _class: split -->
+<div class='ldiv'>
+
+*Sherlock explanation*
+
+![w:400 center](graphics/sherlock-explanation.png)
+
+<p class='small-text'>
+Source: https://mkdev.me/posts/explaining-ai-explainability-vision-reality-and-regulation
+</p>
+
+
+</div>
+<div class='rdiv'>
+
+*Independent verification*
+
+UI in pravni izzidi, Portoroz, 2026
+
+* Federal prosecutor: 1-3 TB of data in some prosecutions
+* Question: Really convict with AI?
+
+</div>
+
