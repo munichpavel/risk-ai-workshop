@@ -146,7 +146,7 @@ jupyter-server==2.18.2
     #   notebook-shim
 jupyter-server-terminals==0.5.4
     # via jupyter-server
-jupyterlab==4.5.7
+jupyterlab==4.5.9
     # via risk-ai (pyproject.toml)
 jupyterlab-pygments==0.3.0
     # via nbconvert
